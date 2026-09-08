@@ -207,7 +207,7 @@ export const ScheduleModal: React.FC<ScheduleModalProps> = ({
                 <span className="text-base shrink-0">🎓</span>
                 <div>
                   <strong className="block font-bold text-blue-900">수원 동남보건대 ➔ 시흥 목감동 통학</strong>
-                  수업을 모두 마친 후 대중교통 통학시간(~50분)을 반영해 목감 최종 도착 시간을 설정하세요.
+                  수업을 모두 마친 후 대중교통 통학시간(약 1시간 30분)을 반영해 목감 최종 도착 시간을 설정하세요.
                 </div>
               </div>
             )}

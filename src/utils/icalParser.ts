@@ -301,7 +301,7 @@ export function parseICSContent(icsText: string): Schedule[] {
       .sort((a, b) => a.startTime.localeCompare(b.startTime));
 
     const latestEunbiClass = eunbiClasses.length > 0 ? eunbiClasses[eunbiClasses.length - 1] : null;
-    const eunbiFinalArrival = latestEunbiClass ? addMinutes(latestEunbiClass.endTime, 60) : '19:00';
+    const eunbiFinalArrival = latestEunbiClass ? addMinutes(latestEunbiClass.endTime, 90) : '19:30';
 
     // Hayul activities
     const hayulActivities = dayItems
@@ -328,8 +328,8 @@ export function parseICSContent(icsText: string): Schedule[] {
             dinnerStatus = 'required';
             returnTime = eunbiFinalArrival;
             memo = item.location
-              ? `수원 동남보건대(${item.location}) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)`
-              : `수원 동남보건대 · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)`;
+              ? `수원 동남보건대(${item.location}) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)`
+              : `수원 동남보건대 · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)`;
           } else {
             dinnerStatus = 'not_required';
             memo = item.location ? `수원 동남보건대(${item.location}) · 다음 강의 대기` : `수원 동남보건대`;

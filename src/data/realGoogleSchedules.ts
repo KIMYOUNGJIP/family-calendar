@@ -226,12 +226,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2012-04-10",
     "title": "은비 소풍날",
     "startTime": "09:00",
-    "returnTime": "10:00",
+    "returnTime": "10:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(동물원) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(동물원) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-20",
@@ -239,12 +239,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2012-04-18",
     "title": "은비소풍날",
     "startTime": "09:00",
-    "returnTime": "10:00",
+    "returnTime": "10:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(경마장공원) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(경마장공원) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-21",
@@ -1080,12 +1080,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2013-02-20",
     "title": "은비웅변발표회",
     "startTime": "19:00",
-    "returnTime": "21:00",
+    "returnTime": "21:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(청명 어린이집 7시) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(청명 어린이집 7시) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-90",
@@ -1117,12 +1117,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2013-02-23",
     "title": "은비 ot",
     "startTime": "14:00",
-    "returnTime": "16:00",
+    "returnTime": "16:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(청명 2시) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(청명 2시) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-93",
@@ -1215,12 +1215,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2013-03-12",
     "title": "은비상담",
     "startTime": "18:20",
-    "returnTime": "20:20",
+    "returnTime": "20:50",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(청명) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(청명) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-101",
@@ -1337,12 +1337,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2013-04-18",
     "title": "은비경마공원소풍 개량원복",
     "startTime": "09:00",
-    "returnTime": "10:00",
+    "returnTime": "10:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(도시락 간식 음료 과일 물 물티슈 비닐봉지) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(도시락 간식 음료 과일 물 물티슈 비닐봉지) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-111",
@@ -1388,12 +1388,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2013-04-27",
     "title": "은비가족봄소풍",
     "startTime": "10:00",
-    "returnTime": "15:00",
+    "returnTime": "15:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(의왕승림식물원) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(의왕승림식물원) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-115",
@@ -1501,12 +1501,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2013-05-21",
     "title": "은비봄소풍",
     "startTime": "10:00",
-    "returnTime": "18:00",
+    "returnTime": "18:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(도시락 간식 음료 물 물티슈 비닐봉지 29000) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(도시락 간식 음료 물 물티슈 비닐봉지 29000) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-124",
@@ -1732,12 +1732,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2013-07-16",
     "title": "은비 청계사 물놀이",
     "startTime": "18:30",
-    "returnTime": "20:30",
+    "returnTime": "21:00",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(청계사) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(청계사) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-143",
@@ -1794,12 +1794,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2013-08-06",
     "title": "은비캐니빌리지견학",
     "startTime": "07:00",
-    "returnTime": "09:00",
+    "returnTime": "09:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(도시락 간식 과일 물 음료수ㅡ캔30개) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(도시락 간식 과일 물 음료수ㅡ캔30개) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-148",
@@ -2330,12 +2330,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2013-11-02",
     "title": "은비하율함소아진료",
     "startTime": "10:15",
-    "returnTime": "12:15",
+    "returnTime": "12:45",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(함소아평촌) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(함소아평촌) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-192",
@@ -2500,12 +2500,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2013-12-01",
     "title": "은비재롱잔치",
     "startTime": "13:00",
-    "returnTime": "17:00",
+    "returnTime": "17:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(안양아트센터 수리홀) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(안양아트센터 수리홀) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-206",
@@ -3250,12 +3250,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2014-04-23",
     "title": "은비과학축제 [!/C]",
     "startTime": "10:20",
-    "returnTime": "19:00",
+    "returnTime": "19:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(체육관) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(체육관) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-267",
@@ -4472,12 +4472,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2015-01-09",
     "title": "은비치과치료",
     "startTime": "09:30",
-    "returnTime": "11:30",
+    "returnTime": "12:00",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(꼬마이치과) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(꼬마이치과) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-367",
@@ -4557,12 +4557,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2015-01-17",
     "title": "은비친구 태연생일파티",
     "startTime": "13:00",
-    "returnTime": "16:00",
+    "returnTime": "16:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(산본) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(산본) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-374",
@@ -4751,12 +4751,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2015-02-08",
     "title": "은비공연",
     "startTime": "15:00",
-    "returnTime": "17:00",
+    "returnTime": "17:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(성남아트센터) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(성남아트센터) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-390",
@@ -4946,12 +4946,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2015-03-19",
     "title": "은비연주회",
     "startTime": "18:00",
-    "returnTime": "20:00",
+    "returnTime": "20:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(안양감리교회 2층 커피숍) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(안양감리교회 2층 커피숍) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-406",
@@ -5909,12 +5909,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2015-09-20",
     "title": "은비 우클 연주회",
     "startTime": "19:30",
-    "returnTime": "21:30",
+    "returnTime": "22:00",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(군포예술회관) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(군포예술회관) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-485",
@@ -7096,12 +7096,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2016-05-14",
     "title": "은비 교회중창대회",
     "startTime": "07:30",
-    "returnTime": "13:00",
+    "returnTime": "13:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(경기중앙교회) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(경기중앙교회) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-582",
@@ -9591,12 +9591,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2017-10-29",
     "title": "은비국기원",
     "startTime": "13:00",
-    "returnTime": "17:00",
+    "returnTime": "17:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(시흥국민체육센터, 대한민국 경기도 시흥시 하중동 880-1) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(시흥국민체육센터, 대한민국 경기도 시흥시 하중동 880-1) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-788",
@@ -9919,12 +9919,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2017-12-23",
     "title": "은비하율쿠킹클래스",
     "startTime": "16:31",
-    "returnTime": "18:31",
+    "returnTime": "19:01",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(1관) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(1관) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-815",
@@ -10801,12 +10801,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2018-06-16",
     "title": "은비공연ㅡ물왕예술제청소년",
     "startTime": "10:00",
-    "returnTime": "12:00",
+    "returnTime": "12:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(은행동비둘기공원 특설무대) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(은행동비둘기공원 특설무대) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-888",
@@ -10814,12 +10814,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2018-06-17",
     "title": "은비 치어리딩대회",
     "startTime": "10:00",
-    "returnTime": "12:00",
+    "returnTime": "12:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(능곡동 중앙공원) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(능곡동 중앙공원) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-889",
@@ -11143,12 +11143,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2018-08-17",
     "title": "은비성교육",
     "startTime": "14:00",
-    "returnTime": "18:00",
+    "returnTime": "18:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(경기도청소년성문화센터) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(경기도청소년성문화센터) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-916",
@@ -11301,12 +11301,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2018-09-01",
     "title": "은비치어리딩연습",
     "startTime": "11:00",
-    "returnTime": "14:00",
+    "returnTime": "14:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(군포중앙고등학교) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(군포중앙고등학교) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-929",
@@ -11580,12 +11580,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2018-10-19",
     "title": "은비 치어리딩  수원 칠보체육관",
     "startTime": "17:30",
-    "returnTime": "22:30",
+    "returnTime": "23:00",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(대한민국 경기도 수원시 권선구 금곡동 410) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(대한민국 경기도 수원시 권선구 금곡동 410) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-952",
@@ -11884,12 +11884,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2018-12-15",
     "title": "은비공연",
     "startTime": "12:30",
-    "returnTime": "15:30",
+    "returnTime": "16:00",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(경기 용인시 기흥구 덕영대로 1732 경희대학교) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(경기 용인시 기흥구 덕영대로 1732 경희대학교) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-977",
@@ -11959,12 +11959,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2018-12-26",
     "title": "은비 독서논술",
     "startTime": "17:00",
-    "returnTime": "19:00",
+    "returnTime": "19:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(목감 다니체유관) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(목감 다니체유관) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-983",
@@ -12795,12 +12795,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2019-05-04",
     "title": "은비 치어리딩 군포 공연",
     "startTime": "10:00",
-    "returnTime": "12:00",
+    "returnTime": "12:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(군포시민체육광장) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(군포시민체육광장) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-1052",
@@ -12918,12 +12918,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2019-05-18",
     "title": "은비공연",
     "startTime": "16:00",
-    "returnTime": "18:00",
+    "returnTime": "18:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(시흥abc센터 abc홀) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(시흥abc센터 abc홀) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-1062",
@@ -12943,12 +12943,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2019-05-25",
     "title": "은비끼페스티벌",
     "startTime": "09:00",
-    "returnTime": "15:00",
+    "returnTime": "15:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(송파구민회관) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(송파구민회관) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-1064",
@@ -13028,12 +13028,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2019-06-06",
     "title": "은비대회최종연습",
     "startTime": "11:00",
-    "returnTime": "15:00",
+    "returnTime": "15:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(군포중앙고등학교) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(군포중앙고등학교) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-1071",
@@ -13053,12 +13053,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2019-06-08",
     "title": "은비치어리딩 대회",
     "startTime": "08:00",
-    "returnTime": "10:00",
+    "returnTime": "10:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(화성 경화공원) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(화성 경화공원) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-1073",
@@ -13547,12 +13547,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2019-11-10",
     "title": "은비따오기문화축제",
     "startTime": "15:00",
-    "returnTime": "19:00",
+    "returnTime": "19:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(시흥ABC행복학습타운, 대한민국 시흥시 대야동) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(시흥ABC행복학습타운, 대한민국 시흥시 대야동) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-1114",
@@ -16076,12 +16076,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2020-12-28",
     "title": "은비아빠건강검진",
     "startTime": "09:30",
-    "returnTime": "13:30",
+    "returnTime": "14:00",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(목감연세내과) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(목감연세내과) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-1323",
@@ -17033,12 +17033,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2021-06-12",
     "title": "은비영어보충",
     "startTime": "09:00",
-    "returnTime": "12:00",
+    "returnTime": "12:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(EIE고려대학교영어교육프로그램) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(EIE고려대학교영어교육프로그램) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-1402",
@@ -17070,12 +17070,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2021-06-26",
     "title": "은비영어보충",
     "startTime": "09:00",
-    "returnTime": "12:00",
+    "returnTime": "12:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(EIE고려대학교영어교육프로그램) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(EIE고려대학교영어교육프로그램) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-1405",
@@ -20530,12 +20530,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2023-01-06",
     "title": "은비교복",
     "startTime": "09:00",
-    "returnTime": "10:00",
+    "returnTime": "10:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(대한민국 경기도 시흥시 대은로) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(대한민국 경기도 시흥시 대은로) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-1691",
@@ -21428,12 +21428,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2023-05-31",
     "title": "은비 입시설명회",
     "startTime": "18:00",
-    "returnTime": "21:00",
+    "returnTime": "21:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(목감고 시청각실) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(목감고 시청각실) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-1764",
@@ -22131,12 +22131,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2023-09-04",
     "title": "중앙대학교 광명병원(외과)",
     "startTime": "15:00",
-    "returnTime": "19:00",
+    "returnTime": "19:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(���기도 광명시 덕안로 110) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(���기도 광명시 덕안로 110) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-1821",
@@ -23735,12 +23735,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2024-10-17",
     "title": "중앙대학교 광명병원(외과)",
     "startTime": "13:57",
-    "returnTime": "19:00",
+    "returnTime": "19:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(경기도 광명시 덕안로 110) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(경기도 광명시 덕안로 110) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-1953",
@@ -25645,12 +25645,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2025-10-31",
     "title": "동남보건대 수시 합격자 발표",
     "startTime": "09:00",
-    "returnTime": "10:00",
+    "returnTime": "10:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대 · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대 · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-2110",
@@ -29675,12 +29675,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2026-09-07",
     "title": "[은비] 생리학",
     "startTime": "16:00",
-    "returnTime": "19:00",
+    "returnTime": "19:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-2431",
@@ -29740,12 +29740,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2026-09-08",
     "title": "[은비] 보조공학",
     "startTime": "16:00",
-    "returnTime": "19:00",
+    "returnTime": "19:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-2436",
@@ -29766,12 +29766,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2026-09-09",
     "title": "[은비] 해부학2",
     "startTime": "16:00",
-    "returnTime": "19:00",
+    "returnTime": "19:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(D102) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(D102) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-2438",
@@ -29896,12 +29896,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2026-09-11",
     "title": "[은비] 생물학",
     "startTime": "11:00",
-    "returnTime": "14:00",
+    "returnTime": "14:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대 · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대 · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-2448",
@@ -29987,12 +29987,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2026-09-14",
     "title": "[은비] 생리학",
     "startTime": "16:00",
-    "returnTime": "19:00",
+    "returnTime": "19:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-2455",
@@ -30078,12 +30078,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2026-09-15",
     "title": "[은비] 보조공학",
     "startTime": "16:00",
-    "returnTime": "19:00",
+    "returnTime": "19:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-2462",
@@ -30104,12 +30104,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2026-09-16",
     "title": "[은비] 해부학2",
     "startTime": "16:00",
-    "returnTime": "19:00",
+    "returnTime": "19:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(D102) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(D102) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-2464",
@@ -30234,12 +30234,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2026-09-18",
     "title": "[은비] 생물학",
     "startTime": "11:00",
-    "returnTime": "14:00",
+    "returnTime": "14:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대 · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대 · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-2474",
@@ -30325,12 +30325,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2026-09-21",
     "title": "[은비] 생리학",
     "startTime": "16:00",
-    "returnTime": "19:00",
+    "returnTime": "19:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-2481",
@@ -30403,12 +30403,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2026-09-22",
     "title": "[은비] 보조공학",
     "startTime": "16:00",
-    "returnTime": "19:00",
+    "returnTime": "19:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-2487",
@@ -30429,12 +30429,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2026-09-23",
     "title": "[은비] 해부학2",
     "startTime": "16:00",
-    "returnTime": "19:00",
+    "returnTime": "19:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(D102) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(D102) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-2489",
@@ -30557,12 +30557,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2026-09-28",
     "title": "[은비] 생리학",
     "startTime": "16:00",
-    "returnTime": "19:00",
+    "returnTime": "19:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-2499",
@@ -30635,12 +30635,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2026-09-29",
     "title": "[은비] 보조공학",
     "startTime": "16:00",
-    "returnTime": "19:00",
+    "returnTime": "19:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-2505",
@@ -30661,12 +30661,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2026-09-30",
     "title": "[은비] 해부학2",
     "startTime": "16:00",
-    "returnTime": "19:00",
+    "returnTime": "19:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(D102) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(D102) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-2507",
@@ -30803,12 +30803,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2026-10-02",
     "title": "[은비] 생물학",
     "startTime": "11:00",
-    "returnTime": "14:00",
+    "returnTime": "14:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대 · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대 · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-2518",
@@ -30907,12 +30907,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2026-10-06",
     "title": "[은비] 보조공학",
     "startTime": "16:00",
-    "returnTime": "19:00",
+    "returnTime": "19:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-2526",
@@ -30933,12 +30933,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2026-10-07",
     "title": "[은비] 해부학2",
     "startTime": "16:00",
-    "returnTime": "19:00",
+    "returnTime": "19:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(D102) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(D102) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-2528",
@@ -31088,12 +31088,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2026-10-12",
     "title": "[은비] 생리학",
     "startTime": "16:00",
-    "returnTime": "19:00",
+    "returnTime": "19:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-2540",
@@ -31166,12 +31166,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2026-10-13",
     "title": "[은비] 보조공학",
     "startTime": "16:00",
-    "returnTime": "19:00",
+    "returnTime": "19:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-2546",
@@ -31192,12 +31192,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2026-10-14",
     "title": "[은비] 해부학2",
     "startTime": "16:00",
-    "returnTime": "19:00",
+    "returnTime": "19:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(D102) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(D102) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-2548",
@@ -31334,12 +31334,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2026-10-16",
     "title": "[은비] 생물학",
     "startTime": "11:00",
-    "returnTime": "14:00",
+    "returnTime": "14:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대 · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대 · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-2559",
@@ -31437,12 +31437,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2026-10-19",
     "title": "[은비] 생리학",
     "startTime": "16:00",
-    "returnTime": "19:00",
+    "returnTime": "19:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-2567",
@@ -31515,12 +31515,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2026-10-20",
     "title": "[은비] 보조공학",
     "startTime": "16:00",
-    "returnTime": "19:00",
+    "returnTime": "19:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-2573",
@@ -31541,12 +31541,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2026-10-21",
     "title": "[은비] 해부학2",
     "startTime": "16:00",
-    "returnTime": "19:00",
+    "returnTime": "19:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(D102) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(D102) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-2575",
@@ -31671,12 +31671,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2026-10-23",
     "title": "[은비] 생물학",
     "startTime": "11:00",
-    "returnTime": "14:00",
+    "returnTime": "14:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대 · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대 · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-2585",
@@ -31774,12 +31774,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2026-10-26",
     "title": "[은비] 생리학",
     "startTime": "16:00",
-    "returnTime": "19:00",
+    "returnTime": "19:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-2593",
@@ -31852,12 +31852,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2026-10-27",
     "title": "[은비] 보조공학",
     "startTime": "16:00",
-    "returnTime": "19:00",
+    "returnTime": "19:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-2599",
@@ -31878,12 +31878,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2026-10-28",
     "title": "[은비] 해부학2",
     "startTime": "16:00",
-    "returnTime": "19:00",
+    "returnTime": "19:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(D102) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(D102) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-2601",
@@ -32008,12 +32008,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2026-10-30",
     "title": "[은비] 생물학",
     "startTime": "11:00",
-    "returnTime": "14:00",
+    "returnTime": "14:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대 · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대 · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-2611",
@@ -32099,12 +32099,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2026-11-02",
     "title": "[은비] 생리학",
     "startTime": "16:00",
-    "returnTime": "19:00",
+    "returnTime": "19:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-2618",
@@ -32177,12 +32177,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2026-11-03",
     "title": "[은비] 보조공학",
     "startTime": "16:00",
-    "returnTime": "19:00",
+    "returnTime": "19:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-2624",
@@ -32203,12 +32203,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2026-11-04",
     "title": "[은비] 해부학2",
     "startTime": "16:00",
-    "returnTime": "19:00",
+    "returnTime": "19:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(D102) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(D102) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-2626",
@@ -32333,12 +32333,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2026-11-06",
     "title": "[은비] 생물학",
     "startTime": "11:00",
-    "returnTime": "14:00",
+    "returnTime": "14:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대 · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대 · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-2636",
@@ -32437,12 +32437,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2026-11-09",
     "title": "[은비] 생리학",
     "startTime": "16:00",
-    "returnTime": "19:00",
+    "returnTime": "19:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-2644",
@@ -32527,12 +32527,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2026-11-10",
     "title": "[은비] 보조공학",
     "startTime": "16:00",
-    "returnTime": "19:00",
+    "returnTime": "19:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-2651",
@@ -32553,12 +32553,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2026-11-11",
     "title": "[은비] 해부학2",
     "startTime": "16:00",
-    "returnTime": "19:00",
+    "returnTime": "19:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(D102) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(D102) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-2653",
@@ -32683,12 +32683,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2026-11-13",
     "title": "[은비] 생물학",
     "startTime": "11:00",
-    "returnTime": "14:00",
+    "returnTime": "14:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대 · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대 · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-2663",
@@ -32786,12 +32786,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2026-11-16",
     "title": "[은비] 생리학",
     "startTime": "16:00",
-    "returnTime": "19:00",
+    "returnTime": "19:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-2671",
@@ -32864,12 +32864,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2026-11-17",
     "title": "[은비] 보조공학",
     "startTime": "16:00",
-    "returnTime": "19:00",
+    "returnTime": "19:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-2677",
@@ -32890,12 +32890,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2026-11-18",
     "title": "[은비] 해부학2",
     "startTime": "16:00",
-    "returnTime": "19:00",
+    "returnTime": "19:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(D102) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(D102) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-2679",
@@ -33020,12 +33020,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2026-11-20",
     "title": "[은비] 생물학",
     "startTime": "11:00",
-    "returnTime": "14:00",
+    "returnTime": "14:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대 · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대 · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-2689",
@@ -33123,12 +33123,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2026-11-23",
     "title": "[은비] 생리학",
     "startTime": "16:00",
-    "returnTime": "19:00",
+    "returnTime": "19:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-2697",
@@ -33201,12 +33201,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2026-11-24",
     "title": "[은비] 보조공학",
     "startTime": "16:00",
-    "returnTime": "19:00",
+    "returnTime": "19:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-2703",
@@ -33227,12 +33227,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2026-11-25",
     "title": "[은비] 해부학2",
     "startTime": "16:00",
-    "returnTime": "19:00",
+    "returnTime": "19:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(D102) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(D102) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-2705",
@@ -33357,12 +33357,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2026-11-27",
     "title": "[은비] 생물학",
     "startTime": "11:00",
-    "returnTime": "14:00",
+    "returnTime": "14:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대 · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대 · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-2715",
@@ -33448,12 +33448,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2026-11-30",
     "title": "[은비] 생리학",
     "startTime": "16:00",
-    "returnTime": "19:00",
+    "returnTime": "19:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-2722",
@@ -33526,12 +33526,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2026-12-01",
     "title": "[은비] 보조공학",
     "startTime": "16:00",
-    "returnTime": "19:00",
+    "returnTime": "19:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-2728",
@@ -33552,12 +33552,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2026-12-02",
     "title": "[은비] 해부학2",
     "startTime": "16:00",
-    "returnTime": "19:00",
+    "returnTime": "19:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(D102) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(D102) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-2730",
@@ -33694,12 +33694,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2026-12-04",
     "title": "[은비] 생물학",
     "startTime": "11:00",
-    "returnTime": "14:00",
+    "returnTime": "14:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대 · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대 · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-2741",
@@ -33797,12 +33797,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2026-12-07",
     "title": "[은비] 생리학",
     "startTime": "16:00",
-    "returnTime": "19:00",
+    "returnTime": "19:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-2749",
@@ -33875,12 +33875,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2026-12-08",
     "title": "[은비] 보조공학",
     "startTime": "16:00",
-    "returnTime": "19:00",
+    "returnTime": "19:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-2755",
@@ -33901,12 +33901,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2026-12-09",
     "title": "[은비] 해부학2",
     "startTime": "16:00",
-    "returnTime": "19:00",
+    "returnTime": "19:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(D102) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(D102) · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-2757",
@@ -34031,12 +34031,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "date": "2026-12-11",
     "title": "[은비] 생물학",
     "startTime": "11:00",
-    "returnTime": "14:00",
+    "returnTime": "14:30",
     "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대 · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대 · 수업 모두 듣고 목감 귀가 (대중교통 약 1시간 30분)"
   },
   {
     "id": "gcal-2767",

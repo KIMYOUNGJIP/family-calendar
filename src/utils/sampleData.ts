@@ -18,7 +18,7 @@ export const FAMILY_MEMBERS: Record<MemberId, FamilyMember> = {
     avatar: '👧',
     roleDescription: '수원 동남보건대 재학 · 대중교통 통학 (모든 수업 종료 후 목감 귀가)',
     locationTag: '수원 동남보건대',
-    commuteNote: '수업 모두 듣고 마지막에 대중교통으로 목감 귀가 (~50분)',
+    commuteNote: '수업 모두 듣고 마지막에 대중교통으로 목감 귀가 (약 1시간 30분 소요)',
   },
   second_child: {
     id: 'second_child',

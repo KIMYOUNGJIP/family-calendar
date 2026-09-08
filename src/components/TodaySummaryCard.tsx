@@ -283,7 +283,7 @@ export const TodaySummaryCard: React.FC<TodaySummaryCardProps> = ({
               🎓 수원 동남보건대 (모든 수업 종료 후 목감 귀가)
             </span>
             <span className="text-[11px] font-bold text-blue-700 bg-blue-50 px-2 py-0.5 rounded-md border border-blue-100">
-              대중교통 약 50분 소요
+              대중교통 약 1시간 30분 소요
             </span>
           </div>
         )}
