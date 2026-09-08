@@ -119,6 +119,18 @@ function addDateDays(dateStr: string, days: number): string {
   return `${dt.getFullYear()}-${padZero(dt.getMonth() + 1)}-${padZero(dt.getDate())}`;
 }
 
+// 2026 공휴일 및 명절 (수업·학원 없는 날)
+const KOREAN_HOLIDAYS_2026 = new Set([
+  '2026-09-24', // 추석 연휴
+  '2026-09-25', // 추석
+  '2026-09-26', // 추석 연휴
+  '2026-10-03', // 개천절
+  '2026-10-05', // 개천절 대체공휴일
+  '2026-10-09', // 한글날
+  '2026-12-25', // 크리스마스 / 성탄절
+  '2027-01-01', // 신정
+]);
+
 export function parseICSContent(icsText: string): Schedule[] {
   const lines = icsText.replace(/\r\n/g, '\n').replace(/\r/g, '\n').split('\n');
 
@@ -134,7 +146,7 @@ export function parseICSContent(icsText: string): Schedule[] {
   }
 
   let inEvent = false;
-  let currentEvent: Record<string, string> = {};
+  let currentEvent: Record<string, any> = { exdates: [] };
   const rawList: Array<{
     memberId: MemberId;
     date: string;
@@ -148,7 +160,7 @@ export function parseICSContent(icsText: string): Schedule[] {
   for (const line of unfolded) {
     if (line.startsWith('BEGIN:VEVENT')) {
       inEvent = true;
-      currentEvent = {};
+      currentEvent = { exdates: [] };
       continue;
     }
 
@@ -161,6 +173,7 @@ export function parseICSContent(icsText: string): Schedule[] {
       const desc = currentEvent['DESCRIPTION_VAL'] || '';
       const location = currentEvent['LOCATION_VAL'] || '';
       const rrule = currentEvent['RRULE_VAL'] || (currentEvent['RRULE'] ? currentEvent['RRULE'].split(':').slice(1).join(':') : '');
+      const exdates = new Set<string>(currentEvent.exdates || []);
 
       const startParsed = parseICSDateTime(dtStartRaw);
       const endParsed = parseICSDateTime(dtEndRaw);
@@ -174,38 +187,60 @@ export function parseICSContent(icsText: string): Schedule[] {
         const byDayMatch = rrule.match(/BYDAY=([A-Z,]+)/);
         const untilMatch = rrule.match(/UNTIL=(\d{8})/);
 
+        const isClassOrAcademy =
+          summary.includes('수업') ||
+          summary.includes('학교') ||
+          summary.includes('학원') ||
+          summary.includes('영어') ||
+          summary.includes('수학') ||
+          summary.includes('태권도') ||
+          summary.includes('강의') ||
+          summary.includes('보조공학') ||
+          summary.includes('해부학') ||
+          summary.includes('생리학') ||
+          summary.includes('심리학') ||
+          summary.includes('재활의학') ||
+          summary.includes('[은비]') ||
+          summary.includes('[하율]');
+
         if (isWeekly && startParsed.date >= '2026-03-01') {
           const targetDays = byDayMatch ? byDayMatch[1].split(',') : [getDayName(startParsed.date)];
           const untilDate = untilMatch
             ? `${untilMatch[1].slice(0, 4)}-${untilMatch[1].slice(4, 6)}-${untilMatch[1].slice(6, 8)}`
-            : '2026-12-18';
+            : '2026-12-31';
 
           let curDate = startParsed.date;
           while (curDate <= untilDate && curDate <= '2026-12-31') {
             const dayName = getDayName(curDate);
             if (targetDays.includes(dayName)) {
-              rawList.push({
-                memberId,
-                date: curDate,
-                title: summary.replace(/\\,/g, ',').replace(/\\n/g, ' ').trim(),
-                startTime,
-                endTime,
-                location: location.replace(/\\,/g, ',').replace(/\\n/g, ' ').trim(),
-                desc: desc.replace(/\\,/g, ',').replace(/\\n/g, ' ').trim(),
-              });
+              const isExcluded = exdates.has(curDate) || (isClassOrAcademy && KOREAN_HOLIDAYS_2026.has(curDate));
+              if (!isExcluded) {
+                rawList.push({
+                  memberId,
+                  date: curDate,
+                  title: summary.replace(/\\,/g, ',').replace(/\\n/g, ' ').trim(),
+                  startTime,
+                  endTime,
+                  location: location.replace(/\\,/g, ',').replace(/\\n/g, ' ').trim(),
+                  desc: desc.replace(/\\,/g, ',').replace(/\\n/g, ' ').trim(),
+                });
+              }
             }
             curDate = addDateDays(curDate, 1);
           }
         } else {
-          rawList.push({
-            memberId,
-            date: startParsed.date,
-            title: summary.replace(/\\,/g, ',').replace(/\\n/g, ' ').trim(),
-            startTime,
-            endTime,
-            location: location.replace(/\\,/g, ',').replace(/\\n/g, ' ').trim(),
-            desc: desc.replace(/\\,/g, ',').replace(/\\n/g, ' ').trim(),
-          });
+          const isExcluded = exdates.has(startParsed.date) || (isClassOrAcademy && KOREAN_HOLIDAYS_2026.has(startParsed.date));
+          if (!isExcluded) {
+            rawList.push({
+              memberId,
+              date: startParsed.date,
+              title: summary.replace(/\\,/g, ',').replace(/\\n/g, ' ').trim(),
+              startTime,
+              endTime,
+              location: location.replace(/\\,/g, ',').replace(/\\n/g, ' ').trim(),
+              desc: desc.replace(/\\,/g, ',').replace(/\\n/g, ' ').trim(),
+            });
+          }
         }
       }
       continue;
@@ -217,9 +252,21 @@ export function parseICSContent(icsText: string): Schedule[] {
         const keyPart = line.slice(0, colonIdx);
         const valPart = line.slice(colonIdx + 1);
         const key = keyPart.split(';')[0].trim().toUpperCase();
-        currentEvent[key] = line;
-        if (!currentEvent[key + '_VAL']) {
-          currentEvent[key + '_VAL'] = valPart;
+
+        if (key === 'EXDATE') {
+          const parts = valPart.split(',');
+          for (const p of parts) {
+            const m = p.match(/(\d{4})(\d{2})(\d{2})/);
+            if (m) {
+              currentEvent.exdates = currentEvent.exdates || [];
+              currentEvent.exdates.push(`${m[1]}-${m[2]}-${m[3]}`);
+            }
+          }
+        } else {
+          currentEvent[key] = line;
+          if (!currentEvent[key + '_VAL']) {
+            currentEvent[key + '_VAL'] = valPart;
+          }
         }
       }
     }
