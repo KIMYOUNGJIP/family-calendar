@@ -56,11 +56,48 @@ export const TodaySummaryCard: React.FC<TodaySummaryCardProps> = ({
     displayWeekdays.some((d) => d.dateStr === todayStr) ? todayStr : displayWeekdays[0].dateStr
   );
 
-  // 각 평일별 은비 & 하율 간략 프리뷰 계산
+  // 아빠/엄마 저녁 모임 판별 헬퍼
+  const isParentMeeting = (s: Schedule) => {
+    if (s.memberId === 'parents') {
+      const t = s.title.toLowerCase();
+      return (
+        t.includes('모임') ||
+        t.includes('회식') ||
+        t.includes('약속') ||
+        t.includes('식사') ||
+        t.includes('외식') ||
+        t.includes('동창') ||
+        t.includes('동호회') ||
+        t.includes('송년') ||
+        t.includes('신년') ||
+        s.dinnerStatus === 'not_required' ||
+        s.startTime >= '17:00'
+      );
+    }
+    const t = s.title.toLowerCase();
+    return (
+      (t.includes('아빠') || t.includes('엄마') || t.includes('마누라') || t.includes('남편')) &&
+      (t.includes('모임') || t.includes('회식') || t.includes('약속') || t.includes('식사') || t.includes('외식') || t.includes('동창'))
+    );
+  };
+
+  const getParentMeetingRole = (title: string, guardian?: string) => {
+    const t = (title + ' ' + (guardian || '')).toLowerCase();
+    if (t.includes('엄마') || t.includes('아내') || t.includes('마누라') || t.includes('미선')) {
+      return { name: '엄마', avatar: '👩', badgeClass: 'bg-rose-500/30 text-rose-200 border-rose-400/40' };
+    }
+    if (t.includes('아빠') || t.includes('남편') || t.includes('영집')) {
+      return { name: '아빠', avatar: '👨', badgeClass: 'bg-indigo-500/30 text-indigo-200 border-indigo-400/40' };
+    }
+    return { name: '아빠 & 엄마', avatar: '💼', badgeClass: 'bg-purple-500/30 text-purple-200 border-purple-400/40' };
+  };
+
+  // 각 평일별 은비 & 하율 및 부모 모임 간략 프리뷰 계산
   const getDayPreview = (dateStr: string) => {
     const daySchedules = schedules.filter((s: Schedule) => s.date === dateStr);
     const eunbiSchedules = daySchedules.filter((s: Schedule) => s.memberId === 'first_child');
     const hayulSchedules = daySchedules.filter((s: Schedule) => s.memberId === 'second_child');
+    const parentMeetings = daySchedules.filter(isParentMeeting);
 
     let eunbiText = '휴식';
     if (eunbiSchedules.length > 0) {
@@ -74,13 +111,21 @@ export const TodaySummaryCard: React.FC<TodaySummaryCardProps> = ({
       hayulText = `${latest.returnTime} 귀가`;
     }
 
-    return { eunbiText, hayulText, totalCount: daySchedules.length };
+    let parentText = '';
+    if (parentMeetings.length > 0) {
+      const p = parentMeetings[0];
+      const role = getParentMeetingRole(p.title, p.guardian);
+      parentText = `${role.avatar} ${role.name} 모임 (${p.returnTime})`;
+    }
+
+    return { eunbiText, hayulText, parentText, totalCount: daySchedules.length };
   };
 
   // 현재 선택된 평일의 일정
   const activeSchedules = schedules.filter((s: Schedule) => s.date === activeDateStr);
   const firstChildSchedules = activeSchedules.filter((s: Schedule) => s.memberId === 'first_child');
   const secondChildSchedules = activeSchedules.filter((s: Schedule) => s.memberId === 'second_child');
+  const activeParentMeetings = activeSchedules.filter(isParentMeeting);
 
   const isActiveToday = activeDateStr === todayStr;
   const activeDateObj = parseDate(activeDateStr);
@@ -488,6 +533,18 @@ export const TodaySummaryCard: React.FC<TodaySummaryCardProps> = ({
                         {preview.hayulText}
                       </span>
                     </div>
+                    {preview.parentText && (
+                      <div
+                        className={`mt-1 pt-1 border-t text-[10px] font-extrabold flex items-center justify-between ${
+                          isSelected ? 'border-slate-200 text-purple-900' : 'border-indigo-800/80 text-amber-300'
+                        }`}
+                      >
+                        <span className="truncate">🍷 {preview.parentText}</span>
+                        <span className="text-[9px] px-1 py-0.2 rounded bg-amber-400/30 text-amber-200 shrink-0 ml-1">
+                          외식
+                        </span>
+                      </div>
+                    )}
                   </div>
                 </button>
               );
@@ -495,16 +552,105 @@ export const TodaySummaryCard: React.FC<TodaySummaryCardProps> = ({
           </div>
         </div>
 
+        {/* 2.5 선택된 평일의 아빠/엄마 저녁 모임 카드 (존재할 경우 눈에 띄게 강조) */}
+        {activeParentMeetings.length > 0 && (
+          <div className="mb-4 relative z-10 space-y-2.5">
+            {activeParentMeetings.map((meeting) => {
+              const role = getParentMeetingRole(meeting.title, meeting.guardian);
+              return (
+                <div
+                  key={meeting.id}
+                  onClick={() => onOpenScheduleModal(meeting)}
+                  className="p-3.5 sm:p-4 rounded-2xl bg-linear-to-r from-purple-950 via-indigo-950 to-slate-900 border-2 border-amber-400 shadow-lg cursor-pointer hover:border-amber-300 hover:scale-[1.005] transition-all flex flex-col sm:flex-row sm:items-center justify-between gap-3 group"
+                >
+                  <div className="flex items-center gap-3">
+                    <span className="text-3xl sm:text-4xl p-2 rounded-2xl bg-amber-400/20 text-amber-300 border border-amber-400/40 shrink-0">
+                      {role.avatar}
+                    </span>
+                    <div>
+                      <div className="flex items-center gap-2 flex-wrap">
+                        <span className="text-sm sm:text-base font-black text-white">
+                          {role.name} 저녁 약속 · 모임 안내
+                        </span>
+                        <span className={`text-[11px] font-bold px-2 py-0.5 rounded-full border ${role.badgeClass}`}>
+                          {meeting.startTime} 시작
+                        </span>
+                        <span className="text-[11px] font-black px-2.5 py-0.5 rounded-full bg-amber-400 text-slate-950 shadow-xs">
+                          🍚 집밥 불필요 (외부 식사)
+                        </span>
+                      </div>
+                      <p className="text-xs sm:text-sm text-indigo-100 font-bold mt-1">
+                        {meeting.title}
+                      </p>
+                      {meeting.memo && (
+                        <p className="text-[11px] text-indigo-300 mt-0.5 line-clamp-1">
+                          💬 {meeting.memo}
+                        </p>
+                      )}
+                    </div>
+                  </div>
+
+                  <div className="flex items-center justify-between sm:justify-end gap-3 pt-2 sm:pt-0 border-t sm:border-t-0 border-indigo-800/80 shrink-0">
+                    <div className="text-left sm:text-right">
+                      <span className="text-[11px] text-indigo-300 font-bold block">예상 귀가 시각</span>
+                      <div className="flex items-baseline gap-1 sm:justify-end">
+                        <span className="text-2xl sm:text-3xl font-black text-amber-300 tracking-tight">
+                          {meeting.returnTime}
+                        </span>
+                        <span className="text-xs font-bold text-indigo-200">귀가 예정</span>
+                      </div>
+                    </div>
+                    <button
+                      type="button"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        onOpenScheduleModal(meeting);
+                      }}
+                      className="text-xs font-bold px-3 py-2 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 shadow-xs cursor-pointer transition-all"
+                    >
+                      상세 / 수정
+                    </button>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        )}
+
         {/* 3. 선택된 평일의 2-Column 자녀별 귀가 상세 카드 */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 relative z-10">
           {renderChildSummary('first_child')}
           {renderChildSummary('second_child')}
         </div>
 
-        {/* 4. 하단 안내 바 */}
-        <div className="mt-4 pt-3 border-t border-indigo-700/50 flex items-center justify-between text-xs text-indigo-200 relative z-10">
-          <span>🏠 시흥시 목감동 은비·하율이네 귀가 알림</span>
-          <span className="text-amber-300 font-semibold">카드를 누르면 일정을 수정하거나 확인할 수 있습니다</span>
+        {/* 4. 하단 안내 바 및 빠른 등록 */}
+        <div className="mt-4 pt-3 border-t border-indigo-700/50 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs text-indigo-200 relative z-10">
+          <div className="flex items-center gap-2">
+            <span>🏠 시흥시 목감동 은비·하율이네 귀가 알림</span>
+            <span className="text-indigo-400">·</span>
+            <span className="text-amber-300 font-semibold">카드를 누르면 일정을 수정하거나 확인할 수 있습니다</span>
+          </div>
+          <button
+            type="button"
+            onClick={() => {
+              onOpenScheduleModal({
+                id: `parent-meeting-${Date.now()}`,
+                memberId: 'parents',
+                date: activeDateStr,
+                title: '[아빠] 저녁 모임',
+                startTime: '18:30',
+                returnTime: '22:30',
+                transitMethod: '대중교통',
+                dinnerStatus: 'not_required',
+                guardian: '나(아빠)',
+                isRecurring: false,
+                memo: '저녁 모임/회식 (외부 식사 · 집밥 불필요)',
+              });
+            }}
+            className="self-end sm:self-auto inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-indigo-800/90 hover:bg-indigo-700 text-amber-300 hover:text-white border border-indigo-600 font-bold transition-all cursor-pointer text-xs"
+          >
+            <span>➕ {activeDayName}요일 아빠/엄마 저녁 모임 등록</span>
+          </button>
         </div>
       </div>
     </section>

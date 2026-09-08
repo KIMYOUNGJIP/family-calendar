@@ -167,6 +167,27 @@ export const WeeklySchedule: React.FC<WeeklyScheduleProps> = ({
       };
     }
 
+    if (
+      sch.memberId === 'parents' ||
+      sch.title.includes('모임') ||
+      sch.title.includes('회식') ||
+      sch.title.includes('약속') ||
+      sch.title.includes('외식')
+    ) {
+      const isDad = sch.title.includes('아빠') || sch.guardian.includes('아빠');
+      const isMom = sch.title.includes('엄마') || sch.title.includes('아내') || sch.title.includes('마누라') || sch.guardian.includes('엄마');
+      const role = isDad ? '아빠' : isMom ? '엄마' : '부모';
+      return {
+        isReturnHome: true,
+        label: `${role} 모임 후 귀가 예정`,
+        timeDisplay: `${sch.returnTime} 귀가`,
+        gridTimeDisplay: `${sch.returnTime} 귀가`,
+        pillText: '🍷 저녁 모임 (외부 식사)',
+        pillClass: 'bg-purple-100 text-purple-800 border border-purple-200',
+        dinnerStatus: sch.dinnerStatus,
+      };
+    }
+
     return {
       isReturnHome: true,
       label: '귀가 예정 시각',

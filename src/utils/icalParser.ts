@@ -72,9 +72,25 @@ export function inferMemberId(title: string, description: string = ''): MemberId
     text.includes('장학') ||
     text.includes('연수') ||
     text.includes('아내') ||
+    text.includes('마누라') ||
+    text.includes('남편') ||
     text.includes('출근') ||
     text.includes('퇴근') ||
-    text.includes('야근')
+    text.includes('야근') ||
+    text.includes('회식') ||
+    text.includes('모임') ||
+    text.includes('약속') ||
+    text.includes('동창') ||
+    text.includes('동호회') ||
+    text.includes('송년') ||
+    text.includes('신년') ||
+    text.includes('저녁식사') ||
+    text.includes('저녁 식사') ||
+    text.includes('외식') ||
+    text.includes('아빠') ||
+    text.includes('엄마') ||
+    text.includes('영집') ||
+    text.includes('미선')
   ) {
     return 'parents';
   }
@@ -315,8 +331,30 @@ export function parseICSContent(icsText: string): Schedule[] {
           }
         }
       } else if (item.memberId === 'parents') {
-        transitMethod = '자차';
-        guardian = '나(아빠)';
+        const titleLower = item.title.toLowerCase();
+        const isMom = titleLower.includes('엄마') || titleLower.includes('아내') || titleLower.includes('마누라') || titleLower.includes('미선');
+        guardian = isMom ? '엄마' : '나(아빠)';
+        
+        const isMeeting =
+          titleLower.includes('모임') ||
+          titleLower.includes('회식') ||
+          titleLower.includes('약속') ||
+          titleLower.includes('식사') ||
+          titleLower.includes('외식') ||
+          titleLower.includes('동창') ||
+          titleLower.includes('동호회') ||
+          titleLower.includes('야근');
+
+        if (isMeeting) {
+          dinnerStatus = 'not_required';
+          transitMethod = titleLower.includes('회식') ? '대중교통' : '자차';
+          returnTime = item.endTime && item.endTime > item.startTime ? item.endTime : '22:00';
+          memo = memo || `${guardian} 저녁 모임 · 외식 (집밥 불필요)`;
+        } else {
+          transitMethod = '자차';
+          dinnerStatus = 'required';
+          returnTime = item.endTime || '19:00';
+        }
       } else {
         transitMethod = '자차';
         guardian = '온 가족';
