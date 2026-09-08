@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Schedule, MemberId } from '../types/calendar';
 import { FAMILY_MEMBERS } from '../utils/sampleData';
-import { getWeekDays, formatKoreanShortDate, getTodayString, parseDate, toDateString } from '../utils/dateUtils';
-import { Clock, Utensils, Bus, Footprints, Car, Plus, Trash2, Edit2, AlertCircle, Sparkles, LayoutGrid, CalendarRange } from 'lucide-react';
+import { getWeekDays, formatKoreanShortDate, getTodayString, parseDate, toDateString, addDays } from '../utils/dateUtils';
+import { Clock, Utensils, Bus, Footprints, Car, Plus, Trash2, Edit2, AlertCircle, Sparkles, LayoutGrid, CalendarRange, ChevronLeft, ChevronRight } from 'lucide-react';
 
 interface WeeklyScheduleProps {
   selectedDateStr: string;
@@ -25,10 +25,21 @@ export const WeeklySchedule: React.FC<WeeklyScheduleProps> = ({
   const todayStr = getTodayString();
   const weekDays = getWeekDays(selectedDateStr);
 
+  const isViewingCurrentWeek = weekDays.some((d) => d.dateStr === todayStr);
   // "상세스케줄에서 지난 일정은 안보이게 해줘":
-  // 지나간 날짜(day.dateStr < todayStr)는 목록에서 제외하고 오늘 및 남은 일정만 표시
-  const upcomingDays = weekDays.filter((d) => d.dateStr >= todayStr);
+  // 이번 주를 보고 있을 때만 지난 날짜(day.dateStr < todayStr)를 가리고,
+  // 다음 주나 이전 주를 선택했을 때는 해당 주의 모든 요일이 표시됨
+  const upcomingDays = isViewingCurrentWeek
+    ? weekDays.filter((d) => d.dateStr >= todayStr)
+    : weekDays;
   const targetDays = upcomingDays.length > 0 ? upcomingDays : weekDays;
+
+  const handlePrevWeek = () => {
+    onSelectDate(addDays(selectedDateStr, -7));
+  };
+  const handleNextWeek = () => {
+    onSelectDate(addDays(selectedDateStr, 7));
+  };
 
   // 필터 적용
   const filteredSchedules = schedules.filter((s) => {
@@ -204,16 +215,34 @@ export const WeeklySchedule: React.FC<WeeklyScheduleProps> = ({
       {/* Section Header */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4 pb-3 border-b border-slate-100">
         <div>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 flex-wrap">
             <h2 className="text-lg sm:text-xl font-black text-slate-900">
-              📅 이번 주 상세 스케줄 (월~일)
+              📅 {isViewingCurrentWeek ? '이번 주' : '주간'} 상세 스케줄 (월~일)
             </h2>
-            <span className="text-xs font-bold text-indigo-700 bg-indigo-50 px-2.5 py-0.5 rounded-full border border-indigo-100">
-              {formatKoreanShortDate(targetDays[0].dateStr)} ~ {formatKoreanShortDate(targetDays[targetDays.length - 1].dateStr)}
-            </span>
+            <div className="flex items-center bg-slate-100 rounded-xl p-0.5 border border-slate-200">
+              <button
+                type="button"
+                onClick={handlePrevWeek}
+                className="p-1 rounded-lg hover:bg-white text-slate-600 hover:text-slate-900 transition-colors cursor-pointer"
+                title="이전 주"
+              >
+                <ChevronLeft className="w-4 h-4" />
+              </button>
+              <span className="text-xs font-bold text-indigo-800 px-2 py-0.5">
+                {formatKoreanShortDate(targetDays[0].dateStr)} ~ {formatKoreanShortDate(targetDays[targetDays.length - 1].dateStr)}
+              </span>
+              <button
+                type="button"
+                onClick={handleNextWeek}
+                className="p-1 rounded-lg hover:bg-white text-slate-600 hover:text-slate-900 transition-colors cursor-pointer"
+                title="다음 주"
+              >
+                <ChevronRight className="w-4 h-4" />
+              </button>
+            </div>
           </div>
           <p className="text-xs text-slate-500 mt-0.5">
-            자녀별 출발/귀가 시간, 이동 방법, 저녁 식사 여부를 상세하게 확인하세요.
+            자녀별 출발/귀가 시간, 부모님 저녁 모임, 이동 방법 및 식사 여부를 상세하게 확인하세요.
           </p>
         </div>
 
