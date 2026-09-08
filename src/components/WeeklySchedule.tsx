@@ -167,6 +167,30 @@ export const WeeklySchedule: React.FC<WeeklyScheduleProps> = ({
           dinnerStatus,
         };
       }
+      if (dayOfWeek === 1 || dayOfWeek === 3) {
+        if (title.includes('영어')) {
+          return {
+            isReturnHome: true,
+            label: '1차 귀가 (저녁 식사)',
+            timeDisplay: `${sch.returnTime} 귀가(저녁)`,
+            gridTimeDisplay: `${sch.returnTime} 저녁`,
+            pillText: '🍚 18:05 귀가 (저녁 식사 후 태권도)',
+            pillClass: 'bg-amber-100 text-amber-900 border border-amber-300 font-bold',
+            dinnerStatus,
+          };
+        }
+        if (title.includes('태권도')) {
+          return {
+            isReturnHome: true,
+            label: '최종 귀가 예정',
+            timeDisplay: `${sch.returnTime} 최종 귀가`,
+            gridTimeDisplay: `${sch.returnTime} 귀가`,
+            pillText: '🏠 20:05 최종 귀가 (식사 완료)',
+            pillClass: 'bg-emerald-100 text-emerald-800 border border-emerald-200',
+            dinnerStatus,
+          };
+        }
+      }
       return {
         isReturnHome: true,
         label: '귀가 예정 시각',

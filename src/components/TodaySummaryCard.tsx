@@ -107,8 +107,14 @@ export const TodaySummaryCard: React.FC<TodaySummaryCardProps> = ({
 
     let hayulText = '휴식';
     if (hayulSchedules.length > 0) {
-      const latest = [...hayulSchedules].sort((a, b) => b.returnTime.localeCompare(a.returnTime))[0];
-      hayulText = `${latest.returnTime} 귀가`;
+      const hasEng = hayulSchedules.some((s: Schedule) => s.title.includes('영어'));
+      const hasTkd = hayulSchedules.some((s: Schedule) => s.title.includes('태권도'));
+      if (hasEng && hasTkd) {
+        hayulText = '18:05 저녁 / 20:05 귀가';
+      } else {
+        const latest = [...hayulSchedules].sort((a, b) => b.returnTime.localeCompare(a.returnTime))[0];
+        hayulText = `${latest.returnTime} 귀가`;
+      }
     }
 
     let parentText = '';
@@ -185,8 +191,10 @@ export const TodaySummaryCard: React.FC<TodaySummaryCardProps> = ({
         : childSchedules[0];
 
     const hasMath = isHayul && childSchedules.some((s: Schedule) => s.title.includes('수학'));
+    const hasEnglish = isHayul && childSchedules.some((s: Schedule) => s.title.includes('영어'));
     const hasTaekwondo = isHayul && childSchedules.some((s: Schedule) => s.title.includes('태권도'));
     const isConsecutiveMathTaekwondo = hasMath && hasTaekwondo;
+    const isEnglishAndTaekwondo = hasEnglish && hasTaekwondo;
 
     if (!activeSchedule) {
       return (
@@ -254,7 +262,11 @@ export const TodaySummaryCard: React.FC<TodaySummaryCardProps> = ({
                   {member.relation}
                 </span>
               </div>
-              <p className="text-xs text-slate-500 font-medium line-clamp-1">{activeSchedule.title}</p>
+              <p className="text-xs text-slate-500 font-medium line-clamp-1">
+                {isEnglishAndTaekwondo
+                  ? '영어(17:00) ➔ 18:05 귀가(저녁) ➔ 19:00 태권도 ➔ 20:05 최종 귀가'
+                  : activeSchedule.title}
+              </p>
             </div>
           </div>
 
@@ -290,7 +302,16 @@ export const TodaySummaryCard: React.FC<TodaySummaryCardProps> = ({
 
         {isHayul && (
           <div className="mb-2.5 flex items-center gap-1.5 flex-wrap">
-            {isConsecutiveMathTaekwondo ? (
+            {isEnglishAndTaekwondo ? (
+              <>
+                <span className="inline-flex items-center gap-1 text-[11px] font-bold px-2 py-0.5 rounded-md bg-amber-100 text-amber-900 border border-amber-300">
+                  🍚 영어 종료 후 집에서 저녁 식사 (18:05~19:00)
+                </span>
+                <span className="text-[11px] font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-md border border-emerald-100">
+                  태권도 종료 후 20:05 최종 귀가
+                </span>
+              </>
+            ) : isConsecutiveMathTaekwondo ? (
               <>
                 <span className="inline-flex items-center gap-1 text-[11px] font-bold px-2 py-0.5 rounded-md bg-emerald-100 text-emerald-900 border border-emerald-200">
                   🥋 수학 ➔ 태권도 연속 수강 (태권도까지 끝나고 귀가)
@@ -316,21 +337,41 @@ export const TodaySummaryCard: React.FC<TodaySummaryCardProps> = ({
         <div className="my-2.5 p-3 bg-slate-50 rounded-xl border border-slate-100 flex items-center justify-between">
           <div>
             <span className="text-xs text-slate-500 font-bold block">
-              {(isEunbi && childSchedules.length > 1) || isConsecutiveMathTaekwondo
+              {isEnglishAndTaekwondo
+                ? '목감 집 1차 귀가(저녁) 및 최종 귀가 예정 시각'
+                : (isEunbi && childSchedules.length > 1) || isConsecutiveMathTaekwondo
                 ? '목감 집 최종 귀가 예정 시각'
                 : '귀가 예정 시각'}
             </span>
-            <div className="flex items-baseline gap-1.5">
-              <span className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
-                {activeSchedule.returnTime}
-              </span>
-              <span className="text-xs font-bold text-slate-500">귀가</span>
-              {activeSchedule.isReturnTimeChanged && (
-                <span className="ml-1 text-[11px] font-bold text-rose-600 bg-rose-100 px-1.5 py-0.5 rounded border border-rose-200">
-                  시간 변경됨
+            {isEnglishAndTaekwondo ? (
+              <div className="flex items-baseline gap-2 flex-wrap">
+                <div className="flex items-baseline gap-1">
+                  <span className="text-2xl sm:text-3xl font-black text-amber-900 tracking-tight">
+                    18:05
+                  </span>
+                  <span className="text-xs font-black text-amber-700">1차(저녁)</span>
+                </div>
+                <span className="text-slate-400 font-black">·</span>
+                <div className="flex items-baseline gap-1">
+                  <span className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
+                    20:05
+                  </span>
+                  <span className="text-xs font-bold text-slate-500">최종</span>
+                </div>
+              </div>
+            ) : (
+              <div className="flex items-baseline gap-1.5">
+                <span className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
+                  {activeSchedule.returnTime}
                 </span>
-              )}
-            </div>
+                <span className="text-xs font-bold text-slate-500">귀가</span>
+                {activeSchedule.isReturnTimeChanged && (
+                  <span className="ml-1 text-[11px] font-bold text-rose-600 bg-rose-100 px-1.5 py-0.5 rounded border border-rose-200">
+                    시간 변경됨
+                  </span>
+                )}
+              </div>
+            )}
           </div>
 
           <div className="text-right space-y-1">
@@ -380,51 +421,98 @@ export const TodaySummaryCard: React.FC<TodaySummaryCardProps> = ({
             <div className="font-bold text-emerald-900 flex items-center justify-between">
               <span>🏃 {activeDayName}요일 하율이 학원 동선 ({childSchedules.length}개)</span>
               <span className="text-[10px] text-emerald-700 font-semibold">
-                {isConsecutiveMathTaekwondo ? '태권도까지 끝나고 귀가' : '도보 5분 거리'}
+                {isEnglishAndTaekwondo
+                  ? '영어 후 저녁 식사 ➔ 태권도'
+                  : isConsecutiveMathTaekwondo
+                  ? '태권도까지 끝나고 귀가'
+                  : '도보 5분 거리'}
               </span>
             </div>
-            <div className="flex flex-wrap items-center gap-1.5">
-              {childSchedules.map((sch: Schedule, idx: number) => {
-                const isFinal = sch.id === activeSchedule.id;
-                return (
-                  <React.Fragment key={sch.id}>
-                    {idx > 0 && <span className="text-emerald-500 font-bold">➔</span>}
-                    <span
-                      className={`px-2 py-0.5 rounded-md font-medium text-[10px] ${
-                        isFinal
-                          ? 'bg-emerald-600 text-white font-bold shadow-2xs'
-                          : 'bg-white text-slate-700 border border-emerald-200'
-                      }`}
-                    >
-                      {sch.startTime} {sch.title.replace('[하율] ', '')}
-                      {isFinal ? ' ➔ 최종 귀가' : ' (바로 이동)'}
-                    </span>
-                  </React.Fragment>
-                );
-              })}
-            </div>
-            {isConsecutiveMathTaekwondo && (
-              <p className="text-[10px] text-emerald-800 font-medium pt-0.5">
-                💡 수학학원 종료(19:00) 후 집에 들르지 않고 바로 태권도로 이동하여, 태권도가 끝난 후(20:00) 도보 5분 내 귀가합니다.
-              </p>
+            {isEnglishAndTaekwondo ? (
+              <div className="space-y-1.5">
+                <div className="flex flex-wrap items-center gap-1.5">
+                  <span className="px-2 py-0.5 rounded-md font-bold text-[10px] bg-white text-emerald-800 border border-emerald-200">
+                    17:00 영어
+                  </span>
+                  <span className="text-amber-600 font-bold">➔</span>
+                  <span className="px-2 py-0.5 rounded-md font-black text-[10px] bg-amber-500 text-white shadow-2xs">
+                    18:05 귀가 및 저녁 식사 🍚
+                  </span>
+                  <span className="text-amber-600 font-bold">➔</span>
+                  <span className="px-2 py-0.5 rounded-md font-bold text-[10px] bg-white text-emerald-800 border border-emerald-200">
+                    19:00 태권도
+                  </span>
+                  <span className="text-emerald-600 font-bold">➔</span>
+                  <span className="px-2 py-0.5 rounded-md font-black text-[10px] bg-emerald-600 text-white shadow-2xs">
+                    20:05 최종 귀가 🏠
+                  </span>
+                </div>
+                <p className="text-[10px] text-amber-900 font-medium bg-amber-50 p-2 rounded-lg border border-amber-200">
+                  💡 <strong>월·수요일 저녁 안내</strong>: 18:05에 영어 종료 후 집에 귀가하여 <strong>저녁 식사를 하고</strong>, 19:00에 태권도로 출발합니다. (태권도 종료 후 20:05 최종 귀가 시에는 식사 완료 상태)
+                </p>
+              </div>
+            ) : (
+              <>
+                <div className="flex flex-wrap items-center gap-1.5">
+                  {childSchedules.map((sch: Schedule, idx: number) => {
+                    const isFinal = sch.id === activeSchedule.id;
+                    return (
+                      <React.Fragment key={sch.id}>
+                        {idx > 0 && <span className="text-emerald-500 font-bold">➔</span>}
+                        <span
+                          className={`px-2 py-0.5 rounded-md font-medium text-[10px] ${
+                            isFinal
+                              ? 'bg-emerald-600 text-white font-bold shadow-2xs'
+                              : 'bg-white text-slate-700 border border-emerald-200'
+                          }`}
+                        >
+                          {sch.startTime} {sch.title.replace('[하율] ', '')}
+                          {isFinal ? ' ➔ 최종 귀가' : ' (바로 이동)'}
+                        </span>
+                      </React.Fragment>
+                    );
+                  })}
+                </div>
+                {isConsecutiveMathTaekwondo && (
+                  <p className="text-[10px] text-emerald-800 font-medium pt-0.5">
+                    💡 수학학원 종료(19:00) 후 집에 들르지 않고 바로 태권도로 이동하여, 태권도가 끝난 후(20:00) 도보 5분 내 귀가합니다.
+                  </p>
+                )}
+              </>
             )}
           </div>
         )}
 
         {/* Dinner Status */}
         <div className="flex items-center justify-between gap-2 pt-1">
-          <div>{renderDinnerBadge(activeSchedule.dinnerStatus)}</div>
+          {isEnglishAndTaekwondo ? (
+            <div className="flex items-center gap-1.5 flex-wrap">
+              <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-extrabold bg-amber-100 text-amber-900 border border-amber-300">
+                <Utensils className="w-3.5 h-3.5 text-amber-700" />
+                🍚 집밥 저녁 필요 (18:05 영어 후 식사)
+              </span>
+              <span className="text-[11px] text-slate-500 font-medium">
+                (태권도 20:05 최종 귀가 후에는 식사 불필요)
+              </span>
+            </div>
+          ) : (
+            <div>{renderDinnerBadge(activeSchedule.dinnerStatus)}</div>
+          )}
           <span className="text-xs text-slate-500 font-medium">
             {isEunbi ? '수업 종료 후 대중교통 목감 귀가' : '도보 5분 거리 학원'}
           </span>
         </div>
 
         {/* Memo note if exists */}
-        {activeSchedule.memo && (
+        {isEnglishAndTaekwondo ? (
+          <p className="mt-2 text-xs text-amber-900 bg-amber-50/90 border border-amber-200 px-2.5 py-1.5 rounded-lg">
+            💬 18:05에 귀가하여 집에서 저녁 식사 후 19:00에 태권도로 이동합니다. (20:05 최종 귀가)
+          </p>
+        ) : activeSchedule.memo ? (
           <p className="mt-2 text-xs text-slate-500 bg-slate-100/80 px-2.5 py-1.5 rounded-lg line-clamp-1">
             💬 {activeSchedule.memo}
           </p>
-        )}
+        ) : null}
       </div>
     );
   };

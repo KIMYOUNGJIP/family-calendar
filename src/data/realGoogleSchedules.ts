@@ -15227,7 +15227,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-1253",
@@ -15826,7 +15826,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-1302",
@@ -16154,7 +16154,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-1329",
@@ -17220,7 +17220,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-1417",
@@ -17245,7 +17245,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-1419",
@@ -20572,7 +20572,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "영어 종료 후 18:05 귀가 (집에서 저녁 식사 후 19:00 태권도 출발)"
   },
   {
     "id": "gcal-1694",
@@ -21088,7 +21088,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "영어 종료 후 18:05 귀가 (집에서 저녁 식사 후 19:00 태권도 출발)"
   },
   {
     "id": "gcal-1736",
@@ -21101,7 +21101,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-1737",
@@ -21238,7 +21238,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "영어 종료 후 18:05 귀가 (집에서 저녁 식사 후 19:00 태권도 출발)"
   },
   {
     "id": "gcal-1748",
@@ -21263,7 +21263,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-1750",
@@ -21276,7 +21276,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "영어 종료 후 18:05 귀가 (집에서 저녁 식사 후 19:00 태권도 출발)"
   },
   {
     "id": "gcal-1751",
@@ -21752,7 +21752,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-1790",
@@ -22010,7 +22010,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "영어 종료 후 18:05 귀가 (집에서 저녁 식사 후 19:00 태권도 출발)"
   },
   {
     "id": "gcal-1811",
@@ -22023,7 +22023,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-1812",
@@ -22085,7 +22085,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-1817",
@@ -22110,7 +22110,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "영어 종료 후 18:05 귀가 (집에서 저녁 식사 후 19:00 태권도 출발)"
   },
   {
     "id": "gcal-1819",
@@ -22685,7 +22685,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "영어 종료 후 18:05 귀가 (집에서 저녁 식사 후 19:00 태권도 출발)"
   },
   {
     "id": "gcal-1866",
@@ -22965,7 +22965,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "영어 종료 후 18:05 귀가 (집에서 저녁 식사 후 19:00 태권도 출발)"
   },
   {
     "id": "gcal-1889",
@@ -23547,7 +23547,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-1937",
@@ -25103,7 +25103,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "영어 종료 후 18:05 귀가 (집에서 저녁 식사 후 19:00 태권도 출발)"
   },
   {
     "id": "gcal-2065",
@@ -25226,7 +25226,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "영어 종료 후 18:05 귀가 (집에서 저녁 식사 후 19:00 태권도 출발)"
   },
   {
     "id": "gcal-2075",
@@ -25239,7 +25239,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-2076",
@@ -27266,7 +27266,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-2242",
@@ -27292,7 +27292,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2244",
@@ -27318,7 +27318,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2246",
@@ -27343,7 +27343,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-2248",
@@ -27369,7 +27369,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2250",
@@ -27382,7 +27382,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-2251",
@@ -27408,7 +27408,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2253",
@@ -27434,7 +27434,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2255",
@@ -27471,7 +27471,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-2258",
@@ -27497,7 +27497,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2260",
@@ -27510,7 +27510,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-2261",
@@ -27536,7 +27536,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2263",
@@ -27562,7 +27562,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2265",
@@ -27612,7 +27612,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2269",
@@ -27625,7 +27625,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-2270",
@@ -27651,7 +27651,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2272",
@@ -27677,7 +27677,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2274",
@@ -27690,7 +27690,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-2275",
@@ -27716,7 +27716,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2277",
@@ -27754,7 +27754,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2280",
@@ -27780,7 +27780,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2282",
@@ -27830,7 +27830,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-2286",
@@ -27856,7 +27856,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2288",
@@ -27869,7 +27869,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-2289",
@@ -27895,7 +27895,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2291",
@@ -27921,7 +27921,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2293",
@@ -27970,7 +27970,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-2297",
@@ -28008,7 +28008,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2300",
@@ -28021,7 +28021,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-2301",
@@ -28047,7 +28047,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2303",
@@ -28073,7 +28073,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2305",
@@ -28098,7 +28098,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-2307",
@@ -28136,7 +28136,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2310",
@@ -28149,7 +28149,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-2311",
@@ -28175,7 +28175,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2313",
@@ -28201,7 +28201,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2315",
@@ -28214,7 +28214,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-2316",
@@ -28240,7 +28240,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2318",
@@ -28265,7 +28265,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-2320",
@@ -28304,7 +28304,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2323",
@@ -28330,7 +28330,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2325",
@@ -28343,7 +28343,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-2326",
@@ -28369,7 +28369,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2328",
@@ -28382,7 +28382,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-2329",
@@ -28408,7 +28408,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2331",
@@ -28434,7 +28434,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2333",
@@ -28447,7 +28447,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-2334",
@@ -28473,7 +28473,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2336",
@@ -28486,7 +28486,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-2337",
@@ -28512,7 +28512,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2339",
@@ -28561,7 +28561,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-2343",
@@ -28587,7 +28587,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2345",
@@ -28600,7 +28600,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-2346",
@@ -28639,7 +28639,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2349",
@@ -28677,7 +28677,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2352",
@@ -28702,7 +28702,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-2354",
@@ -28752,7 +28752,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2358",
@@ -28777,7 +28777,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-2360",
@@ -28815,7 +28815,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2363",
@@ -28865,7 +28865,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2367",
@@ -28878,7 +28878,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-2368",
@@ -28891,7 +28891,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-2369",
@@ -28917,7 +28917,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2371",
@@ -28942,7 +28942,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-2373",
@@ -28968,7 +28968,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2375",
@@ -29006,7 +29006,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2378",
@@ -29043,7 +29043,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-2381",
@@ -29081,7 +29081,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2384",
@@ -29130,7 +29130,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-2388",
@@ -29156,7 +29156,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2390",
@@ -29182,7 +29182,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2392",
@@ -29245,7 +29245,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2397",
@@ -29282,7 +29282,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-2400",
@@ -29332,7 +29332,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2404",
@@ -29358,7 +29358,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2406",
@@ -29383,7 +29383,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-2408",
@@ -29409,7 +29409,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2410",
@@ -29422,7 +29422,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-2411",
@@ -29448,7 +29448,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2413",
@@ -29474,7 +29474,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2415",
@@ -29499,7 +29499,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-2417",
@@ -29525,7 +29525,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2419",
@@ -29538,7 +29538,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-2420",
@@ -29564,7 +29564,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2422",
@@ -29590,7 +29590,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2424",
@@ -29628,7 +29628,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "영어 종료 후 18:05 귀가 (집에서 저녁 식사 후 19:00 태권도 출발)"
   },
   {
     "id": "gcal-2427",
@@ -29654,7 +29654,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-2429",
@@ -29693,7 +29693,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2432",
@@ -29797,7 +29797,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-2440",
@@ -29823,7 +29823,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "영어 종료 후 18:05 귀가 (집에서 저녁 식사 후 19:00 태권도 출발)"
   },
   {
     "id": "gcal-2442",
@@ -29836,7 +29836,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2443",
@@ -29875,7 +29875,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2446",
@@ -29953,7 +29953,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-2452",
@@ -30005,7 +30005,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "영어 종료 후 18:05 귀가 (집에서 저녁 식사 후 19:00 태권도 출발)"
   },
   {
     "id": "gcal-2456",
@@ -30018,7 +30018,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2457",
@@ -30135,7 +30135,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-2466",
@@ -30161,7 +30161,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "영어 종료 후 18:05 귀가 (집에서 저녁 식사 후 19:00 태권도 출발)"
   },
   {
     "id": "gcal-2468",
@@ -30174,7 +30174,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2469",
@@ -30213,7 +30213,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2472",
@@ -30291,7 +30291,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-2478",
@@ -30343,7 +30343,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "영어 종료 후 18:05 귀가 (집에서 저녁 식사 후 19:00 태권도 출발)"
   },
   {
     "id": "gcal-2482",
@@ -30356,7 +30356,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2483",
@@ -30460,7 +30460,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-2491",
@@ -30486,7 +30486,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "영어 종료 후 18:05 귀가 (집에서 저녁 식사 후 19:00 태권도 출발)"
   },
   {
     "id": "gcal-2493",
@@ -30523,7 +30523,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-2496",
@@ -30575,7 +30575,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "영어 종료 후 18:05 귀가 (집에서 저녁 식사 후 19:00 태권도 출발)"
   },
   {
     "id": "gcal-2500",
@@ -30588,7 +30588,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2501",
@@ -30692,7 +30692,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-2509",
@@ -30718,7 +30718,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "영어 종료 후 18:05 귀가 (집에서 저녁 식사 후 19:00 태권도 출발)"
   },
   {
     "id": "gcal-2511",
@@ -30731,7 +30731,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2512",
@@ -30782,7 +30782,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2516",
@@ -30860,7 +30860,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2522",
@@ -30964,7 +30964,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-2530",
@@ -30990,7 +30990,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "영어 종료 후 18:05 귀가 (집에서 저녁 식사 후 19:00 태권도 출발)"
   },
   {
     "id": "gcal-2532",
@@ -31003,7 +31003,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2533",
@@ -31054,7 +31054,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-2537",
@@ -31106,7 +31106,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "영어 종료 후 18:05 귀가 (집에서 저녁 식사 후 19:00 태권도 출발)"
   },
   {
     "id": "gcal-2541",
@@ -31119,7 +31119,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2542",
@@ -31223,7 +31223,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-2550",
@@ -31249,7 +31249,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "영어 종료 후 18:05 귀가 (집에서 저녁 식사 후 19:00 태권도 출발)"
   },
   {
     "id": "gcal-2552",
@@ -31274,7 +31274,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2554",
@@ -31313,7 +31313,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2557",
@@ -31403,7 +31403,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-2564",
@@ -31455,7 +31455,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "영어 종료 후 18:05 귀가 (집에서 저녁 식사 후 19:00 태권도 출발)"
   },
   {
     "id": "gcal-2568",
@@ -31468,7 +31468,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2569",
@@ -31572,7 +31572,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-2577",
@@ -31598,7 +31598,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "영어 종료 후 18:05 귀가 (집에서 저녁 식사 후 19:00 태권도 출발)"
   },
   {
     "id": "gcal-2579",
@@ -31611,7 +31611,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2580",
@@ -31650,7 +31650,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2583",
@@ -31740,7 +31740,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-2590",
@@ -31792,7 +31792,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "영어 종료 후 18:05 귀가 (집에서 저녁 식사 후 19:00 태권도 출발)"
   },
   {
     "id": "gcal-2594",
@@ -31805,7 +31805,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2595",
@@ -31909,7 +31909,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-2603",
@@ -31935,7 +31935,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "영어 종료 후 18:05 귀가 (집에서 저녁 식사 후 19:00 태권도 출발)"
   },
   {
     "id": "gcal-2605",
@@ -31948,7 +31948,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2606",
@@ -31987,7 +31987,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2609",
@@ -32065,7 +32065,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-2615",
@@ -32117,7 +32117,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "영어 종료 후 18:05 귀가 (집에서 저녁 식사 후 19:00 태권도 출발)"
   },
   {
     "id": "gcal-2619",
@@ -32130,7 +32130,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2620",
@@ -32234,7 +32234,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-2628",
@@ -32260,7 +32260,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "영어 종료 후 18:05 귀가 (집에서 저녁 식사 후 19:00 태권도 출발)"
   },
   {
     "id": "gcal-2630",
@@ -32273,7 +32273,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2631",
@@ -32312,7 +32312,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2634",
@@ -32403,7 +32403,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-2641",
@@ -32455,7 +32455,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "영어 종료 후 18:05 귀가 (집에서 저녁 식사 후 19:00 태권도 출발)"
   },
   {
     "id": "gcal-2645",
@@ -32480,7 +32480,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2647",
@@ -32584,7 +32584,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-2655",
@@ -32610,7 +32610,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "영어 종료 후 18:05 귀가 (집에서 저녁 식사 후 19:00 태권도 출발)"
   },
   {
     "id": "gcal-2657",
@@ -32623,7 +32623,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2658",
@@ -32662,7 +32662,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2661",
@@ -32752,7 +32752,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-2668",
@@ -32804,7 +32804,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "영어 종료 후 18:05 귀가 (집에서 저녁 식사 후 19:00 태권도 출발)"
   },
   {
     "id": "gcal-2672",
@@ -32817,7 +32817,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2673",
@@ -32921,7 +32921,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-2681",
@@ -32947,7 +32947,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "영어 종료 후 18:05 귀가 (집에서 저녁 식사 후 19:00 태권도 출발)"
   },
   {
     "id": "gcal-2683",
@@ -32960,7 +32960,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2684",
@@ -32999,7 +32999,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2687",
@@ -33089,7 +33089,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-2694",
@@ -33141,7 +33141,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "영어 종료 후 18:05 귀가 (집에서 저녁 식사 후 19:00 태권도 출발)"
   },
   {
     "id": "gcal-2698",
@@ -33154,7 +33154,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2699",
@@ -33258,7 +33258,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-2707",
@@ -33284,7 +33284,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "영어 종료 후 18:05 귀가 (집에서 저녁 식사 후 19:00 태권도 출발)"
   },
   {
     "id": "gcal-2709",
@@ -33297,7 +33297,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2710",
@@ -33336,7 +33336,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2713",
@@ -33414,7 +33414,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-2719",
@@ -33466,7 +33466,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "영어 종료 후 18:05 귀가 (집에서 저녁 식사 후 19:00 태권도 출발)"
   },
   {
     "id": "gcal-2723",
@@ -33479,7 +33479,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2724",
@@ -33583,7 +33583,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-2732",
@@ -33609,7 +33609,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "영어 종료 후 18:05 귀가 (집에서 저녁 식사 후 19:00 태권도 출발)"
   },
   {
     "id": "gcal-2734",
@@ -33622,7 +33622,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2735",
@@ -33673,7 +33673,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2739",
@@ -33763,7 +33763,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-2746",
@@ -33815,7 +33815,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "영어 종료 후 18:05 귀가 (집에서 저녁 식사 후 19:00 태권도 출발)"
   },
   {
     "id": "gcal-2750",
@@ -33828,7 +33828,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2751",
@@ -33932,7 +33932,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-2759",
@@ -33958,7 +33958,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "영어 종료 후 18:05 귀가 (집에서 저녁 식사 후 19:00 태권도 출발)"
   },
   {
     "id": "gcal-2761",
@@ -33971,7 +33971,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2762",
@@ -34010,7 +34010,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2765",
@@ -34100,7 +34100,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-2772",
@@ -34126,7 +34126,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "영어 종료 후 18:05 귀가 (집에서 저녁 식사 후 19:00 태권도 출발)"
   },
   {
     "id": "gcal-2774",
@@ -34151,7 +34151,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2776",
@@ -34190,7 +34190,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-2779",
@@ -34216,7 +34216,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "영어 종료 후 18:05 귀가 (집에서 저녁 식사 후 19:00 태권도 출발)"
   },
   {
     "id": "gcal-2781",
@@ -34229,7 +34229,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2782",
@@ -34280,7 +34280,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2786",
@@ -34332,7 +34332,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-2790",
@@ -34358,7 +34358,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "영어 종료 후 18:05 귀가 (집에서 저녁 식사 후 19:00 태권도 출발)"
   },
   {
     "id": "gcal-2792",
@@ -34371,7 +34371,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2793",
@@ -34410,7 +34410,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-2796",
@@ -34436,7 +34436,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "영어 종료 후 18:05 귀가 (집에서 저녁 식사 후 19:00 태권도 출발)"
   },
   {
     "id": "gcal-2798",
@@ -34449,7 +34449,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2799",
@@ -34488,7 +34488,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-2802",
@@ -34514,7 +34514,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "영어 종료 후 18:05 귀가 (집에서 저녁 식사 후 19:00 태권도 출발)"
   },
   {
     "id": "gcal-2804",
@@ -34527,7 +34527,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2805",
@@ -34566,7 +34566,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)"
   },
   {
     "id": "gcal-2808",
@@ -34592,7 +34592,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "영어 종료 후 18:05 귀가 (집에서 저녁 식사 후 19:00 태권도 출발)"
   },
   {
     "id": "gcal-2810",
@@ -34605,7 +34605,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)"
   },
   {
     "id": "gcal-2811",

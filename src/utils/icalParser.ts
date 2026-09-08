@@ -367,9 +367,18 @@ export function parseICSContent(icsText: string): Schedule[] {
             } else if (item.title.includes('태권도')) {
               // 태권도까지 끝나고 5분 후 귀가
               returnTime = addMinutes(item.endTime, 5);
-              memo = '수학·태권도 연속 수강 후 도보 5분 최종 귀가';
+              memo = '수학·태권도 연속 수강 후 20:05 최종 귀가 (태권도 후 저녁 식사)';
             } else {
               returnTime = addMinutes(item.endTime, 5);
+              memo = '목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)';
+            }
+          } else if (dayOfWeek === 1 || dayOfWeek === 3) {
+            returnTime = addMinutes(item.endTime, 5);
+            if (item.title.includes('영어')) {
+              memo = '영어 종료 후 18:05 귀가 (집에서 저녁 식사 후 19:00 태권도 출발)';
+            } else if (item.title.includes('태권도')) {
+              memo = '태권도 종료 후 20:05 최종 귀가 (영어 종료 후 18:05에 저녁 식사 완료)';
+            } else {
               memo = '목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)';
             }
           } else {
