@@ -58,17 +58,38 @@ export const App: React.FC = () => {
     setSchedules(loadedSchedules);
     setIsLoaded(true);
 
-    // 앱 시작 시 백그라운드에서 구글 캘린더 최신 일정을 조용히 동기화
+    // 앱 시작 시 백그라운드에서 최신 구글 캘린더 일정을 동기화
     const autoSyncGoogle = async () => {
       try {
-        const fetchUrl = GOOGLE_CALENDAR_DEFAULT_URL;
-        let res: Response;
+        // 1. 배포 번들 내의 최신 ICS 파일 fetch 시도 (CORS 없이 즉시 갱신)
         try {
-          res = await fetch(fetchUrl);
+          const localRes = await fetch('./google_calendar.ics');
+          if (localRes.ok) {
+            const text = await localRes.text();
+            const parsed = parseICSContent(text);
+            if (parsed && parsed.length > 0) {
+              setSchedules(parsed);
+              saveSchedules(parsed);
+              return;
+            }
+          }
         } catch {
-          res = await fetch(`https://api.allorigins.win/raw?url=${encodeURIComponent(fetchUrl)}`);
+          // fallback
         }
-        if (res.ok) {
+
+        // 2. 원격 구글 캘린더 프록시 fetch 시도
+        const fetchUrl = GOOGLE_CALENDAR_DEFAULT_URL;
+        let res: Response | null = null;
+        try {
+          res = await fetch(`https://api.allorigins.win/raw?url=${encodeURIComponent(fetchUrl)}`);
+        } catch {
+          try {
+            res = await fetch(`https://corsproxy.io/?url=${encodeURIComponent(fetchUrl)}`);
+          } catch {
+            res = null;
+          }
+        }
+        if (res && res.ok) {
           const text = await res.text();
           const parsed = parseICSContent(text);
           if (parsed && parsed.length > 0) {

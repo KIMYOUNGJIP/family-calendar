@@ -17,14 +17,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-2",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2011-05-27",
     "title": "마누라생일",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -103,11 +103,11 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-9",
     "memberId": "family",
     "date": "2012-02-11",
-    "title": "아버지 성묘",
+    "title": "처가할아버지 제사",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
-    "dinnerStatus": "required",
+    "dinnerStatus": "not_required",
     "guardian": "온 가족",
     "isRecurring": false
   },
@@ -115,11 +115,11 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-10",
     "memberId": "family",
     "date": "2012-02-11",
-    "title": "처가할아버지 제사",
+    "title": "아버지 성묘",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
+    "dinnerStatus": "required",
     "guardian": "온 가족",
     "isRecurring": false
   },
@@ -209,16 +209,16 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-18",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2012-03-24",
     "title": "외가댁 모임",
     "startTime": "14:00",
     "returnTime": "17:01",
     "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
     "isRecurring": false,
-    "memo": "장소: 대전 삼촌댁"
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-19",
@@ -345,14 +345,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-29",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2012-05-18",
-    "title": "승원이랑 저녁약속",
-    "startTime": "18:00",
-    "returnTime": "19:00",
+    "title": "마누라 심장 검사일",
+    "startTime": "16:00",
+    "returnTime": "17:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -369,26 +369,27 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-31",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2012-05-18",
-    "title": "마누라 심장 검사일",
-    "startTime": "16:00",
-    "returnTime": "17:00",
+    "title": "승원이랑 저녁약속",
+    "startTime": "18:00",
+    "returnTime": "19:00",
     "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-32",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2012-05-19",
     "title": "마누라 병원가는 날",
     "startTime": "11:00",
     "returnTime": "11:30",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -407,6 +408,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-34",
     "memberId": "family",
     "date": "2012-06-09",
+    "title": "사귄 기념일",
+    "startTime": "09:00",
+    "returnTime": "09:00",
+    "transitMethod": "자차",
+    "dinnerStatus": "required",
+    "guardian": "온 가족",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-35",
+    "memberId": "family",
+    "date": "2012-06-09",
     "title": "영빈이형 광자 결혼식",
     "startTime": "13:00",
     "returnTime": "15:00",
@@ -415,18 +428,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "guardian": "온 가족",
     "isRecurring": false,
     "memo": "장소: 의정부 노바웨딩홀 3층 루시홀"
-  },
-  {
-    "id": "gcal-35",
-    "memberId": "family",
-    "date": "2012-06-09",
-    "title": "사귄 기념일",
-    "startTime": "09:00",
-    "returnTime": "09:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
   },
   {
     "id": "gcal-36",
@@ -442,14 +443,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-37",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2012-06-11",
     "title": "마누라 퇴원일",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -478,26 +479,26 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-40",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2012-07-05",
     "title": "마누라 병원 가는 날",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
     "id": "gcal-41",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2012-07-06",
     "title": "미선생일",
     "startTime": "11:00",
     "returnTime": "12:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -551,16 +552,16 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-46",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2012-08-14",
     "title": "재현이 애들 약속",
     "startTime": "18:00",
     "returnTime": "22:00",
     "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
     "isRecurring": false,
-    "memo": "장소: 부평"
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-47",
@@ -588,14 +589,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-49",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2012-08-20",
     "title": "엄마 생신",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -675,6 +676,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-56",
     "memberId": "family",
     "date": "2012-11-10",
+    "title": "용인이모댁 다녀오기",
+    "startTime": "18:00",
+    "returnTime": "17:00",
+    "transitMethod": "자차",
+    "dinnerStatus": "required",
+    "guardian": "온 가족",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-57",
+    "memberId": "family",
+    "date": "2012-11-10",
     "title": "혜경 돌잔치",
     "startTime": "15:00",
     "returnTime": "17:00",
@@ -683,18 +696,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "guardian": "온 가족",
     "isRecurring": false,
     "memo": "장소: 큐브아고라 판교점"
-  },
-  {
-    "id": "gcal-57",
-    "memberId": "family",
-    "date": "2012-11-10",
-    "title": "용인이모댁 다녀오기",
-    "startTime": "18:00",
-    "returnTime": "17:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
   },
   {
     "id": "gcal-58",
@@ -734,14 +735,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-61",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2012-11-28",
     "title": "별이아빠 생일",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
@@ -818,6 +819,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-68",
+    "memberId": "second_child",
+    "date": "2012-12-25",
+    "title": "하율이 유아세례일",
+    "startTime": "09:20",
+    "returnTime": "10:30",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-69",
     "memberId": "family",
     "date": "2012-12-25",
     "title": "로보카폴리 뮤지컬",
@@ -828,18 +841,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "guardian": "온 가족",
     "isRecurring": false,
     "memo": "장소: 서울교육문화회관 대극장"
-  },
-  {
-    "id": "gcal-69",
-    "memberId": "second_child",
-    "date": "2012-12-25",
-    "title": "하율이 유아세례일",
-    "startTime": "09:20",
-    "returnTime": "10:30",
-    "transitMethod": "도보",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false
   },
   {
     "id": "gcal-70",
@@ -954,40 +955,40 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-79",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2013-01-26",
     "title": "작은엄마생신(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
     "id": "gcal-80",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2013-01-26",
     "title": "작은엄마 생신(처가)",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
     "id": "gcal-81",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2013-01-27",
-    "title": "작은엄마 생신모임(처가)",
+    "title": "작은엄마 생신모임(처��)",
     "startTime": "17:30",
     "returnTime": "20:30",
     "transitMethod": "자차",
     "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "guardian": "엄마",
     "isRecurring": false,
-    "memo": "장소: 청포휴게실"
+    "memo": "엄마 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-82",
@@ -1003,14 +1004,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-83",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2013-02-03",
     "title": "아빠생신",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
@@ -1051,6 +1052,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-87",
+    "memberId": "parents",
+    "date": "2013-02-19",
+    "title": "아내 첫출근일",
+    "startTime": "09:00",
+    "returnTime": "09:00",
+    "transitMethod": "자차",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-88",
     "memberId": "family",
     "date": "2013-02-19",
     "title": "아가씨 생일(시댁)",
@@ -1059,18 +1072,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "transitMethod": "자차",
     "dinnerStatus": "required",
     "guardian": "온 가족",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-88",
-    "memberId": "parents",
-    "date": "2013-02-19",
-    "title": "아내 첫출근일",
-    "startTime": "09:00",
-    "returnTime": "09:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
@@ -1088,18 +1089,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-90",
-    "memberId": "first_child",
-    "date": "2013-02-22",
-    "title": "은비 마중가기",
-    "startTime": "17:30",
-    "returnTime": "18:00",
-    "transitMethod": "도보",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-91",
     "memberId": "family",
     "date": "2013-02-22",
     "title": "장모님 제주 여행",
@@ -1108,6 +1097,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "transitMethod": "자차",
     "dinnerStatus": "required",
     "guardian": "온 가족",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-91",
+    "memberId": "first_child",
+    "date": "2013-02-22",
+    "title": "은비 마중가기",
+    "startTime": "17:30",
+    "returnTime": "18:00",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
     "isRecurring": false
   },
   {
@@ -1173,16 +1174,16 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-97",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2013-03-10",
     "title": "현서가족과 모임",
     "startTime": "14:00",
     "returnTime": "17:00",
     "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
     "isRecurring": false,
-    "memo": "장소: 교회키즈카페"
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-98",
@@ -1223,23 +1224,23 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-101",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2013-03-18",
     "title": "엄마 집에 옮",
     "startTime": "18:00",
     "returnTime": "20:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
     "id": "gcal-102",
     "memberId": "first_child",
     "date": "2013-03-19",
-    "title": "은비엄마 회식",
-    "startTime": "17:00",
-    "returnTime": "21:00",
+    "title": "은비 병원가기",
+    "startTime": "18:00",
+    "returnTime": "20:00",
     "transitMethod": "도보",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
@@ -1249,9 +1250,9 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-103",
     "memberId": "first_child",
     "date": "2013-03-19",
-    "title": "은비 병원가기",
-    "startTime": "18:00",
-    "returnTime": "20:00",
+    "title": "은비엄마 회식",
+    "startTime": "17:00",
+    "returnTime": "21:00",
     "transitMethod": "도보",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
@@ -1370,15 +1371,16 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-113",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2013-04-26",
     "title": "마누라회식",
     "startTime": "17:00",
     "returnTime": "21:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "transitMethod": "대중교통",
+    "dinnerStatus": "not_required",
+    "guardian": "엄마",
+    "isRecurring": false,
+    "memo": "엄마 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-114",
@@ -1407,15 +1409,16 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-116",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2013-05-01",
     "title": "마누라회식",
     "startTime": "17:00",
     "returnTime": "20:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "transitMethod": "대중교통",
+    "dinnerStatus": "not_required",
+    "guardian": "엄마",
+    "isRecurring": false,
+    "memo": "엄마 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-117",
@@ -1443,28 +1446,29 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-119",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2013-05-12",
     "title": "처가집 저녁식사",
     "startTime": "18:00",
     "returnTime": "20:00",
     "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
     "isRecurring": false,
-    "memo": "장소: 자연콩"
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-120",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2013-05-14",
     "title": "마누라 회식",
     "startTime": "17:00",
     "returnTime": "20:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "transitMethod": "대중교통",
+    "dinnerStatus": "not_required",
+    "guardian": "엄마",
+    "isRecurring": false,
+    "memo": "엄마 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-121",
@@ -1578,51 +1582,52 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-130",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2013-06-07",
     "title": "작은아빠제사(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
     "id": "gcal-131",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2013-06-07",
     "title": "작은아빠 제사(처가)",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
     "id": "gcal-132",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2013-06-07",
     "title": "마누라 재량휴업일",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
     "id": "gcal-133",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2013-06-14",
     "title": "두리 회식",
     "startTime": "17:00",
     "returnTime": "21:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "transitMethod": "대중교통",
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-134",
@@ -1638,15 +1643,16 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-135",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2013-06-27",
     "title": "엄마와 약속",
     "startTime": "18:00",
     "returnTime": "21:00",
     "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "dinnerStatus": "not_required",
+    "guardian": "엄마",
+    "isRecurring": false,
+    "memo": "엄마 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-136",
@@ -1710,14 +1716,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-141",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2013-07-13",
     "title": "미선이생일",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -1759,16 +1765,16 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-145",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2013-07-28",
     "title": "동기모임",
     "startTime": "13:00",
     "returnTime": "14:00",
     "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
     "isRecurring": false,
-    "memo": "장소: 의왕시 오전동 652 '산촌' 누룽지백숙 집 회비: 2만원"
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-146",
@@ -1809,14 +1815,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-149",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2013-08-09",
     "title": "서울엄마생신(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -1894,14 +1900,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-156",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2013-08-25",
     "title": "부천작은엄마 생신",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -1918,30 +1924,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-158",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2013-08-31",
     "title": "아빠 어디가? 부자캠프",
     "startTime": "18:00",
     "returnTime": "08:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-159",
-    "memberId": "parents",
-    "date": "2013-09-12",
-    "title": "학부모연수",
-    "startTime": "18:00",
-    "returnTime": "19:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
     "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-160",
+    "id": "gcal-159",
     "memberId": "first_child",
     "date": "2013-09-12",
     "title": "은비 어린이집 두뇌교육강의",
@@ -1953,16 +1947,29 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
+    "id": "gcal-160",
+    "memberId": "parents",
+    "date": "2013-09-12",
+    "title": "학부모연수",
+    "startTime": "18:00",
+    "returnTime": "19:00",
+    "transitMethod": "자차",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
+    "isRecurring": false
+  },
+  {
     "id": "gcal-161",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2013-09-14",
     "title": "인지학과상상력 달안초 모임",
     "startTime": "08:30",
     "returnTime": "09:30",
     "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-162",
@@ -1990,23 +1997,23 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-164",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2013-09-19",
-    "title": "뽀로로극장판 상영",
-    "startTime": "18:30",
-    "returnTime": "20:00",
+    "title": "엄마생일(처가)",
+    "startTime": "09:00",
+    "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
     "id": "gcal-165",
     "memberId": "family",
     "date": "2013-09-19",
-    "title": "엄마생일(처가)",
-    "startTime": "09:00",
-    "returnTime": "09:00",
+    "title": "뽀로로극장판 상영",
+    "startTime": "18:30",
+    "returnTime": "20:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
     "guardian": "온 가족",
@@ -2021,7 +2028,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "returnTime": "20:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "나(아빠)",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -2038,15 +2045,16 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-168",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2013-09-30",
     "title": "마누라 동문모임",
     "startTime": "17:00",
     "returnTime": "20:00",
     "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "dinnerStatus": "not_required",
+    "guardian": "엄마",
+    "isRecurring": false,
+    "memo": "엄마 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-169",
@@ -2074,30 +2082,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-171",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2013-10-09",
     "title": "서울아빠제사(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
     "id": "gcal-172",
-    "memberId": "family",
-    "date": "2013-10-09",
-    "title": "아버님 제사(시댁)",
-    "startTime": "09:00",
-    "returnTime": "09:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-173",
     "memberId": "family",
     "date": "2013-10-09",
     "title": "한글날",
@@ -2105,6 +2101,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
+    "guardian": "온 가족",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-173",
+    "memberId": "family",
+    "date": "2013-10-09",
+    "title": "아버님 제사(시댁)",
+    "startTime": "09:00",
+    "returnTime": "09:00",
+    "transitMethod": "자차",
+    "dinnerStatus": "not_required",
     "guardian": "온 가족",
     "isRecurring": false
   },
@@ -2146,18 +2154,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-177",
-    "memberId": "family",
-    "date": "2013-10-17",
-    "title": "4학년 회식(남편)",
-    "startTime": "17:00",
-    "returnTime": "20:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-178",
     "memberId": "first_child",
     "date": "2013-10-17",
     "title": "은비 1박2일 캠프",
@@ -2167,6 +2163,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false
+  },
+  {
+    "id": "gcal-178",
+    "memberId": "parents",
+    "date": "2013-10-17",
+    "title": "4학년 회식(남편)",
+    "startTime": "17:00",
+    "returnTime": "20:00",
+    "transitMethod": "대중교통",
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-179",
@@ -2182,30 +2191,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-180",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2013-10-18",
     "title": "부천아빠 생신",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
     "id": "gcal-181",
-    "memberId": "family",
-    "date": "2013-10-19",
-    "title": "작은 이모부 환갑",
-    "startTime": "18:00",
-    "returnTime": "21:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-182",
     "memberId": "first_child",
     "date": "2013-10-19",
     "title": "은비 성가대, 그림대회",
@@ -2217,16 +2214,29 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-183",
+    "id": "gcal-182",
     "memberId": "family",
-    "date": "2013-10-22",
-    "title": "부장회식",
-    "startTime": "17:00",
-    "returnTime": "19:00",
+    "date": "2013-10-19",
+    "title": "작은 이모부 환갑",
+    "startTime": "18:00",
+    "returnTime": "21:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
     "guardian": "온 가족",
     "isRecurring": false
+  },
+  {
+    "id": "gcal-183",
+    "memberId": "parents",
+    "date": "2013-10-22",
+    "title": "부장회식",
+    "startTime": "17:00",
+    "returnTime": "19:00",
+    "transitMethod": "대중교통",
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-184",
@@ -2254,18 +2264,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-186",
-    "memberId": "parents",
-    "date": "2013-10-25",
-    "title": "마누라 현지연수",
-    "startTime": "17:00",
-    "returnTime": "20:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "나(아빠)",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-187",
     "memberId": "first_child",
     "date": "2013-10-25",
     "title": "대학후배들이랑 약속",
@@ -2277,16 +2275,29 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
+    "id": "gcal-187",
+    "memberId": "parents",
+    "date": "2013-10-25",
+    "title": "마누라 현지연수",
+    "startTime": "17:00",
+    "returnTime": "20:00",
+    "transitMethod": "자차",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
+    "isRecurring": false
+  },
+  {
     "id": "gcal-188",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2013-11-01",
     "title": "효준이집 약속",
     "startTime": "19:00",
     "returnTime": "20:00",
     "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-189",
@@ -2376,15 +2387,16 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-196",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2013-11-13",
     "title": "마누라 전직원회식",
     "startTime": "14:00",
     "returnTime": "17:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "transitMethod": "대중교통",
+    "dinnerStatus": "not_required",
+    "guardian": "엄마",
+    "isRecurring": false,
+    "memo": "엄마 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-197",
@@ -2412,14 +2424,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-199",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2013-11-17",
     "title": "별이아빠생일(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
@@ -2472,14 +2484,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-204",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2013-11-29",
     "title": "남편생일",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
@@ -2497,15 +2509,16 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-206",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2013-12-06",
     "title": "마누라회식",
     "startTime": "17:00",
     "returnTime": "20:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "transitMethod": "대중교통",
+    "dinnerStatus": "not_required",
+    "guardian": "엄마",
+    "isRecurring": false,
+    "memo": "엄마 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-207",
@@ -2566,7 +2579,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "나(아빠)",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -2619,21 +2632,21 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-216",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2014-01-08",
-    "title": "남편운전면허 적성만료일",
+    "title": "마누라학교 예비소집일",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
     "id": "gcal-217",
     "memberId": "parents",
     "date": "2014-01-08",
-    "title": "마누라학교 예비소집일",
+    "title": "남편운전면허 적성만료일",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
@@ -2681,24 +2694,24 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-221",
     "memberId": "family",
     "date": "2014-01-15",
-    "title": "작은엄마생신(처가)",
-    "startTime": "09:00",
-    "returnTime": "18:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-222",
-    "memberId": "family",
-    "date": "2014-01-15",
     "title": "국세청 간소화서비스기간",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
     "guardian": "온 가족",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-222",
+    "memberId": "parents",
+    "date": "2014-01-15",
+    "title": "작은엄마생신(처가)",
+    "startTime": "09:00",
+    "returnTime": "18:00",
+    "transitMethod": "자차",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -2727,14 +2740,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-225",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2014-01-27",
     "title": "마누라 유치원 강의",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -2763,15 +2776,16 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-228",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2014-02-02",
     "title": "현서네랑 약속",
     "startTime": "09:00",
-    "returnTime": "09:00",
+    "returnTime": "22:00",
     "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-229",
@@ -2859,15 +2873,16 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-236",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2014-02-19",
     "title": "마누라회식",
     "startTime": "09:00",
-    "returnTime": "09:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "returnTime": "22:00",
+    "transitMethod": "대중교통",
+    "dinnerStatus": "not_required",
+    "guardian": "엄마",
+    "isRecurring": false,
+    "memo": "엄마 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-237",
@@ -2981,7 +2996,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-246",
     "memberId": "family",
     "date": "2014-03-05",
-    "title": "쿠키클레이 [!]",
+    "title": "쿠키클레이 [!/C]",
     "startTime": "13:00",
     "returnTime": "14:40",
     "transitMethod": "자차",
@@ -2994,7 +3009,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-247",
     "memberId": "family",
     "date": "2014-03-05",
-    "title": "쿠키클레이 [!/C]",
+    "title": "쿠키클레이 [!]",
     "startTime": "13:00",
     "returnTime": "14:40",
     "transitMethod": "자차",
@@ -3067,14 +3082,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-253",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2014-03-15",
     "title": "엄마집청소",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -3117,16 +3132,16 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-257",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2014-03-25",
     "title": "반 모임",
     "startTime": "11:00",
     "returnTime": "12:00",
     "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
     "isRecurring": false,
-    "memo": "장소: 민들레영토"
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-258",
@@ -3218,19 +3233,32 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-265",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2014-04-22",
     "title": "과학축제모임",
     "startTime": "11:00",
     "returnTime": "12:00",
     "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
     "isRecurring": false,
-    "memo": "장소: 다현이네집"
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-266",
+    "memberId": "parents",
+    "date": "2014-04-23",
+    "title": "엄마병원 [!/C]",
+    "startTime": "14:00",
+    "returnTime": "15:00",
+    "transitMethod": "자차",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
+    "isRecurring": false,
+    "memo": "장소: 샘병원"
+  },
+  {
+    "id": "gcal-267",
     "memberId": "family",
     "date": "2014-04-23",
     "title": "어머님 병원진료",
@@ -3242,7 +3270,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-267",
+    "id": "gcal-268",
     "memberId": "first_child",
     "date": "2014-04-23",
     "title": "은비과학축제 [!/C]",
@@ -3255,32 +3283,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수원 동남보건대(체육관) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
   },
   {
-    "id": "gcal-268",
-    "memberId": "family",
-    "date": "2014-04-23",
-    "title": "엄마병원 [!/C]",
-    "startTime": "14:00",
-    "returnTime": "15:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false,
-    "memo": "장소: 샘병원"
-  },
-  {
     "id": "gcal-269",
-    "memberId": "family",
-    "date": "2014-04-24",
-    "title": "별이 생일 [C]",
-    "startTime": "09:00",
-    "returnTime": "09:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-270",
     "memberId": "second_child",
     "date": "2014-04-24",
     "title": "하율딸기체험 [!]",
@@ -3289,6 +3292,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "transitMethod": "도보",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-270",
+    "memberId": "family",
+    "date": "2014-04-24",
+    "title": "별이 생일 [C]",
+    "startTime": "09:00",
+    "returnTime": "09:00",
+    "transitMethod": "자차",
+    "dinnerStatus": "required",
+    "guardian": "온 가족",
     "isRecurring": false
   },
   {
@@ -3343,15 +3358,16 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-275",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2014-05-05",
     "title": "연미남친과 저녁식사",
     "startTime": "17:00",
     "returnTime": "19:00",
     "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-276",
@@ -3416,14 +3432,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-281",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2014-05-27",
     "title": "작은아빠제사(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
@@ -3537,14 +3553,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-291",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2014-07-06",
     "title": "미선생일",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -3600,18 +3616,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-296",
     "memberId": "family",
     "date": "2014-07-27",
-    "title": "항암8차",
-    "startTime": "09:00",
-    "returnTime": "09:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-297",
-    "memberId": "family",
-    "date": "2014-07-27",
     "title": "번개만3공연관람",
     "startTime": "16:30",
     "returnTime": "17:30",
@@ -3621,7 +3625,31 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
+    "id": "gcal-297",
+    "memberId": "family",
+    "date": "2014-07-27",
+    "title": "항암8차",
+    "startTime": "09:00",
+    "returnTime": "09:00",
+    "transitMethod": "자차",
+    "dinnerStatus": "required",
+    "guardian": "온 가족",
+    "isRecurring": false
+  },
+  {
     "id": "gcal-298",
+    "memberId": "parents",
+    "date": "2014-07-29",
+    "title": "서울엄마생신(시댁) [C]",
+    "startTime": "09:00",
+    "returnTime": "09:00",
+    "transitMethod": "자차",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-299",
     "memberId": "family",
     "date": "2014-07-29",
     "title": "유원지",
@@ -3629,18 +3657,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "returnTime": "01:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-299",
-    "memberId": "family",
-    "date": "2014-07-29",
-    "title": "서울엄마생신(시댁) [C]",
-    "startTime": "09:00",
-    "returnTime": "09:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "not_required",
     "guardian": "온 가족",
     "isRecurring": false
   },
@@ -3707,21 +3723,22 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-305",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2014-08-05",
     "title": "민락식구들 모임",
     "startTime": "17:00",
     "returnTime": "22:00",
     "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-306",
     "memberId": "family",
     "date": "2014-08-07",
-    "title": "아쿠아리움",
+    "title": "미술방학",
     "startTime": "00:00",
     "returnTime": "01:00",
     "transitMethod": "자차",
@@ -3733,7 +3750,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-307",
     "memberId": "family",
     "date": "2014-08-07",
-    "title": "미술방학",
+    "title": "아쿠아리움",
     "startTime": "00:00",
     "returnTime": "01:00",
     "transitMethod": "자차",
@@ -3768,18 +3785,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-310",
-    "memberId": "family",
-    "date": "2014-08-12",
-    "title": "라바",
-    "startTime": "09:00",
-    "returnTime": "09:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-311",
     "memberId": "second_child",
     "date": "2014-08-12",
     "title": "하율뇌염3차 [!]",
@@ -3788,6 +3793,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "transitMethod": "도보",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-311",
+    "memberId": "family",
+    "date": "2014-08-12",
+    "title": "라바",
+    "startTime": "09:00",
+    "returnTime": "09:00",
+    "transitMethod": "자차",
+    "dinnerStatus": "required",
+    "guardian": "온 가족",
     "isRecurring": false
   },
   {
@@ -3816,30 +3833,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-314",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2014-08-19",
     "title": "엄마랑 저녁식사",
     "startTime": "19:00",
     "returnTime": "21:00",
     "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "dinnerStatus": "not_required",
+    "guardian": "엄마",
+    "isRecurring": false,
+    "memo": "엄마 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-315",
-    "memberId": "family",
-    "date": "2014-08-22",
-    "title": "효준이네랑 모임",
-    "startTime": "19:00",
-    "returnTime": "21:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-316",
     "memberId": "first_child",
     "date": "2014-08-22",
     "title": "은비청명나들이 [!]",
@@ -3851,19 +3857,20 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-317",
-    "memberId": "family",
-    "date": "2014-08-23",
-    "title": "천안상록아쿠아 수영",
-    "startTime": "10:00",
-    "returnTime": "16:00",
+    "id": "gcal-316",
+    "memberId": "parents",
+    "date": "2014-08-22",
+    "title": "효준이네랑 모임",
+    "startTime": "19:00",
+    "returnTime": "21:00",
     "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
-    "id": "gcal-318",
+    "id": "gcal-317",
     "memberId": "family",
     "date": "2014-08-23",
     "title": "음성벌초",
@@ -3875,19 +3882,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-319",
+    "id": "gcal-318",
     "memberId": "family",
-    "date": "2014-08-26",
-    "title": "저녁 양복사러 감",
-    "startTime": "17:00",
-    "returnTime": "19:00",
+    "date": "2014-08-23",
+    "title": "천안상록아쿠아 수영",
+    "startTime": "10:00",
+    "returnTime": "16:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
     "guardian": "온 가족",
     "isRecurring": false
   },
   {
-    "id": "gcal-320",
+    "id": "gcal-319",
     "memberId": "first_child",
     "date": "2014-08-26",
     "title": "은비개학식",
@@ -3896,6 +3903,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "transitMethod": "도보",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-320",
+    "memberId": "family",
+    "date": "2014-08-26",
+    "title": "저녁 양복사러 감",
+    "startTime": "17:00",
+    "returnTime": "19:00",
+    "transitMethod": "자차",
+    "dinnerStatus": "required",
+    "guardian": "온 가족",
     "isRecurring": false
   },
   {
@@ -3914,7 +3933,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-322",
     "memberId": "family",
     "date": "2014-08-30",
-    "title": "엄마할머니 벌초날",
+    "title": "효준이 결혼식",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
@@ -3924,14 +3943,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-323",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2014-08-30",
-    "title": "효준이 결혼식",
+    "title": "엄마할머니 벌초날",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -3951,7 +3970,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-325",
     "memberId": "family",
     "date": "2014-09-06",
-    "title": "지혜생일",
+    "title": "지혜생일 [C]",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
@@ -3963,7 +3982,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-326",
     "memberId": "family",
     "date": "2014-09-06",
-    "title": "지혜생일 [C]",
+    "title": "지혜생일",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
@@ -4021,39 +4040,40 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-331",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2014-09-28",
     "title": "서울아빠제사(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
     "id": "gcal-332",
-    "memberId": "first_child",
+    "memberId": "family",
     "date": "2014-10-01",
-    "title": "은비생일 파티",
+    "title": "은��생일 파티",
     "startTime": "17:30",
     "returnTime": "20:30",
-    "transitMethod": "도보",
+    "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
+    "guardian": "온 가족",
     "isRecurring": false
   },
   {
     "id": "gcal-333",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2014-10-04",
     "title": "애들 저녁식사 초대",
     "startTime": "17:30",
     "returnTime": "19:30",
     "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-334",
@@ -4094,14 +4114,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-337",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2014-10-28",
     "title": "서울아빠제사(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
@@ -4166,14 +4186,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-343",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2014-12-06",
     "title": "별이아빠생일(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
@@ -4290,18 +4310,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-353",
     "memberId": "family",
     "date": "2014-12-17",
-    "title": "할머니제사(처가)",
-    "startTime": "09:00",
-    "returnTime": "18:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-354",
-    "memberId": "family",
-    "date": "2014-12-17",
     "title": "현대유치원",
     "startTime": "10:00",
     "returnTime": "11:00",
@@ -4310,6 +4318,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "guardian": "온 가족",
     "isRecurring": false,
     "memo": "장소: 의왕"
+  },
+  {
+    "id": "gcal-354",
+    "memberId": "family",
+    "date": "2014-12-17",
+    "title": "할머니제사(처가)",
+    "startTime": "09:00",
+    "returnTime": "18:00",
+    "transitMethod": "자차",
+    "dinnerStatus": "not_required",
+    "guardian": "온 가족",
+    "isRecurring": false
   },
   {
     "id": "gcal-355",
@@ -4325,18 +4345,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-356",
-    "memberId": "family",
-    "date": "2014-12-18",
-    "title": "아파트계약",
-    "startTime": "09:09",
-    "returnTime": "10:09",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-357",
     "memberId": "first_child",
     "date": "2014-12-18",
     "title": "하니스 은비반 송년모임",
@@ -4345,6 +4353,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "transitMethod": "도보",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-357",
+    "memberId": "family",
+    "date": "2014-12-18",
+    "title": "아파트계약",
+    "startTime": "09:09",
+    "returnTime": "10:09",
+    "transitMethod": "자차",
+    "dinnerStatus": "required",
+    "guardian": "온 가족",
     "isRecurring": false
   },
   {
@@ -4410,15 +4430,16 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-363",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2015-01-03",
     "title": "서울집 저녁식사",
     "startTime": "17:00",
     "returnTime": "21:00",
     "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-364",
@@ -4435,14 +4456,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-365",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2015-01-08",
     "title": "엄마여행",
     "startTime": "10:00",
     "returnTime": "11:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -4472,14 +4493,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-368",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2015-01-12",
     "title": "아빠병원 1시54분",
     "startTime": "11:00",
     "returnTime": "12:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
@@ -4545,14 +4566,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-374",
-    "memberId": "parents",
+    "memberId": "family",
     "date": "2015-01-19",
-    "title": "미술수업휴강",
-    "startTime": "13:00",
-    "returnTime": "14:00",
+    "title": "아파트2차계약금",
+    "startTime": "09:00",
+    "returnTime": "10:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "나(아빠)",
+    "guardian": "온 가족",
     "isRecurring": false
   },
   {
@@ -4569,14 +4590,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-376",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2015-01-19",
-    "title": "아파트2차계약금",
-    "startTime": "09:00",
-    "returnTime": "10:00",
+    "title": "미술수업휴강",
+    "startTime": "13:00",
+    "returnTime": "14:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
@@ -4593,27 +4614,28 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-378",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2015-01-23",
     "title": "아빠 이비인후과",
     "startTime": "09:30",
     "returnTime": "10:30",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
     "id": "gcal-379",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2015-01-23",
     "title": "지우맘 생일모임",
     "startTime": "14:00",
     "returnTime": "15:00",
     "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-380",
@@ -4847,15 +4869,16 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-399",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2015-03-02",
     "title": "덕천초 회식",
     "startTime": "17:00",
     "returnTime": "20:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "transitMethod": "대중교통",
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-400",
@@ -4883,14 +4906,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-402",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2015-03-10",
     "title": "처가 막내작은엄마 생신",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -4909,14 +4932,13 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-404",
     "memberId": "first_child",
     "date": "2015-03-19",
-    "title": "은비연주회",
-    "startTime": "18:00",
-    "returnTime": "20:00",
-    "transitMethod": "대중교통",
+    "title": "은비 피아노 발표회",
+    "startTime": "18:30",
+    "returnTime": "19:30",
+    "transitMethod": "도보",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "수원 동남보건대(안양감리교회 2층 커피숍) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "isRecurring": false
   },
   {
     "id": "gcal-405",
@@ -4934,24 +4956,25 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-406",
     "memberId": "first_child",
     "date": "2015-03-19",
-    "title": "은비 피아노 발표회",
-    "startTime": "18:30",
-    "returnTime": "19:30",
-    "transitMethod": "도보",
+    "title": "은비연주회",
+    "startTime": "18:00",
+    "returnTime": "20:00",
+    "transitMethod": "대중교통",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
-    "isRecurring": false
+    "isRecurring": false,
+    "memo": "수원 동남보건대(안양감리교회 2층 커피숍) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
   },
   {
     "id": "gcal-407",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2015-03-21",
     "title": "엄마 사촌오빠의 딸 결혼식",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "엄마",
     "isRecurring": false,
     "memo": "장소: 충남 부여군 부여읍 동남리 521ㅡ18번지 재천년 웨딩홀 12시"
   },
@@ -4981,23 +5004,23 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-410",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2015-04-04",
     "title": "아빠성묘",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
     "id": "gcal-411",
     "memberId": "first_child",
     "date": "2015-04-10",
-    "title": "준민생일잔치ㅡ은비친구",
-    "startTime": "18:00",
-    "returnTime": "19:00",
+    "title": "은비친구생일파티",
+    "startTime": "17:00",
+    "returnTime": "21:00",
     "transitMethod": "도보",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
@@ -5007,9 +5030,9 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-412",
     "memberId": "first_child",
     "date": "2015-04-10",
-    "title": "은비친구생일파티",
-    "startTime": "17:00",
-    "returnTime": "21:00",
+    "title": "준민생일잔치ㅡ은비친구",
+    "startTime": "18:00",
+    "returnTime": "19:00",
     "transitMethod": "도보",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
@@ -5041,23 +5064,24 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-415",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2015-04-15",
-    "title": "학운위간담회",
+    "title": "마누라 회식",
     "startTime": "17:00",
-    "returnTime": "18:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "returnTime": "19:00",
+    "transitMethod": "대중교통",
+    "dinnerStatus": "not_required",
+    "guardian": "엄마",
+    "isRecurring": false,
+    "memo": "엄마 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-416",
     "memberId": "family",
     "date": "2015-04-15",
-    "title": "마누라 회식",
+    "title": "학운위간담회",
     "startTime": "17:00",
-    "returnTime": "19:00",
+    "returnTime": "18:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
     "guardian": "온 가족",
@@ -5176,38 +5200,40 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-426",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2015-06-04",
     "title": "일석이조 모임",
     "startTime": "20:00",
     "returnTime": "21:00",
     "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-427",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2015-06-04",
     "title": "마누라모임",
     "startTime": "20:00",
-    "returnTime": "00:00",
+    "returnTime": "22:00",
     "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "dinnerStatus": "not_required",
+    "guardian": "엄마",
+    "isRecurring": false,
+    "memo": "엄마 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-428",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2015-06-05",
     "title": "아빠",
     "startTime": "08:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
@@ -5224,38 +5250,38 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-430",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2015-06-10",
     "title": "아빠",
     "startTime": "08:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
     "id": "gcal-431",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2015-06-12",
     "title": "아빠",
     "startTime": "08:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
     "id": "gcal-432",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2015-06-15",
     "title": "작은아빠제사(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
@@ -5272,35 +5298,36 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-434",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2015-06-21",
     "title": "아빠",
     "startTime": "08:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
     "id": "gcal-435",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2015-06-27",
-    "title": "식당봉사",
-    "startTime": "08:00",
-    "returnTime": "13:00",
+    "title": "용인외가댁 모임",
+    "startTime": "09:00",
+    "returnTime": "22:00",
     "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-436",
     "memberId": "family",
     "date": "2015-06-27",
-    "title": "용인외가댁 모임",
-    "startTime": "09:00",
-    "returnTime": "09:00",
+    "title": "식당봉사",
+    "startTime": "20:00",
+    "returnTime": "21:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
     "guardian": "온 가족",
@@ -5311,8 +5338,8 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memberId": "family",
     "date": "2015-06-27",
     "title": "식당봉사",
-    "startTime": "20:00",
-    "returnTime": "21:00",
+    "startTime": "08:00",
+    "returnTime": "13:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
     "guardian": "온 가족",
@@ -5380,15 +5407,16 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-443",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2015-07-10",
     "title": "마누라 모임",
     "startTime": "20:00",
-    "returnTime": "00:00",
+    "returnTime": "22:00",
     "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "dinnerStatus": "not_required",
+    "guardian": "엄마",
+    "isRecurring": false,
+    "memo": "엄마 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-444",
@@ -5406,18 +5434,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-445",
     "memberId": "family",
     "date": "2015-07-25",
-    "title": "서울랜드(별이네)",
-    "startTime": "10:00",
-    "returnTime": "17:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-446",
-    "memberId": "family",
-    "date": "2015-07-25",
     "title": "고모부생신",
     "startTime": "19:00",
     "returnTime": "20:00",
@@ -5426,6 +5442,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "guardian": "온 가족",
     "isRecurring": false,
     "memo": "장소: 물왕저수지 담원"
+  },
+  {
+    "id": "gcal-446",
+    "memberId": "family",
+    "date": "2015-07-25",
+    "title": "서울랜드(별이네)",
+    "startTime": "10:00",
+    "returnTime": "17:00",
+    "transitMethod": "자차",
+    "dinnerStatus": "required",
+    "guardian": "온 가족",
+    "isRecurring": false
   },
   {
     "id": "gcal-447",
@@ -5443,18 +5471,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-448",
     "memberId": "family",
     "date": "2015-07-27",
-    "title": "여름과학동산",
-    "startTime": "08:00",
-    "returnTime": "11:59",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-449",
-    "memberId": "family",
-    "date": "2015-07-27",
     "title": "덕천 과학동산",
     "startTime": "09:00",
     "returnTime": "09:00",
@@ -5464,15 +5480,27 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-450",
+    "id": "gcal-449",
     "memberId": "family",
-    "date": "2015-07-29",
-    "title": "근무",
-    "startTime": "11:00",
-    "returnTime": "12:00",
+    "date": "2015-07-27",
+    "title": "여름과학동산",
+    "startTime": "08:00",
+    "returnTime": "11:59",
     "transitMethod": "자차",
     "dinnerStatus": "required",
     "guardian": "온 가족",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-450",
+    "memberId": "second_child",
+    "date": "2015-07-29",
+    "title": "하율방학",
+    "startTime": "19:00",
+    "returnTime": "20:00",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
     "isRecurring": false
   },
   {
@@ -5489,30 +5517,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-452",
-    "memberId": "second_child",
+    "memberId": "family",
     "date": "2015-07-29",
-    "title": "하율방학",
-    "startTime": "19:00",
-    "returnTime": "20:00",
-    "transitMethod": "도보",
+    "title": "근무",
+    "startTime": "11:00",
+    "returnTime": "12:00",
+    "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
+    "guardian": "온 가족",
     "isRecurring": false
   },
   {
     "id": "gcal-453",
-    "memberId": "first_child",
-    "date": "2015-07-31",
-    "title": "은비 여름성경학교",
-    "startTime": "11:00",
-    "returnTime": "12:00",
-    "transitMethod": "도보",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-454",
     "memberId": "first_child",
     "date": "2015-07-31",
     "title": "은비성경학교",
@@ -5524,16 +5540,29 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
+    "id": "gcal-454",
+    "memberId": "first_child",
+    "date": "2015-07-31",
+    "title": "은비 여름성경학교",
+    "startTime": "11:00",
+    "returnTime": "12:00",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false
+  },
+  {
     "id": "gcal-455",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2015-08-03",
     "title": "군포샘들 모임",
     "startTime": "15:00",
     "returnTime": "16:00",
     "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-456",
@@ -5551,9 +5580,9 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-457",
     "memberId": "family",
     "date": "2015-08-09",
-    "title": "가족여행(정윤이네)",
-    "startTime": "09:00",
-    "returnTime": "09:00",
+    "title": "정윤이 가족과여행",
+    "startTime": "16:00",
+    "returnTime": "17:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
     "guardian": "온 가족",
@@ -5563,9 +5592,9 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-458",
     "memberId": "family",
     "date": "2015-08-09",
-    "title": "정윤이 가족과여행",
-    "startTime": "16:00",
-    "returnTime": "17:00",
+    "title": "가족여행(정윤이네)",
+    "startTime": "09:00",
+    "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
     "guardian": "온 가족",
@@ -5597,14 +5626,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-461",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2015-08-16",
     "title": "서울엄마생신(시댁)",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -5645,18 +5674,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-465",
-    "memberId": "parents",
-    "date": "2015-08-21",
-    "title": "전직원 출근",
-    "startTime": "15:00",
-    "returnTime": "16:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "나(아빠)",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-466",
     "memberId": "first_child",
     "date": "2015-08-21",
     "title": "은비구몬",
@@ -5668,12 +5685,24 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
+    "id": "gcal-466",
+    "memberId": "parents",
+    "date": "2015-08-21",
+    "title": "전직원 출근",
+    "startTime": "15:00",
+    "returnTime": "16:00",
+    "transitMethod": "자차",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
+    "isRecurring": false
+  },
+  {
     "id": "gcal-467",
     "memberId": "family",
     "date": "2015-08-22",
-    "title": "생태체험",
-    "startTime": "14:00",
-    "returnTime": "15:00",
+    "title": "함소아",
+    "startTime": "09:40",
+    "returnTime": "10:40",
     "transitMethod": "자차",
     "dinnerStatus": "required",
     "guardian": "온 가족",
@@ -5695,9 +5724,9 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-469",
     "memberId": "family",
     "date": "2015-08-22",
-    "title": "함소아",
-    "startTime": "09:40",
-    "returnTime": "10:40",
+    "title": "생태체험",
+    "startTime": "14:00",
+    "returnTime": "15:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
     "guardian": "온 가족",
@@ -5743,18 +5772,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-473",
     "memberId": "family",
     "date": "2015-09-03",
-    "title": "일석이조 모임",
-    "startTime": "18:00",
-    "returnTime": "19:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-474",
-    "memberId": "family",
-    "date": "2015-09-03",
     "title": "미술수강료",
     "startTime": "09:00",
     "returnTime": "09:00",
@@ -5762,6 +5779,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "온 가족",
     "isRecurring": false
+  },
+  {
+    "id": "gcal-474",
+    "memberId": "parents",
+    "date": "2015-09-03",
+    "title": "일석이조 모임",
+    "startTime": "18:00",
+    "returnTime": "19:00",
+    "transitMethod": "자차",
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-475",
@@ -5777,18 +5807,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-476",
-    "memberId": "family",
-    "date": "2015-09-05",
-    "title": "소여리 벌초",
-    "startTime": "09:00",
-    "returnTime": "09:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-477",
     "memberId": "first_child",
     "date": "2015-09-05",
     "title": "은비우크렐레리허설",
@@ -5797,6 +5815,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "transitMethod": "도보",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-477",
+    "memberId": "family",
+    "date": "2015-09-05",
+    "title": "소여리 벌초",
+    "startTime": "09:00",
+    "returnTime": "09:00",
+    "transitMethod": "자차",
+    "dinnerStatus": "required",
+    "guardian": "온 가족",
     "isRecurring": false
   },
   {
@@ -5862,19 +5892,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-483",
-    "memberId": "family",
-    "date": "2015-09-20",
-    "title": "우클연주 리허설",
-    "startTime": "15:30",
-    "returnTime": "16:30",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false,
-    "memo": "장소: 군포예술회관"
-  },
-  {
-    "id": "gcal-484",
     "memberId": "first_child",
     "date": "2015-09-20",
     "title": "은비 우클 연주회",
@@ -5885,6 +5902,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "guardian": "스스로 귀가",
     "isRecurring": false,
     "memo": "수원 동남보건대(군포예술회관) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+  },
+  {
+    "id": "gcal-484",
+    "memberId": "family",
+    "date": "2015-09-20",
+    "title": "우클연주 리허설",
+    "startTime": "15:30",
+    "returnTime": "16:30",
+    "transitMethod": "자차",
+    "dinnerStatus": "required",
+    "guardian": "온 가족",
+    "isRecurring": false,
+    "memo": "장소: 군포예술회관"
   },
   {
     "id": "gcal-485",
@@ -5912,14 +5942,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-487",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2015-10-17",
     "title": "서울아빠제사(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
@@ -5948,26 +5978,26 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-490",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2015-10-21",
     "title": "마누라 유치원 강의",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
     "id": "gcal-491",
-    "memberId": "parents",
+    "memberId": "family",
     "date": "2015-10-21",
-    "title": "그린유치원 초등 연수",
+    "title": "그린유치원 초등 ��수",
     "startTime": "18:00",
     "returnTime": "19:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "나(아빠)",
+    "guardian": "온 가족",
     "isRecurring": false
   },
   {
@@ -6070,18 +6100,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-500",
     "memberId": "family",
     "date": "2015-11-04",
-    "title": "마누라회식",
-    "startTime": "17:00",
-    "returnTime": "20:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-501",
-    "memberId": "family",
-    "date": "2015-11-04",
     "title": "덕천동아리발표 및 교직원 문화체험",
     "startTime": "13:00",
     "returnTime": "19:00",
@@ -6091,19 +6109,20 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-502",
-    "memberId": "second_child",
-    "date": "2015-11-11",
-    "title": "하율이 에버그린 유치원 설명회",
-    "startTime": "09:00",
-    "returnTime": "09:00",
-    "transitMethod": "도보",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false
+    "id": "gcal-501",
+    "memberId": "parents",
+    "date": "2015-11-04",
+    "title": "마누라회식",
+    "startTime": "17:00",
+    "returnTime": "20:00",
+    "transitMethod": "대중교통",
+    "dinnerStatus": "not_required",
+    "guardian": "엄마",
+    "isRecurring": false,
+    "memo": "엄마 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
-    "id": "gcal-503",
+    "id": "gcal-502",
     "memberId": "family",
     "date": "2015-11-11",
     "title": "성모유치원 4시",
@@ -6112,6 +6131,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "transitMethod": "자차",
     "dinnerStatus": "required",
     "guardian": "온 가족",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-503",
+    "memberId": "second_child",
+    "date": "2015-11-11",
+    "title": "하율이 에버그린 유치원 설명회",
+    "startTime": "09:00",
+    "returnTime": "09:00",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
     "isRecurring": false
   },
   {
@@ -6128,14 +6159,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-505",
-    "memberId": "family",
+    "memberId": "second_child",
     "date": "2015-11-14",
-    "title": "에버그린 어린이집 설명회",
-    "startTime": "11:00",
+    "title": "하율공개수업,그린유치원",
+    "startTime": "09:00",
     "returnTime": "12:00",
-    "transitMethod": "자차",
+    "transitMethod": "도보",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "스스로 귀가",
     "isRecurring": false
   },
   {
@@ -6152,25 +6183,25 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-507",
-    "memberId": "second_child",
+    "memberId": "family",
     "date": "2015-11-14",
-    "title": "하율공개수업,그린유치원",
-    "startTime": "09:00",
+    "title": "에버그린 어린이집 설명회",
+    "startTime": "11:00",
     "returnTime": "12:00",
-    "transitMethod": "도보",
+    "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
+    "guardian": "온 가족",
     "isRecurring": false
   },
   {
     "id": "gcal-508",
     "memberId": "family",
     "date": "2015-11-17",
-    "title": "처가 고모생신",
-    "startTime": "09:00",
-    "returnTime": "09:00",
+    "title": "상담",
+    "startTime": "17:00",
+    "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
+    "dinnerStatus": "required",
     "guardian": "온 가족",
     "isRecurring": false
   },
@@ -6190,11 +6221,11 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-510",
     "memberId": "family",
     "date": "2015-11-17",
-    "title": "상담",
-    "startTime": "17:00",
-    "returnTime": "18:00",
+    "title": "처가 고모생신",
+    "startTime": "09:00",
+    "returnTime": "09:00",
     "transitMethod": "자차",
-    "dinnerStatus": "required",
+    "dinnerStatus": "not_required",
     "guardian": "온 가족",
     "isRecurring": false
   },
@@ -6225,6 +6256,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-513",
+    "memberId": "parents",
+    "date": "2015-11-25",
+    "title": "마누라 유치원수업",
+    "startTime": "17:00",
+    "returnTime": "20:00",
+    "transitMethod": "자차",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-514",
     "memberId": "family",
     "date": "2015-11-25",
     "title": "동화나라어린이집",
@@ -6236,27 +6279,15 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-514",
-    "memberId": "parents",
-    "date": "2015-11-25",
-    "title": "마누라 유치원수업",
-    "startTime": "17:00",
-    "returnTime": "20:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "나(아빠)",
-    "isRecurring": false
-  },
-  {
     "id": "gcal-515",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2015-11-26",
     "title": "별이아빠생일(처가)",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
@@ -6297,6 +6328,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-519",
+    "memberId": "parents",
+    "date": "2015-11-29",
+    "title": "정수약속",
+    "startTime": "09:00",
+    "returnTime": "22:00",
+    "transitMethod": "자차",
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
+  },
+  {
+    "id": "gcal-520",
     "memberId": "family",
     "date": "2015-11-29",
     "title": "용관이형 딸 결혼식",
@@ -6309,31 +6353,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "장소: 천년부페웨딩홀"
   },
   {
-    "id": "gcal-520",
-    "memberId": "family",
-    "date": "2015-11-29",
-    "title": "정수약속",
-    "startTime": "09:00",
-    "returnTime": "09:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
-  },
-  {
     "id": "gcal-521",
-    "memberId": "family",
-    "date": "2015-12-03",
-    "title": "정수출국일",
-    "startTime": "09:00",
-    "returnTime": "09:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-522",
     "memberId": "first_child",
     "date": "2015-12-03",
     "title": "은비상시평가",
@@ -6345,19 +6365,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-523",
-    "memberId": "first_child",
-    "date": "2015-12-05",
-    "title": "은비 산본행사",
+    "id": "gcal-522",
+    "memberId": "family",
+    "date": "2015-12-03",
+    "title": "정수출국��",
     "startTime": "09:00",
     "returnTime": "09:00",
-    "transitMethod": "도보",
+    "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
+    "guardian": "온 가족",
     "isRecurring": false
   },
   {
-    "id": "gcal-524",
+    "id": "gcal-523",
     "memberId": "family",
     "date": "2015-12-05",
     "title": "구세군 시종식",
@@ -6370,16 +6390,29 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "장소: 군포이마트 무대"
   },
   {
+    "id": "gcal-524",
+    "memberId": "first_child",
+    "date": "2015-12-05",
+    "title": "은비 산본행사",
+    "startTime": "09:00",
+    "returnTime": "09:00",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false
+  },
+  {
     "id": "gcal-525",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2015-12-06",
     "title": "전도회모임",
     "startTime": "12:30",
     "returnTime": "13:30",
     "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-526",
@@ -6395,28 +6428,29 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-527",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2015-12-10",
     "title": "준영인니 생일파티 모임",
     "startTime": "21:00",
     "returnTime": "22:00",
     "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
     "isRecurring": false,
-    "memo": "장소: 여자수산"
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-528",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2015-12-10",
     "title": "마누라 저녁식사",
     "startTime": "09:00",
-    "returnTime": "09:00",
+    "returnTime": "22:00",
     "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "dinnerStatus": "not_required",
+    "guardian": "엄마",
+    "isRecurring": false,
+    "memo": "엄마 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-529",
@@ -6426,9 +6460,10 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "startTime": "17:00",
     "returnTime": "20:00",
     "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "나(아빠)",
-    "isRecurring": false
+    "dinnerStatus": "not_required",
+    "guardian": "엄마",
+    "isRecurring": false,
+    "memo": "엄마 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-530",
@@ -6444,15 +6479,16 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-531",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2015-12-20",
     "title": "신임원모임",
     "startTime": "12:30",
     "returnTime": "13:30",
     "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-532",
@@ -6560,7 +6596,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "나(아빠)",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -6615,14 +6651,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-545",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2016-01-24",
     "title": "작은엄마생신(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -6653,9 +6689,9 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-548",
     "memberId": "family",
     "date": "2016-01-30",
-    "title": "장인칠순",
-    "startTime": "19:00",
-    "returnTime": "22:00",
+    "title": "연미 상견례",
+    "startTime": "13:00",
+    "returnTime": "15:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
     "guardian": "온 가족",
@@ -6665,9 +6701,9 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-549",
     "memberId": "family",
     "date": "2016-01-30",
-    "title": "연미 상견례",
-    "startTime": "13:00",
-    "returnTime": "15:00",
+    "title": "장인칠순",
+    "startTime": "19:00",
+    "returnTime": "22:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
     "guardian": "온 가족",
@@ -6723,15 +6759,16 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-554",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2016-02-15",
     "title": "마눌 학운위 회식",
     "startTime": "17:00",
     "returnTime": "20:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "transitMethod": "대중교통",
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-555",
@@ -6759,15 +6796,16 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-557",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2016-02-22",
     "title": "마누라 송별회식",
     "startTime": "17:00",
     "returnTime": "20:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "transitMethod": "대중교통",
+    "dinnerStatus": "not_required",
+    "guardian": "엄마",
+    "isRecurring": false,
+    "memo": "엄마 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-558",
@@ -6807,6 +6845,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-561",
+    "memberId": "first_child",
+    "date": "2016-03-19",
+    "title": "은비교회",
+    "startTime": "13:00",
+    "returnTime": "14:00",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-562",
     "memberId": "family",
     "date": "2016-03-19",
     "title": "재권이동생 결혼식",
@@ -6817,18 +6867,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "guardian": "온 가족",
     "isRecurring": false,
     "memo": "장소: 스칼라티움 8층"
-  },
-  {
-    "id": "gcal-562",
-    "memberId": "first_child",
-    "date": "2016-03-19",
-    "title": "은비교회",
-    "startTime": "13:00",
-    "returnTime": "14:00",
-    "transitMethod": "도보",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false
   },
   {
     "id": "gcal-563",
@@ -6845,15 +6883,16 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-564",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2016-03-26",
     "title": "엄마랑 약속",
     "startTime": "12:00",
     "returnTime": "14:00",
     "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "dinnerStatus": "not_required",
+    "guardian": "엄마",
+    "isRecurring": false,
+    "memo": "엄마 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-565",
@@ -6881,31 +6920,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-567",
-    "memberId": "family",
-    "date": "2016-04-09",
-    "title": "석수우체국 앞에서 만나기",
-    "startTime": "08:30",
-    "returnTime": "09:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false,
-    "memo": "장소: 석수우체국"
-  },
-  {
-    "id": "gcal-568",
-    "memberId": "first_child",
-    "date": "2016-04-09",
-    "title": "은비딸기체험",
-    "startTime": "09:00",
-    "returnTime": "09:00",
-    "transitMethod": "도보",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-569",
     "memberId": "second_child",
     "date": "2016-04-09",
     "title": "영포형딸(둘째) 결혼식",
@@ -6916,6 +6930,31 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "guardian": "스스로 귀가",
     "isRecurring": false,
     "memo": "장소: 아름다운 웨딩홀"
+  },
+  {
+    "id": "gcal-568",
+    "memberId": "family",
+    "date": "2016-04-09",
+    "title": "���수우체국 앞에서 만나기",
+    "startTime": "08:30",
+    "returnTime": "09:00",
+    "transitMethod": "자차",
+    "dinnerStatus": "required",
+    "guardian": "온 가족",
+    "isRecurring": false,
+    "memo": "장소: 석수우체국"
+  },
+  {
+    "id": "gcal-569",
+    "memberId": "first_child",
+    "date": "2016-04-09",
+    "title": "은비딸기체험",
+    "startTime": "09:00",
+    "returnTime": "09:00",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false
   },
   {
     "id": "gcal-570",
@@ -6955,14 +6994,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-573",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2016-04-20",
     "title": "엄마 검사결과",
     "startTime": "11:00",
     "returnTime": "12:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -6992,18 +7031,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-576",
-    "memberId": "parents",
-    "date": "2016-04-27",
-    "title": "마누라 체육연수",
-    "startTime": "17:00",
-    "returnTime": "20:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "나(아빠)",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-577",
     "memberId": "second_child",
     "date": "2016-04-27",
     "title": "하율소풍 과천어울터",
@@ -7015,31 +7042,31 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
+    "id": "gcal-577",
+    "memberId": "parents",
+    "date": "2016-04-27",
+    "title": "마누라 체육연수",
+    "startTime": "17:00",
+    "returnTime": "20:00",
+    "transitMethod": "자차",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
+    "isRecurring": false
+  },
+  {
     "id": "gcal-578",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2016-05-05",
     "title": "엄마항암치료",
     "startTime": "15:00",
     "returnTime": "16:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
     "id": "gcal-579",
-    "memberId": "family",
-    "date": "2016-05-13",
-    "title": "마님운동회식",
-    "startTime": "17:00",
-    "returnTime": "19:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-580",
     "memberId": "first_child",
     "date": "2016-05-13",
     "title": "은비중창연습",
@@ -7049,6 +7076,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false
+  },
+  {
+    "id": "gcal-580",
+    "memberId": "parents",
+    "date": "2016-05-13",
+    "title": "마님운동회식",
+    "startTime": "17:00",
+    "returnTime": "19:00",
+    "transitMethod": "대중교통",
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-581",
@@ -7114,14 +7154,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-586",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2016-05-26",
     "title": "엄마2차항암",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -7138,14 +7178,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-588",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2016-06-04",
     "title": "작은아빠제사(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
@@ -7163,14 +7203,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-590",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2016-06-15",
     "title": "엄마3차 항암",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -7187,14 +7227,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-592",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2016-07-06",
     "title": "엄마 4치항암",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -7262,18 +7302,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-598",
     "memberId": "first_child",
     "date": "2016-08-01",
-    "title": "은비미술방학",
-    "startTime": "20:00",
-    "returnTime": "21:00",
-    "transitMethod": "도보",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-599",
-    "memberId": "first_child",
-    "date": "2016-08-01",
     "title": "은비영어방학",
     "startTime": "21:00",
     "returnTime": "22:00",
@@ -7283,15 +7311,27 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
+    "id": "gcal-599",
+    "memberId": "first_child",
+    "date": "2016-08-01",
+    "title": "은비미술방학",
+    "startTime": "20:00",
+    "returnTime": "21:00",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false
+  },
+  {
     "id": "gcal-600",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2016-08-02",
     "title": "엄마 방사선 치료",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -7308,14 +7348,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-602",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2016-08-05",
     "title": "서울엄마생신(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -7356,14 +7396,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-606",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2016-08-13",
     "title": "엄마이사",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -7417,14 +7457,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-611",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2016-08-22",
     "title": "건강검진",
     "startTime": "10:30",
     "returnTime": "11:30",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
@@ -7443,18 +7483,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-613",
     "memberId": "family",
     "date": "2016-09-03",
-    "title": "벌초",
-    "startTime": "12:00",
-    "returnTime": "15:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-614",
-    "memberId": "family",
-    "date": "2016-09-03",
     "title": "한신아파트 조경설명회",
     "startTime": "10:00",
     "returnTime": "11:00",
@@ -7464,16 +7492,29 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-615",
+    "id": "gcal-614",
     "memberId": "family",
-    "date": "2016-09-05",
-    "title": "마누라 회식",
-    "startTime": "17:00",
-    "returnTime": "19:00",
+    "date": "2016-09-03",
+    "title": "벌초",
+    "startTime": "12:00",
+    "returnTime": "15:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
     "guardian": "온 가족",
     "isRecurring": false
+  },
+  {
+    "id": "gcal-615",
+    "memberId": "parents",
+    "date": "2016-09-05",
+    "title": "마누라 회식",
+    "startTime": "17:00",
+    "returnTime": "19:00",
+    "transitMethod": "대중교통",
+    "dinnerStatus": "not_required",
+    "guardian": "엄마",
+    "isRecurring": false,
+    "memo": "엄마 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-616",
@@ -7525,26 +7566,26 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-620",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2016-10-05",
     "title": "서울아빠제사(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
     "id": "gcal-621",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2016-10-06",
     "title": "엄마검사 결과확인",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -7573,14 +7614,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-624",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2016-10-11",
     "title": "엄마 입원일",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -7609,14 +7650,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-627",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2016-11-01",
     "title": "엄마입원",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -7669,14 +7710,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-632",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2016-11-14",
     "title": "별이아빠생일(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
@@ -7693,14 +7734,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-634",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2016-11-22",
     "title": "엄마 입원",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -7719,18 +7760,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-636",
     "memberId": "family",
     "date": "2016-11-26",
-    "title": "성준이형네 방문",
-    "startTime": "17:00",
-    "returnTime": "19:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-637",
-    "memberId": "family",
-    "date": "2016-11-26",
     "title": "목사님 대심방",
     "startTime": "14:00",
     "returnTime": "15:00",
@@ -7740,7 +7769,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-638",
+    "id": "gcal-637",
     "memberId": "family",
     "date": "2016-11-26",
     "title": "이레유치원",
@@ -7751,6 +7780,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "guardian": "온 가족",
     "isRecurring": false,
     "memo": "장소: 이레유치원"
+  },
+  {
+    "id": "gcal-638",
+    "memberId": "family",
+    "date": "2016-11-26",
+    "title": "성준이형네 방문",
+    "startTime": "17:00",
+    "returnTime": "19:00",
+    "transitMethod": "자차",
+    "dinnerStatus": "required",
+    "guardian": "온 가족",
+    "isRecurring": false
   },
   {
     "id": "gcal-639",
@@ -7792,15 +7833,16 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-642",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2016-12-08",
     "title": "마누라회식",
     "startTime": "17:00",
     "returnTime": "20:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "transitMethod": "대중교통",
+    "dinnerStatus": "not_required",
+    "guardian": "엄마",
+    "isRecurring": false,
+    "memo": "엄마 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-643",
@@ -7866,9 +7908,9 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-648",
     "memberId": "family",
     "date": "2016-12-17",
-    "title": "엄마집 저녁가기",
-    "startTime": "17:00",
-    "returnTime": "20:00",
+    "title": "중간점검일",
+    "startTime": "09:00",
+    "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
     "guardian": "온 가족",
@@ -7876,14 +7918,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-649",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2016-12-17",
-    "title": "중간점검일",
-    "startTime": "09:00",
-    "returnTime": "09:00",
+    "title": "엄마집 저녁가기",
+    "startTime": "17:00",
+    "returnTime": "20:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -7924,6 +7966,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-653",
+    "memberId": "parents",
+    "date": "2016-12-26",
+    "title": "엄마병원 상담",
+    "startTime": "09:00",
+    "returnTime": "09:00",
+    "transitMethod": "자차",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-654",
     "memberId": "second_child",
     "date": "2016-12-26",
     "title": "하율방학",
@@ -7935,28 +7989,17 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-654",
-    "memberId": "family",
-    "date": "2016-12-26",
-    "title": "엄마병원 상담",
-    "startTime": "09:00",
-    "returnTime": "09:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
-  },
-  {
     "id": "gcal-655",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2016-12-28",
     "title": "마누라 회식",
     "startTime": "17:00",
     "returnTime": "20:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "transitMethod": "대중교통",
+    "dinnerStatus": "not_required",
+    "guardian": "엄마",
+    "isRecurring": false,
+    "memo": "엄마 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-656",
@@ -7997,26 +8040,26 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-659",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2017-01-02",
     "title": "엄마병원 입원",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
     "id": "gcal-660",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2017-01-04",
     "title": "마누라 근무",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -8081,14 +8124,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-666",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2017-01-13",
     "title": "작은엄마생신(처가)",
     "startTime": "18:30",
     "returnTime": "20:30",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false,
     "memo": "장소: 경기도 안양시 만안구 병목안로 292"
   },
@@ -8154,18 +8197,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-672",
-    "memberId": "second_child",
-    "date": "2017-01-21",
-    "title": "하율 해밀 오티",
-    "startTime": "13:00",
-    "returnTime": "14:00",
-    "transitMethod": "도보",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-673",
     "memberId": "family",
     "date": "2017-01-21",
     "title": "한신 입주민 소통의 시간",
@@ -8174,6 +8205,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "transitMethod": "자차",
     "dinnerStatus": "required",
     "guardian": "온 가족",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-673",
+    "memberId": "second_child",
+    "date": "2017-01-21",
+    "title": "하율 해밀 오티",
+    "startTime": "13:00",
+    "returnTime": "14:00",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
     "isRecurring": false
   },
   {
@@ -8192,18 +8235,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-675",
     "memberId": "first_child",
     "date": "2017-01-24",
-    "title": "은비교실청소",
-    "startTime": "08:00",
-    "returnTime": "09:00",
-    "transitMethod": "도보",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-676",
-    "memberId": "first_child",
-    "date": "2017-01-24",
     "title": "은비스피치특강",
     "startTime": "10:30",
     "returnTime": "12:30",
@@ -8213,31 +8244,32 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
+    "id": "gcal-676",
+    "memberId": "first_child",
+    "date": "2017-01-24",
+    "title": "은비교실청소",
+    "startTime": "08:00",
+    "returnTime": "09:00",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false
+  },
+  {
     "id": "gcal-677",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2017-01-25",
     "title": "군포샘 모임",
     "startTime": "08:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-678",
-    "memberId": "parents",
-    "date": "2017-01-31",
-    "title": "전체출근일",
-    "startTime": "08:00",
-    "returnTime": "09:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "나(아빠)",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-679",
     "memberId": "first_child",
     "date": "2017-01-31",
     "title": "은비수영보강",
@@ -8246,6 +8278,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "transitMethod": "도보",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-679",
+    "memberId": "parents",
+    "date": "2017-01-31",
+    "title": "전체출근일",
+    "startTime": "08:00",
+    "returnTime": "09:00",
+    "transitMethod": "자차",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
@@ -8324,9 +8368,9 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-686",
     "memberId": "family",
     "date": "2017-02-06",
-    "title": "가화 커텐 전화",
-    "startTime": "15:00",
-    "returnTime": "16:00",
+    "title": "산부인과진료",
+    "startTime": "15:30",
+    "returnTime": "16:30",
     "transitMethod": "자차",
     "dinnerStatus": "required",
     "guardian": "온 가족",
@@ -8336,9 +8380,9 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-687",
     "memberId": "family",
     "date": "2017-02-06",
-    "title": "산부인과진료",
-    "startTime": "15:30",
-    "returnTime": "16:30",
+    "title": "가화 커텐 전화",
+    "startTime": "15:00",
+    "returnTime": "16:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
     "guardian": "온 가족",
@@ -8419,14 +8463,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-694",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2017-02-14",
     "title": "엄마 입원",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -8503,14 +8547,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-701",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2017-03-21",
     "title": "엄마입원",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -8540,21 +8584,21 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-704",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2017-04-11",
-    "title": "장모 제주도여행",
+    "title": "엄마입원",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
     "id": "gcal-705",
     "memberId": "family",
     "date": "2017-04-11",
-    "title": "엄마입원",
+    "title": "장모 제주도여행",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
@@ -8601,14 +8645,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-709",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2017-05-04",
     "title": "엄마입원",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -8637,14 +8681,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-712",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2017-05-24",
     "title": "작은아빠제사(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
@@ -8682,7 +8726,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "온 가족",
     "isRecurring": false,
-    "memo": "장소: 수인중앙교회, 대한민국 경기도 시흥시 조남동 170-1"
+    "memo": "장소: 수인중��교회, 대한민국 경기도 시흥시 조남동 170-1"
   },
   {
     "id": "gcal-716",
@@ -8806,15 +8850,16 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-726",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2017-06-30",
     "title": "마누라 회식",
     "startTime": "17:00",
     "returnTime": "21:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "transitMethod": "대중교통",
+    "dinnerStatus": "not_required",
+    "guardian": "엄마",
+    "isRecurring": false,
+    "memo": "엄마 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-727",
@@ -8881,14 +8926,13 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-732",
     "memberId": "family",
     "date": "2017-07-22",
-    "title": "동주민 미팅",
+    "title": "친목여행",
     "startTime": "09:00",
-    "returnTime": "10:00",
+    "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
     "guardian": "온 가족",
-    "isRecurring": false,
-    "memo": "장소: 지하주차장"
+    "isRecurring": false
   },
   {
     "id": "gcal-733",
@@ -8906,13 +8950,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-734",
     "memberId": "family",
     "date": "2017-07-22",
-    "title": "친목여행",
+    "title": "동주민 미팅",
     "startTime": "09:00",
-    "returnTime": "09:00",
+    "returnTime": "10:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
     "guardian": "온 가족",
-    "isRecurring": false
+    "isRecurring": false,
+    "memo": "장소: 지하주차장"
   },
   {
     "id": "gcal-735",
@@ -8952,30 +8997,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-738",
-    "memberId": "family",
+    "memberId": "first_child",
     "date": "2017-07-26",
-    "title": "동대표 감사",
-    "startTime": "18:00",
-    "returnTime": "19:00",
-    "transitMethod": "자차",
+    "title": "하율 은비아빠방학식",
+    "startTime": "09:00",
+    "returnTime": "09:00",
+    "transitMethod": "도보",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "스스로 귀가",
     "isRecurring": false
   },
   {
     "id": "gcal-739",
-    "memberId": "family",
-    "date": "2017-07-26",
-    "title": "엄마병원 입원",
-    "startTime": "09:00",
-    "returnTime": "09:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-740",
     "memberId": "family",
     "date": "2017-07-26",
     "title": "동대표 시공무원 미팅",
@@ -8987,15 +9020,27 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-741",
-    "memberId": "first_child",
+    "id": "gcal-740",
+    "memberId": "family",
     "date": "2017-07-26",
-    "title": "하율 은비아빠방학식",
+    "title": "동대표 감사",
+    "startTime": "18:00",
+    "returnTime": "19:00",
+    "transitMethod": "자차",
+    "dinnerStatus": "required",
+    "guardian": "온 가족",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-741",
+    "memberId": "parents",
+    "date": "2017-07-26",
+    "title": "엄마병원 입원",
     "startTime": "09:00",
     "returnTime": "09:00",
-    "transitMethod": "도보",
+    "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -9124,18 +9169,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-752",
     "memberId": "family",
     "date": "2017-08-12",
-    "title": "한신 호반집회",
-    "startTime": "07:00",
-    "returnTime": "08:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-753",
-    "memberId": "family",
-    "date": "2017-08-12",
     "title": "호반 대책회의",
     "startTime": "19:00",
     "returnTime": "20:00",
@@ -9145,15 +9178,27 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-754",
+    "id": "gcal-753",
     "memberId": "family",
+    "date": "2017-08-12",
+    "title": "한신 호반집회",
+    "startTime": "07:00",
+    "returnTime": "08:00",
+    "transitMethod": "자차",
+    "dinnerStatus": "required",
+    "guardian": "온 가족",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-754",
+    "memberId": "parents",
     "date": "2017-08-16",
     "title": "엄마입원",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -9194,14 +9239,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-758",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2017-08-24",
     "title": "서울엄마생신(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -9230,14 +9275,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-761",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2017-08-26",
     "title": "엄마생신 양평가족 여행",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -9302,14 +9347,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-767",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2017-09-06",
     "title": "엄마입원",
     "startTime": "08:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -9386,14 +9431,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-774",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2017-09-27",
     "title": "엄마 입원",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -9434,18 +9479,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-778",
-    "memberId": "family",
-    "date": "2017-10-14",
-    "title": "장모님 여행",
-    "startTime": "09:00",
-    "returnTime": "09:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-779",
     "memberId": "first_child",
     "date": "2017-10-14",
     "title": "은비 생일파티",
@@ -9454,6 +9487,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "transitMethod": "도보",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-779",
+    "memberId": "family",
+    "date": "2017-10-14",
+    "title": "장모님 여행",
+    "startTime": "09:00",
+    "returnTime": "09:00",
+    "transitMethod": "자차",
+    "dinnerStatus": "required",
+    "guardian": "온 가족",
     "isRecurring": false
   },
   {
@@ -9482,14 +9527,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-782",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2017-10-24",
     "title": "서울아빠제사(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
@@ -9530,14 +9575,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-786",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2017-10-29",
     "title": "엄마 열차여행",
     "startTime": "08:00",
     "returnTime": "21:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -9700,14 +9745,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-800",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2017-12-02",
     "title": "별이아빠생일(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
@@ -9786,18 +9831,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-807",
-    "memberId": "family",
-    "date": "2017-12-16",
-    "title": "서울엄마집 방문",
-    "startTime": "11:00",
-    "returnTime": "14:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-808",
     "memberId": "first_child",
     "date": "2017-12-16",
     "title": "은비하율치과검진",
@@ -9806,6 +9839,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "transitMethod": "도보",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-808",
+    "memberId": "parents",
+    "date": "2017-12-16",
+    "title": "서울엄마집 방문",
+    "startTime": "11:00",
+    "returnTime": "14:00",
+    "transitMethod": "자차",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -9900,10 +9945,11 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "title": "학교전체회식",
     "startTime": "17:00",
     "returnTime": "18:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
+    "transitMethod": "대중교통",
+    "dinnerStatus": "not_required",
     "guardian": "나(아빠)",
-    "isRecurring": false
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-817",
@@ -9919,22 +9965,22 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-818",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2017-12-29",
     "title": "서울 엄마집 가기",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
     "id": "gcal-819",
     "memberId": "parents",
     "date": "2018-01-02",
-    "title": "혁신연수ㅡ연구부장님 만나서가기",
-    "startTime": "08:00",
+    "title": "혁신연수",
+    "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
@@ -9945,8 +9991,8 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-820",
     "memberId": "parents",
     "date": "2018-01-02",
-    "title": "혁신연수",
-    "startTime": "09:00",
+    "title": "혁신연수ㅡ연구부장님 만나서가기",
+    "startTime": "08:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
@@ -9981,9 +10027,9 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-823",
     "memberId": "family",
     "date": "2018-01-13",
-    "title": "터키여행",
-    "startTime": "09:00",
-    "returnTime": "09:00",
+    "title": "밴아저씨 6시",
+    "startTime": "06:00",
+    "returnTime": "07:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
     "guardian": "온 가족",
@@ -9993,9 +10039,9 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-824",
     "memberId": "family",
     "date": "2018-01-13",
-    "title": "밴아저씨 6시",
-    "startTime": "06:00",
-    "returnTime": "07:00",
+    "title": "터키여행",
+    "startTime": "09:00",
+    "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
     "guardian": "온 가족",
@@ -10051,14 +10097,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-829",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2018-01-31",
     "title": "작은엄마생신(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -10221,7 +10267,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-843",
     "memberId": "family",
     "date": "2018-02-25",
-    "title": "연미생일(시댁)",
+    "title": "연미���일(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
@@ -10339,15 +10385,16 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-853",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2018-03-30",
     "title": "부장회의 및 회식",
     "startTime": "16:00",
     "returnTime": "17:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "transitMethod": "대중교통",
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-854",
@@ -10411,11 +10458,11 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-859",
-    "memberId": "second_child",
+    "memberId": "first_child",
     "date": "2018-04-14",
-    "title": "하율친구 한결이 생일파티",
-    "startTime": "12:00",
-    "returnTime": "13:00",
+    "title": "은비치과진료",
+    "startTime": "09:30",
+    "returnTime": "10:30",
     "transitMethod": "도보",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
@@ -10423,11 +10470,11 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-860",
-    "memberId": "first_child",
+    "memberId": "second_child",
     "date": "2018-04-14",
-    "title": "은비치과진료",
-    "startTime": "09:30",
-    "returnTime": "10:30",
+    "title": "하율친구 한결이 생일파티",
+    "startTime": "12:00",
+    "returnTime": "13:00",
     "transitMethod": "도보",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
@@ -10519,15 +10566,16 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-868",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2018-04-25",
     "title": "철쭉동산친목회식",
     "startTime": "18:00",
     "returnTime": "19:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "transitMethod": "대중교통",
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-869",
@@ -10557,18 +10605,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-871",
     "memberId": "family",
     "date": "2018-04-28",
-    "title": "교회어린이행사",
-    "startTime": "10:30",
-    "returnTime": "12:30",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-872",
-    "memberId": "family",
-    "date": "2018-04-28",
     "title": "광곤이 돌잔치",
     "startTime": "17:30",
     "returnTime": "18:30",
@@ -10577,6 +10613,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "guardian": "온 가족",
     "isRecurring": false,
     "memo": "장소: 구로호텔 라스텔라"
+  },
+  {
+    "id": "gcal-872",
+    "memberId": "family",
+    "date": "2018-04-28",
+    "title": "교회어린이행사",
+    "startTime": "10:30",
+    "returnTime": "12:30",
+    "transitMethod": "자차",
+    "dinnerStatus": "required",
+    "guardian": "온 가족",
+    "isRecurring": false
   },
   {
     "id": "gcal-873",
@@ -10592,9 +10640,9 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-874",
-    "memberId": "first_child",
+    "memberId": "second_child",
     "date": "2018-05-01",
-    "title": "은비개교기념일",
+    "title": "하율유치원휴원",
     "startTime": "08:00",
     "returnTime": "09:00",
     "transitMethod": "도보",
@@ -10604,9 +10652,9 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-875",
-    "memberId": "second_child",
+    "memberId": "first_child",
     "date": "2018-05-01",
-    "title": "하율유치원휴원",
+    "title": "은비개교기념일",
     "startTime": "08:00",
     "returnTime": "09:00",
     "transitMethod": "도보",
@@ -10646,10 +10694,10 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "startTime": "15:00",
     "returnTime": "16:00",
     "transitMethod": "자차",
-    "dinnerStatus": "required",
+    "dinnerStatus": "not_required",
     "guardian": "나(아빠)",
     "isRecurring": false,
-    "memo": "장소: 안양초 3:30 학운위실"
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-879",
@@ -10737,14 +10785,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-886",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2018-06-12",
     "title": "작은아빠제사(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
@@ -10799,9 +10847,9 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-891",
-    "memberId": "first_child",
+    "memberId": "second_child",
     "date": "2018-06-23",
-    "title": "은비하율구강검진",
+    "title": "��비하율구강검진",
     "startTime": "10:30",
     "returnTime": "11:30",
     "transitMethod": "도보",
@@ -10907,27 +10955,29 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-900",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2018-07-22",
     "title": "교회식사봉사",
     "startTime": "08:00",
     "returnTime": "09:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "transitMethod": "대중교통",
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-901",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2018-07-24",
     "title": "부장회의 후 회식",
     "startTime": "17:00",
     "returnTime": "19:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "transitMethod": "대중교통",
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-902",
@@ -10979,15 +11029,16 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-906",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2018-07-29",
     "title": "교회식사봉사",
     "startTime": "08:00",
     "returnTime": "09:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "transitMethod": "대중교통",
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-907",
@@ -11039,14 +11090,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-911",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2018-08-13",
     "title": "서울엄마생신(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -11063,15 +11114,16 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-913",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2018-08-14",
     "title": "부장회식",
     "startTime": "17:30",
     "returnTime": "18:30",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "transitMethod": "대중교통",
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-914",
@@ -11282,18 +11334,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-931",
-    "memberId": "first_child",
-    "date": "2018-09-08",
-    "title": "은비치어리딩",
-    "startTime": "09:00",
-    "returnTime": "12:00",
-    "transitMethod": "도보",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-932",
     "memberId": "family",
     "date": "2018-09-08",
     "title": "벌초",
@@ -11302,6 +11342,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "transitMethod": "자차",
     "dinnerStatus": "required",
     "guardian": "온 가족",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-932",
+    "memberId": "first_child",
+    "date": "2018-09-08",
+    "title": "은비치어리딩",
+    "startTime": "09:00",
+    "returnTime": "12:00",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
     "isRecurring": false
   },
   {
@@ -11366,14 +11418,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-938",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2018-09-24",
     "title": "엄마칠순",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -11462,6 +11514,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-946",
+    "memberId": "parents",
+    "date": "2018-10-10",
+    "title": "동문회식",
+    "startTime": "17:00",
+    "returnTime": "18:00",
+    "transitMethod": "대중교통",
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
+  },
+  {
+    "id": "gcal-947",
     "memberId": "second_child",
     "date": "2018-10-10",
     "title": "하율한우랜드 소풍준비",
@@ -11471,19 +11536,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "장소: 대한민국 경기도 용인시 처인구 백암면 옥산리"
-  },
-  {
-    "id": "gcal-947",
-    "memberId": "family",
-    "date": "2018-10-10",
-    "title": "동문회식",
-    "startTime": "17:00",
-    "returnTime": "18:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "memo": "장소: 대한민국 경기도 용��시 처인구 백암면 옥산리"
   },
   {
     "id": "gcal-948",
@@ -11499,26 +11552,26 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-949",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2018-10-13",
     "title": "서울아빠제사(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
     "id": "gcal-950",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2018-10-18",
     "title": "엄마 병원 검사",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -11669,14 +11722,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-963",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2018-11-22",
     "title": "별이아빠생일(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
@@ -11741,15 +11794,16 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-969",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2018-12-04",
     "title": "부장회식",
     "startTime": "17:00",
     "returnTime": "18:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "transitMethod": "대중교통",
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-970",
@@ -11901,6 +11955,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-982",
+    "memberId": "second_child",
+    "date": "2018-12-26",
+    "title": "하율방학",
+    "startTime": "09:00",
+    "returnTime": "09:00",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-983",
     "memberId": "first_child",
     "date": "2018-12-26",
     "title": "은비 독서논술",
@@ -11913,7 +11979,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수원 동남보건대(목감 다니체유관) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
   },
   {
-    "id": "gcal-983",
+    "id": "gcal-984",
     "memberId": "family",
     "date": "2018-12-26",
     "title": "교육과정협의회",
@@ -11922,18 +11988,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "transitMethod": "자차",
     "dinnerStatus": "required",
     "guardian": "온 가족",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-984",
-    "memberId": "second_child",
-    "date": "2018-12-26",
-    "title": "하율방학",
-    "startTime": "09:00",
-    "returnTime": "09:00",
-    "transitMethod": "도보",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
     "isRecurring": false
   },
   {
@@ -11974,11 +12028,11 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-988",
-    "memberId": "first_child",
+    "memberId": "second_child",
     "date": "2019-01-03",
-    "title": "은비독서논술",
-    "startTime": "17:00",
-    "returnTime": "18:00",
+    "title": "하율예비소집일",
+    "startTime": "15:00",
+    "returnTime": "16:00",
     "transitMethod": "도보",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
@@ -11986,11 +12040,11 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-989",
-    "memberId": "second_child",
+    "memberId": "first_child",
     "date": "2019-01-03",
-    "title": "하율예비소집일",
-    "startTime": "15:00",
-    "returnTime": "16:00",
+    "title": "은비독서논술",
+    "startTime": "17:00",
+    "returnTime": "18:00",
     "transitMethod": "도보",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
@@ -12034,21 +12088,22 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-993",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2019-01-10",
     "title": "군포초모임",
     "startTime": "08:00",
     "returnTime": "17:00",
     "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-994",
     "memberId": "first_child",
     "date": "2019-01-11",
-    "title": "은비아빠종업식",
+    "title": "은비치어리딩 1시",
     "startTime": "08:00",
     "returnTime": "09:00",
     "transitMethod": "도보",
@@ -12060,7 +12115,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-995",
     "memberId": "first_child",
     "date": "2019-01-11",
-    "title": "은비치어리딩 1시",
+    "title": "은비아빠종업식",
     "startTime": "08:00",
     "returnTime": "09:00",
     "transitMethod": "도보",
@@ -12131,14 +12186,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1001",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2019-01-20",
     "title": "작은엄마생신(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -12338,6 +12393,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-1018",
     "memberId": "family",
     "date": "2019-02-26",
+    "title": "안과",
+    "startTime": "14:00",
+    "returnTime": "15:00",
+    "transitMethod": "자차",
+    "dinnerStatus": "required",
+    "guardian": "온 가족",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-1019",
+    "memberId": "family",
+    "date": "2019-02-26",
     "title": "스마일라식",
     "startTime": "17:00",
     "returnTime": "18:00",
@@ -12347,7 +12414,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-1019",
+    "id": "gcal-1020",
+    "memberId": "family",
+    "date": "2019-02-26",
+    "title": "도서관프로그램신청",
+    "startTime": "10:00",
+    "returnTime": "11:00",
+    "transitMethod": "자차",
+    "dinnerStatus": "required",
+    "guardian": "온 가족",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-1021",
     "memberId": "family",
     "date": "2019-02-26",
     "title": "이음여성한의원",
@@ -12360,43 +12439,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "장소: 교대역 3300"
   },
   {
-    "id": "gcal-1020",
-    "memberId": "family",
-    "date": "2019-02-26",
-    "title": "안과",
-    "startTime": "14:00",
-    "returnTime": "15:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-1021",
-    "memberId": "family",
-    "date": "2019-02-26",
-    "title": "도서관프로그램신청",
-    "startTime": "10:00",
-    "returnTime": "11:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
-  },
-  {
     "id": "gcal-1022",
-    "memberId": "family",
-    "date": "2019-02-27",
-    "title": "전교조전화",
-    "startTime": "11:00",
-    "returnTime": "12:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-1023",
     "memberId": "family",
     "date": "2019-02-27",
     "title": "보험설계",
@@ -12408,7 +12451,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-1024",
+    "id": "gcal-1023",
     "memberId": "first_child",
     "date": "2019-02-27",
     "title": "은비 파자마파티",
@@ -12417,6 +12460,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "transitMethod": "도보",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-1024",
+    "memberId": "family",
+    "date": "2019-02-27",
+    "title": "전교조전화",
+    "startTime": "11:00",
+    "returnTime": "12:00",
+    "transitMethod": "자차",
+    "dinnerStatus": "required",
+    "guardian": "온 가족",
     "isRecurring": false
   },
   {
@@ -12483,9 +12538,9 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-1030",
     "memberId": "family",
     "date": "2019-03-18",
-    "title": "이음한의원",
-    "startTime": "12:20",
-    "returnTime": "13:20",
+    "title": "안과",
+    "startTime": "10:30",
+    "returnTime": "11:30",
     "transitMethod": "자차",
     "dinnerStatus": "required",
     "guardian": "온 가족",
@@ -12495,9 +12550,9 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-1031",
     "memberId": "family",
     "date": "2019-03-18",
-    "title": "안과",
-    "startTime": "10:30",
-    "returnTime": "11:30",
+    "title": "이음한의원",
+    "startTime": "12:20",
+    "returnTime": "13:20",
     "transitMethod": "자차",
     "dinnerStatus": "required",
     "guardian": "온 가족",
@@ -12543,15 +12598,16 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1035",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2019-03-29",
     "title": "덕천부장 모임",
     "startTime": "17:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-1036",
@@ -12641,9 +12697,9 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-1043",
     "memberId": "family",
     "date": "2019-04-16",
-    "title": "한의원예약",
-    "startTime": "12:00",
-    "returnTime": "13:00",
+    "title": "홍교장샘만남",
+    "startTime": "17:30",
+    "returnTime": "19:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
     "guardian": "온 가족",
@@ -12653,9 +12709,9 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-1044",
     "memberId": "family",
     "date": "2019-04-16",
-    "title": "홍교장샘만남",
-    "startTime": "17:30",
-    "returnTime": "19:00",
+    "title": "한의원예약",
+    "startTime": "12:00",
+    "returnTime": "13:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
     "guardian": "온 가족",
@@ -12737,7 +12793,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-1051",
     "memberId": "first_child",
     "date": "2019-05-04",
-    "title": "은비 치어리딩 군포 공연",
+    "title": "은비 ��어리딩 군포 공연",
     "startTime": "10:00",
     "returnTime": "12:00",
     "transitMethod": "대중교통",
@@ -12787,8 +12843,8 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-1055",
     "memberId": "family",
     "date": "2019-05-10",
-    "title": "반모임",
-    "startTime": "20:00",
+    "title": "태안가기",
+    "startTime": "19:00",
     "returnTime": "21:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
@@ -12797,15 +12853,16 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1056",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2019-05-10",
-    "title": "태안가기",
-    "startTime": "19:00",
+    "title": "반모임",
+    "startTime": "20:00",
     "returnTime": "21:00",
     "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-1057",
@@ -12857,6 +12914,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1061",
+    "memberId": "family",
+    "date": "2019-05-18",
+    "title": "교회 바자회",
+    "startTime": "08:00",
+    "returnTime": "09:00",
+    "transitMethod": "자차",
+    "dinnerStatus": "required",
+    "guardian": "온 가족",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-1062",
     "memberId": "first_child",
     "date": "2019-05-18",
     "title": "은비공연",
@@ -12867,18 +12936,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "guardian": "스스로 귀가",
     "isRecurring": false,
     "memo": "수원 동남보건대(시흥abc센터 abc홀) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
-  },
-  {
-    "id": "gcal-1062",
-    "memberId": "family",
-    "date": "2019-05-18",
-    "title": "교회 바자회",
-    "startTime": "08:00",
-    "returnTime": "09:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
   },
   {
     "id": "gcal-1063",
@@ -12931,14 +12988,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1067",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2019-06-02",
     "title": "작은아빠제사(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
@@ -13041,15 +13098,16 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1076",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2019-06-18",
     "title": "토론사전모임5-1",
     "startTime": "15:00",
     "returnTime": "16:00",
     "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-1077",
@@ -13185,14 +13243,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1088",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2019-08-03",
     "title": "서울엄마생신(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -13317,30 +13375,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1099",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2019-10-03",
     "title": "서울아빠제사(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-1100",
-    "memberId": "parents",
-    "date": "2019-10-04",
-    "title": "학교장재량휴업일",
-    "startTime": "08:00",
-    "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
     "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-1101",
+    "id": "gcal-1100",
     "memberId": "family",
     "date": "2019-10-04",
     "title": "작은이모 생신여행",
@@ -13349,6 +13395,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "transitMethod": "자차",
     "dinnerStatus": "not_required",
     "guardian": "온 가족",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-1101",
+    "memberId": "parents",
+    "date": "2019-10-04",
+    "title": "학교장재량휴업일",
+    "startTime": "08:00",
+    "returnTime": "09:00",
+    "transitMethod": "자차",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
@@ -13498,14 +13556,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1114",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2019-11-11",
     "title": "별이아빠생일(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
@@ -13582,15 +13640,16 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1121",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2019-12-01",
     "title": "9여전도회송별회식사",
     "startTime": "17:00",
     "returnTime": "19:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "transitMethod": "대중교통",
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-1122",
@@ -13631,15 +13690,16 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1125",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2019-12-08",
     "title": "교회식사봉사",
     "startTime": "12:10",
     "returnTime": "13:10",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "transitMethod": "대중교통",
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-1126",
@@ -13667,15 +13727,16 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1128",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2019-12-15",
     "title": "교회식당봉사",
     "startTime": "12:24",
     "returnTime": "13:24",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "transitMethod": "대중교통",
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-1129",
@@ -13919,14 +13980,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1149",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2020-01-09",
     "title": "작은엄마생신(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -13955,11 +14016,11 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1152",
-    "memberId": "second_child",
+    "memberId": "first_child",
     "date": "2020-01-10",
-    "title": "하율 축구",
-    "startTime": "12:15",
-    "returnTime": "13:45",
+    "title": "은비중입배정",
+    "startTime": "10:00",
+    "returnTime": "11:00",
     "transitMethod": "도보",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
@@ -13967,11 +14028,11 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1153",
-    "memberId": "first_child",
+    "memberId": "second_child",
     "date": "2020-01-10",
-    "title": "은비중입배정",
-    "startTime": "10:00",
-    "returnTime": "11:00",
+    "title": "하율 축구",
+    "startTime": "12:15",
+    "returnTime": "13:45",
     "transitMethod": "도보",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
@@ -14029,9 +14090,9 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-1158",
     "memberId": "family",
     "date": "2020-01-19",
-    "title": "여전도회 월례회 4층",
-    "startTime": "12:10",
-    "returnTime": "13:10",
+    "title": "안성여행",
+    "startTime": "09:00",
+    "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
     "guardian": "온 가족",
@@ -14041,9 +14102,9 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-1159",
     "memberId": "family",
     "date": "2020-01-19",
-    "title": "안성여행",
-    "startTime": "09:00",
-    "returnTime": "09:00",
+    "title": "여전도회 월례회 4층",
+    "startTime": "12:10",
+    "returnTime": "13:10",
     "transitMethod": "자차",
     "dinnerStatus": "required",
     "guardian": "온 가족",
@@ -14063,23 +14124,24 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1161",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2020-01-22",
-    "title": "독서논술",
-    "startTime": "14:00",
-    "returnTime": "15:00",
+    "title": "군포초모임",
+    "startTime": "11:30",
+    "returnTime": "12:30",
     "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-1162",
     "memberId": "family",
     "date": "2020-01-22",
-    "title": "군포초모임",
-    "startTime": "11:30",
-    "returnTime": "12:30",
+    "title": "독서논술",
+    "startTime": "14:00",
+    "returnTime": "15:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
     "guardian": "온 가족",
@@ -14231,14 +14293,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1175",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2020-02-12",
     "title": "남편 근무일",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
@@ -14281,9 +14343,9 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-1179",
     "memberId": "family",
     "date": "2020-02-17",
-    "title": "잡월드 확약서 보내기",
-    "startTime": "11:00",
-    "returnTime": "12:00",
+    "title": "덕천근무",
+    "startTime": "08:00",
+    "returnTime": "16:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
     "guardian": "온 가족",
@@ -14293,9 +14355,9 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-1180",
     "memberId": "family",
     "date": "2020-02-17",
-    "title": "덕천근무",
-    "startTime": "08:00",
-    "returnTime": "16:00",
+    "title": "잡월드 확약서 보내기",
+    "startTime": "11:00",
+    "returnTime": "12:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
     "guardian": "온 가족",
@@ -14411,14 +14473,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1190",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2020-03-12",
     "title": "영집근무",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
@@ -14447,30 +14509,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1193",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2020-03-17",
     "title": "영집근무",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
     "id": "gcal-1194",
-    "memberId": "family",
-    "date": "2020-03-18",
-    "title": "인터넷 설치",
-    "startTime": "13:00",
-    "returnTime": "14:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-1195",
     "memberId": "family",
     "date": "2020-03-18",
     "title": "지연근무",
@@ -14482,15 +14532,27 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-1196",
+    "id": "gcal-1195",
     "memberId": "family",
+    "date": "2020-03-18",
+    "title": "인터넷 설치",
+    "startTime": "13:00",
+    "returnTime": "14:00",
+    "transitMethod": "자차",
+    "dinnerStatus": "required",
+    "guardian": "온 가족",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-1196",
+    "memberId": "parents",
     "date": "2020-03-20",
     "title": "영집근무",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
@@ -14531,26 +14593,26 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1200",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2020-03-24",
     "title": "영집근무",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
     "id": "gcal-1201",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2020-03-27",
     "title": "영집근무",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
@@ -14567,23 +14629,23 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1203",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2020-04-01",
-    "title": "영집근무",
-    "startTime": "09:00",
-    "returnTime": "09:00",
+    "title": "연수",
+    "startTime": "14:55",
+    "returnTime": "15:55",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
     "id": "gcal-1204",
     "memberId": "parents",
     "date": "2020-04-01",
-    "title": "연수",
-    "startTime": "14:55",
-    "returnTime": "15:55",
+    "title": "영집근무",
+    "startTime": "09:00",
+    "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
     "guardian": "나(아빠)",
@@ -14605,7 +14667,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-1206",
     "memberId": "family",
     "date": "2020-04-03",
-    "title": "영집근무",
+    "title": "지연근무",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
@@ -14615,14 +14677,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1207",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2020-04-03",
-    "title": "지연근무",
+    "title": "영집근무",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
@@ -14639,11 +14701,11 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1209",
-    "memberId": "first_child",
+    "memberId": "second_child",
     "date": "2020-04-10",
-    "title": "은비스포츠클럽신청",
-    "startTime": "18:00",
-    "returnTime": "19:00",
+    "title": "하율교과서",
+    "startTime": "15:00",
+    "returnTime": "16:00",
     "transitMethod": "도보",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
@@ -14651,11 +14713,11 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1210",
-    "memberId": "second_child",
+    "memberId": "first_child",
     "date": "2020-04-10",
-    "title": "하율교과서",
-    "startTime": "15:00",
-    "returnTime": "16:00",
+    "title": "은비스포츠클럽신청",
+    "startTime": "18:00",
+    "returnTime": "19:00",
     "transitMethod": "도보",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
@@ -14819,14 +14881,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1224",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2020-05-21",
     "title": "작은아빠제사(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
@@ -14927,14 +14989,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1233",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2020-06-20",
     "title": "작은아빠제사(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
@@ -15035,15 +15097,16 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1242",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2020-07-27",
     "title": "부장회식",
     "startTime": "17:00",
     "returnTime": "18:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "transitMethod": "대중교통",
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-1243",
@@ -15131,14 +15194,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1250",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2020-08-10",
     "title": "마누라근무",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -15168,18 +15231,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1253",
-    "memberId": "first_child",
-    "date": "2020-08-18",
-    "title": "은비개학식",
-    "startTime": "09:00",
-    "returnTime": "09:00",
-    "transitMethod": "도보",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-1254",
     "memberId": "second_child",
     "date": "2020-08-18",
     "title": "하율 태권도",
@@ -15190,6 +15241,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "guardian": "스스로 귀가",
     "isRecurring": false,
     "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+  },
+  {
+    "id": "gcal-1254",
+    "memberId": "first_child",
+    "date": "2020-08-18",
+    "title": "은비개학식",
+    "startTime": "09:00",
+    "returnTime": "09:00",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false
   },
   {
     "id": "gcal-1255",
@@ -15350,14 +15413,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1268",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2020-09-17",
     "title": "엄마 안과검진",
     "startTime": "15:00",
     "returnTime": "16:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -15497,14 +15560,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1280",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2020-10-16",
     "title": "엄마경주여행",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -15546,14 +15609,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1284",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2020-10-21",
     "title": "서울할아버지 제사",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
@@ -15619,18 +15682,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1290",
-    "memberId": "second_child",
-    "date": "2020-10-30",
-    "title": "하율 축구",
-    "startTime": "14:20",
-    "returnTime": "15:50",
-    "transitMethod": "도보",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-1291",
     "memberId": "family",
     "date": "2020-10-30",
     "title": "부천할아버지 생신",
@@ -15639,6 +15690,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "transitMethod": "자차",
     "dinnerStatus": "not_required",
     "guardian": "온 가족",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-1291",
+    "memberId": "second_child",
+    "date": "2020-10-30",
+    "title": "하율 축구",
+    "startTime": "14:20",
+    "returnTime": "15:50",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
     "isRecurring": false
   },
   {
@@ -15744,18 +15807,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-1300",
     "memberId": "second_child",
     "date": "2020-11-23",
-    "title": "하율 줌수업(비밀번호1234)",
-    "startTime": "08:50",
-    "returnTime": "09:30",
-    "transitMethod": "도보",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-1301",
-    "memberId": "second_child",
-    "date": "2020-11-23",
     "title": "하율 태권도",
     "startTime": "14:30",
     "returnTime": "15:45",
@@ -15764,6 +15815,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "guardian": "스스로 귀가",
     "isRecurring": false,
     "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+  },
+  {
+    "id": "gcal-1301",
+    "memberId": "second_child",
+    "date": "2020-11-23",
+    "title": "하율 줌수업(비밀번호1234)",
+    "startTime": "08:50",
+    "returnTime": "09:30",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false
   },
   {
     "id": "gcal-1302",
@@ -15803,14 +15866,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1305",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2020-11-29",
     "title": "별이아빠생일(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
@@ -15925,18 +15988,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1315",
-    "memberId": "family",
-    "date": "2020-12-11",
-    "title": "태양 하준생일",
-    "startTime": "09:00",
-    "returnTime": "09:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-1316",
     "memberId": "second_child",
     "date": "2020-12-11",
     "title": "하율 축구 휴관",
@@ -15945,6 +15996,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "transitMethod": "도보",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-1316",
+    "memberId": "family",
+    "date": "2020-12-11",
+    "title": "태양 하준생일",
+    "startTime": "09:00",
+    "returnTime": "09:00",
+    "transitMethod": "자차",
+    "dinnerStatus": "required",
+    "guardian": "온 가족",
     "isRecurring": false
   },
   {
@@ -16070,11 +16133,11 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1327",
-    "memberId": "second_child",
+    "memberId": "first_child",
     "date": "2021-01-04",
-    "title": "하율 줌수업",
-    "startTime": "10:20",
-    "returnTime": "11:00",
+    "title": "은비교통비 지원금 신청",
+    "startTime": "09:00",
+    "returnTime": "09:00",
     "transitMethod": "도보",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
@@ -16095,11 +16158,11 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1329",
-    "memberId": "first_child",
+    "memberId": "second_child",
     "date": "2021-01-04",
-    "title": "은비교통비 지원금 신청",
-    "startTime": "09:00",
-    "returnTime": "09:00",
+    "title": "하율 줌수업",
+    "startTime": "10:20",
+    "returnTime": "11:00",
     "transitMethod": "도보",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
@@ -16131,15 +16194,16 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1332",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2021-01-10",
     "title": "12시 여전도회모임",
     "startTime": "12:00",
     "returnTime": "13:00",
     "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-1333",
@@ -16191,26 +16255,26 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1337",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2021-01-18",
     "title": "남편근무",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
     "id": "gcal-1338",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2021-01-19",
     "title": "엄마집 방문",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -16264,14 +16328,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1343",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2021-01-27",
     "title": "작은엄마생신(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -16387,6 +16451,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-1353",
     "memberId": "family",
     "date": "2021-02-20",
+    "title": "여전도회월례회",
+    "startTime": "17:00",
+    "returnTime": "18:00",
+    "transitMethod": "자차",
+    "dinnerStatus": "required",
+    "guardian": "온 가족",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-1354",
+    "memberId": "family",
+    "date": "2021-02-20",
     "title": "쏘울 영화 감상",
     "startTime": "10:30",
     "returnTime": "12:30",
@@ -16395,18 +16471,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "guardian": "온 가족",
     "isRecurring": false,
     "memo": "장소: 안산롯데마트"
-  },
-  {
-    "id": "gcal-1354",
-    "memberId": "family",
-    "date": "2021-02-20",
-    "title": "여전도회월례회",
-    "startTime": "17:00",
-    "returnTime": "18:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
   },
   {
     "id": "gcal-1355",
@@ -16507,11 +16571,11 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1363",
-    "memberId": "first_child",
+    "memberId": "second_child",
     "date": "2021-03-02",
-    "title": "은비영어",
-    "startTime": "18:10",
-    "returnTime": "20:10",
+    "title": "하율 등교수업",
+    "startTime": "08:40",
+    "returnTime": "10:30",
     "transitMethod": "도보",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
@@ -16519,11 +16583,11 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1364",
-    "memberId": "second_child",
+    "memberId": "first_child",
     "date": "2021-03-02",
-    "title": "하율 등교수업",
-    "startTime": "08:40",
-    "returnTime": "10:30",
+    "title": "은비영어",
+    "startTime": "18:10",
+    "returnTime": "20:10",
     "transitMethod": "도보",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
@@ -16545,6 +16609,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-1366",
     "memberId": "first_child",
     "date": "2021-03-03",
+    "title": "은비 기가줌수업",
+    "startTime": "11:05",
+    "returnTime": "11:50",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-1367",
+    "memberId": "first_child",
+    "date": "2021-03-03",
     "title": "은비 국어줌수업",
     "startTime": "13:35",
     "returnTime": "14:20",
@@ -16554,24 +16630,12 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-1367",
+    "id": "gcal-1368",
     "memberId": "second_child",
     "date": "2021-03-03",
     "title": "하율 줌수업(비번1234)",
     "startTime": "09:00",
     "returnTime": "10:30",
-    "transitMethod": "도보",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-1368",
-    "memberId": "first_child",
-    "date": "2021-03-03",
-    "title": "은비 기가줌수업",
-    "startTime": "11:05",
-    "returnTime": "11:50",
     "transitMethod": "도보",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
@@ -16617,6 +16681,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-1372",
     "memberId": "second_child",
     "date": "2021-03-05",
+    "title": "하율 축구",
+    "startTime": "16:45",
+    "returnTime": "17:45",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-1373",
+    "memberId": "second_child",
+    "date": "2021-03-05",
     "title": "하율 태권도",
     "startTime": "14:30",
     "returnTime": "15:35",
@@ -16625,18 +16701,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "guardian": "스스로 귀가",
     "isRecurring": false,
     "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
-  },
-  {
-    "id": "gcal-1373",
-    "memberId": "second_child",
-    "date": "2021-03-05",
-    "title": "하율 축구",
-    "startTime": "16:45",
-    "returnTime": "17:45",
-    "transitMethod": "도보",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false
   },
   {
     "id": "gcal-1374",
@@ -16881,14 +16945,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1394",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2021-06-04",
     "title": "엄마 예방접종",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -16917,26 +16981,26 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1397",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2021-06-07",
     "title": "엄마주사",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
     "id": "gcal-1398",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2021-06-09",
     "title": "작은아빠제사(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
@@ -16990,14 +17054,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1403",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2021-06-17",
     "title": "아빠접종",
     "startTime": "08:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
@@ -17123,14 +17187,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1414",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2021-07-23",
     "title": "엄마 방학",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -17172,14 +17236,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1418",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2021-07-28",
     "title": "남편 예방접종",
     "startTime": "18:00",
     "returnTime": "19:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
@@ -17211,9 +17275,9 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-1421",
     "memberId": "second_child",
     "date": "2021-07-30",
-    "title": "하율 축구",
-    "startTime": "16:45",
-    "returnTime": "17:45",
+    "title": "하율축구방학",
+    "startTime": "09:00",
+    "returnTime": "09:00",
     "transitMethod": "도보",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
@@ -17223,9 +17287,9 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-1422",
     "memberId": "second_child",
     "date": "2021-07-30",
-    "title": "하율축구방학",
-    "startTime": "09:00",
-    "returnTime": "09:00",
+    "title": "하율 축구",
+    "startTime": "16:45",
+    "returnTime": "17:45",
     "transitMethod": "도보",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
@@ -17293,14 +17357,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1428",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2021-08-10",
     "title": "서울엄마생신(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -17365,14 +17429,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1434",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2021-08-21",
     "title": "부천엄마칠순",
     "startTime": "08:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -17475,14 +17539,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1443",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2021-09-01",
     "title": "남편 예방접종",
     "startTime": "18:00",
     "returnTime": "19:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
@@ -17501,7 +17565,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-1445",
     "memberId": "second_child",
     "date": "2021-09-06",
-    "title": "하율 등교수업",
+    "title": "하율 ���교수업",
     "startTime": "08:30",
     "returnTime": "13:00",
     "transitMethod": "도보",
@@ -17631,18 +17695,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1456",
-    "memberId": "family",
-    "date": "2021-10-02",
-    "title": "뮤지컬",
-    "startTime": "15:00",
-    "returnTime": "16:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-1457",
     "memberId": "first_child",
     "date": "2021-10-02",
     "title": "은비보충",
@@ -17651,6 +17703,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "transitMethod": "도보",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-1457",
+    "memberId": "family",
+    "date": "2021-10-02",
+    "title": "뮤지컬",
+    "startTime": "15:00",
+    "returnTime": "16:00",
+    "transitMethod": "자차",
+    "dinnerStatus": "required",
+    "guardian": "온 가족",
     "isRecurring": false
   },
   {
@@ -17703,14 +17767,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1462",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2021-10-10",
     "title": "서울아빠제사(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
@@ -17922,18 +17986,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-1480",
     "memberId": "family",
     "date": "2021-11-13",
-    "title": "여전도회임원모임",
-    "startTime": "18:00",
-    "returnTime": "19:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-1481",
-    "memberId": "family",
-    "date": "2021-11-13",
     "title": "재홍결혼식",
     "startTime": "15:40",
     "returnTime": "16:40",
@@ -17941,6 +17993,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "온 가족",
     "isRecurring": false
+  },
+  {
+    "id": "gcal-1481",
+    "memberId": "parents",
+    "date": "2021-11-13",
+    "title": "여전도회임원모임",
+    "startTime": "18:00",
+    "returnTime": "19:00",
+    "transitMethod": "자차",
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-1482",
@@ -17956,15 +18021,16 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1483",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2021-11-17",
     "title": "회식",
     "startTime": "17:00",
     "returnTime": "18:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "transitMethod": "대중교통",
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-1484",
@@ -17980,14 +18046,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1485",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2021-11-19",
     "title": "별이아빠생일(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
@@ -18113,15 +18179,16 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1496",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2021-12-06",
     "title": "오카리나회식",
     "startTime": "17:00",
     "returnTime": "18:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "transitMethod": "대중교통",
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-1497",
@@ -18175,7 +18242,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-1501",
     "memberId": "family",
     "date": "2021-12-14",
-    "title": "도수치료",
+    "title": "도수치���",
     "startTime": "18:00",
     "returnTime": "19:00",
     "transitMethod": "자차",
@@ -18269,18 +18336,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1509",
-    "memberId": "family",
-    "date": "2022-01-05",
-    "title": "도수치료",
-    "startTime": "08:00",
-    "returnTime": "14:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-1510",
     "memberId": "first_child",
     "date": "2022-01-05",
     "title": "하율은비 치과",
@@ -18289,6 +18344,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "transitMethod": "도보",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-1510",
+    "memberId": "family",
+    "date": "2022-01-05",
+    "title": "도수치료",
+    "startTime": "08:00",
+    "returnTime": "14:00",
+    "transitMethod": "자차",
+    "dinnerStatus": "required",
+    "guardian": "온 가족",
     "isRecurring": false
   },
   {
@@ -18306,6 +18373,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1512",
+    "memberId": "first_child",
+    "date": "2022-01-10",
+    "title": "은비독서논술보충",
+    "startTime": "10:30",
+    "returnTime": "11:30",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-1513",
     "memberId": "family",
     "date": "2022-01-10",
     "title": "군포초",
@@ -18317,7 +18396,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-1513",
+    "id": "gcal-1514",
     "memberId": "family",
     "date": "2022-01-10",
     "title": "너프건",
@@ -18326,18 +18405,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "transitMethod": "자차",
     "dinnerStatus": "required",
     "guardian": "온 가족",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-1514",
-    "memberId": "first_child",
-    "date": "2022-01-10",
-    "title": "은비독서논술보충",
-    "startTime": "10:30",
-    "returnTime": "11:30",
-    "transitMethod": "도보",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
     "isRecurring": false
   },
   {
@@ -18390,14 +18457,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1519",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2022-01-17",
     "title": "작은엄마생신(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -18607,18 +18674,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1537",
-    "memberId": "parents",
-    "date": "2022-02-23",
-    "title": "그림책연수",
-    "startTime": "14:00",
-    "returnTime": "15:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "나(아빠)",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-1538",
     "memberId": "family",
     "date": "2022-02-23",
     "title": "도수치료",
@@ -18627,6 +18682,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "transitMethod": "자차",
     "dinnerStatus": "required",
     "guardian": "온 가족",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-1538",
+    "memberId": "parents",
+    "date": "2022-02-23",
+    "title": "그림책연수",
+    "startTime": "14:00",
+    "returnTime": "15:00",
+    "transitMethod": "자차",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
@@ -18777,30 +18844,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1551",
-    "memberId": "first_child",
-    "date": "2022-03-25",
-    "title": "은비접종정샘",
-    "startTime": "17:00",
-    "returnTime": "18:00",
-    "transitMethod": "도보",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-1552",
-    "memberId": "family",
-    "date": "2022-03-25",
-    "title": "엄마검사일",
-    "startTime": "09:00",
-    "returnTime": "09:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-1553",
     "memberId": "second_child",
     "date": "2022-03-25",
     "title": "하율 태권도",
@@ -18811,6 +18854,30 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "guardian": "스스로 귀가",
     "isRecurring": false,
     "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+  },
+  {
+    "id": "gcal-1552",
+    "memberId": "parents",
+    "date": "2022-03-25",
+    "title": "엄마검사일",
+    "startTime": "09:00",
+    "returnTime": "09:00",
+    "transitMethod": "자차",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-1553",
+    "memberId": "first_child",
+    "date": "2022-03-25",
+    "title": "은비접종정샘",
+    "startTime": "17:00",
+    "returnTime": "18:00",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false
   },
   {
     "id": "gcal-1554",
@@ -18852,7 +18919,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-1557",
     "memberId": "family",
     "date": "2022-04-11",
-    "title": "상담주간",
+    "title": "상담���간",
     "startTime": "08:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
@@ -18911,15 +18978,16 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1562",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2022-05-07",
     "title": "처가집 모임",
     "startTime": "13:00",
     "returnTime": "15:00",
     "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-1563",
@@ -18947,15 +19015,16 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1565",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2022-05-18",
     "title": "학년간담회 저녁식사",
     "startTime": "15:00",
     "returnTime": "16:00",
     "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-1566",
@@ -19019,14 +19088,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1571",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2022-05-29",
     "title": "작은아빠제사(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
@@ -19043,14 +19112,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1573",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2022-06-03",
     "title": "서울엄마여행",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -19091,18 +19160,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1577",
-    "memberId": "family",
-    "date": "2022-06-17",
-    "title": "5지구교무부장협의",
-    "startTime": "08:00",
-    "returnTime": "09:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-1578",
     "memberId": "parents",
     "date": "2022-06-17",
     "title": "줌연수오늘도무사히",
@@ -19114,15 +19171,27 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-1579",
+    "id": "gcal-1578",
     "memberId": "family",
+    "date": "2022-06-17",
+    "title": "5지구교무부장협의",
+    "startTime": "08:00",
+    "returnTime": "09:00",
+    "transitMethod": "자차",
+    "dinnerStatus": "required",
+    "guardian": "온 가족",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-1579",
+    "memberId": "parents",
     "date": "2022-06-26",
     "title": "엄마핸드폰 재약정",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -19163,18 +19232,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1583",
-    "memberId": "second_child",
-    "date": "2022-07-11",
-    "title": "하율녹색",
-    "startTime": "09:00",
-    "returnTime": "09:00",
-    "transitMethod": "도보",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-1584",
     "memberId": "family",
     "date": "2022-07-11",
     "title": "한약복용",
@@ -19183,6 +19240,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "transitMethod": "자차",
     "dinnerStatus": "required",
     "guardian": "온 가족",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-1584",
+    "memberId": "second_child",
+    "date": "2022-07-11",
+    "title": "하율녹색",
+    "startTime": "09:00",
+    "returnTime": "09:00",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
     "isRecurring": false
   },
   {
@@ -19213,7 +19282,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-1587",
     "memberId": "family",
     "date": "2022-07-25",
-    "title": "한약처방",
+    "title": "오카리나발표",
     "startTime": "08:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
@@ -19225,7 +19294,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-1588",
     "memberId": "family",
     "date": "2022-07-25",
-    "title": "오카리나발표",
+    "title": "한약처방",
     "startTime": "08:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
@@ -19247,15 +19316,16 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1590",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2022-07-26",
     "title": "오카리나회식",
     "startTime": "17:00",
     "returnTime": "18:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "transitMethod": "대중교통",
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-1591",
@@ -19283,14 +19353,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1593",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2022-07-31",
     "title": "서울엄마생신(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -19307,11 +19377,11 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1595",
-    "memberId": "second_child",
+    "memberId": "first_child",
     "date": "2022-08-02",
-    "title": "하율수영보강",
-    "startTime": "13:35",
-    "returnTime": "14:35",
+    "title": "은비치과",
+    "startTime": "10:00",
+    "returnTime": "11:00",
     "transitMethod": "도보",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
@@ -19319,11 +19389,11 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1596",
-    "memberId": "first_child",
+    "memberId": "second_child",
     "date": "2022-08-02",
-    "title": "은비치과",
-    "startTime": "10:00",
-    "returnTime": "11:00",
+    "title": "하율수영보강",
+    "startTime": "13:35",
+    "returnTime": "14:35",
     "transitMethod": "도보",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
@@ -19405,18 +19475,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1603",
-    "memberId": "first_child",
-    "date": "2022-08-08",
-    "title": "하율은비안과",
-    "startTime": "14:00",
-    "returnTime": "15:00",
-    "transitMethod": "도보",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-1604",
     "memberId": "family",
     "date": "2022-08-08",
     "title": "한의원",
@@ -19425,6 +19483,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "transitMethod": "자차",
     "dinnerStatus": "required",
     "guardian": "온 가족",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-1604",
+    "memberId": "first_child",
+    "date": "2022-08-08",
+    "title": "하율은비안과",
+    "startTime": "14:00",
+    "returnTime": "15:00",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
     "isRecurring": false
   },
   {
@@ -19490,14 +19560,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1610",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2022-08-16",
     "title": "남편근무",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
@@ -19562,18 +19632,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1616",
-    "memberId": "family",
-    "date": "2022-08-22",
-    "title": "한의원",
-    "startTime": "18:40",
-    "returnTime": "19:40",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-1617",
     "memberId": "second_child",
     "date": "2022-08-22",
     "title": "하율수영보강",
@@ -19585,7 +19643,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-1618",
+    "id": "gcal-1617",
     "memberId": "parents",
     "date": "2022-08-22",
     "title": "출근",
@@ -19594,6 +19652,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "transitMethod": "자차",
     "dinnerStatus": "required",
     "guardian": "나(아빠)",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-1618",
+    "memberId": "family",
+    "date": "2022-08-22",
+    "title": "한의원",
+    "startTime": "18:40",
+    "returnTime": "19:40",
+    "transitMethod": "자차",
+    "dinnerStatus": "required",
+    "guardian": "온 가족",
     "isRecurring": false
   },
   {
@@ -19622,14 +19692,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1621",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2022-08-29",
     "title": "남편개학",
     "startTime": "08:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
@@ -19672,9 +19742,9 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-1625",
     "memberId": "first_child",
     "date": "2022-09-06",
-    "title": "은비영어듣기",
-    "startTime": "08:00",
-    "returnTime": "09:00",
+    "title": "은비매트리스뒤집기",
+    "startTime": "17:00",
+    "returnTime": "18:00",
     "transitMethod": "도보",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
@@ -19684,9 +19754,9 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-1626",
     "memberId": "first_child",
     "date": "2022-09-06",
-    "title": "은비매트리스뒤집기",
-    "startTime": "17:00",
-    "returnTime": "18:00",
+    "title": "은비영어듣기",
+    "startTime": "08:00",
+    "returnTime": "09:00",
     "transitMethod": "도보",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
@@ -19778,14 +19848,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1634",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2022-09-30",
     "title": "서울아빠제사(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
@@ -19862,14 +19932,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1641",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2022-10-15",
     "title": "엄마 내시경",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -19898,14 +19968,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1644",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2022-10-21",
     "title": "엄마 여행",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -19983,18 +20053,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1651",
-    "memberId": "first_child",
-    "date": "2022-10-29",
-    "title": "은비학원",
-    "startTime": "13:00",
-    "returnTime": "15:00",
-    "transitMethod": "도보",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-1652",
     "memberId": "family",
     "date": "2022-10-29",
     "title": "독감접종",
@@ -20003,6 +20061,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "transitMethod": "자차",
     "dinnerStatus": "required",
     "guardian": "온 가족",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-1652",
+    "memberId": "first_child",
+    "date": "2022-10-29",
+    "title": "은비학원",
+    "startTime": "13:00",
+    "returnTime": "15:00",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
     "isRecurring": false
   },
   {
@@ -20044,11 +20114,11 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1656",
-    "memberId": "second_child",
+    "memberId": "first_child",
     "date": "2022-11-05",
-    "title": "하율안과약",
-    "startTime": "10:00",
-    "returnTime": "11:00",
+    "title": "은비학원하율태권도결재",
+    "startTime": "08:00",
+    "returnTime": "09:00",
     "transitMethod": "도보",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
@@ -20056,11 +20126,11 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1657",
-    "memberId": "first_child",
+    "memberId": "second_child",
     "date": "2022-11-05",
-    "title": "은비학원하율태권도결재",
-    "startTime": "08:00",
-    "returnTime": "09:00",
+    "title": "하율안과약",
+    "startTime": "10:00",
+    "returnTime": "11:00",
     "transitMethod": "도보",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
@@ -20080,14 +20150,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1659",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2022-11-08",
-    "title": "별이아빠생일(처가)",
+    "title": "별이아빠생��(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
@@ -20250,7 +20320,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-1673",
     "memberId": "second_child",
     "date": "2022-12-03",
-    "title": "하율국기원",
+    "title": "하율수영특강신청",
     "startTime": "08:00",
     "returnTime": "09:00",
     "transitMethod": "도보",
@@ -20262,7 +20332,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-1674",
     "memberId": "second_child",
     "date": "2022-12-03",
-    "title": "하율수영특강신청",
+    "title": "하율국기원",
     "startTime": "08:00",
     "returnTime": "09:00",
     "transitMethod": "도보",
@@ -20272,6 +20342,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1675",
+    "memberId": "parents",
+    "date": "2022-12-10",
+    "title": "8여전도회모임",
+    "startTime": "13:00",
+    "returnTime": "14:00",
+    "transitMethod": "자차",
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
+  },
+  {
+    "id": "gcal-1676",
     "memberId": "second_child",
     "date": "2022-12-10",
     "title": "하율안과검진",
@@ -20280,18 +20363,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "transitMethod": "도보",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-1676",
-    "memberId": "family",
-    "date": "2022-12-10",
-    "title": "8여전도회모임",
-    "startTime": "13:00",
-    "returnTime": "14:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
     "isRecurring": false
   },
   {
@@ -20418,26 +20489,26 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1687",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2023-01-05",
     "title": "남편방학",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
     "id": "gcal-1688",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2023-01-06",
     "title": "작은엄마생신(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -20581,6 +20652,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1700",
+    "memberId": "family",
+    "date": "2023-01-20",
+    "title": "연말정산제출",
+    "startTime": "09:00",
+    "returnTime": "09:00",
+    "transitMethod": "자차",
+    "dinnerStatus": "required",
+    "guardian": "온 가족",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-1701",
     "memberId": "second_child",
     "date": "2023-01-20",
     "title": "하율수학",
@@ -20591,18 +20674,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "guardian": "스스로 귀가",
     "isRecurring": false,
     "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
-  },
-  {
-    "id": "gcal-1701",
-    "memberId": "family",
-    "date": "2023-01-20",
-    "title": "연말정산제출",
-    "startTime": "09:00",
-    "returnTime": "09:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
   },
   {
     "id": "gcal-1702",
@@ -20702,6 +20773,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1710",
+    "memberId": "second_child",
+    "date": "2023-02-03",
+    "title": "하율안과진료",
+    "startTime": "12:30",
+    "returnTime": "13:30",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-1711",
     "memberId": "family",
     "date": "2023-02-03",
     "title": "안과검진",
@@ -20712,18 +20795,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "guardian": "온 가족",
     "isRecurring": false,
     "memo": "장소: 서울 강남구 강남대로 652"
-  },
-  {
-    "id": "gcal-1711",
-    "memberId": "second_child",
-    "date": "2023-02-03",
-    "title": "하율안과진료",
-    "startTime": "12:30",
-    "returnTime": "13:30",
-    "transitMethod": "도보",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false
   },
   {
     "id": "gcal-1712",
@@ -20829,9 +20900,9 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-1720",
     "memberId": "first_child",
     "date": "2023-02-15",
-    "title": "은비과탐",
-    "startTime": "14:30",
-    "returnTime": "16:00",
+    "title": "은비교과서배부",
+    "startTime": "09:00",
+    "returnTime": "11:00",
     "transitMethod": "도보",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
@@ -20841,9 +20912,9 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-1721",
     "memberId": "first_child",
     "date": "2023-02-15",
-    "title": "은비교과서배부",
-    "startTime": "09:00",
-    "returnTime": "11:00",
+    "title": "은비과탐",
+    "startTime": "14:30",
+    "returnTime": "16:00",
     "transitMethod": "도보",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
@@ -20877,9 +20948,9 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-1724",
     "memberId": "first_child",
     "date": "2023-02-21",
-    "title": "은비하율치과검진",
-    "startTime": "10:00",
-    "returnTime": "11:00",
+    "title": "은비영어",
+    "startTime": "19:00",
+    "returnTime": "22:00",
     "transitMethod": "도보",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
@@ -20889,9 +20960,9 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-1725",
     "memberId": "first_child",
     "date": "2023-02-21",
-    "title": "은비영어",
-    "startTime": "19:00",
-    "returnTime": "22:00",
+    "title": "은비하율치과검진",
+    "startTime": "10:00",
+    "returnTime": "11:00",
     "transitMethod": "도보",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
@@ -20911,18 +20982,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1727",
-    "memberId": "second_child",
-    "date": "2023-02-27",
-    "title": "하율치과",
-    "startTime": "16:00",
-    "returnTime": "17:00",
-    "transitMethod": "도보",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-1728",
     "memberId": "first_child",
     "date": "2023-02-27",
     "title": "은비 치과",
@@ -20934,20 +20993,43 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-1729",
+    "id": "gcal-1728",
     "memberId": "second_child",
-    "date": "2023-03-02",
-    "title": "하율 태권도",
-    "startTime": "17:00",
-    "returnTime": "18:05",
+    "date": "2023-02-27",
+    "title": "하율치과",
+    "startTime": "16:00",
+    "returnTime": "17:00",
     "transitMethod": "도보",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-1729",
+    "memberId": "first_child",
+    "date": "2023-03-02",
+    "title": "개학(은비입학)",
+    "startTime": "09:00",
+    "returnTime": "09:00",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false
   },
   {
     "id": "gcal-1730",
+    "memberId": "first_child",
+    "date": "2023-03-02",
+    "title": "은비엄마 병원외래",
+    "startTime": "16:50",
+    "returnTime": "17:50",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-1731",
     "memberId": "second_child",
     "date": "2023-03-02",
     "title": "하율영어",
@@ -20960,28 +21042,17 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
   },
   {
-    "id": "gcal-1731",
-    "memberId": "first_child",
-    "date": "2023-03-02",
-    "title": "은비엄마 병원외래",
-    "startTime": "16:50",
-    "returnTime": "17:50",
-    "transitMethod": "도보",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false
-  },
-  {
     "id": "gcal-1732",
-    "memberId": "first_child",
+    "memberId": "second_child",
     "date": "2023-03-02",
-    "title": "개학(은비입학)",
-    "startTime": "09:00",
-    "returnTime": "09:00",
+    "title": "하율 태권도",
+    "startTime": "17:00",
+    "returnTime": "18:05",
     "transitMethod": "도보",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
-    "isRecurring": false
+    "isRecurring": false,
+    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
   },
   {
     "id": "gcal-1733",
@@ -21009,19 +21080,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1735",
-    "memberId": "second_child",
-    "date": "2023-03-06",
-    "title": "하율영어",
-    "startTime": "15:10",
-    "returnTime": "16:05",
-    "transitMethod": "도보",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
-  },
-  {
-    "id": "gcal-1736",
     "memberId": "first_child",
     "date": "2023-03-06",
     "title": "은비수학",
@@ -21033,7 +21091,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-1737",
+    "id": "gcal-1736",
     "memberId": "second_child",
     "date": "2023-03-06",
     "title": "하율 태권도",
@@ -21046,16 +21104,30 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
   },
   {
+    "id": "gcal-1737",
+    "memberId": "second_child",
+    "date": "2023-03-06",
+    "title": "하율영어",
+    "startTime": "15:10",
+    "returnTime": "16:05",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+  },
+  {
     "id": "gcal-1738",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2023-03-07",
     "title": "회식",
     "startTime": "17:00",
     "returnTime": "18:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "transitMethod": "대중교통",
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-1739",
@@ -21096,15 +21168,16 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1742",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2023-03-11",
     "title": "군포초모임",
     "startTime": "12:00",
     "returnTime": "13:00",
     "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-1743",
@@ -21232,9 +21305,9 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1753",
-    "memberId": "first_child",
+    "memberId": "second_child",
     "date": "2023-05-01",
-    "title": "은비재량휴업일",
+    "title": "하율개교기념일",
     "startTime": "08:00",
     "returnTime": "09:00",
     "transitMethod": "도보",
@@ -21244,9 +21317,9 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1754",
-    "memberId": "second_child",
+    "memberId": "first_child",
     "date": "2023-05-01",
-    "title": "하율개교기념일",
+    "title": "은비재량휴업일",
     "startTime": "08:00",
     "returnTime": "09:00",
     "transitMethod": "도보",
@@ -21425,14 +21498,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1769",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2023-06-17",
     "title": "작은아빠제사(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
@@ -21474,15 +21547,16 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1773",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2023-07-09",
     "title": "교회 점심 약속",
     "startTime": "09:00",
-    "returnTime": "09:00",
+    "returnTime": "22:00",
     "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-1774",
@@ -21510,6 +21584,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1776",
+    "memberId": "parents",
+    "date": "2023-07-18",
+    "title": "기획협의회식사",
+    "startTime": "18:00",
+    "returnTime": "19:00",
+    "transitMethod": "대중교통",
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
+  },
+  {
+    "id": "gcal-1777",
     "memberId": "first_child",
     "date": "2023-07-18",
     "title": "은비영어",
@@ -21518,18 +21605,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "transitMethod": "도보",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-1777",
-    "memberId": "family",
-    "date": "2023-07-18",
-    "title": "기획협의회식사",
-    "startTime": "18:00",
-    "returnTime": "19:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
     "isRecurring": false
   },
   {
@@ -21558,15 +21633,16 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1780",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2023-07-24",
     "title": "저녁회식",
     "startTime": "21:00",
     "returnTime": "22:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "transitMethod": "대중교통",
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-1781",
@@ -21633,18 +21709,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-1786",
     "memberId": "first_child",
     "date": "2023-07-28",
-    "title": "은비영어방학",
-    "startTime": "09:00",
-    "returnTime": "09:00",
-    "transitMethod": "도보",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-1787",
-    "memberId": "first_child",
-    "date": "2023-07-28",
     "title": "은비 수학 보충",
     "startTime": "14:00",
     "returnTime": "16:00",
@@ -21654,22 +21718,10 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-1788",
-    "memberId": "family",
-    "date": "2023-07-29",
-    "title": "🃏 밥 약속",
-    "startTime": "09:00",
-    "returnTime": "09:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-1789",
+    "id": "gcal-1787",
     "memberId": "first_child",
-    "date": "2023-07-31",
-    "title": "은비 수학 방학",
+    "date": "2023-07-28",
+    "title": "은비영어방학",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "도보",
@@ -21678,7 +21730,20 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-1790",
+    "id": "gcal-1788",
+    "memberId": "parents",
+    "date": "2023-07-29",
+    "title": "🃏 밥 약속",
+    "startTime": "09:00",
+    "returnTime": "22:00",
+    "transitMethod": "자차",
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
+  },
+  {
+    "id": "gcal-1789",
     "memberId": "second_child",
     "date": "2023-07-31",
     "title": "하율태권도방학",
@@ -21689,6 +21754,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "guardian": "스스로 귀가",
     "isRecurring": false,
     "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+  },
+  {
+    "id": "gcal-1790",
+    "memberId": "first_child",
+    "date": "2023-07-31",
+    "title": "은비 수학 방학",
+    "startTime": "09:00",
+    "returnTime": "09:00",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false
   },
   {
     "id": "gcal-1791",
@@ -21719,6 +21796,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-1793",
     "memberId": "second_child",
     "date": "2023-08-03",
+    "title": "하율태권도",
+    "startTime": "09:30",
+    "returnTime": "10:35",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+  },
+  {
+    "id": "gcal-1794",
+    "memberId": "second_child",
+    "date": "2023-08-03",
     "title": "하율영어",
     "startTime": "15:10",
     "returnTime": "16:05",
@@ -21729,50 +21819,37 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
   },
   {
-    "id": "gcal-1794",
-    "memberId": "second_child",
-    "date": "2023-08-03",
-    "title": "하율태권도",
-    "startTime": "09:30",
-    "returnTime": "10:35",
-    "transitMethod": "도보",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
-  },
-  {
     "id": "gcal-1795",
-    "memberId": "second_child",
-    "date": "2023-08-04",
-    "title": "하율태권도",
-    "startTime": "09:30",
-    "returnTime": "10:35",
-    "transitMethod": "도보",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
-  },
-  {
-    "id": "gcal-1796",
     "memberId": "first_child",
     "date": "2023-08-04",
-    "title": "은비영어",
-    "startTime": "14:30",
-    "returnTime": "16:30",
+    "title": "은비국어",
+    "startTime": "18:00",
+    "returnTime": "19:00",
     "transitMethod": "도보",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false
   },
   {
+    "id": "gcal-1796",
+    "memberId": "second_child",
+    "date": "2023-08-04",
+    "title": "하율태권도",
+    "startTime": "09:30",
+    "returnTime": "10:35",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+  },
+  {
     "id": "gcal-1797",
     "memberId": "first_child",
     "date": "2023-08-04",
-    "title": "은비국어",
-    "startTime": "18:00",
-    "returnTime": "19:00",
+    "title": "은비영어",
+    "startTime": "14:30",
+    "returnTime": "16:30",
     "transitMethod": "도보",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
@@ -21915,9 +21992,9 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-1809",
     "memberId": "first_child",
     "date": "2023-08-14",
-    "title": "은비 개학",
-    "startTime": "09:00",
-    "returnTime": "09:00",
+    "title": "은비수학",
+    "startTime": "19:00",
+    "returnTime": "21:00",
     "transitMethod": "도보",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
@@ -21927,9 +22004,9 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-1810",
     "memberId": "first_child",
     "date": "2023-08-14",
-    "title": "은비수학",
-    "startTime": "19:00",
-    "returnTime": "21:00",
+    "title": "은비 개학",
+    "startTime": "09:00",
+    "returnTime": "09:00",
     "transitMethod": "도보",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
@@ -21963,30 +22040,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1813",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2023-08-18",
     "title": "서울엄마생신(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
     "id": "gcal-1814",
-    "memberId": "second_child",
-    "date": "2023-08-18",
-    "title": "하율개학",
-    "startTime": "09:00",
-    "returnTime": "09:00",
-    "transitMethod": "도보",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-1815",
     "memberId": "first_child",
     "date": "2023-08-18",
     "title": "은비영어",
@@ -21998,7 +22063,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-1816",
+    "id": "gcal-1815",
     "memberId": "second_child",
     "date": "2023-08-18",
     "title": "하율태권도",
@@ -22009,6 +22074,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "guardian": "스스로 귀가",
     "isRecurring": false,
     "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+  },
+  {
+    "id": "gcal-1816",
+    "memberId": "second_child",
+    "date": "2023-08-18",
+    "title": "하율개학",
+    "startTime": "09:00",
+    "returnTime": "09:00",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false
   },
   {
     "id": "gcal-1817",
@@ -22037,19 +22114,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1819",
-    "memberId": "second_child",
-    "date": "2023-09-04",
-    "title": "하율영어",
-    "startTime": "15:20",
-    "returnTime": "16:15",
-    "transitMethod": "도보",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
-  },
-  {
-    "id": "gcal-1820",
     "memberId": "first_child",
     "date": "2023-09-04",
     "title": "중앙대학교 광명병원(산부인과)",
@@ -22060,6 +22124,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "guardian": "스스로 귀가",
     "isRecurring": false,
     "memo": "수원 동남보건대(경기도 광명시 덕안로 110) · 다음 강의 대기"
+  },
+  {
+    "id": "gcal-1820",
+    "memberId": "second_child",
+    "date": "2023-09-04",
+    "title": "하율영어",
+    "startTime": "15:20",
+    "returnTime": "16:15",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
   },
   {
     "id": "gcal-1821",
@@ -22172,15 +22249,16 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1830",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2023-10-08",
     "title": "찬양팀저녁모임",
     "startTime": "16:00",
     "returnTime": "17:00",
     "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-1831",
@@ -22209,14 +22287,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1833",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2023-10-19",
     "title": "서울아빠제사(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
@@ -22245,14 +22323,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1836",
-    "memberId": "second_child",
+    "memberId": "family",
     "date": "2023-10-28",
-    "title": "하율어와나 체험",
+    "title": "���율어와나 체험",
     "startTime": "09:00",
     "returnTime": "17:30",
-    "transitMethod": "도보",
+    "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
+    "guardian": "온 가족",
     "isRecurring": false
   },
   {
@@ -22413,26 +22491,26 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1850",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2023-11-25",
     "title": "엄마네김장",
     "startTime": "21:00",
     "returnTime": "22:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
     "id": "gcal-1851",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2023-11-27",
     "title": "별이아빠생일(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
@@ -22485,27 +22563,29 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1856",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2023-12-13",
     "title": "유초이음저녁식사",
     "startTime": "18:00",
     "returnTime": "19:00",
     "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-1857",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2023-12-17",
     "title": "만능이조 저녁 회식",
     "startTime": "16:00",
     "returnTime": "19:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "transitMethod": "대중교통",
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-1858",
@@ -22558,18 +22638,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1862",
-    "memberId": "second_child",
-    "date": "2023-12-29",
-    "title": "하율종업",
-    "startTime": "08:00",
-    "returnTime": "09:00",
-    "transitMethod": "도보",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-1863",
     "memberId": "first_child",
     "date": "2023-12-29",
     "title": "은비영어",
@@ -22581,16 +22649,29 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
+    "id": "gcal-1863",
+    "memberId": "second_child",
+    "date": "2023-12-29",
+    "title": "하율종업",
+    "startTime": "08:00",
+    "returnTime": "09:00",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false
+  },
+  {
     "id": "gcal-1864",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2023-12-31",
     "title": "찬양대 점심 회식",
     "startTime": "09:00",
-    "returnTime": "09:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "returnTime": "22:00",
+    "transitMethod": "대중교통",
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-1865",
@@ -22633,18 +22714,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1868",
-    "memberId": "family",
-    "date": "2024-01-04",
-    "title": "led설치",
-    "startTime": "10:00",
-    "returnTime": "12:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-1869",
     "memberId": "first_child",
     "date": "2024-01-04",
     "title": "은비영어",
@@ -22653,6 +22722,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "transitMethod": "도보",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-1869",
+    "memberId": "family",
+    "date": "2024-01-04",
+    "title": "led설치",
+    "startTime": "10:00",
+    "returnTime": "12:00",
+    "transitMethod": "자차",
+    "dinnerStatus": "required",
+    "guardian": "온 가족",
     "isRecurring": false
   },
   {
@@ -22717,15 +22798,16 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1875",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2024-01-15",
     "title": "점심 모임",
     "startTime": "12:00",
     "returnTime": "13:00",
     "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-1876",
@@ -22778,26 +22860,27 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1880",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2024-01-24",
     "title": "군포초모임",
     "startTime": "11:00",
     "returnTime": "12:00",
     "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-1881",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2024-01-25",
     "title": "작은엄마생신(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -23095,9 +23178,9 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-1906",
     "memberId": "family",
     "date": "2024-04-27",
-    "title": "수학보충",
-    "startTime": "11:00",
-    "returnTime": "13:00",
+    "title": "영어보충",
+    "startTime": "09:00",
+    "returnTime": "11:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
     "guardian": "온 가족",
@@ -23107,9 +23190,9 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-1907",
     "memberId": "family",
     "date": "2024-04-27",
-    "title": "영어보충",
-    "startTime": "09:00",
-    "returnTime": "11:00",
+    "title": "수학보충",
+    "startTime": "11:00",
+    "returnTime": "13:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
     "guardian": "온 가족",
@@ -23249,14 +23332,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1919",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2024-06-05",
     "title": "작은아빠제사(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
@@ -23345,15 +23428,16 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1927",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2024-06-30",
     "title": "고2 회식",
     "startTime": "11:00",
     "returnTime": "12:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "transitMethod": "대중교통",
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-1928",
@@ -23443,18 +23527,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1935",
-    "memberId": "first_child",
-    "date": "2024-07-31",
-    "title": "은비 학원 방학",
-    "startTime": "09:00",
-    "returnTime": "09:00",
-    "transitMethod": "도보",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-1936",
     "memberId": "family",
     "date": "2024-07-31",
     "title": "건강검진",
@@ -23463,6 +23535,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "transitMethod": "자차",
     "dinnerStatus": "required",
     "guardian": "온 가족",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-1936",
+    "memberId": "first_child",
+    "date": "2024-07-31",
+    "title": "은비 학원 방학",
+    "startTime": "09:00",
+    "returnTime": "09:00",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
     "isRecurring": false
   },
   {
@@ -23504,14 +23588,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1940",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2024-08-06",
     "title": "서울엄마생신(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -23588,14 +23672,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1947",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2024-10-07",
     "title": "서울아빠제사(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
@@ -23709,15 +23793,16 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1957",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2024-10-19",
     "title": "구억모임",
     "startTime": "13:00",
     "returnTime": "14:00",
     "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-1958",
@@ -23818,14 +23903,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1966",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2024-11-15",
     "title": "별이아빠생일(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
@@ -23842,6 +23927,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1968",
+    "memberId": "family",
+    "date": "2024-11-23",
+    "title": "김장",
+    "startTime": "07:00",
+    "returnTime": "08:00",
+    "transitMethod": "자차",
+    "dinnerStatus": "required",
+    "guardian": "온 가족",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-1969",
     "memberId": "second_child",
     "date": "2024-11-23",
     "title": "태권도에버랜드",
@@ -23852,18 +23949,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "guardian": "스스로 귀가",
     "isRecurring": false,
     "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
-  },
-  {
-    "id": "gcal-1969",
-    "memberId": "family",
-    "date": "2024-11-23",
-    "title": "김장",
-    "startTime": "07:00",
-    "returnTime": "08:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
   },
   {
     "id": "gcal-1970",
@@ -23915,15 +24000,16 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1974",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2024-12-08",
     "title": "안양노회 중고등부 연합회 총회 연습 & 성가대 점심 회식",
     "startTime": "09:00",
-    "returnTime": "09:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "returnTime": "22:00",
+    "transitMethod": "대중교통",
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-1975",
@@ -23977,9 +24063,9 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-1979",
     "memberId": "second_child",
     "date": "2025-01-09",
-    "title": "하율교복",
-    "startTime": "12:00",
-    "returnTime": "14:00",
+    "title": "하율안과검진",
+    "startTime": "14:00",
+    "returnTime": "15:00",
     "transitMethod": "도보",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
@@ -23989,9 +24075,9 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-1980",
     "memberId": "second_child",
     "date": "2025-01-09",
-    "title": "하율안과검진",
-    "startTime": "14:00",
-    "returnTime": "15:00",
+    "title": "하율교복",
+    "startTime": "12:00",
+    "returnTime": "14:00",
     "transitMethod": "도보",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
@@ -24035,14 +24121,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1984",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2025-01-14",
     "title": "작은엄마생신(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -24170,30 +24256,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1995",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2025-02-04",
     "title": "군포초모임",
     "startTime": "11:00",
     "returnTime": "12:00",
     "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-1996",
-    "memberId": "family",
-    "date": "2025-02-06",
-    "title": "엄마병원",
-    "startTime": "15:00",
-    "returnTime": "16:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-1997",
     "memberId": "second_child",
     "date": "2025-02-06",
     "title": "하율안과",
@@ -24202,6 +24277,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "transitMethod": "도보",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-1997",
+    "memberId": "parents",
+    "date": "2025-02-06",
+    "title": "엄마병원",
+    "startTime": "15:00",
+    "returnTime": "16:00",
+    "transitMethod": "자차",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -24218,23 +24305,24 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-1999",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2025-02-07",
-    "title": "은하수련회",
-    "startTime": "21:00",
+    "title": "정윤이랑 약속",
+    "startTime": "09:00",
     "returnTime": "22:00",
     "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-2000",
     "memberId": "family",
     "date": "2025-02-07",
-    "title": "정윤이랑 약속",
-    "startTime": "09:00",
-    "returnTime": "09:00",
+    "title": "은하수련회",
+    "startTime": "21:00",
+    "returnTime": "22:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
     "guardian": "온 가족",
@@ -24254,30 +24342,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-2002",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2025-02-11",
     "title": "엄마입원",
     "startTime": "10:00",
     "returnTime": "11:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
     "id": "gcal-2003",
-    "memberId": "family",
-    "date": "2025-02-12",
-    "title": "공복혈액검사",
-    "startTime": "07:00",
-    "returnTime": "08:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-2004",
     "memberId": "family",
     "date": "2025-02-12",
     "title": "학운위",
@@ -24289,15 +24365,27 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2005",
+    "id": "gcal-2004",
     "memberId": "family",
+    "date": "2025-02-12",
+    "title": "공복혈액검사",
+    "startTime": "07:00",
+    "returnTime": "08:00",
+    "transitMethod": "자차",
+    "dinnerStatus": "required",
+    "guardian": "온 가족",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-2005",
+    "memberId": "parents",
     "date": "2025-02-12",
     "title": "엄마수술",
     "startTime": "14:00",
     "returnTime": "15:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -24326,18 +24414,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-2008",
-    "memberId": "parents",
-    "date": "2025-02-19",
-    "title": "출근시작",
-    "startTime": "08:00",
-    "returnTime": "09:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "나(아빠)",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-2009",
     "memberId": "first_child",
     "date": "2025-02-19",
     "title": "은비교과서 배부",
@@ -24346,6 +24422,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "transitMethod": "도보",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-2009",
+    "memberId": "parents",
+    "date": "2025-02-19",
+    "title": "출근시작",
+    "startTime": "08:00",
+    "returnTime": "09:00",
+    "transitMethod": "자차",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
@@ -24388,9 +24476,9 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-2013",
     "memberId": "second_child",
     "date": "2025-03-04",
-    "title": "하율영어",
-    "startTime": "15:30",
-    "returnTime": "16:25",
+    "title": "하율수학",
+    "startTime": "16:20",
+    "returnTime": "17:05",
     "transitMethod": "도보",
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
@@ -24413,9 +24501,9 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-2015",
     "memberId": "second_child",
     "date": "2025-03-04",
-    "title": "하율수학",
-    "startTime": "16:20",
-    "returnTime": "17:05",
+    "title": "하율영어",
+    "startTime": "15:30",
+    "returnTime": "16:25",
     "transitMethod": "도보",
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
@@ -24486,6 +24574,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-2021",
     "memberId": "family",
     "date": "2025-03-22",
+    "title": "자동차정기검사 예약",
+    "startTime": "09:00",
+    "returnTime": "09:00",
+    "transitMethod": "자차",
+    "dinnerStatus": "required",
+    "guardian": "온 가족",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-2022",
+    "memberId": "family",
+    "date": "2025-03-22",
     "title": "자동차검사",
     "startTime": "10:20",
     "returnTime": "11:20",
@@ -24494,18 +24594,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "guardian": "온 가족",
     "isRecurring": false,
     "memo": "장소: 시화정비센터"
-  },
-  {
-    "id": "gcal-2022",
-    "memberId": "family",
-    "date": "2025-03-22",
-    "title": "자동차정기검사 예약",
-    "startTime": "09:00",
-    "returnTime": "09:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
   },
   {
     "id": "gcal-2023",
@@ -24691,18 +24779,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-2038",
-    "memberId": "family",
-    "date": "2025-04-26",
-    "title": "교회청소",
-    "startTime": "10:00",
-    "returnTime": "11:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-2039",
     "memberId": "second_child",
     "date": "2025-04-26",
     "title": "김하율방 에어컨 설치",
@@ -24711,6 +24787,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "transitMethod": "도보",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-2039",
+    "memberId": "family",
+    "date": "2025-04-26",
+    "title": "교회청소",
+    "startTime": "10:00",
+    "returnTime": "11:00",
+    "transitMethod": "자차",
+    "dinnerStatus": "required",
+    "guardian": "온 가족",
     "isRecurring": false
   },
   {
@@ -24727,14 +24815,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-2041",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2025-05-03",
     "title": "서울엄마칠순여행",
     "startTime": "07:00",
     "returnTime": "20:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -24823,23 +24911,23 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-2049",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2025-05-26",
     "title": "작은아빠제사(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
     "id": "gcal-2050",
-    "memberId": "second_child",
+    "memberId": "first_child",
     "date": "2025-06-07",
-    "title": "하율안과",
-    "startTime": "08:00",
-    "returnTime": "09:00",
+    "title": "은비시력검사",
+    "startTime": "09:00",
+    "returnTime": "10:00",
     "transitMethod": "도보",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
@@ -24847,11 +24935,11 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-2051",
-    "memberId": "first_child",
+    "memberId": "second_child",
     "date": "2025-06-07",
-    "title": "은비시력검사",
-    "startTime": "09:00",
-    "returnTime": "10:00",
+    "title": "하율안과",
+    "startTime": "08:00",
+    "returnTime": "09:00",
     "transitMethod": "도보",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
@@ -24885,6 +24973,30 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-2054",
+    "memberId": "family",
+    "date": "2025-06-14",
+    "title": "미용실예약",
+    "startTime": "15:00",
+    "returnTime": "16:00",
+    "transitMethod": "자차",
+    "dinnerStatus": "required",
+    "guardian": "온 가족",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-2055",
+    "memberId": "second_child",
+    "date": "2025-06-14",
+    "title": "하율 조별모임",
+    "startTime": "14:00",
+    "returnTime": "18:00",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-2056",
     "memberId": "second_child",
     "date": "2025-06-14",
     "title": "하율영어 숙제",
@@ -24897,39 +25009,15 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
   },
   {
-    "id": "gcal-2055",
-    "memberId": "family",
-    "date": "2025-06-14",
-    "title": "미용실예약",
-    "startTime": "15:00",
-    "returnTime": "16:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-2056",
-    "memberId": "second_child",
-    "date": "2025-06-14",
-    "title": "하율 조별모임",
-    "startTime": "14:00",
-    "returnTime": "18:00",
+    "id": "gcal-2057",
+    "memberId": "first_child",
+    "date": "2025-06-15",
+    "title": "은비 수학",
+    "startTime": "18:00",
+    "returnTime": "21:00",
     "transitMethod": "도보",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-2057",
-    "memberId": "family",
-    "date": "2025-06-15",
-    "title": "주방봉사",
-    "startTime": "11:21",
-    "returnTime": "12:21",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
     "isRecurring": false
   },
   {
@@ -24946,14 +25034,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-2059",
-    "memberId": "first_child",
+    "memberId": "family",
     "date": "2025-06-15",
-    "title": "은비 수학",
-    "startTime": "18:00",
-    "returnTime": "21:00",
-    "transitMethod": "도보",
+    "title": "주방봉사",
+    "startTime": "11:21",
+    "returnTime": "12:21",
+    "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
+    "guardian": "온 가족",
     "isRecurring": false
   },
   {
@@ -24983,6 +25071,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-2062",
+    "memberId": "parents",
+    "date": "2025-07-05",
+    "title": "여전도협의회 월례회 및 회식",
+    "startTime": "14:00",
+    "returnTime": "18:00",
+    "transitMethod": "대중교통",
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
+  },
+  {
+    "id": "gcal-2063",
     "memberId": "second_child",
     "date": "2025-07-05",
     "title": "하율 시력검사",
@@ -24991,18 +25092,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "transitMethod": "도보",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-2063",
-    "memberId": "family",
-    "date": "2025-07-05",
-    "title": "여전도협의회 월례회 및 회식",
-    "startTime": "14:00",
-    "returnTime": "18:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
     "isRecurring": false
   },
   {
@@ -25033,9 +25122,9 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-2066",
     "memberId": "first_child",
     "date": "2025-07-21",
-    "title": "은비미용실",
-    "startTime": "14:00",
-    "returnTime": "15:00",
+    "title": "은비 수학",
+    "startTime": "20:00",
+    "returnTime": "21:00",
     "transitMethod": "도보",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
@@ -25045,9 +25134,9 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-2067",
     "memberId": "first_child",
     "date": "2025-07-21",
-    "title": "은비 수학",
-    "startTime": "20:00",
-    "returnTime": "21:00",
+    "title": "은비미용실",
+    "startTime": "14:00",
+    "returnTime": "15:00",
     "transitMethod": "도보",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
@@ -25068,18 +25157,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-2069",
-    "memberId": "first_child",
-    "date": "2025-07-22",
-    "title": "은비 국어",
-    "startTime": "11:00",
-    "returnTime": "12:00",
-    "transitMethod": "도보",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-2070",
     "memberId": "second_child",
     "date": "2025-07-22",
     "title": "하율수학",
@@ -25092,7 +25169,31 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
   },
   {
+    "id": "gcal-2070",
+    "memberId": "first_child",
+    "date": "2025-07-22",
+    "title": "은비 국어",
+    "startTime": "11:00",
+    "returnTime": "12:00",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false
+  },
+  {
     "id": "gcal-2071",
+    "memberId": "first_child",
+    "date": "2025-07-23",
+    "title": "은비 수학",
+    "startTime": "20:00",
+    "returnTime": "21:00",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-2072",
     "memberId": "first_child",
     "date": "2025-07-23",
     "title": "은비 국어",
@@ -25104,7 +25205,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2072",
+    "id": "gcal-2073",
     "memberId": "second_child",
     "date": "2025-07-23",
     "title": "하율수학",
@@ -25115,18 +25216,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "guardian": "스스로 귀가",
     "isRecurring": false,
     "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
-  },
-  {
-    "id": "gcal-2073",
-    "memberId": "first_child",
-    "date": "2025-07-23",
-    "title": "은비 수학",
-    "startTime": "20:00",
-    "returnTime": "21:00",
-    "transitMethod": "도보",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false
   },
   {
     "id": "gcal-2074",
@@ -25142,14 +25231,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-2075",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2025-07-25",
     "title": "엄마방학식",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -25168,7 +25257,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-2077",
     "memberId": "family",
     "date": "2025-07-28",
-    "title": "아빠방학식",
+    "title": "���빠방학식",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
@@ -25180,19 +25269,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-2078",
     "memberId": "second_child",
     "date": "2025-07-28",
-    "title": "하율영어방학",
-    "startTime": "08:00",
-    "returnTime": "09:05",
-    "transitMethod": "도보",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
-  },
-  {
-    "id": "gcal-2079",
-    "memberId": "second_child",
-    "date": "2025-07-28",
     "title": "하율태권도방학",
     "startTime": "09:00",
     "returnTime": "10:05",
@@ -25201,6 +25277,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "guardian": "스스로 귀가",
     "isRecurring": false,
     "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+  },
+  {
+    "id": "gcal-2079",
+    "memberId": "family",
+    "date": "2025-07-28",
+    "title": "���율영어방학",
+    "startTime": "08:00",
+    "returnTime": "09:00",
+    "transitMethod": "자차",
+    "dinnerStatus": "required",
+    "guardian": "온 가족",
+    "isRecurring": false
   },
   {
     "id": "gcal-2080",
@@ -25266,9 +25354,9 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-2085",
     "memberId": "second_child",
     "date": "2025-08-04",
-    "title": "하율치과",
-    "startTime": "11:00",
-    "returnTime": "12:00",
+    "title": "하율안과",
+    "startTime": "09:00",
+    "returnTime": "10:00",
     "transitMethod": "도보",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
@@ -25278,9 +25366,9 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-2086",
     "memberId": "second_child",
     "date": "2025-08-04",
-    "title": "하율안과",
-    "startTime": "09:00",
-    "returnTime": "10:00",
+    "title": "하율치과",
+    "startTime": "11:00",
+    "returnTime": "12:00",
     "transitMethod": "도보",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
@@ -25350,26 +25438,26 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-2092",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2025-08-18",
     "title": "아빠개학식",
     "startTime": "08:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
     "id": "gcal-2093",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2025-08-19",
     "title": "엄마개학식",
     "startTime": "07:00",
     "returnTime": "08:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -25386,14 +25474,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-2095",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2025-08-25",
     "title": "서울엄마생신(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -25485,9 +25573,9 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-2103",
     "memberId": "family",
     "date": "2025-09-21",
-    "title": "식당봉사",
-    "startTime": "12:00",
-    "returnTime": "13:00",
+    "title": "음성벌초",
+    "startTime": "11:00",
+    "returnTime": "15:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
     "guardian": "온 가족",
@@ -25497,9 +25585,9 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-2104",
     "memberId": "family",
     "date": "2025-09-21",
-    "title": "음성벌초",
-    "startTime": "11:00",
-    "returnTime": "15:00",
+    "title": "식당봉사",
+    "startTime": "12:00",
+    "returnTime": "13:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
     "guardian": "온 가족",
@@ -25520,18 +25608,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-2106",
-    "memberId": "second_child",
-    "date": "2025-10-04",
-    "title": "하율안과검사",
-    "startTime": "09:00",
-    "returnTime": "10:00",
-    "transitMethod": "도보",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-2107",
     "memberId": "family",
     "date": "2025-10-04",
     "title": "가족영화 감상",
@@ -25543,7 +25619,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2108",
+    "id": "gcal-2107",
     "memberId": "family",
     "date": "2025-10-04",
     "title": "내과피검사",
@@ -25552,6 +25628,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "transitMethod": "자차",
     "dinnerStatus": "required",
     "guardian": "온 가족",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-2108",
+    "memberId": "second_child",
+    "date": "2025-10-04",
+    "title": "하율안과검사",
+    "startTime": "09:00",
+    "returnTime": "10:00",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
     "isRecurring": false
   },
   {
@@ -25592,14 +25680,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-2112",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2025-10-25",
     "title": "서울아빠제사(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
@@ -25701,18 +25789,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-2121",
-    "memberId": "family",
-    "date": "2025-11-08",
-    "title": "여전도회총회",
-    "startTime": "13:00",
-    "returnTime": "14:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-2122",
     "memberId": "second_child",
     "date": "2025-11-08",
     "title": "하율치과",
@@ -25721,6 +25797,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "transitMethod": "도보",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-2122",
+    "memberId": "family",
+    "date": "2025-11-08",
+    "title": "여전도회총회",
+    "startTime": "13:00",
+    "returnTime": "14:00",
+    "transitMethod": "자차",
+    "dinnerStatus": "required",
+    "guardian": "온 가족",
     "isRecurring": false
   },
   {
@@ -25785,26 +25873,27 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-2128",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2025-11-21",
     "title": "2학년회식",
     "startTime": "17:00",
     "returnTime": "18:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "transitMethod": "대중교통",
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-2129",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2025-11-22",
     "title": "엄마네김장",
     "startTime": "09:00",
     "returnTime": "17:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -25869,14 +25958,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-2135",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2025-12-04",
     "title": "별이아빠생일(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
@@ -25991,9 +26080,9 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-2145",
     "memberId": "family",
     "date": "2025-12-17",
-    "title": "학운위저녁",
-    "startTime": "17:00",
-    "returnTime": "18:00",
+    "title": "필라2",
+    "startTime": "20:30",
+    "returnTime": "21:30",
     "transitMethod": "자차",
     "dinnerStatus": "required",
     "guardian": "온 가족",
@@ -26003,9 +26092,9 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-2146",
     "memberId": "family",
     "date": "2025-12-17",
-    "title": "필라2",
-    "startTime": "20:30",
-    "returnTime": "21:30",
+    "title": "학운위저녁",
+    "startTime": "17:00",
+    "returnTime": "18:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
     "guardian": "온 가족",
@@ -26133,15 +26222,16 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-2157",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2026-01-10",
     "title": "8여임원모임",
     "startTime": "14:00",
     "returnTime": "15:00",
     "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-2158",
@@ -26169,14 +26259,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-2160",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2026-01-16",
     "title": "아빠옷피팅",
     "startTime": "12:00",
     "returnTime": "13:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
@@ -26229,15 +26319,16 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-2165",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2026-01-23",
     "title": "한여울모임",
     "startTime": "08:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-2166",
@@ -26265,30 +26356,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-2168",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2026-01-27",
     "title": "군포초모임",
     "startTime": "08:00",
     "returnTime": "21:00",
     "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-2169",
-    "memberId": "family",
-    "date": "2026-01-28",
-    "title": "치과검진",
-    "startTime": "13:30",
-    "returnTime": "14:30",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-2170",
     "memberId": "second_child",
     "date": "2026-01-28",
     "title": "하율수련회",
@@ -26300,19 +26380,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2171",
-    "memberId": "first_child",
-    "date": "2026-01-30",
-    "title": "은비안과검사",
-    "startTime": "10:30",
-    "returnTime": "11:30",
-    "transitMethod": "도보",
+    "id": "gcal-2170",
+    "memberId": "family",
+    "date": "2026-01-28",
+    "title": "치과검진",
+    "startTime": "13:30",
+    "returnTime": "14:30",
+    "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
+    "guardian": "온 가족",
     "isRecurring": false
   },
   {
-    "id": "gcal-2172",
+    "id": "gcal-2171",
     "memberId": "family",
     "date": "2026-01-30",
     "title": "안과",
@@ -26321,6 +26401,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "transitMethod": "자차",
     "dinnerStatus": "required",
     "guardian": "온 가족",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-2172",
+    "memberId": "first_child",
+    "date": "2026-01-30",
+    "title": "은비안과검사",
+    "startTime": "10:30",
+    "returnTime": "11:30",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
     "isRecurring": false
   },
   {
@@ -26349,14 +26441,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-2175",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2026-02-02",
     "title": "작은엄마생신(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -26472,18 +26564,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-2185",
     "memberId": "family",
     "date": "2026-02-19",
-    "title": "구역모임",
-    "startTime": "19:00",
-    "returnTime": "20:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-2186",
-    "memberId": "family",
-    "date": "2026-02-19",
     "title": "미용실예약",
     "startTime": "13:30",
     "returnTime": "14:30",
@@ -26493,12 +26573,25 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
+    "id": "gcal-2186",
+    "memberId": "parents",
+    "date": "2026-02-19",
+    "title": "구역모임",
+    "startTime": "19:00",
+    "returnTime": "20:00",
+    "transitMethod": "자차",
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
+  },
+  {
     "id": "gcal-2187",
     "memberId": "family",
     "date": "2026-02-20",
-    "title": "내과피검사",
-    "startTime": "07:00",
-    "returnTime": "08:00",
+    "title": "필라 6",
+    "startTime": "21:00",
+    "returnTime": "22:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
     "guardian": "온 가족",
@@ -26508,9 +26601,9 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-2188",
     "memberId": "family",
     "date": "2026-02-20",
-    "title": "필라 6",
-    "startTime": "21:00",
-    "returnTime": "22:00",
+    "title": "내과피검사",
+    "startTime": "07:00",
+    "returnTime": "08:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
     "guardian": "온 가족",
@@ -26590,11 +26683,11 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-2195",
-    "memberId": "second_child",
+    "memberId": "first_child",
     "date": "2026-02-26",
-    "title": "하율반평성",
-    "startTime": "14:00",
-    "returnTime": "15:00",
+    "title": "은비 수강신청",
+    "startTime": "10:00",
+    "returnTime": "11:00",
     "transitMethod": "도보",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
@@ -26602,11 +26695,11 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-2196",
-    "memberId": "first_child",
+    "memberId": "second_child",
     "date": "2026-02-26",
-    "title": "은비 수강신청",
-    "startTime": "10:00",
-    "returnTime": "11:00",
+    "title": "하율반평성",
+    "startTime": "14:00",
+    "returnTime": "15:00",
     "transitMethod": "도보",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
@@ -26713,18 +26806,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-2205",
-    "memberId": "family",
-    "date": "2026-03-14",
-    "title": "한의원",
-    "startTime": "12:30",
-    "returnTime": "13:30",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-2206",
     "memberId": "first_child",
     "date": "2026-03-14",
     "title": "은비안과시력검사",
@@ -26733,6 +26814,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "transitMethod": "도보",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-2206",
+    "memberId": "family",
+    "date": "2026-03-14",
+    "title": "한의원",
+    "startTime": "12:30",
+    "returnTime": "13:30",
+    "transitMethod": "자차",
+    "dinnerStatus": "required",
+    "guardian": "온 가족",
     "isRecurring": false
   },
   {
@@ -26790,9 +26883,9 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-2211",
     "memberId": "family",
     "date": "2026-03-21",
-    "title": "한의원",
-    "startTime": "13:00",
-    "returnTime": "14:00",
+    "title": "영화",
+    "startTime": "14:00",
+    "returnTime": "15:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
     "guardian": "온 가족",
@@ -26802,9 +26895,9 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-2212",
     "memberId": "family",
     "date": "2026-03-21",
-    "title": "영화",
-    "startTime": "14:00",
-    "returnTime": "15:00",
+    "title": "한의원",
+    "startTime": "13:00",
+    "returnTime": "14:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
     "guardian": "온 가족",
@@ -26863,23 +26956,24 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-2217",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2026-03-28",
-    "title": "한의원",
-    "startTime": "09:00",
-    "returnTime": "10:00",
+    "title": "교회모임",
+    "startTime": "12:00",
+    "returnTime": "13:00",
     "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-2218",
     "memberId": "family",
     "date": "2026-03-28",
-    "title": "교회모임",
-    "startTime": "12:00",
-    "returnTime": "13:00",
+    "title": "한의원",
+    "startTime": "09:00",
+    "returnTime": "10:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
     "guardian": "온 가족",
@@ -26950,18 +27044,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-2224",
-    "memberId": "family",
-    "date": "2026-04-04",
-    "title": "교회모임",
-    "startTime": "14:00",
-    "returnTime": "15:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-2225",
     "memberId": "second_child",
     "date": "2026-04-04",
     "title": "하율치과",
@@ -26973,7 +27055,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2226",
+    "id": "gcal-2225",
     "memberId": "family",
     "date": "2026-04-04",
     "title": "한식일벌초",
@@ -26983,6 +27065,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "dinnerStatus": "required",
     "guardian": "온 가족",
     "isRecurring": false
+  },
+  {
+    "id": "gcal-2226",
+    "memberId": "parents",
+    "date": "2026-04-04",
+    "title": "교회모임",
+    "startTime": "14:00",
+    "returnTime": "15:00",
+    "transitMethod": "자차",
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-2227",
@@ -27444,18 +27539,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-2263",
-    "memberId": "family",
-    "date": "2026-05-16",
-    "title": "한의원9",
-    "startTime": "09:00",
-    "returnTime": "10:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-2264",
     "memberId": "second_child",
     "date": "2026-05-16",
     "title": "하율안과약처방",
@@ -27464,6 +27547,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "transitMethod": "도보",
     "dinnerStatus": "required",
     "guardian": "스스로 귀가",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-2264",
+    "memberId": "family",
+    "date": "2026-05-16",
+    "title": "한의원9",
+    "startTime": "09:00",
+    "returnTime": "10:00",
+    "transitMethod": "자차",
+    "dinnerStatus": "required",
+    "guardian": "온 가족",
     "isRecurring": false
   },
   {
@@ -27818,9 +27913,9 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-2292",
     "memberId": "family",
     "date": "2026-06-06",
-    "title": "교회 워크샵",
-    "startTime": "08:00",
-    "returnTime": "16:00",
+    "title": "교회청소",
+    "startTime": "10:00",
+    "returnTime": "11:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
     "guardian": "온 가족",
@@ -27830,9 +27925,9 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-2293",
     "memberId": "family",
     "date": "2026-06-06",
-    "title": "교회청소",
-    "startTime": "10:00",
-    "returnTime": "11:00",
+    "title": "교회 워크샵",
+    "startTime": "08:00",
+    "returnTime": "16:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
     "guardian": "온 가족",
@@ -27969,14 +28064,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-2304",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2026-06-14",
     "title": "작은아빠제사(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
@@ -28134,6 +28229,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-2317",
+    "memberId": "first_child",
+    "date": "2026-06-23",
+    "title": "은비방학",
+    "startTime": "09:00",
+    "returnTime": "09:00",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-2318",
     "memberId": "second_child",
     "date": "2026-06-23",
     "title": "하율태권도",
@@ -28146,7 +28253,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
   },
   {
-    "id": "gcal-2318",
+    "id": "gcal-2319",
     "memberId": "second_child",
     "date": "2026-06-23",
     "title": "하율수학",
@@ -28157,18 +28264,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "guardian": "스스로 귀가",
     "isRecurring": false,
     "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
-  },
-  {
-    "id": "gcal-2319",
-    "memberId": "first_child",
-    "date": "2026-06-23",
-    "title": "은비방학",
-    "startTime": "09:00",
-    "returnTime": "09:00",
-    "transitMethod": "도보",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false
   },
   {
     "id": "gcal-2320",
@@ -28252,6 +28347,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-2326",
     "memberId": "second_child",
     "date": "2026-06-30",
+    "title": "하율 지필평가",
+    "startTime": "09:00",
+    "returnTime": "09:00",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-2327",
+    "memberId": "second_child",
+    "date": "2026-06-30",
     "title": "하율태권도",
     "startTime": "19:30",
     "returnTime": "20:15",
@@ -28262,7 +28369,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
   },
   {
-    "id": "gcal-2327",
+    "id": "gcal-2328",
     "memberId": "second_child",
     "date": "2026-06-30",
     "title": "하율수학",
@@ -28275,32 +28382,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
   },
   {
-    "id": "gcal-2328",
-    "memberId": "second_child",
-    "date": "2026-06-30",
-    "title": "하율 지필평가",
-    "startTime": "09:00",
-    "returnTime": "09:00",
-    "transitMethod": "도보",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false
-  },
-  {
     "id": "gcal-2329",
-    "memberId": "second_child",
-    "date": "2026-07-01",
-    "title": "하율태권도",
-    "startTime": "19:30",
-    "returnTime": "20:15",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
-  },
-  {
-    "id": "gcal-2330",
     "memberId": "family",
     "date": "2026-07-01",
     "title": "자동차수리",
@@ -28311,6 +28393,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "guardian": "온 가족",
     "isRecurring": false,
     "memo": "장소: 현대자동차블루핸즈 장곡점(경기 시흥시 황고개로 476)"
+  },
+  {
+    "id": "gcal-2330",
+    "memberId": "second_child",
+    "date": "2026-07-01",
+    "title": "하율태권도",
+    "startTime": "19:30",
+    "returnTime": "20:15",
+    "transitMethod": "도보",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
   },
   {
     "id": "gcal-2331",
@@ -28662,15 +28757,16 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-2358",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2026-07-22",
     "title": "학년회식",
     "startTime": "17:00",
     "returnTime": "20:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "transitMethod": "대중교통",
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-2359",
@@ -28689,6 +28785,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-2360",
     "memberId": "second_child",
     "date": "2026-07-23",
+    "title": "하율특강",
+    "startTime": "09:30",
+    "returnTime": "11:30",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-2361",
+    "memberId": "second_child",
+    "date": "2026-07-23",
     "title": "하율수학",
     "startTime": "17:00",
     "returnTime": "18:30",
@@ -28697,18 +28805,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "guardian": "스스로 귀가",
     "isRecurring": false,
     "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
-  },
-  {
-    "id": "gcal-2361",
-    "memberId": "second_child",
-    "date": "2026-07-23",
-    "title": "하율특강",
-    "startTime": "09:30",
-    "returnTime": "11:30",
-    "transitMethod": "도보",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false
   },
   {
     "id": "gcal-2362",
@@ -28763,9 +28859,21 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-2366",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2026-07-27",
     "title": "엄마방학식",
+    "startTime": "09:00",
+    "returnTime": "09:00",
+    "transitMethod": "자차",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-2367",
+    "memberId": "family",
+    "date": "2026-07-28",
+    "title": "촌캉스 여행",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
@@ -28774,7 +28882,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2367",
+    "id": "gcal-2368",
     "memberId": "second_child",
     "date": "2026-07-28",
     "title": "하율태권도",
@@ -28787,7 +28895,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
   },
   {
-    "id": "gcal-2368",
+    "id": "gcal-2369",
+    "memberId": "second_child",
+    "date": "2026-07-28",
+    "title": "하율특강2",
+    "startTime": "09:30",
+    "returnTime": "11:30",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-2370",
     "memberId": "second_child",
     "date": "2026-07-28",
     "title": "하율수학",
@@ -28798,30 +28918,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "guardian": "스스로 귀가",
     "isRecurring": false,
     "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
-  },
-  {
-    "id": "gcal-2369",
-    "memberId": "family",
-    "date": "2026-07-28",
-    "title": "촌캉스 여행",
-    "startTime": "09:00",
-    "returnTime": "09:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-2370",
-    "memberId": "second_child",
-    "date": "2026-07-28",
-    "title": "하율특강2",
-    "startTime": "09:30",
-    "returnTime": "11:30",
-    "transitMethod": "도보",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false
   },
   {
     "id": "gcal-2371",
@@ -28852,6 +28948,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-2373",
     "memberId": "second_child",
     "date": "2026-07-30",
+    "title": "하율수련회",
+    "startTime": "08:00",
+    "returnTime": "09:00",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-2374",
+    "memberId": "second_child",
+    "date": "2026-07-30",
     "title": "하율태권도",
     "startTime": "19:30",
     "returnTime": "20:15",
@@ -28862,7 +28970,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
   },
   {
-    "id": "gcal-2374",
+    "id": "gcal-2375",
+    "memberId": "second_child",
+    "date": "2026-07-30",
+    "title": "하율특강3",
+    "startTime": "09:30",
+    "returnTime": "11:30",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-2376",
     "memberId": "second_child",
     "date": "2026-07-30",
     "title": "하율수학",
@@ -28873,30 +28993,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "guardian": "스스로 귀가",
     "isRecurring": false,
     "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
-  },
-  {
-    "id": "gcal-2375",
-    "memberId": "second_child",
-    "date": "2026-07-30",
-    "title": "하율수련회",
-    "startTime": "08:00",
-    "returnTime": "09:00",
-    "transitMethod": "도보",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-2376",
-    "memberId": "second_child",
-    "date": "2026-07-30",
-    "title": "하율특강3",
-    "startTime": "09:30",
-    "returnTime": "11:30",
-    "transitMethod": "도보",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false
   },
   {
     "id": "gcal-2377",
@@ -28928,19 +29024,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-2379",
     "memberId": "second_child",
     "date": "2026-08-03",
-    "title": "하율태권도",
-    "startTime": "19:30",
-    "returnTime": "20:15",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
-  },
-  {
-    "id": "gcal-2380",
-    "memberId": "second_child",
-    "date": "2026-08-03",
     "title": "하율태권도방학",
     "startTime": "09:00",
     "returnTime": "10:05",
@@ -28951,7 +29034,32 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
   },
   {
+    "id": "gcal-2380",
+    "memberId": "second_child",
+    "date": "2026-08-03",
+    "title": "하율태권도",
+    "startTime": "19:30",
+    "returnTime": "20:15",
+    "transitMethod": "도보",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+  },
+  {
     "id": "gcal-2381",
+    "memberId": "family",
+    "date": "2026-08-04",
+    "title": "특강4",
+    "startTime": "09:30",
+    "returnTime": "11:30",
+    "transitMethod": "자차",
+    "dinnerStatus": "required",
+    "guardian": "온 가족",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-2382",
     "memberId": "second_child",
     "date": "2026-08-04",
     "title": "하율태권도",
@@ -28962,18 +29070,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "guardian": "스스로 귀가",
     "isRecurring": false,
     "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
-  },
-  {
-    "id": "gcal-2382",
-    "memberId": "family",
-    "date": "2026-08-04",
-    "title": "특강4",
-    "startTime": "09:30",
-    "returnTime": "11:30",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
   },
   {
     "id": "gcal-2383",
@@ -29003,6 +29099,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-2385",
+    "memberId": "family",
+    "date": "2026-08-06",
+    "title": "특강5",
+    "startTime": "09:30",
+    "returnTime": "11:30",
+    "transitMethod": "자차",
+    "dinnerStatus": "required",
+    "guardian": "온 가족",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-2386",
     "memberId": "second_child",
     "date": "2026-08-06",
     "title": "하율태권도",
@@ -29015,7 +29123,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
   },
   {
-    "id": "gcal-2386",
+    "id": "gcal-2387",
     "memberId": "second_child",
     "date": "2026-08-06",
     "title": "하율수학",
@@ -29026,18 +29134,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "guardian": "스스로 귀가",
     "isRecurring": false,
     "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
-  },
-  {
-    "id": "gcal-2387",
-    "memberId": "family",
-    "date": "2026-08-06",
-    "title": "특강5",
-    "startTime": "09:30",
-    "returnTime": "11:30",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
   },
   {
     "id": "gcal-2388",
@@ -29116,18 +29212,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-2394",
-    "memberId": "family",
-    "date": "2026-08-11",
-    "title": "구역저녁",
-    "startTime": "19:00",
-    "returnTime": "20:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-2395",
     "memberId": "second_child",
     "date": "2026-08-11",
     "title": "하율태권도",
@@ -29138,6 +29222,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "guardian": "스스로 귀가",
     "isRecurring": false,
     "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+  },
+  {
+    "id": "gcal-2395",
+    "memberId": "family",
+    "date": "2026-08-11",
+    "title": "구역저녁",
+    "startTime": "19:00",
+    "returnTime": "20:00",
+    "transitMethod": "자차",
+    "dinnerStatus": "required",
+    "guardian": "온 가족",
+    "isRecurring": false
   },
   {
     "id": "gcal-2396",
@@ -29154,6 +29250,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-2397",
+    "memberId": "family",
+    "date": "2026-08-12",
+    "title": "수학방학",
+    "startTime": "08:00",
+    "returnTime": "09:00",
+    "transitMethod": "자차",
+    "dinnerStatus": "required",
+    "guardian": "온 가족",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-2398",
     "memberId": "second_child",
     "date": "2026-08-12",
     "title": "하율태권도",
@@ -29166,27 +29274,15 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
   },
   {
-    "id": "gcal-2398",
-    "memberId": "family",
+    "id": "gcal-2399",
+    "memberId": "parents",
     "date": "2026-08-12",
     "title": "아빠 근무",
     "startTime": "09:00",
     "returnTime": "09:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-2399",
-    "memberId": "family",
-    "date": "2026-08-12",
-    "title": "수학방학",
-    "startTime": "08:00",
-    "returnTime": "09:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
@@ -29243,14 +29339,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-2404",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2026-08-15",
     "title": "서울엄마생신(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
@@ -29293,18 +29389,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-2408",
-    "memberId": "family",
-    "date": "2026-08-18",
-    "title": "건강검진",
-    "startTime": "09:00",
-    "returnTime": "12:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-2409",
     "memberId": "second_child",
     "date": "2026-08-18",
     "title": "하율태권도",
@@ -29315,6 +29399,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "guardian": "스스로 귀가",
     "isRecurring": false,
     "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+  },
+  {
+    "id": "gcal-2409",
+    "memberId": "family",
+    "date": "2026-08-18",
+    "title": "건강검진",
+    "startTime": "09:00",
+    "returnTime": "12:00",
+    "transitMethod": "자차",
+    "dinnerStatus": "required",
+    "guardian": "온 가족",
+    "isRecurring": false
   },
   {
     "id": "gcal-2410",
@@ -29331,18 +29427,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-2411",
-    "memberId": "first_child",
-    "date": "2026-08-19",
-    "title": "은비 2학기 등록금 납부",
-    "startTime": "09:00",
-    "returnTime": "09:00",
-    "transitMethod": "도보",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-2412",
     "memberId": "second_child",
     "date": "2026-08-19",
     "title": "하율태권도",
@@ -29355,7 +29439,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
   },
   {
-    "id": "gcal-2413",
+    "id": "gcal-2412",
     "memberId": "family",
     "date": "2026-08-19",
     "title": "수요 예배",
@@ -29364,6 +29448,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "transitMethod": "자차",
     "dinnerStatus": "required",
     "guardian": "온 가족",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-2413",
+    "memberId": "first_child",
+    "date": "2026-08-19",
+    "title": "은비 2학기 등록금 납부",
+    "startTime": "09:00",
+    "returnTime": "09:00",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
     "isRecurring": false
   },
   {
@@ -29381,6 +29477,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-2415",
+    "memberId": "parents",
+    "date": "2026-08-20",
+    "title": "엄마개학식",
+    "startTime": "09:00",
+    "returnTime": "09:00",
+    "transitMethod": "자차",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
+    "isRecurring": false
+  },
+  {
+    "id": "gcal-2416",
     "memberId": "second_child",
     "date": "2026-08-20",
     "title": "하율수학",
@@ -29391,18 +29499,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "guardian": "스스로 귀가",
     "isRecurring": false,
     "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
-  },
-  {
-    "id": "gcal-2416",
-    "memberId": "family",
-    "date": "2026-08-20",
-    "title": "엄마개학식",
-    "startTime": "09:00",
-    "returnTime": "09:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
   },
   {
     "id": "gcal-2417",
@@ -29664,15 +29760,16 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-2437",
-    "memberId": "family",
+    "memberId": "parents",
     "date": "2026-09-05",
     "title": "8여모임",
     "startTime": "14:00",
     "returnTime": "16:00",
     "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
   },
   {
     "id": "gcal-2438",
@@ -29690,30 +29787,17 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-2439",
     "memberId": "first_child",
     "date": "2026-09-07",
-    "title": "[은비] 상담심리학",
-    "startTime": "14:00",
-    "returnTime": "16:00",
+    "title": "[은비] 생리학",
+    "startTime": "16:00",
+    "returnTime": "19:00",
     "transitMethod": "대중교통",
-    "dinnerStatus": "not_required",
+    "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(E606) · 다음 강의 대기"
+    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
   },
   {
     "id": "gcal-2440",
-    "memberId": "second_child",
-    "date": "2026-09-07",
-    "title": "[하율] 학교수업",
-    "startTime": "09:00",
-    "returnTime": "15:20",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
-  },
-  {
-    "id": "gcal-2441",
     "memberId": "second_child",
     "date": "2026-09-07",
     "title": "하율태권도",
@@ -29726,20 +29810,20 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
   },
   {
-    "id": "gcal-2442",
+    "id": "gcal-2441",
     "memberId": "first_child",
     "date": "2026-09-07",
-    "title": "[은비] 생리학",
-    "startTime": "16:00",
-    "returnTime": "19:00",
+    "title": "[은비] 상담심리학",
+    "startTime": "14:00",
+    "returnTime": "16:00",
     "transitMethod": "대중교통",
-    "dinnerStatus": "required",
+    "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+    "memo": "수원 동남보건대(E606) · 다음 강의 대기"
   },
   {
-    "id": "gcal-2443",
+    "id": "gcal-2442",
     "memberId": "second_child",
     "date": "2026-09-07",
     "title": "하율영어",
@@ -29750,6 +29834,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "guardian": "스스로 귀가",
     "isRecurring": false,
     "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+  },
+  {
+    "id": "gcal-2443",
+    "memberId": "second_child",
+    "date": "2026-09-07",
+    "title": "[하율] 학교수업",
+    "startTime": "09:00",
+    "returnTime": "15:20",
+    "transitMethod": "도보",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
   },
   {
     "id": "gcal-2444",
@@ -29766,32 +29863,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-2445",
-    "memberId": "first_child",
-    "date": "2026-09-08",
-    "title": "[은비] 보조공학",
-    "startTime": "16:00",
-    "returnTime": "19:00",
-    "transitMethod": "대중교통",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
-  },
-  {
-    "id": "gcal-2446",
-    "memberId": "second_child",
-    "date": "2026-09-08",
-    "title": "[하율] 수학",
-    "startTime": "17:00",
-    "returnTime": "19:00",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
-  },
-  {
-    "id": "gcal-2447",
     "memberId": "second_child",
     "date": "2026-09-08",
     "title": "[하율] 태권도",
@@ -29804,20 +29875,33 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
   },
   {
-    "id": "gcal-2448",
+    "id": "gcal-2446",
     "memberId": "first_child",
     "date": "2026-09-08",
-    "title": "[은비] 움직임해부학",
-    "startTime": "14:00",
-    "returnTime": "16:00",
+    "title": "[은비] 보조공학",
+    "startTime": "16:00",
+    "returnTime": "19:00",
     "transitMethod": "대중교통",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+  },
+  {
+    "id": "gcal-2447",
+    "memberId": "second_child",
+    "date": "2026-09-08",
+    "title": "[하율] 수학",
+    "startTime": "17:00",
+    "returnTime": "19:00",
+    "transitMethod": "도보",
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(E611) · 다음 강의 대기"
+    "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
   },
   {
-    "id": "gcal-2449",
+    "id": "gcal-2448",
     "memberId": "first_child",
     "date": "2026-09-08",
     "title": "[은비] 재활의학",
@@ -29830,20 +29914,20 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수원 동남보건대(E606) · 다음 강의 대기"
   },
   {
-    "id": "gcal-2450",
-    "memberId": "second_child",
-    "date": "2026-09-09",
-    "title": "[하율] 영어",
-    "startTime": "17:00",
-    "returnTime": "18:05",
-    "transitMethod": "도보",
-    "dinnerStatus": "required",
+    "id": "gcal-2449",
+    "memberId": "first_child",
+    "date": "2026-09-08",
+    "title": "[은비] 움직임해부학",
+    "startTime": "14:00",
+    "returnTime": "16:00",
+    "transitMethod": "대중교통",
+    "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "수원 동남보건대(E611) · 다음 강의 대기"
   },
   {
-    "id": "gcal-2451",
+    "id": "gcal-2450",
     "memberId": "first_child",
     "date": "2026-09-09",
     "title": "[은비] 활동분석",
@@ -29856,7 +29940,33 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수원 동남보건대(E401) · 다음 강의 대기"
   },
   {
+    "id": "gcal-2451",
+    "memberId": "second_child",
+    "date": "2026-09-09",
+    "title": "[하율] 태권도",
+    "startTime": "19:00",
+    "returnTime": "20:05",
+    "transitMethod": "도보",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+  },
+  {
     "id": "gcal-2452",
+    "memberId": "second_child",
+    "date": "2026-09-09",
+    "title": "[하율] 영어",
+    "startTime": "17:00",
+    "returnTime": "18:05",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+  },
+  {
+    "id": "gcal-2453",
     "memberId": "first_child",
     "date": "2026-09-09",
     "title": "[은비] 해부학2",
@@ -29869,7 +29979,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수원 동남보건대(D102) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
   },
   {
-    "id": "gcal-2453",
+    "id": "gcal-2454",
     "memberId": "second_child",
     "date": "2026-09-09",
     "title": "[하율] 학교수업",
@@ -29880,19 +29990,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "guardian": "스스로 귀가",
     "isRecurring": false,
     "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
-  },
-  {
-    "id": "gcal-2454",
-    "memberId": "second_child",
-    "date": "2026-09-09",
-    "title": "[하율] 태권도",
-    "startTime": "19:00",
-    "returnTime": "20:05",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
   },
   {
     "id": "gcal-2455",
@@ -29911,19 +30008,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-2456",
     "memberId": "second_child",
     "date": "2026-09-10",
-    "title": "[하율] 수학",
-    "startTime": "17:00",
-    "returnTime": "19:00",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
-  },
-  {
-    "id": "gcal-2457",
-    "memberId": "second_child",
-    "date": "2026-09-10",
     "title": "[하율] 태권도",
     "startTime": "19:00",
     "returnTime": "20:05",
@@ -29934,7 +30018,33 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
   },
   {
+    "id": "gcal-2457",
+    "memberId": "second_child",
+    "date": "2026-09-10",
+    "title": "[하율] 수학",
+    "startTime": "17:00",
+    "returnTime": "19:00",
+    "transitMethod": "도보",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
+  },
+  {
     "id": "gcal-2458",
+    "memberId": "second_child",
+    "date": "2026-09-11",
+    "title": "[하율] 태권도",
+    "startTime": "19:00",
+    "returnTime": "20:05",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+  },
+  {
+    "id": "gcal-2459",
     "memberId": "second_child",
     "date": "2026-09-11",
     "title": "[하율] 영어",
@@ -29947,7 +30057,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
   },
   {
-    "id": "gcal-2459",
+    "id": "gcal-2460",
     "memberId": "second_child",
     "date": "2026-09-11",
     "title": "[하율] 수학",
@@ -29960,7 +30070,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
   },
   {
-    "id": "gcal-2460",
+    "id": "gcal-2461",
     "memberId": "second_child",
     "date": "2026-09-11",
     "title": "[하율] 학교수업",
@@ -29973,20 +30083,33 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
   },
   {
-    "id": "gcal-2461",
+    "id": "gcal-2462",
+    "memberId": "first_child",
+    "date": "2026-09-14",
+    "title": "[은비] 생리학",
+    "startTime": "16:00",
+    "returnTime": "19:00",
+    "transitMethod": "대중교통",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+  },
+  {
+    "id": "gcal-2463",
     "memberId": "second_child",
-    "date": "2026-09-11",
+    "date": "2026-09-14",
     "title": "[하율] 태권도",
     "startTime": "19:00",
     "returnTime": "20:05",
     "transitMethod": "도보",
-    "dinnerStatus": "required",
+    "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
+    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
   },
   {
-    "id": "gcal-2462",
+    "id": "gcal-2464",
     "memberId": "second_child",
     "date": "2026-09-14",
     "title": "[하율] 영어",
@@ -29999,7 +30122,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
   },
   {
-    "id": "gcal-2463",
+    "id": "gcal-2465",
     "memberId": "first_child",
     "date": "2026-09-14",
     "title": "[은비] 상담심리학",
@@ -30012,7 +30135,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수원 동남보건대(E606) · 다음 강의 대기"
   },
   {
-    "id": "gcal-2464",
+    "id": "gcal-2466",
     "memberId": "second_child",
     "date": "2026-09-14",
     "title": "[하율] 학교수업",
@@ -30023,32 +30146,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "guardian": "스스로 귀가",
     "isRecurring": false,
     "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
-  },
-  {
-    "id": "gcal-2465",
-    "memberId": "second_child",
-    "date": "2026-09-14",
-    "title": "[하율] 태권도",
-    "startTime": "19:00",
-    "returnTime": "20:05",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
-  },
-  {
-    "id": "gcal-2466",
-    "memberId": "first_child",
-    "date": "2026-09-14",
-    "title": "[은비] 생리학",
-    "startTime": "16:00",
-    "returnTime": "19:00",
-    "transitMethod": "대중교통",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
   },
   {
     "id": "gcal-2467",
@@ -30065,32 +30162,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-2468",
-    "memberId": "first_child",
-    "date": "2026-09-15",
-    "title": "[은비] 보조공학",
-    "startTime": "16:00",
-    "returnTime": "19:00",
-    "transitMethod": "대중교통",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
-  },
-  {
-    "id": "gcal-2469",
-    "memberId": "second_child",
-    "date": "2026-09-15",
-    "title": "[하율] 수학",
-    "startTime": "17:00",
-    "returnTime": "19:00",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
-  },
-  {
-    "id": "gcal-2470",
     "memberId": "second_child",
     "date": "2026-09-15",
     "title": "[하율] 태권도",
@@ -30103,20 +30174,33 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
   },
   {
-    "id": "gcal-2471",
+    "id": "gcal-2469",
     "memberId": "first_child",
     "date": "2026-09-15",
-    "title": "[은비] 움직임해부학",
-    "startTime": "14:00",
-    "returnTime": "16:00",
+    "title": "[은비] 보조공학",
+    "startTime": "16:00",
+    "returnTime": "19:00",
     "transitMethod": "대중교통",
-    "dinnerStatus": "not_required",
+    "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(E611) · 다음 강의 대기"
+    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
   },
   {
-    "id": "gcal-2472",
+    "id": "gcal-2470",
+    "memberId": "parents",
+    "date": "2026-09-15",
+    "title": "아빠 저녁약속",
+    "startTime": "17:00",
+    "returnTime": "20:00",
+    "transitMethod": "자차",
+    "dinnerStatus": "not_required",
+    "guardian": "나(아빠)",
+    "isRecurring": false,
+    "memo": "나(아빠) 저녁 모임 · 외식 (집밥 불필요)"
+  },
+  {
+    "id": "gcal-2471",
     "memberId": "first_child",
     "date": "2026-09-15",
     "title": "[은비] 재활의학",
@@ -30129,17 +30213,30 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수원 동남보건대(E606) · 다음 강의 대기"
   },
   {
-    "id": "gcal-2473",
-    "memberId": "second_child",
-    "date": "2026-09-16",
-    "title": "[하율] 영어",
-    "startTime": "17:00",
-    "returnTime": "18:05",
-    "transitMethod": "도보",
-    "dinnerStatus": "required",
+    "id": "gcal-2472",
+    "memberId": "first_child",
+    "date": "2026-09-15",
+    "title": "[은비] 움직임해부학",
+    "startTime": "14:00",
+    "returnTime": "16:00",
+    "transitMethod": "대중교통",
+    "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "수원 동남보건대(E611) · 다음 강의 대기"
+  },
+  {
+    "id": "gcal-2473",
+    "memberId": "second_child",
+    "date": "2026-09-15",
+    "title": "[하율] 수학",
+    "startTime": "17:00",
+    "returnTime": "19:00",
+    "transitMethod": "도보",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
   },
   {
     "id": "gcal-2474",
@@ -30156,32 +30253,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-2475",
-    "memberId": "first_child",
-    "date": "2026-09-16",
-    "title": "[은비] 해부학2",
-    "startTime": "16:00",
-    "returnTime": "19:00",
-    "transitMethod": "대중교통",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "수원 동남보건대(D102) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
-  },
-  {
-    "id": "gcal-2476",
-    "memberId": "second_child",
-    "date": "2026-09-16",
-    "title": "[하율] 학교수업",
-    "startTime": "09:00",
-    "returnTime": "15:20",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
-  },
-  {
-    "id": "gcal-2477",
     "memberId": "second_child",
     "date": "2026-09-16",
     "title": "[하율] 태권도",
@@ -30194,12 +30265,38 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
   },
   {
+    "id": "gcal-2476",
+    "memberId": "second_child",
+    "date": "2026-09-16",
+    "title": "[하율] 영어",
+    "startTime": "17:00",
+    "returnTime": "18:05",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+  },
+  {
+    "id": "gcal-2477",
+    "memberId": "first_child",
+    "date": "2026-09-16",
+    "title": "[은비] 해부학2",
+    "startTime": "16:00",
+    "returnTime": "19:00",
+    "transitMethod": "대중교통",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "수원 동남보건대(D102) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+  },
+  {
     "id": "gcal-2478",
     "memberId": "second_child",
-    "date": "2026-09-17",
+    "date": "2026-09-16",
     "title": "[하율] 학교수업",
     "startTime": "09:00",
-    "returnTime": "16:15",
+    "returnTime": "15:20",
     "transitMethod": "도보",
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
@@ -30210,14 +30307,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-2479",
     "memberId": "second_child",
     "date": "2026-09-17",
-    "title": "[하율] 수학",
-    "startTime": "17:00",
-    "returnTime": "19:00",
+    "title": "[하율] 학교수업",
+    "startTime": "09:00",
+    "returnTime": "16:15",
     "transitMethod": "도보",
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
+    "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
   },
   {
     "id": "gcal-2480",
@@ -30235,20 +30332,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   {
     "id": "gcal-2481",
     "memberId": "second_child",
-    "date": "2026-09-18",
-    "title": "[하율] 영어",
-    "startTime": "17:00",
-    "returnTime": "18:05",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
-  },
-  {
-    "id": "gcal-2482",
-    "memberId": "second_child",
-    "date": "2026-09-18",
+    "date": "2026-09-17",
     "title": "[하율] 수학",
     "startTime": "17:00",
     "returnTime": "19:00",
@@ -30259,20 +30343,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
   },
   {
-    "id": "gcal-2483",
-    "memberId": "second_child",
-    "date": "2026-09-18",
-    "title": "[하율] 학교수업",
-    "startTime": "09:00",
-    "returnTime": "15:20",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
-  },
-  {
-    "id": "gcal-2484",
+    "id": "gcal-2482",
     "memberId": "second_child",
     "date": "2026-09-18",
     "title": "[하율] 태권도",
@@ -30285,35 +30356,35 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
   },
   {
-    "id": "gcal-2485",
+    "id": "gcal-2483",
     "memberId": "second_child",
-    "date": "2026-09-21",
+    "date": "2026-09-18",
     "title": "[하율] 영어",
     "startTime": "17:00",
     "returnTime": "18:05",
     "transitMethod": "도보",
-    "dinnerStatus": "required",
+    "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
     "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
   },
   {
-    "id": "gcal-2486",
-    "memberId": "first_child",
-    "date": "2026-09-21",
-    "title": "[은비] 상담심리학",
-    "startTime": "14:00",
-    "returnTime": "16:00",
-    "transitMethod": "대중교통",
+    "id": "gcal-2484",
+    "memberId": "second_child",
+    "date": "2026-09-18",
+    "title": "[하율] 수학",
+    "startTime": "17:00",
+    "returnTime": "19:00",
+    "transitMethod": "도보",
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(E606) · 다음 강의 대기"
+    "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
   },
   {
-    "id": "gcal-2487",
+    "id": "gcal-2485",
     "memberId": "second_child",
-    "date": "2026-09-21",
+    "date": "2026-09-18",
     "title": "[하율] 학교수업",
     "startTime": "09:00",
     "returnTime": "15:20",
@@ -30324,20 +30395,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
   },
   {
-    "id": "gcal-2488",
-    "memberId": "second_child",
-    "date": "2026-09-21",
-    "title": "[하율] 태권도",
-    "startTime": "19:00",
-    "returnTime": "20:05",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
-  },
-  {
-    "id": "gcal-2489",
+    "id": "gcal-2486",
     "memberId": "first_child",
     "date": "2026-09-21",
     "title": "[은비] 생리학",
@@ -30350,7 +30408,59 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
   },
   {
+    "id": "gcal-2487",
+    "memberId": "second_child",
+    "date": "2026-09-21",
+    "title": "[하율] 태권도",
+    "startTime": "19:00",
+    "returnTime": "20:05",
+    "transitMethod": "도보",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+  },
+  {
+    "id": "gcal-2488",
+    "memberId": "second_child",
+    "date": "2026-09-21",
+    "title": "[하율] 영어",
+    "startTime": "17:00",
+    "returnTime": "18:05",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+  },
+  {
+    "id": "gcal-2489",
+    "memberId": "first_child",
+    "date": "2026-09-21",
+    "title": "[은비] 상담심리학",
+    "startTime": "14:00",
+    "returnTime": "16:00",
+    "transitMethod": "대중교통",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "수원 동남보건대(E606) · 다음 강의 대기"
+  },
+  {
     "id": "gcal-2490",
+    "memberId": "second_child",
+    "date": "2026-09-21",
+    "title": "[하율] 학교수업",
+    "startTime": "09:00",
+    "returnTime": "15:20",
+    "transitMethod": "도보",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
+  },
+  {
+    "id": "gcal-2491",
     "memberId": "second_child",
     "date": "2026-09-22",
     "title": "[하율] 학교수업",
@@ -30363,33 +30473,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
   },
   {
-    "id": "gcal-2491",
-    "memberId": "first_child",
-    "date": "2026-09-22",
-    "title": "[은비] 보조공학",
-    "startTime": "16:00",
-    "returnTime": "19:00",
-    "transitMethod": "대중교통",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
-  },
-  {
     "id": "gcal-2492",
-    "memberId": "second_child",
-    "date": "2026-09-22",
-    "title": "[하율] 수학",
-    "startTime": "17:00",
-    "returnTime": "19:00",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
-  },
-  {
-    "id": "gcal-2493",
     "memberId": "second_child",
     "date": "2026-09-22",
     "title": "[하율] 태권도",
@@ -30402,20 +30486,20 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
   },
   {
-    "id": "gcal-2494",
+    "id": "gcal-2493",
     "memberId": "first_child",
     "date": "2026-09-22",
-    "title": "[은비] 움직임해부학",
-    "startTime": "14:00",
-    "returnTime": "16:00",
+    "title": "[은비] 보조공학",
+    "startTime": "16:00",
+    "returnTime": "19:00",
     "transitMethod": "대중교통",
-    "dinnerStatus": "not_required",
+    "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(E611) · 다음 강의 대기"
+    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
   },
   {
-    "id": "gcal-2495",
+    "id": "gcal-2494",
     "memberId": "first_child",
     "date": "2026-09-22",
     "title": "[은비] 재활의학",
@@ -30428,17 +30512,30 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수원 동남보건대(E606) · 다음 강의 대기"
   },
   {
-    "id": "gcal-2496",
-    "memberId": "second_child",
-    "date": "2026-09-23",
-    "title": "[하율] 영어",
-    "startTime": "17:00",
-    "returnTime": "18:05",
-    "transitMethod": "도보",
-    "dinnerStatus": "required",
+    "id": "gcal-2495",
+    "memberId": "first_child",
+    "date": "2026-09-22",
+    "title": "[은비] 움직임해부학",
+    "startTime": "14:00",
+    "returnTime": "16:00",
+    "transitMethod": "대중교통",
+    "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "수원 동남보건대(E611) · 다음 강의 대기"
+  },
+  {
+    "id": "gcal-2496",
+    "memberId": "second_child",
+    "date": "2026-09-22",
+    "title": "[하율] 수학",
+    "startTime": "17:00",
+    "returnTime": "19:00",
+    "transitMethod": "도보",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
   },
   {
     "id": "gcal-2497",
@@ -30455,32 +30552,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-2498",
-    "memberId": "first_child",
-    "date": "2026-09-23",
-    "title": "[은비] 해부학2",
-    "startTime": "16:00",
-    "returnTime": "19:00",
-    "transitMethod": "대중교통",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "수원 동남보건대(D102) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
-  },
-  {
-    "id": "gcal-2499",
-    "memberId": "second_child",
-    "date": "2026-09-23",
-    "title": "[하율] 학교수업",
-    "startTime": "09:00",
-    "returnTime": "15:20",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
-  },
-  {
-    "id": "gcal-2500",
     "memberId": "second_child",
     "date": "2026-09-23",
     "title": "[하율] 태권도",
@@ -30493,12 +30564,38 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
   },
   {
+    "id": "gcal-2499",
+    "memberId": "second_child",
+    "date": "2026-09-23",
+    "title": "[하율] 영어",
+    "startTime": "17:00",
+    "returnTime": "18:05",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+  },
+  {
+    "id": "gcal-2500",
+    "memberId": "first_child",
+    "date": "2026-09-23",
+    "title": "[은비] 해부학2",
+    "startTime": "16:00",
+    "returnTime": "19:00",
+    "transitMethod": "대중교통",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "수원 동남보건대(D102) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+  },
+  {
     "id": "gcal-2501",
     "memberId": "second_child",
-    "date": "2026-09-24",
+    "date": "2026-09-23",
     "title": "[하율] 학교수업",
     "startTime": "09:00",
-    "returnTime": "16:15",
+    "returnTime": "15:20",
     "transitMethod": "도보",
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
@@ -30509,14 +30606,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-2502",
     "memberId": "second_child",
     "date": "2026-09-24",
-    "title": "[하율] 수학",
-    "startTime": "17:00",
-    "returnTime": "19:00",
+    "title": "[하율] 학교수업",
+    "startTime": "09:00",
+    "returnTime": "16:15",
     "transitMethod": "도보",
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
+    "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
   },
   {
     "id": "gcal-2503",
@@ -30533,6 +30630,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-2504",
+    "memberId": "second_child",
+    "date": "2026-09-24",
+    "title": "[하율] 수학",
+    "startTime": "17:00",
+    "returnTime": "19:00",
+    "transitMethod": "도보",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
+  },
+  {
+    "id": "gcal-2505",
     "memberId": "family",
     "date": "2026-09-25",
     "title": "안양장모님생신(처가)",
@@ -30544,46 +30654,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2505",
-    "memberId": "second_child",
-    "date": "2026-09-25",
-    "title": "[하율] 영어",
-    "startTime": "17:00",
-    "returnTime": "18:05",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
-  },
-  {
     "id": "gcal-2506",
-    "memberId": "second_child",
-    "date": "2026-09-25",
-    "title": "[하율] 수학",
-    "startTime": "17:00",
-    "returnTime": "19:00",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
-  },
-  {
-    "id": "gcal-2507",
-    "memberId": "second_child",
-    "date": "2026-09-25",
-    "title": "[하율] 학교수업",
-    "startTime": "09:00",
-    "returnTime": "15:20",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
-  },
-  {
-    "id": "gcal-2508",
     "memberId": "second_child",
     "date": "2026-09-25",
     "title": "[하율] 태권도",
@@ -30596,7 +30667,46 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
   },
   {
+    "id": "gcal-2507",
+    "memberId": "second_child",
+    "date": "2026-09-25",
+    "title": "[하율] 영어",
+    "startTime": "17:00",
+    "returnTime": "18:05",
+    "transitMethod": "도보",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+  },
+  {
+    "id": "gcal-2508",
+    "memberId": "second_child",
+    "date": "2026-09-25",
+    "title": "[하율] 수학",
+    "startTime": "17:00",
+    "returnTime": "19:00",
+    "transitMethod": "도보",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
+  },
+  {
     "id": "gcal-2509",
+    "memberId": "second_child",
+    "date": "2026-09-25",
+    "title": "[하율] 학교수업",
+    "startTime": "09:00",
+    "returnTime": "15:20",
+    "transitMethod": "도보",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
+  },
+  {
+    "id": "gcal-2510",
     "memberId": "family",
     "date": "2026-09-26",
     "title": "교회청소",
@@ -30608,59 +30718,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2510",
-    "memberId": "second_child",
-    "date": "2026-09-28",
-    "title": "[하율] 영어",
-    "startTime": "17:00",
-    "returnTime": "18:05",
-    "transitMethod": "도보",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
-  },
-  {
     "id": "gcal-2511",
-    "memberId": "first_child",
-    "date": "2026-09-28",
-    "title": "[은비] 상담심리학",
-    "startTime": "14:00",
-    "returnTime": "16:00",
-    "transitMethod": "대중교통",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "수원 동남보건대(E606) · 다음 강의 대기"
-  },
-  {
-    "id": "gcal-2512",
-    "memberId": "second_child",
-    "date": "2026-09-28",
-    "title": "[하율] 학교수업",
-    "startTime": "09:00",
-    "returnTime": "15:20",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
-  },
-  {
-    "id": "gcal-2513",
-    "memberId": "second_child",
-    "date": "2026-09-28",
-    "title": "[하율] 태권도",
-    "startTime": "19:00",
-    "returnTime": "20:05",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
-  },
-  {
-    "id": "gcal-2514",
     "memberId": "first_child",
     "date": "2026-09-28",
     "title": "[은비] 생리학",
@@ -30673,7 +30731,59 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
   },
   {
+    "id": "gcal-2512",
+    "memberId": "second_child",
+    "date": "2026-09-28",
+    "title": "[하율] 태권도",
+    "startTime": "19:00",
+    "returnTime": "20:05",
+    "transitMethod": "도보",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+  },
+  {
+    "id": "gcal-2513",
+    "memberId": "second_child",
+    "date": "2026-09-28",
+    "title": "[하율] 영어",
+    "startTime": "17:00",
+    "returnTime": "18:05",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+  },
+  {
+    "id": "gcal-2514",
+    "memberId": "first_child",
+    "date": "2026-09-28",
+    "title": "[은비] 상담심리학",
+    "startTime": "14:00",
+    "returnTime": "16:00",
+    "transitMethod": "대중교통",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "수원 동남보건대(E606) · 다음 강의 대기"
+  },
+  {
     "id": "gcal-2515",
+    "memberId": "second_child",
+    "date": "2026-09-28",
+    "title": "[하율] 학교수업",
+    "startTime": "09:00",
+    "returnTime": "15:20",
+    "transitMethod": "도보",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
+  },
+  {
+    "id": "gcal-2516",
     "memberId": "second_child",
     "date": "2026-09-29",
     "title": "[하율] 학교수업",
@@ -30686,33 +30796,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
   },
   {
-    "id": "gcal-2516",
-    "memberId": "first_child",
-    "date": "2026-09-29",
-    "title": "[은비] 보조공학",
-    "startTime": "16:00",
-    "returnTime": "19:00",
-    "transitMethod": "대중교통",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
-  },
-  {
     "id": "gcal-2517",
-    "memberId": "second_child",
-    "date": "2026-09-29",
-    "title": "[하율] 수학",
-    "startTime": "17:00",
-    "returnTime": "19:00",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
-  },
-  {
-    "id": "gcal-2518",
     "memberId": "second_child",
     "date": "2026-09-29",
     "title": "[하율] 태권도",
@@ -30725,20 +30809,20 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
   },
   {
-    "id": "gcal-2519",
+    "id": "gcal-2518",
     "memberId": "first_child",
     "date": "2026-09-29",
-    "title": "[은비] 움직임해부학",
-    "startTime": "14:00",
-    "returnTime": "16:00",
+    "title": "[은비] 보조공학",
+    "startTime": "16:00",
+    "returnTime": "19:00",
     "transitMethod": "대중교통",
-    "dinnerStatus": "not_required",
+    "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(E611) · 다음 강의 대기"
+    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
   },
   {
-    "id": "gcal-2520",
+    "id": "gcal-2519",
     "memberId": "first_child",
     "date": "2026-09-29",
     "title": "[은비] 재활의학",
@@ -30751,17 +30835,30 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수원 동남보건대(E606) · 다음 강의 대기"
   },
   {
-    "id": "gcal-2521",
-    "memberId": "second_child",
-    "date": "2026-09-30",
-    "title": "[하율] 영어",
-    "startTime": "17:00",
-    "returnTime": "18:05",
-    "transitMethod": "도보",
-    "dinnerStatus": "required",
+    "id": "gcal-2520",
+    "memberId": "first_child",
+    "date": "2026-09-29",
+    "title": "[은비] 움직임해부학",
+    "startTime": "14:00",
+    "returnTime": "16:00",
+    "transitMethod": "대중교통",
+    "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "수원 동남보건대(E611) · 다음 강의 대기"
+  },
+  {
+    "id": "gcal-2521",
+    "memberId": "second_child",
+    "date": "2026-09-29",
+    "title": "[하율] 수학",
+    "startTime": "17:00",
+    "returnTime": "19:00",
+    "transitMethod": "도보",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
   },
   {
     "id": "gcal-2522",
@@ -30778,32 +30875,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-2523",
-    "memberId": "first_child",
-    "date": "2026-09-30",
-    "title": "[은비] 해부학2",
-    "startTime": "16:00",
-    "returnTime": "19:00",
-    "transitMethod": "대중교통",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "수원 동남보건대(D102) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
-  },
-  {
-    "id": "gcal-2524",
-    "memberId": "second_child",
-    "date": "2026-09-30",
-    "title": "[하율] 학교수업",
-    "startTime": "09:00",
-    "returnTime": "15:20",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
-  },
-  {
-    "id": "gcal-2525",
     "memberId": "second_child",
     "date": "2026-09-30",
     "title": "[하율] 태권도",
@@ -30816,12 +30887,38 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
   },
   {
+    "id": "gcal-2524",
+    "memberId": "second_child",
+    "date": "2026-09-30",
+    "title": "[하율] 영어",
+    "startTime": "17:00",
+    "returnTime": "18:05",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+  },
+  {
+    "id": "gcal-2525",
+    "memberId": "first_child",
+    "date": "2026-09-30",
+    "title": "[은비] 해부학2",
+    "startTime": "16:00",
+    "returnTime": "19:00",
+    "transitMethod": "대중교통",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "수원 동남보건대(D102) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+  },
+  {
     "id": "gcal-2526",
     "memberId": "second_child",
-    "date": "2026-10-01",
+    "date": "2026-09-30",
     "title": "[하율] 학교수업",
     "startTime": "09:00",
-    "returnTime": "16:15",
+    "returnTime": "15:20",
     "transitMethod": "도보",
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
@@ -30832,14 +30929,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-2527",
     "memberId": "second_child",
     "date": "2026-10-01",
-    "title": "[하율] 수학",
-    "startTime": "17:00",
-    "returnTime": "19:00",
+    "title": "[하율] 학교수업",
+    "startTime": "09:00",
+    "returnTime": "16:15",
     "transitMethod": "도보",
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
+    "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
   },
   {
     "id": "gcal-2528",
@@ -30857,32 +30954,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   {
     "id": "gcal-2529",
     "memberId": "second_child",
-    "date": "2026-10-02",
-    "title": "하율 체육대회",
-    "startTime": "09:00",
-    "returnTime": "09:00",
-    "transitMethod": "도보",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-2530",
-    "memberId": "second_child",
-    "date": "2026-10-02",
-    "title": "[하율] 영어",
-    "startTime": "17:00",
-    "returnTime": "18:05",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
-  },
-  {
-    "id": "gcal-2531",
-    "memberId": "second_child",
-    "date": "2026-10-02",
+    "date": "2026-10-01",
     "title": "[하율] 수학",
     "startTime": "17:00",
     "returnTime": "19:00",
@@ -30893,20 +30965,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
   },
   {
-    "id": "gcal-2532",
+    "id": "gcal-2530",
     "memberId": "second_child",
     "date": "2026-10-02",
-    "title": "[하율] 학교수업",
+    "title": "하율 체육대회",
     "startTime": "09:00",
-    "returnTime": "15:20",
+    "returnTime": "09:00",
     "transitMethod": "도보",
-    "dinnerStatus": "not_required",
+    "dinnerStatus": "required",
     "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
+    "isRecurring": false
   },
   {
-    "id": "gcal-2533",
+    "id": "gcal-2531",
     "memberId": "second_child",
     "date": "2026-10-02",
     "title": "[하율] 태권도",
@@ -30919,35 +30990,35 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
   },
   {
-    "id": "gcal-2534",
+    "id": "gcal-2532",
     "memberId": "second_child",
-    "date": "2026-10-05",
+    "date": "2026-10-02",
     "title": "[하율] 영어",
     "startTime": "17:00",
     "returnTime": "18:05",
     "transitMethod": "도보",
-    "dinnerStatus": "required",
+    "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
     "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
   },
   {
-    "id": "gcal-2535",
-    "memberId": "first_child",
-    "date": "2026-10-05",
-    "title": "[은비] 상담심리학",
-    "startTime": "14:00",
-    "returnTime": "16:00",
-    "transitMethod": "대중교통",
+    "id": "gcal-2533",
+    "memberId": "second_child",
+    "date": "2026-10-02",
+    "title": "[하율] 수학",
+    "startTime": "17:00",
+    "returnTime": "19:00",
+    "transitMethod": "도보",
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(E606) · 다음 강의 대기"
+    "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
   },
   {
-    "id": "gcal-2536",
+    "id": "gcal-2534",
     "memberId": "second_child",
-    "date": "2026-10-05",
+    "date": "2026-10-02",
     "title": "[하율] 학교수업",
     "startTime": "09:00",
     "returnTime": "15:20",
@@ -30958,20 +31029,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
   },
   {
-    "id": "gcal-2537",
-    "memberId": "second_child",
-    "date": "2026-10-05",
-    "title": "[하율] 태권도",
-    "startTime": "19:00",
-    "returnTime": "20:05",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
-  },
-  {
-    "id": "gcal-2538",
+    "id": "gcal-2535",
     "memberId": "first_child",
     "date": "2026-10-05",
     "title": "[은비] 생리학",
@@ -30984,7 +31042,59 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
   },
   {
+    "id": "gcal-2536",
+    "memberId": "second_child",
+    "date": "2026-10-05",
+    "title": "[하율] 태권도",
+    "startTime": "19:00",
+    "returnTime": "20:05",
+    "transitMethod": "도보",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+  },
+  {
+    "id": "gcal-2537",
+    "memberId": "second_child",
+    "date": "2026-10-05",
+    "title": "[하율] 영어",
+    "startTime": "17:00",
+    "returnTime": "18:05",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+  },
+  {
+    "id": "gcal-2538",
+    "memberId": "first_child",
+    "date": "2026-10-05",
+    "title": "[은비] 상담심리학",
+    "startTime": "14:00",
+    "returnTime": "16:00",
+    "transitMethod": "대중교통",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "수원 동남보건대(E606) · 다음 강의 대기"
+  },
+  {
     "id": "gcal-2539",
+    "memberId": "second_child",
+    "date": "2026-10-05",
+    "title": "[하율] 학교수업",
+    "startTime": "09:00",
+    "returnTime": "15:20",
+    "transitMethod": "도보",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
+  },
+  {
+    "id": "gcal-2540",
     "memberId": "second_child",
     "date": "2026-10-06",
     "title": "[하율] 학교수업",
@@ -30997,33 +31107,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
   },
   {
-    "id": "gcal-2540",
-    "memberId": "first_child",
-    "date": "2026-10-06",
-    "title": "[은비] 보조공학",
-    "startTime": "16:00",
-    "returnTime": "19:00",
-    "transitMethod": "대중교통",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
-  },
-  {
     "id": "gcal-2541",
-    "memberId": "second_child",
-    "date": "2026-10-06",
-    "title": "[하율] 수학",
-    "startTime": "17:00",
-    "returnTime": "19:00",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
-  },
-  {
-    "id": "gcal-2542",
     "memberId": "second_child",
     "date": "2026-10-06",
     "title": "[하율] 태권도",
@@ -31036,20 +31120,20 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
   },
   {
-    "id": "gcal-2543",
+    "id": "gcal-2542",
     "memberId": "first_child",
     "date": "2026-10-06",
-    "title": "[은비] 움직임해부학",
-    "startTime": "14:00",
-    "returnTime": "16:00",
+    "title": "[은비] 보조공학",
+    "startTime": "16:00",
+    "returnTime": "19:00",
     "transitMethod": "대중교통",
-    "dinnerStatus": "not_required",
+    "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(E611) · 다음 강의 대기"
+    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
   },
   {
-    "id": "gcal-2544",
+    "id": "gcal-2543",
     "memberId": "first_child",
     "date": "2026-10-06",
     "title": "[은비] 재활의학",
@@ -31062,17 +31146,30 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수원 동남보건대(E606) · 다음 강의 대기"
   },
   {
-    "id": "gcal-2545",
-    "memberId": "second_child",
-    "date": "2026-10-07",
-    "title": "[하율] 영어",
-    "startTime": "17:00",
-    "returnTime": "18:05",
-    "transitMethod": "도보",
-    "dinnerStatus": "required",
+    "id": "gcal-2544",
+    "memberId": "first_child",
+    "date": "2026-10-06",
+    "title": "[은비] 움직임해부학",
+    "startTime": "14:00",
+    "returnTime": "16:00",
+    "transitMethod": "대중교통",
+    "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "수원 동남보건대(E611) · 다음 강의 대기"
+  },
+  {
+    "id": "gcal-2545",
+    "memberId": "second_child",
+    "date": "2026-10-06",
+    "title": "[하율] 수학",
+    "startTime": "17:00",
+    "returnTime": "19:00",
+    "transitMethod": "도보",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
   },
   {
     "id": "gcal-2546",
@@ -31089,32 +31186,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-2547",
-    "memberId": "first_child",
-    "date": "2026-10-07",
-    "title": "[은비] 해부학2",
-    "startTime": "16:00",
-    "returnTime": "19:00",
-    "transitMethod": "대중교통",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "수원 동남보건대(D102) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
-  },
-  {
-    "id": "gcal-2548",
-    "memberId": "second_child",
-    "date": "2026-10-07",
-    "title": "[하율] 학교수업",
-    "startTime": "09:00",
-    "returnTime": "15:20",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
-  },
-  {
-    "id": "gcal-2549",
     "memberId": "second_child",
     "date": "2026-10-07",
     "title": "[하율] 태권도",
@@ -31127,12 +31198,38 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
   },
   {
+    "id": "gcal-2548",
+    "memberId": "second_child",
+    "date": "2026-10-07",
+    "title": "[하율] 영어",
+    "startTime": "17:00",
+    "returnTime": "18:05",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+  },
+  {
+    "id": "gcal-2549",
+    "memberId": "first_child",
+    "date": "2026-10-07",
+    "title": "[은비] 해부학2",
+    "startTime": "16:00",
+    "returnTime": "19:00",
+    "transitMethod": "대중교통",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "수원 동남보건대(D102) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+  },
+  {
     "id": "gcal-2550",
     "memberId": "second_child",
-    "date": "2026-10-08",
+    "date": "2026-10-07",
     "title": "[하율] 학교수업",
     "startTime": "09:00",
-    "returnTime": "16:15",
+    "returnTime": "15:20",
     "transitMethod": "도보",
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
@@ -31143,14 +31240,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-2551",
     "memberId": "second_child",
     "date": "2026-10-08",
-    "title": "[하율] 수학",
-    "startTime": "17:00",
-    "returnTime": "19:00",
+    "title": "[하율] 학교수업",
+    "startTime": "09:00",
+    "returnTime": "16:15",
     "transitMethod": "도보",
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
+    "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
   },
   {
     "id": "gcal-2552",
@@ -31168,20 +31265,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   {
     "id": "gcal-2553",
     "memberId": "second_child",
-    "date": "2026-10-09",
-    "title": "[하율] 영어",
-    "startTime": "17:00",
-    "returnTime": "18:05",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
-  },
-  {
-    "id": "gcal-2554",
-    "memberId": "second_child",
-    "date": "2026-10-09",
+    "date": "2026-10-08",
     "title": "[하율] 수학",
     "startTime": "17:00",
     "returnTime": "19:00",
@@ -31192,20 +31276,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
   },
   {
-    "id": "gcal-2555",
-    "memberId": "second_child",
-    "date": "2026-10-09",
-    "title": "[하율] 학교수업",
-    "startTime": "09:00",
-    "returnTime": "15:20",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
-  },
-  {
-    "id": "gcal-2556",
+    "id": "gcal-2554",
     "memberId": "second_child",
     "date": "2026-10-09",
     "title": "[하율] 태권도",
@@ -31218,7 +31289,46 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
   },
   {
+    "id": "gcal-2555",
+    "memberId": "second_child",
+    "date": "2026-10-09",
+    "title": "[하율] 영어",
+    "startTime": "17:00",
+    "returnTime": "18:05",
+    "transitMethod": "도보",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+  },
+  {
+    "id": "gcal-2556",
+    "memberId": "second_child",
+    "date": "2026-10-09",
+    "title": "[하율] 수학",
+    "startTime": "17:00",
+    "returnTime": "19:00",
+    "transitMethod": "도보",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
+  },
+  {
     "id": "gcal-2557",
+    "memberId": "second_child",
+    "date": "2026-10-09",
+    "title": "[하율] 학교수업",
+    "startTime": "09:00",
+    "returnTime": "15:20",
+    "transitMethod": "도보",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
+  },
+  {
+    "id": "gcal-2558",
     "memberId": "first_child",
     "date": "2026-10-12",
     "title": "은비 중간고사",
@@ -31230,59 +31340,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2558",
-    "memberId": "second_child",
-    "date": "2026-10-12",
-    "title": "[하율] 영어",
-    "startTime": "17:00",
-    "returnTime": "18:05",
-    "transitMethod": "도보",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
-  },
-  {
     "id": "gcal-2559",
-    "memberId": "first_child",
-    "date": "2026-10-12",
-    "title": "[은비] 상담심리학",
-    "startTime": "14:00",
-    "returnTime": "16:00",
-    "transitMethod": "대중교통",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "수원 동남보건대(E606) · 다음 강의 대기"
-  },
-  {
-    "id": "gcal-2560",
-    "memberId": "second_child",
-    "date": "2026-10-12",
-    "title": "[하율] 학교수업",
-    "startTime": "09:00",
-    "returnTime": "15:20",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
-  },
-  {
-    "id": "gcal-2561",
-    "memberId": "second_child",
-    "date": "2026-10-12",
-    "title": "[하율] 태권도",
-    "startTime": "19:00",
-    "returnTime": "20:05",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
-  },
-  {
-    "id": "gcal-2562",
     "memberId": "first_child",
     "date": "2026-10-12",
     "title": "[은비] 생리학",
@@ -31295,7 +31353,59 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
   },
   {
+    "id": "gcal-2560",
+    "memberId": "second_child",
+    "date": "2026-10-12",
+    "title": "[하율] 태권도",
+    "startTime": "19:00",
+    "returnTime": "20:05",
+    "transitMethod": "도보",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+  },
+  {
+    "id": "gcal-2561",
+    "memberId": "second_child",
+    "date": "2026-10-12",
+    "title": "[하율] 영어",
+    "startTime": "17:00",
+    "returnTime": "18:05",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+  },
+  {
+    "id": "gcal-2562",
+    "memberId": "first_child",
+    "date": "2026-10-12",
+    "title": "[은비] 상담심리학",
+    "startTime": "14:00",
+    "returnTime": "16:00",
+    "transitMethod": "대중교통",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "수원 동남보건대(E606) · 다음 강의 대기"
+  },
+  {
     "id": "gcal-2563",
+    "memberId": "second_child",
+    "date": "2026-10-12",
+    "title": "[하율] 학교수업",
+    "startTime": "09:00",
+    "returnTime": "15:20",
+    "transitMethod": "도보",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
+  },
+  {
+    "id": "gcal-2564",
     "memberId": "second_child",
     "date": "2026-10-13",
     "title": "[하율] 학교수업",
@@ -31308,33 +31418,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
   },
   {
-    "id": "gcal-2564",
-    "memberId": "first_child",
-    "date": "2026-10-13",
-    "title": "[은비] 보조공학",
-    "startTime": "16:00",
-    "returnTime": "19:00",
-    "transitMethod": "대중교통",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
-  },
-  {
     "id": "gcal-2565",
-    "memberId": "second_child",
-    "date": "2026-10-13",
-    "title": "[하율] 수학",
-    "startTime": "17:00",
-    "returnTime": "19:00",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
-  },
-  {
-    "id": "gcal-2566",
     "memberId": "second_child",
     "date": "2026-10-13",
     "title": "[하율] 태권도",
@@ -31347,20 +31431,20 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
   },
   {
-    "id": "gcal-2567",
+    "id": "gcal-2566",
     "memberId": "first_child",
     "date": "2026-10-13",
-    "title": "[은비] 움직임해부학",
-    "startTime": "14:00",
-    "returnTime": "16:00",
+    "title": "[은비] 보조공학",
+    "startTime": "16:00",
+    "returnTime": "19:00",
     "transitMethod": "대중교통",
-    "dinnerStatus": "not_required",
+    "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(E611) · 다음 강의 대기"
+    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
   },
   {
-    "id": "gcal-2568",
+    "id": "gcal-2567",
     "memberId": "first_child",
     "date": "2026-10-13",
     "title": "[은비] 재활의학",
@@ -31373,17 +31457,30 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수원 동남보건대(E606) · 다음 강의 대기"
   },
   {
-    "id": "gcal-2569",
-    "memberId": "second_child",
-    "date": "2026-10-14",
-    "title": "[하율] 영어",
-    "startTime": "17:00",
-    "returnTime": "18:05",
-    "transitMethod": "도보",
-    "dinnerStatus": "required",
+    "id": "gcal-2568",
+    "memberId": "first_child",
+    "date": "2026-10-13",
+    "title": "[은비] 움직임해부학",
+    "startTime": "14:00",
+    "returnTime": "16:00",
+    "transitMethod": "대중교통",
+    "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "수원 동남보건대(E611) · 다음 강의 대기"
+  },
+  {
+    "id": "gcal-2569",
+    "memberId": "second_child",
+    "date": "2026-10-13",
+    "title": "[하율] 수학",
+    "startTime": "17:00",
+    "returnTime": "19:00",
+    "transitMethod": "도보",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
   },
   {
     "id": "gcal-2570",
@@ -31400,32 +31497,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-2571",
-    "memberId": "first_child",
-    "date": "2026-10-14",
-    "title": "[은비] 해부학2",
-    "startTime": "16:00",
-    "returnTime": "19:00",
-    "transitMethod": "대중교통",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "수원 동남보건대(D102) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
-  },
-  {
-    "id": "gcal-2572",
-    "memberId": "second_child",
-    "date": "2026-10-14",
-    "title": "[하율] 학교수업",
-    "startTime": "09:00",
-    "returnTime": "15:20",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
-  },
-  {
-    "id": "gcal-2573",
     "memberId": "second_child",
     "date": "2026-10-14",
     "title": "[하율] 태권도",
@@ -31438,19 +31509,58 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
   },
   {
+    "id": "gcal-2572",
+    "memberId": "second_child",
+    "date": "2026-10-14",
+    "title": "[하율] 영어",
+    "startTime": "17:00",
+    "returnTime": "18:05",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+  },
+  {
+    "id": "gcal-2573",
+    "memberId": "first_child",
+    "date": "2026-10-14",
+    "title": "[은비] 해부학2",
+    "startTime": "16:00",
+    "returnTime": "19:00",
+    "transitMethod": "대중교통",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "수원 동남보건대(D102) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+  },
+  {
     "id": "gcal-2574",
-    "memberId": "family",
+    "memberId": "second_child",
+    "date": "2026-10-14",
+    "title": "[하율] 학교수업",
+    "startTime": "09:00",
+    "returnTime": "15:20",
+    "transitMethod": "도보",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
+  },
+  {
+    "id": "gcal-2575",
+    "memberId": "parents",
     "date": "2026-10-15",
     "title": "서울아빠제사(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-2575",
+    "id": "gcal-2576",
     "memberId": "second_child",
     "date": "2026-10-15",
     "title": "[하율] 학교수업",
@@ -31461,19 +31571,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "guardian": "스스로 귀가",
     "isRecurring": false,
     "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
-  },
-  {
-    "id": "gcal-2576",
-    "memberId": "second_child",
-    "date": "2026-10-15",
-    "title": "[하율] 수학",
-    "startTime": "17:00",
-    "returnTime": "19:00",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
   },
   {
     "id": "gcal-2577",
@@ -31491,15 +31588,15 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   {
     "id": "gcal-2578",
     "memberId": "second_child",
-    "date": "2026-10-16",
-    "title": "[하율] 영어",
+    "date": "2026-10-15",
+    "title": "[하율] 수학",
     "startTime": "17:00",
-    "returnTime": "18:05",
+    "returnTime": "19:00",
     "transitMethod": "도보",
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
   },
   {
     "id": "gcal-2579",
@@ -31517,32 +31614,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-2580",
     "memberId": "second_child",
     "date": "2026-10-16",
-    "title": "[하율] 수학",
-    "startTime": "17:00",
-    "returnTime": "19:00",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
-  },
-  {
-    "id": "gcal-2581",
-    "memberId": "second_child",
-    "date": "2026-10-16",
-    "title": "[하율] 학교수업",
-    "startTime": "09:00",
-    "returnTime": "15:20",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
-  },
-  {
-    "id": "gcal-2582",
-    "memberId": "second_child",
-    "date": "2026-10-16",
     "title": "[하율] 태권도",
     "startTime": "19:00",
     "returnTime": "20:05",
@@ -31553,35 +31624,35 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
   },
   {
-    "id": "gcal-2583",
+    "id": "gcal-2581",
     "memberId": "second_child",
-    "date": "2026-10-19",
+    "date": "2026-10-16",
     "title": "[하율] 영어",
     "startTime": "17:00",
     "returnTime": "18:05",
     "transitMethod": "도보",
-    "dinnerStatus": "required",
+    "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
     "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
   },
   {
-    "id": "gcal-2584",
-    "memberId": "first_child",
-    "date": "2026-10-19",
-    "title": "[은비] 상담심리학",
-    "startTime": "14:00",
-    "returnTime": "16:00",
-    "transitMethod": "대중교통",
+    "id": "gcal-2582",
+    "memberId": "second_child",
+    "date": "2026-10-16",
+    "title": "[하율] 수학",
+    "startTime": "17:00",
+    "returnTime": "19:00",
+    "transitMethod": "도보",
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(E606) · 다음 강의 대기"
+    "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
   },
   {
-    "id": "gcal-2585",
+    "id": "gcal-2583",
     "memberId": "second_child",
-    "date": "2026-10-19",
+    "date": "2026-10-16",
     "title": "[하율] 학교수업",
     "startTime": "09:00",
     "returnTime": "15:20",
@@ -31592,20 +31663,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
   },
   {
-    "id": "gcal-2586",
-    "memberId": "second_child",
-    "date": "2026-10-19",
-    "title": "[하율] 태권도",
-    "startTime": "19:00",
-    "returnTime": "20:05",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
-  },
-  {
-    "id": "gcal-2587",
+    "id": "gcal-2584",
     "memberId": "first_child",
     "date": "2026-10-19",
     "title": "[은비] 생리학",
@@ -31618,7 +31676,59 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
   },
   {
+    "id": "gcal-2585",
+    "memberId": "second_child",
+    "date": "2026-10-19",
+    "title": "[하율] 태권도",
+    "startTime": "19:00",
+    "returnTime": "20:05",
+    "transitMethod": "도보",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+  },
+  {
+    "id": "gcal-2586",
+    "memberId": "second_child",
+    "date": "2026-10-19",
+    "title": "[하율] 영어",
+    "startTime": "17:00",
+    "returnTime": "18:05",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+  },
+  {
+    "id": "gcal-2587",
+    "memberId": "first_child",
+    "date": "2026-10-19",
+    "title": "[은비] 상담심리학",
+    "startTime": "14:00",
+    "returnTime": "16:00",
+    "transitMethod": "대중교통",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "수원 동남보건대(E606) · 다음 강의 대기"
+  },
+  {
     "id": "gcal-2588",
+    "memberId": "second_child",
+    "date": "2026-10-19",
+    "title": "[하율] 학교수업",
+    "startTime": "09:00",
+    "returnTime": "15:20",
+    "transitMethod": "도보",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
+  },
+  {
+    "id": "gcal-2589",
     "memberId": "second_child",
     "date": "2026-10-20",
     "title": "[하율] 학교수업",
@@ -31631,33 +31741,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
   },
   {
-    "id": "gcal-2589",
-    "memberId": "first_child",
-    "date": "2026-10-20",
-    "title": "[은비] 보조공학",
-    "startTime": "16:00",
-    "returnTime": "19:00",
-    "transitMethod": "대중교통",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
-  },
-  {
     "id": "gcal-2590",
-    "memberId": "second_child",
-    "date": "2026-10-20",
-    "title": "[하율] 수학",
-    "startTime": "17:00",
-    "returnTime": "19:00",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
-  },
-  {
-    "id": "gcal-2591",
     "memberId": "second_child",
     "date": "2026-10-20",
     "title": "[하율] 태권도",
@@ -31670,20 +31754,20 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
   },
   {
-    "id": "gcal-2592",
+    "id": "gcal-2591",
     "memberId": "first_child",
     "date": "2026-10-20",
-    "title": "[은비] 움직임해부학",
-    "startTime": "14:00",
-    "returnTime": "16:00",
+    "title": "[은비] 보조공학",
+    "startTime": "16:00",
+    "returnTime": "19:00",
     "transitMethod": "대중교통",
-    "dinnerStatus": "not_required",
+    "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(E611) · 다음 강의 대기"
+    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
   },
   {
-    "id": "gcal-2593",
+    "id": "gcal-2592",
     "memberId": "first_child",
     "date": "2026-10-20",
     "title": "[은비] 재활의학",
@@ -31696,17 +31780,30 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수원 동남보건대(E606) · 다음 강의 대기"
   },
   {
-    "id": "gcal-2594",
-    "memberId": "second_child",
-    "date": "2026-10-21",
-    "title": "[하율] 영어",
-    "startTime": "17:00",
-    "returnTime": "18:05",
-    "transitMethod": "도보",
-    "dinnerStatus": "required",
+    "id": "gcal-2593",
+    "memberId": "first_child",
+    "date": "2026-10-20",
+    "title": "[은비] 움직임해부학",
+    "startTime": "14:00",
+    "returnTime": "16:00",
+    "transitMethod": "대중교통",
+    "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "수원 동남보건대(E611) · 다음 강의 대기"
+  },
+  {
+    "id": "gcal-2594",
+    "memberId": "second_child",
+    "date": "2026-10-20",
+    "title": "[하율] 수학",
+    "startTime": "17:00",
+    "returnTime": "19:00",
+    "transitMethod": "도보",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
   },
   {
     "id": "gcal-2595",
@@ -31723,32 +31820,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-2596",
-    "memberId": "first_child",
-    "date": "2026-10-21",
-    "title": "[은비] 해부학2",
-    "startTime": "16:00",
-    "returnTime": "19:00",
-    "transitMethod": "대중교통",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "수원 동남보건대(D102) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
-  },
-  {
-    "id": "gcal-2597",
-    "memberId": "second_child",
-    "date": "2026-10-21",
-    "title": "[하율] 학교수업",
-    "startTime": "09:00",
-    "returnTime": "15:20",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
-  },
-  {
-    "id": "gcal-2598",
     "memberId": "second_child",
     "date": "2026-10-21",
     "title": "[하율] 태권도",
@@ -31761,12 +31832,38 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
   },
   {
+    "id": "gcal-2597",
+    "memberId": "second_child",
+    "date": "2026-10-21",
+    "title": "[하율] 영어",
+    "startTime": "17:00",
+    "returnTime": "18:05",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+  },
+  {
+    "id": "gcal-2598",
+    "memberId": "first_child",
+    "date": "2026-10-21",
+    "title": "[은비] 해부학2",
+    "startTime": "16:00",
+    "returnTime": "19:00",
+    "transitMethod": "대중교통",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "수원 동남보건대(D102) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+  },
+  {
     "id": "gcal-2599",
     "memberId": "second_child",
-    "date": "2026-10-22",
+    "date": "2026-10-21",
     "title": "[하율] 학교수업",
     "startTime": "09:00",
-    "returnTime": "16:15",
+    "returnTime": "15:20",
     "transitMethod": "도보",
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
@@ -31777,14 +31874,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-2600",
     "memberId": "second_child",
     "date": "2026-10-22",
-    "title": "[하율] 수학",
-    "startTime": "17:00",
-    "returnTime": "19:00",
+    "title": "[하율] 학교수업",
+    "startTime": "09:00",
+    "returnTime": "16:15",
     "transitMethod": "도보",
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
+    "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
   },
   {
     "id": "gcal-2601",
@@ -31802,20 +31899,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   {
     "id": "gcal-2602",
     "memberId": "second_child",
-    "date": "2026-10-23",
-    "title": "[하율] 영어",
-    "startTime": "17:00",
-    "returnTime": "18:05",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
-  },
-  {
-    "id": "gcal-2603",
-    "memberId": "second_child",
-    "date": "2026-10-23",
+    "date": "2026-10-22",
     "title": "[하율] 수학",
     "startTime": "17:00",
     "returnTime": "19:00",
@@ -31826,20 +31910,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
   },
   {
-    "id": "gcal-2604",
-    "memberId": "second_child",
-    "date": "2026-10-23",
-    "title": "[하율] 학교수업",
-    "startTime": "09:00",
-    "returnTime": "15:20",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
-  },
-  {
-    "id": "gcal-2605",
+    "id": "gcal-2603",
     "memberId": "second_child",
     "date": "2026-10-23",
     "title": "[하율] 태권도",
@@ -31852,7 +31923,46 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
   },
   {
+    "id": "gcal-2604",
+    "memberId": "second_child",
+    "date": "2026-10-23",
+    "title": "[하율] 영어",
+    "startTime": "17:00",
+    "returnTime": "18:05",
+    "transitMethod": "도보",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+  },
+  {
+    "id": "gcal-2605",
+    "memberId": "second_child",
+    "date": "2026-10-23",
+    "title": "[하율] 수학",
+    "startTime": "17:00",
+    "returnTime": "19:00",
+    "transitMethod": "도보",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
+  },
+  {
     "id": "gcal-2606",
+    "memberId": "second_child",
+    "date": "2026-10-23",
+    "title": "[하율] 학교수업",
+    "startTime": "09:00",
+    "returnTime": "15:20",
+    "transitMethod": "도보",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
+  },
+  {
+    "id": "gcal-2607",
     "memberId": "family",
     "date": "2026-10-24",
     "title": "부천아버님생신(처가)",
@@ -31864,59 +31974,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2607",
-    "memberId": "second_child",
-    "date": "2026-10-26",
-    "title": "[하율] 영어",
-    "startTime": "17:00",
-    "returnTime": "18:05",
-    "transitMethod": "도보",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
-  },
-  {
     "id": "gcal-2608",
-    "memberId": "first_child",
-    "date": "2026-10-26",
-    "title": "[은비] 상담심리학",
-    "startTime": "14:00",
-    "returnTime": "16:00",
-    "transitMethod": "대중교통",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "수원 동남보건대(E606) · 다음 강의 대기"
-  },
-  {
-    "id": "gcal-2609",
-    "memberId": "second_child",
-    "date": "2026-10-26",
-    "title": "[하율] 학교수업",
-    "startTime": "09:00",
-    "returnTime": "15:20",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
-  },
-  {
-    "id": "gcal-2610",
-    "memberId": "second_child",
-    "date": "2026-10-26",
-    "title": "[하율] 태권도",
-    "startTime": "19:00",
-    "returnTime": "20:05",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
-  },
-  {
-    "id": "gcal-2611",
     "memberId": "first_child",
     "date": "2026-10-26",
     "title": "[은비] 생리학",
@@ -31929,7 +31987,59 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
   },
   {
+    "id": "gcal-2609",
+    "memberId": "second_child",
+    "date": "2026-10-26",
+    "title": "[하율] 태권도",
+    "startTime": "19:00",
+    "returnTime": "20:05",
+    "transitMethod": "도보",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+  },
+  {
+    "id": "gcal-2610",
+    "memberId": "second_child",
+    "date": "2026-10-26",
+    "title": "[하율] 영어",
+    "startTime": "17:00",
+    "returnTime": "18:05",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+  },
+  {
+    "id": "gcal-2611",
+    "memberId": "first_child",
+    "date": "2026-10-26",
+    "title": "[은비] 상담심리학",
+    "startTime": "14:00",
+    "returnTime": "16:00",
+    "transitMethod": "대중교통",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "수원 동남보건대(E606) · 다음 강의 대기"
+  },
+  {
     "id": "gcal-2612",
+    "memberId": "second_child",
+    "date": "2026-10-26",
+    "title": "[하율] 학교수업",
+    "startTime": "09:00",
+    "returnTime": "15:20",
+    "transitMethod": "도보",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
+  },
+  {
+    "id": "gcal-2613",
     "memberId": "second_child",
     "date": "2026-10-27",
     "title": "[하율] 학교수업",
@@ -31942,33 +32052,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
   },
   {
-    "id": "gcal-2613",
-    "memberId": "first_child",
-    "date": "2026-10-27",
-    "title": "[은비] 보조공학",
-    "startTime": "16:00",
-    "returnTime": "19:00",
-    "transitMethod": "대중교통",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
-  },
-  {
     "id": "gcal-2614",
-    "memberId": "second_child",
-    "date": "2026-10-27",
-    "title": "[하율] 수학",
-    "startTime": "17:00",
-    "returnTime": "19:00",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
-  },
-  {
-    "id": "gcal-2615",
     "memberId": "second_child",
     "date": "2026-10-27",
     "title": "[하율] 태권도",
@@ -31981,20 +32065,20 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
   },
   {
-    "id": "gcal-2616",
+    "id": "gcal-2615",
     "memberId": "first_child",
     "date": "2026-10-27",
-    "title": "[은비] 움직임해부학",
-    "startTime": "14:00",
-    "returnTime": "16:00",
+    "title": "[은비] 보조공학",
+    "startTime": "16:00",
+    "returnTime": "19:00",
     "transitMethod": "대중교통",
-    "dinnerStatus": "not_required",
+    "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(E611) · 다음 강의 대기"
+    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
   },
   {
-    "id": "gcal-2617",
+    "id": "gcal-2616",
     "memberId": "first_child",
     "date": "2026-10-27",
     "title": "[은비] 재활의학",
@@ -32007,17 +32091,30 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수원 동남보건대(E606) · 다음 강의 대기"
   },
   {
-    "id": "gcal-2618",
-    "memberId": "second_child",
-    "date": "2026-10-28",
-    "title": "[하율] 영어",
-    "startTime": "17:00",
-    "returnTime": "18:05",
-    "transitMethod": "도보",
-    "dinnerStatus": "required",
+    "id": "gcal-2617",
+    "memberId": "first_child",
+    "date": "2026-10-27",
+    "title": "[은비] 움직임해부학",
+    "startTime": "14:00",
+    "returnTime": "16:00",
+    "transitMethod": "대중교통",
+    "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "수원 동남보건대(E611) · 다음 강의 대기"
+  },
+  {
+    "id": "gcal-2618",
+    "memberId": "second_child",
+    "date": "2026-10-27",
+    "title": "[하율] 수학",
+    "startTime": "17:00",
+    "returnTime": "19:00",
+    "transitMethod": "도보",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
   },
   {
     "id": "gcal-2619",
@@ -32034,32 +32131,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-2620",
-    "memberId": "first_child",
-    "date": "2026-10-28",
-    "title": "[은비] 해부학2",
-    "startTime": "16:00",
-    "returnTime": "19:00",
-    "transitMethod": "대중교통",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "수원 동남보건대(D102) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
-  },
-  {
-    "id": "gcal-2621",
-    "memberId": "second_child",
-    "date": "2026-10-28",
-    "title": "[하율] 학교수업",
-    "startTime": "09:00",
-    "returnTime": "15:20",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
-  },
-  {
-    "id": "gcal-2622",
     "memberId": "second_child",
     "date": "2026-10-28",
     "title": "[하율] 태권도",
@@ -32072,12 +32143,38 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
   },
   {
+    "id": "gcal-2621",
+    "memberId": "second_child",
+    "date": "2026-10-28",
+    "title": "[하율] 영어",
+    "startTime": "17:00",
+    "returnTime": "18:05",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+  },
+  {
+    "id": "gcal-2622",
+    "memberId": "first_child",
+    "date": "2026-10-28",
+    "title": "[은비] 해부학2",
+    "startTime": "16:00",
+    "returnTime": "19:00",
+    "transitMethod": "대중교통",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "수원 동남보건대(D102) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+  },
+  {
     "id": "gcal-2623",
     "memberId": "second_child",
-    "date": "2026-10-29",
+    "date": "2026-10-28",
     "title": "[하율] 학교수업",
     "startTime": "09:00",
-    "returnTime": "16:15",
+    "returnTime": "15:20",
     "transitMethod": "도보",
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
@@ -32088,14 +32185,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-2624",
     "memberId": "second_child",
     "date": "2026-10-29",
-    "title": "[하율] 수학",
-    "startTime": "17:00",
-    "returnTime": "19:00",
+    "title": "[하율] 학교수업",
+    "startTime": "09:00",
+    "returnTime": "16:15",
     "transitMethod": "도보",
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
+    "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
   },
   {
     "id": "gcal-2625",
@@ -32113,20 +32210,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   {
     "id": "gcal-2626",
     "memberId": "second_child",
-    "date": "2026-10-30",
-    "title": "[하율] 영어",
-    "startTime": "17:00",
-    "returnTime": "18:05",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
-  },
-  {
-    "id": "gcal-2627",
-    "memberId": "second_child",
-    "date": "2026-10-30",
+    "date": "2026-10-29",
     "title": "[하율] 수학",
     "startTime": "17:00",
     "returnTime": "19:00",
@@ -32137,20 +32221,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
   },
   {
-    "id": "gcal-2628",
-    "memberId": "second_child",
-    "date": "2026-10-30",
-    "title": "[하율] 학교수업",
-    "startTime": "09:00",
-    "returnTime": "15:20",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
-  },
-  {
-    "id": "gcal-2629",
+    "id": "gcal-2627",
     "memberId": "second_child",
     "date": "2026-10-30",
     "title": "[하율] 태권도",
@@ -32163,35 +32234,35 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
   },
   {
-    "id": "gcal-2630",
+    "id": "gcal-2628",
     "memberId": "second_child",
-    "date": "2026-11-02",
+    "date": "2026-10-30",
     "title": "[하율] 영어",
     "startTime": "17:00",
     "returnTime": "18:05",
     "transitMethod": "도보",
-    "dinnerStatus": "required",
+    "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
     "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
   },
   {
-    "id": "gcal-2631",
-    "memberId": "first_child",
-    "date": "2026-11-02",
-    "title": "[은비] 상담심리학",
-    "startTime": "14:00",
-    "returnTime": "16:00",
-    "transitMethod": "대중교통",
+    "id": "gcal-2629",
+    "memberId": "second_child",
+    "date": "2026-10-30",
+    "title": "[하율] 수학",
+    "startTime": "17:00",
+    "returnTime": "19:00",
+    "transitMethod": "도보",
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(E606) · 다음 강의 대기"
+    "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
   },
   {
-    "id": "gcal-2632",
+    "id": "gcal-2630",
     "memberId": "second_child",
-    "date": "2026-11-02",
+    "date": "2026-10-30",
     "title": "[하율] 학교수업",
     "startTime": "09:00",
     "returnTime": "15:20",
@@ -32202,20 +32273,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
   },
   {
-    "id": "gcal-2633",
-    "memberId": "second_child",
-    "date": "2026-11-02",
-    "title": "[하율] 태권도",
-    "startTime": "19:00",
-    "returnTime": "20:05",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
-  },
-  {
-    "id": "gcal-2634",
+    "id": "gcal-2631",
     "memberId": "first_child",
     "date": "2026-11-02",
     "title": "[은비] 생리학",
@@ -32228,7 +32286,59 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
   },
   {
+    "id": "gcal-2632",
+    "memberId": "second_child",
+    "date": "2026-11-02",
+    "title": "[하율] 태권도",
+    "startTime": "19:00",
+    "returnTime": "20:05",
+    "transitMethod": "도보",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+  },
+  {
+    "id": "gcal-2633",
+    "memberId": "second_child",
+    "date": "2026-11-02",
+    "title": "[하율] 영어",
+    "startTime": "17:00",
+    "returnTime": "18:05",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+  },
+  {
+    "id": "gcal-2634",
+    "memberId": "first_child",
+    "date": "2026-11-02",
+    "title": "[은비] 상담심리학",
+    "startTime": "14:00",
+    "returnTime": "16:00",
+    "transitMethod": "대중교통",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "수원 동남보건대(E606) · 다음 강의 대기"
+  },
+  {
     "id": "gcal-2635",
+    "memberId": "second_child",
+    "date": "2026-11-02",
+    "title": "[하율] 학교수업",
+    "startTime": "09:00",
+    "returnTime": "15:20",
+    "transitMethod": "도보",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
+  },
+  {
+    "id": "gcal-2636",
     "memberId": "second_child",
     "date": "2026-11-03",
     "title": "[하율] 학교수업",
@@ -32241,33 +32351,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
   },
   {
-    "id": "gcal-2636",
-    "memberId": "first_child",
-    "date": "2026-11-03",
-    "title": "[은비] 보조공학",
-    "startTime": "16:00",
-    "returnTime": "19:00",
-    "transitMethod": "대중교통",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
-  },
-  {
     "id": "gcal-2637",
-    "memberId": "second_child",
-    "date": "2026-11-03",
-    "title": "[하율] 수학",
-    "startTime": "17:00",
-    "returnTime": "19:00",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
-  },
-  {
-    "id": "gcal-2638",
     "memberId": "second_child",
     "date": "2026-11-03",
     "title": "[하율] 태권도",
@@ -32280,20 +32364,20 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
   },
   {
-    "id": "gcal-2639",
+    "id": "gcal-2638",
     "memberId": "first_child",
     "date": "2026-11-03",
-    "title": "[은비] 움직임해부학",
-    "startTime": "14:00",
-    "returnTime": "16:00",
+    "title": "[은비] 보조공학",
+    "startTime": "16:00",
+    "returnTime": "19:00",
     "transitMethod": "대중교통",
-    "dinnerStatus": "not_required",
+    "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(E611) · 다음 강의 대기"
+    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
   },
   {
-    "id": "gcal-2640",
+    "id": "gcal-2639",
     "memberId": "first_child",
     "date": "2026-11-03",
     "title": "[은비] 재활의학",
@@ -32306,17 +32390,30 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수원 동남보건대(E606) · 다음 강의 대기"
   },
   {
-    "id": "gcal-2641",
-    "memberId": "second_child",
-    "date": "2026-11-04",
-    "title": "[하율] 영어",
-    "startTime": "17:00",
-    "returnTime": "18:05",
-    "transitMethod": "도보",
-    "dinnerStatus": "required",
+    "id": "gcal-2640",
+    "memberId": "first_child",
+    "date": "2026-11-03",
+    "title": "[은비] 움직임해부학",
+    "startTime": "14:00",
+    "returnTime": "16:00",
+    "transitMethod": "대중교통",
+    "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "수원 동남보건대(E611) · 다음 강의 대기"
+  },
+  {
+    "id": "gcal-2641",
+    "memberId": "second_child",
+    "date": "2026-11-03",
+    "title": "[하율] 수학",
+    "startTime": "17:00",
+    "returnTime": "19:00",
+    "transitMethod": "도보",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
   },
   {
     "id": "gcal-2642",
@@ -32333,32 +32430,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-2643",
-    "memberId": "first_child",
-    "date": "2026-11-04",
-    "title": "[은비] 해부학2",
-    "startTime": "16:00",
-    "returnTime": "19:00",
-    "transitMethod": "대중교통",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "수원 동남보건대(D102) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
-  },
-  {
-    "id": "gcal-2644",
-    "memberId": "second_child",
-    "date": "2026-11-04",
-    "title": "[하율] 학교수업",
-    "startTime": "09:00",
-    "returnTime": "15:20",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
-  },
-  {
-    "id": "gcal-2645",
     "memberId": "second_child",
     "date": "2026-11-04",
     "title": "[하율] 태권도",
@@ -32371,12 +32442,38 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
   },
   {
+    "id": "gcal-2644",
+    "memberId": "second_child",
+    "date": "2026-11-04",
+    "title": "[하율] 영어",
+    "startTime": "17:00",
+    "returnTime": "18:05",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+  },
+  {
+    "id": "gcal-2645",
+    "memberId": "first_child",
+    "date": "2026-11-04",
+    "title": "[은비] 해부학2",
+    "startTime": "16:00",
+    "returnTime": "19:00",
+    "transitMethod": "대중교통",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "수원 동남보건대(D102) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+  },
+  {
     "id": "gcal-2646",
     "memberId": "second_child",
-    "date": "2026-11-05",
+    "date": "2026-11-04",
     "title": "[하율] 학교수업",
     "startTime": "09:00",
-    "returnTime": "16:15",
+    "returnTime": "15:20",
     "transitMethod": "도보",
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
@@ -32387,14 +32484,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-2647",
     "memberId": "second_child",
     "date": "2026-11-05",
-    "title": "[하율] 수학",
-    "startTime": "17:00",
-    "returnTime": "19:00",
+    "title": "[하율] 학교수업",
+    "startTime": "09:00",
+    "returnTime": "16:15",
     "transitMethod": "도보",
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
+    "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
   },
   {
     "id": "gcal-2648",
@@ -32412,20 +32509,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   {
     "id": "gcal-2649",
     "memberId": "second_child",
-    "date": "2026-11-06",
-    "title": "[하율] 영어",
-    "startTime": "17:00",
-    "returnTime": "18:05",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
-  },
-  {
-    "id": "gcal-2650",
-    "memberId": "second_child",
-    "date": "2026-11-06",
+    "date": "2026-11-05",
     "title": "[하율] 수학",
     "startTime": "17:00",
     "returnTime": "19:00",
@@ -32436,20 +32520,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
   },
   {
-    "id": "gcal-2651",
-    "memberId": "second_child",
-    "date": "2026-11-06",
-    "title": "[하율] 학교수업",
-    "startTime": "09:00",
-    "returnTime": "15:20",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
-  },
-  {
-    "id": "gcal-2652",
+    "id": "gcal-2650",
     "memberId": "second_child",
     "date": "2026-11-06",
     "title": "[하율] 태권도",
@@ -32462,7 +32533,46 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
   },
   {
+    "id": "gcal-2651",
+    "memberId": "second_child",
+    "date": "2026-11-06",
+    "title": "[하율] 영어",
+    "startTime": "17:00",
+    "returnTime": "18:05",
+    "transitMethod": "도보",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+  },
+  {
+    "id": "gcal-2652",
+    "memberId": "second_child",
+    "date": "2026-11-06",
+    "title": "[하율] 수학",
+    "startTime": "17:00",
+    "returnTime": "19:00",
+    "transitMethod": "도보",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
+  },
+  {
     "id": "gcal-2653",
+    "memberId": "second_child",
+    "date": "2026-11-06",
+    "title": "[하율] 학교수업",
+    "startTime": "09:00",
+    "returnTime": "15:20",
+    "transitMethod": "도보",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
+  },
+  {
+    "id": "gcal-2654",
     "memberId": "family",
     "date": "2026-11-08",
     "title": "부장님지만이결혼식",
@@ -32475,59 +32585,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "장소: 천주교성프란치스코회수도원교육회관 전기차충전소(서울 중구 정동길 9)"
   },
   {
-    "id": "gcal-2654",
-    "memberId": "second_child",
-    "date": "2026-11-09",
-    "title": "[하율] 영어",
-    "startTime": "17:00",
-    "returnTime": "18:05",
-    "transitMethod": "도보",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
-  },
-  {
     "id": "gcal-2655",
-    "memberId": "first_child",
-    "date": "2026-11-09",
-    "title": "[은비] 상담심리학",
-    "startTime": "14:00",
-    "returnTime": "16:00",
-    "transitMethod": "대중교통",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "수원 동남보건대(E606) · 다음 강의 대기"
-  },
-  {
-    "id": "gcal-2656",
-    "memberId": "second_child",
-    "date": "2026-11-09",
-    "title": "[하율] 학교수업",
-    "startTime": "09:00",
-    "returnTime": "15:20",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
-  },
-  {
-    "id": "gcal-2657",
-    "memberId": "second_child",
-    "date": "2026-11-09",
-    "title": "[하율] 태권도",
-    "startTime": "19:00",
-    "returnTime": "20:05",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
-  },
-  {
-    "id": "gcal-2658",
     "memberId": "first_child",
     "date": "2026-11-09",
     "title": "[은비] 생리학",
@@ -32540,7 +32598,59 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
   },
   {
+    "id": "gcal-2656",
+    "memberId": "second_child",
+    "date": "2026-11-09",
+    "title": "[하율] 태권도",
+    "startTime": "19:00",
+    "returnTime": "20:05",
+    "transitMethod": "도보",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+  },
+  {
+    "id": "gcal-2657",
+    "memberId": "second_child",
+    "date": "2026-11-09",
+    "title": "[하율] 영어",
+    "startTime": "17:00",
+    "returnTime": "18:05",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+  },
+  {
+    "id": "gcal-2658",
+    "memberId": "first_child",
+    "date": "2026-11-09",
+    "title": "[은비] 상담심리학",
+    "startTime": "14:00",
+    "returnTime": "16:00",
+    "transitMethod": "대중교통",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "수원 동남보건대(E606) · 다음 강의 대기"
+  },
+  {
     "id": "gcal-2659",
+    "memberId": "second_child",
+    "date": "2026-11-09",
+    "title": "[하율] 학교수업",
+    "startTime": "09:00",
+    "returnTime": "15:20",
+    "transitMethod": "도보",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
+  },
+  {
+    "id": "gcal-2660",
     "memberId": "family",
     "date": "2026-11-10",
     "title": "작은할머니제사(시댁)",
@@ -32552,7 +32662,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2660",
+    "id": "gcal-2661",
     "memberId": "second_child",
     "date": "2026-11-10",
     "title": "[하율] 학교수업",
@@ -32565,33 +32675,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
   },
   {
-    "id": "gcal-2661",
-    "memberId": "first_child",
-    "date": "2026-11-10",
-    "title": "[은비] 보조공학",
-    "startTime": "16:00",
-    "returnTime": "19:00",
-    "transitMethod": "대중교통",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
-  },
-  {
     "id": "gcal-2662",
-    "memberId": "second_child",
-    "date": "2026-11-10",
-    "title": "[하율] 수학",
-    "startTime": "17:00",
-    "returnTime": "19:00",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
-  },
-  {
-    "id": "gcal-2663",
     "memberId": "second_child",
     "date": "2026-11-10",
     "title": "[하율] 태권도",
@@ -32604,20 +32688,20 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
   },
   {
-    "id": "gcal-2664",
+    "id": "gcal-2663",
     "memberId": "first_child",
     "date": "2026-11-10",
-    "title": "[은비] 움직임해부학",
-    "startTime": "14:00",
-    "returnTime": "16:00",
+    "title": "[은비] 보조공학",
+    "startTime": "16:00",
+    "returnTime": "19:00",
     "transitMethod": "대중교통",
-    "dinnerStatus": "not_required",
+    "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(E611) · 다음 강의 대기"
+    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
   },
   {
-    "id": "gcal-2665",
+    "id": "gcal-2664",
     "memberId": "first_child",
     "date": "2026-11-10",
     "title": "[은비] 재활의학",
@@ -32630,17 +32714,30 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수원 동남보건대(E606) · 다음 강의 대기"
   },
   {
-    "id": "gcal-2666",
-    "memberId": "second_child",
-    "date": "2026-11-11",
-    "title": "[하율] 영어",
-    "startTime": "17:00",
-    "returnTime": "18:05",
-    "transitMethod": "도보",
-    "dinnerStatus": "required",
+    "id": "gcal-2665",
+    "memberId": "first_child",
+    "date": "2026-11-10",
+    "title": "[은비] 움직임해부학",
+    "startTime": "14:00",
+    "returnTime": "16:00",
+    "transitMethod": "대중교통",
+    "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "수원 동남보건대(E611) · 다음 강의 대기"
+  },
+  {
+    "id": "gcal-2666",
+    "memberId": "second_child",
+    "date": "2026-11-10",
+    "title": "[하율] 수학",
+    "startTime": "17:00",
+    "returnTime": "19:00",
+    "transitMethod": "도보",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
   },
   {
     "id": "gcal-2667",
@@ -32657,32 +32754,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-2668",
-    "memberId": "first_child",
-    "date": "2026-11-11",
-    "title": "[은비] 해부학2",
-    "startTime": "16:00",
-    "returnTime": "19:00",
-    "transitMethod": "대중교통",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "수원 동남보건대(D102) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
-  },
-  {
-    "id": "gcal-2669",
-    "memberId": "second_child",
-    "date": "2026-11-11",
-    "title": "[하율] 학교수업",
-    "startTime": "09:00",
-    "returnTime": "15:20",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
-  },
-  {
-    "id": "gcal-2670",
     "memberId": "second_child",
     "date": "2026-11-11",
     "title": "[하율] 태권도",
@@ -32695,12 +32766,38 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
   },
   {
+    "id": "gcal-2669",
+    "memberId": "second_child",
+    "date": "2026-11-11",
+    "title": "[하율] 영어",
+    "startTime": "17:00",
+    "returnTime": "18:05",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+  },
+  {
+    "id": "gcal-2670",
+    "memberId": "first_child",
+    "date": "2026-11-11",
+    "title": "[은비] 해부학2",
+    "startTime": "16:00",
+    "returnTime": "19:00",
+    "transitMethod": "대중교통",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "수원 동남보건대(D102) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+  },
+  {
     "id": "gcal-2671",
     "memberId": "second_child",
-    "date": "2026-11-12",
+    "date": "2026-11-11",
     "title": "[하율] 학교수업",
     "startTime": "09:00",
-    "returnTime": "16:15",
+    "returnTime": "15:20",
     "transitMethod": "도보",
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
@@ -32711,14 +32808,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-2672",
     "memberId": "second_child",
     "date": "2026-11-12",
-    "title": "[하율] 수학",
-    "startTime": "17:00",
-    "returnTime": "19:00",
+    "title": "[하율] 학교수업",
+    "startTime": "09:00",
+    "returnTime": "16:15",
     "transitMethod": "도보",
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
+    "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
   },
   {
     "id": "gcal-2673",
@@ -32736,20 +32833,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   {
     "id": "gcal-2674",
     "memberId": "second_child",
-    "date": "2026-11-13",
-    "title": "[하율] 영어",
-    "startTime": "17:00",
-    "returnTime": "18:05",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
-  },
-  {
-    "id": "gcal-2675",
-    "memberId": "second_child",
-    "date": "2026-11-13",
+    "date": "2026-11-12",
     "title": "[하율] 수학",
     "startTime": "17:00",
     "returnTime": "19:00",
@@ -32760,20 +32844,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
   },
   {
-    "id": "gcal-2676",
-    "memberId": "second_child",
-    "date": "2026-11-13",
-    "title": "[하율] 학교수업",
-    "startTime": "09:00",
-    "returnTime": "15:20",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
-  },
-  {
-    "id": "gcal-2677",
+    "id": "gcal-2675",
     "memberId": "second_child",
     "date": "2026-11-13",
     "title": "[하율] 태권도",
@@ -32786,7 +32857,46 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
   },
   {
+    "id": "gcal-2676",
+    "memberId": "second_child",
+    "date": "2026-11-13",
+    "title": "[하율] 영어",
+    "startTime": "17:00",
+    "returnTime": "18:05",
+    "transitMethod": "도보",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+  },
+  {
+    "id": "gcal-2677",
+    "memberId": "second_child",
+    "date": "2026-11-13",
+    "title": "[하율] 수학",
+    "startTime": "17:00",
+    "returnTime": "19:00",
+    "transitMethod": "도보",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
+  },
+  {
     "id": "gcal-2678",
+    "memberId": "second_child",
+    "date": "2026-11-13",
+    "title": "[하율] 학교수업",
+    "startTime": "09:00",
+    "returnTime": "15:20",
+    "transitMethod": "도보",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
+  },
+  {
+    "id": "gcal-2679",
     "memberId": "family",
     "date": "2026-11-15",
     "title": "식당봉사",
@@ -32798,59 +32908,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2679",
-    "memberId": "second_child",
-    "date": "2026-11-16",
-    "title": "[하율] 영어",
-    "startTime": "17:00",
-    "returnTime": "18:05",
-    "transitMethod": "도보",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
-  },
-  {
     "id": "gcal-2680",
-    "memberId": "first_child",
-    "date": "2026-11-16",
-    "title": "[은비] 상담심리학",
-    "startTime": "14:00",
-    "returnTime": "16:00",
-    "transitMethod": "대중교통",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "수원 동남보건대(E606) · 다음 강의 대기"
-  },
-  {
-    "id": "gcal-2681",
-    "memberId": "second_child",
-    "date": "2026-11-16",
-    "title": "[하율] 학교수업",
-    "startTime": "09:00",
-    "returnTime": "15:20",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
-  },
-  {
-    "id": "gcal-2682",
-    "memberId": "second_child",
-    "date": "2026-11-16",
-    "title": "[하율] 태권도",
-    "startTime": "19:00",
-    "returnTime": "20:05",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
-  },
-  {
-    "id": "gcal-2683",
     "memberId": "first_child",
     "date": "2026-11-16",
     "title": "[은비] 생리학",
@@ -32863,7 +32921,59 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
   },
   {
+    "id": "gcal-2681",
+    "memberId": "second_child",
+    "date": "2026-11-16",
+    "title": "[하율] 태권도",
+    "startTime": "19:00",
+    "returnTime": "20:05",
+    "transitMethod": "도보",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+  },
+  {
+    "id": "gcal-2682",
+    "memberId": "second_child",
+    "date": "2026-11-16",
+    "title": "[하율] 영어",
+    "startTime": "17:00",
+    "returnTime": "18:05",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+  },
+  {
+    "id": "gcal-2683",
+    "memberId": "first_child",
+    "date": "2026-11-16",
+    "title": "[은비] 상담심리학",
+    "startTime": "14:00",
+    "returnTime": "16:00",
+    "transitMethod": "대중교통",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "수원 동남보건대(E606) · 다음 강의 대기"
+  },
+  {
     "id": "gcal-2684",
+    "memberId": "second_child",
+    "date": "2026-11-16",
+    "title": "[하율] 학교수업",
+    "startTime": "09:00",
+    "returnTime": "15:20",
+    "transitMethod": "도보",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
+  },
+  {
+    "id": "gcal-2685",
     "memberId": "second_child",
     "date": "2026-11-17",
     "title": "[하율] 학교수업",
@@ -32876,33 +32986,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
   },
   {
-    "id": "gcal-2685",
-    "memberId": "first_child",
-    "date": "2026-11-17",
-    "title": "[은비] 보조공학",
-    "startTime": "16:00",
-    "returnTime": "19:00",
-    "transitMethod": "대중교통",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
-  },
-  {
     "id": "gcal-2686",
-    "memberId": "second_child",
-    "date": "2026-11-17",
-    "title": "[하율] 수학",
-    "startTime": "17:00",
-    "returnTime": "19:00",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
-  },
-  {
-    "id": "gcal-2687",
     "memberId": "second_child",
     "date": "2026-11-17",
     "title": "[하율] 태권도",
@@ -32915,20 +32999,20 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
   },
   {
-    "id": "gcal-2688",
+    "id": "gcal-2687",
     "memberId": "first_child",
     "date": "2026-11-17",
-    "title": "[은비] 움직임해부학",
-    "startTime": "14:00",
-    "returnTime": "16:00",
+    "title": "[은비] 보조공학",
+    "startTime": "16:00",
+    "returnTime": "19:00",
     "transitMethod": "대중교통",
-    "dinnerStatus": "not_required",
+    "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(E611) · 다음 강의 대기"
+    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
   },
   {
-    "id": "gcal-2689",
+    "id": "gcal-2688",
     "memberId": "first_child",
     "date": "2026-11-17",
     "title": "[은비] 재활의학",
@@ -32941,17 +33025,30 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수원 동남보건대(E606) · 다음 강의 대기"
   },
   {
-    "id": "gcal-2690",
-    "memberId": "second_child",
-    "date": "2026-11-18",
-    "title": "[하율] 영어",
-    "startTime": "17:00",
-    "returnTime": "18:05",
-    "transitMethod": "도보",
-    "dinnerStatus": "required",
+    "id": "gcal-2689",
+    "memberId": "first_child",
+    "date": "2026-11-17",
+    "title": "[은비] 움직임해부학",
+    "startTime": "14:00",
+    "returnTime": "16:00",
+    "transitMethod": "대중교통",
+    "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "수원 동남보건대(E611) · 다음 강의 대기"
+  },
+  {
+    "id": "gcal-2690",
+    "memberId": "second_child",
+    "date": "2026-11-17",
+    "title": "[하율] 수학",
+    "startTime": "17:00",
+    "returnTime": "19:00",
+    "transitMethod": "도보",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
   },
   {
     "id": "gcal-2691",
@@ -32968,32 +33065,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-2692",
-    "memberId": "first_child",
-    "date": "2026-11-18",
-    "title": "[은비] 해부학2",
-    "startTime": "16:00",
-    "returnTime": "19:00",
-    "transitMethod": "대중교통",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "수원 동남보건대(D102) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
-  },
-  {
-    "id": "gcal-2693",
-    "memberId": "second_child",
-    "date": "2026-11-18",
-    "title": "[하율] 학교수업",
-    "startTime": "09:00",
-    "returnTime": "15:20",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
-  },
-  {
-    "id": "gcal-2694",
     "memberId": "second_child",
     "date": "2026-11-18",
     "title": "[하율] 태권도",
@@ -33006,12 +33077,38 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
   },
   {
+    "id": "gcal-2693",
+    "memberId": "second_child",
+    "date": "2026-11-18",
+    "title": "[하율] 영어",
+    "startTime": "17:00",
+    "returnTime": "18:05",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+  },
+  {
+    "id": "gcal-2694",
+    "memberId": "first_child",
+    "date": "2026-11-18",
+    "title": "[은비] 해부학2",
+    "startTime": "16:00",
+    "returnTime": "19:00",
+    "transitMethod": "대중교통",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "수원 동남보건대(D102) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+  },
+  {
     "id": "gcal-2695",
     "memberId": "second_child",
-    "date": "2026-11-19",
+    "date": "2026-11-18",
     "title": "[하율] 학교수업",
     "startTime": "09:00",
-    "returnTime": "16:15",
+    "returnTime": "15:20",
     "transitMethod": "도보",
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
@@ -33022,14 +33119,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-2696",
     "memberId": "second_child",
     "date": "2026-11-19",
-    "title": "[하율] 수학",
-    "startTime": "17:00",
-    "returnTime": "19:00",
+    "title": "[하율] 학교수업",
+    "startTime": "09:00",
+    "returnTime": "16:15",
     "transitMethod": "도보",
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
+    "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
   },
   {
     "id": "gcal-2697",
@@ -33047,20 +33144,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   {
     "id": "gcal-2698",
     "memberId": "second_child",
-    "date": "2026-11-20",
-    "title": "[하율] 영어",
-    "startTime": "17:00",
-    "returnTime": "18:05",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
-  },
-  {
-    "id": "gcal-2699",
-    "memberId": "second_child",
-    "date": "2026-11-20",
+    "date": "2026-11-19",
     "title": "[하율] 수학",
     "startTime": "17:00",
     "returnTime": "19:00",
@@ -33071,20 +33155,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
   },
   {
-    "id": "gcal-2700",
-    "memberId": "second_child",
-    "date": "2026-11-20",
-    "title": "[하율] 학교수업",
-    "startTime": "09:00",
-    "returnTime": "15:20",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
-  },
-  {
-    "id": "gcal-2701",
+    "id": "gcal-2699",
     "memberId": "second_child",
     "date": "2026-11-20",
     "title": "[하율] 태권도",
@@ -33097,47 +33168,35 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
   },
   {
-    "id": "gcal-2702",
-    "memberId": "family",
-    "date": "2026-11-23",
-    "title": "별이아빠생일(처가)",
-    "startTime": "09:00",
-    "returnTime": "18:00",
-    "transitMethod": "자차",
-    "dinnerStatus": "required",
-    "guardian": "온 가족",
-    "isRecurring": false
-  },
-  {
-    "id": "gcal-2703",
+    "id": "gcal-2700",
     "memberId": "second_child",
-    "date": "2026-11-23",
+    "date": "2026-11-20",
     "title": "[하율] 영어",
     "startTime": "17:00",
     "returnTime": "18:05",
     "transitMethod": "도보",
-    "dinnerStatus": "required",
+    "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
     "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
   },
   {
-    "id": "gcal-2704",
-    "memberId": "first_child",
-    "date": "2026-11-23",
-    "title": "[은비] 상담심리학",
-    "startTime": "14:00",
-    "returnTime": "16:00",
-    "transitMethod": "대중교통",
+    "id": "gcal-2701",
+    "memberId": "second_child",
+    "date": "2026-11-20",
+    "title": "[하율] 수학",
+    "startTime": "17:00",
+    "returnTime": "19:00",
+    "transitMethod": "도보",
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(E606) · 다음 강의 대기"
+    "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
   },
   {
-    "id": "gcal-2705",
+    "id": "gcal-2702",
     "memberId": "second_child",
-    "date": "2026-11-23",
+    "date": "2026-11-20",
     "title": "[하율] 학교수업",
     "startTime": "09:00",
     "returnTime": "15:20",
@@ -33148,20 +33207,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
   },
   {
-    "id": "gcal-2706",
-    "memberId": "second_child",
+    "id": "gcal-2703",
+    "memberId": "parents",
     "date": "2026-11-23",
-    "title": "[하율] 태권도",
-    "startTime": "19:00",
-    "returnTime": "20:05",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "title": "별이아빠생일(처가)",
+    "startTime": "09:00",
+    "returnTime": "18:00",
+    "transitMethod": "자차",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
+    "isRecurring": false
   },
   {
-    "id": "gcal-2707",
+    "id": "gcal-2704",
     "memberId": "first_child",
     "date": "2026-11-23",
     "title": "[은비] 생리학",
@@ -33174,7 +33232,59 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
   },
   {
+    "id": "gcal-2705",
+    "memberId": "second_child",
+    "date": "2026-11-23",
+    "title": "[하율] 태권도",
+    "startTime": "19:00",
+    "returnTime": "20:05",
+    "transitMethod": "도보",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+  },
+  {
+    "id": "gcal-2706",
+    "memberId": "second_child",
+    "date": "2026-11-23",
+    "title": "[하율] 영어",
+    "startTime": "17:00",
+    "returnTime": "18:05",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+  },
+  {
+    "id": "gcal-2707",
+    "memberId": "first_child",
+    "date": "2026-11-23",
+    "title": "[은비] 상담심리학",
+    "startTime": "14:00",
+    "returnTime": "16:00",
+    "transitMethod": "대중교통",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "수원 동남보건대(E606) · 다음 강의 대기"
+  },
+  {
     "id": "gcal-2708",
+    "memberId": "second_child",
+    "date": "2026-11-23",
+    "title": "[하율] 학교수업",
+    "startTime": "09:00",
+    "returnTime": "15:20",
+    "transitMethod": "도보",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
+  },
+  {
+    "id": "gcal-2709",
     "memberId": "second_child",
     "date": "2026-11-24",
     "title": "[하율] 학교수업",
@@ -33187,33 +33297,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
   },
   {
-    "id": "gcal-2709",
-    "memberId": "first_child",
-    "date": "2026-11-24",
-    "title": "[은비] 보조공학",
-    "startTime": "16:00",
-    "returnTime": "19:00",
-    "transitMethod": "대중교통",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
-  },
-  {
     "id": "gcal-2710",
-    "memberId": "second_child",
-    "date": "2026-11-24",
-    "title": "[하율] 수학",
-    "startTime": "17:00",
-    "returnTime": "19:00",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
-  },
-  {
-    "id": "gcal-2711",
     "memberId": "second_child",
     "date": "2026-11-24",
     "title": "[하율] 태권도",
@@ -33226,20 +33310,20 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
   },
   {
-    "id": "gcal-2712",
+    "id": "gcal-2711",
     "memberId": "first_child",
     "date": "2026-11-24",
-    "title": "[은비] 움직임해부학",
-    "startTime": "14:00",
-    "returnTime": "16:00",
+    "title": "[은비] 보조공학",
+    "startTime": "16:00",
+    "returnTime": "19:00",
     "transitMethod": "대중교통",
-    "dinnerStatus": "not_required",
+    "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(E611) · 다음 강의 대기"
+    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
   },
   {
-    "id": "gcal-2713",
+    "id": "gcal-2712",
     "memberId": "first_child",
     "date": "2026-11-24",
     "title": "[은비] 재활의학",
@@ -33252,17 +33336,30 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수원 동남보건대(E606) · 다음 강의 대기"
   },
   {
-    "id": "gcal-2714",
-    "memberId": "second_child",
-    "date": "2026-11-25",
-    "title": "[하율] 영어",
-    "startTime": "17:00",
-    "returnTime": "18:05",
-    "transitMethod": "도보",
-    "dinnerStatus": "required",
+    "id": "gcal-2713",
+    "memberId": "first_child",
+    "date": "2026-11-24",
+    "title": "[은비] 움직임해부학",
+    "startTime": "14:00",
+    "returnTime": "16:00",
+    "transitMethod": "대중교통",
+    "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "수원 동남보건대(E611) · 다음 강의 대기"
+  },
+  {
+    "id": "gcal-2714",
+    "memberId": "second_child",
+    "date": "2026-11-24",
+    "title": "[하율] 수학",
+    "startTime": "17:00",
+    "returnTime": "19:00",
+    "transitMethod": "도보",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
   },
   {
     "id": "gcal-2715",
@@ -33279,32 +33376,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-2716",
-    "memberId": "first_child",
-    "date": "2026-11-25",
-    "title": "[은비] 해부학2",
-    "startTime": "16:00",
-    "returnTime": "19:00",
-    "transitMethod": "대중교통",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "수원 동남보건대(D102) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
-  },
-  {
-    "id": "gcal-2717",
-    "memberId": "second_child",
-    "date": "2026-11-25",
-    "title": "[하율] 학교수업",
-    "startTime": "09:00",
-    "returnTime": "15:20",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
-  },
-  {
-    "id": "gcal-2718",
     "memberId": "second_child",
     "date": "2026-11-25",
     "title": "[하율] 태권도",
@@ -33317,12 +33388,38 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
   },
   {
+    "id": "gcal-2717",
+    "memberId": "second_child",
+    "date": "2026-11-25",
+    "title": "[하율] 영어",
+    "startTime": "17:00",
+    "returnTime": "18:05",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+  },
+  {
+    "id": "gcal-2718",
+    "memberId": "first_child",
+    "date": "2026-11-25",
+    "title": "[은비] 해부학2",
+    "startTime": "16:00",
+    "returnTime": "19:00",
+    "transitMethod": "대중교통",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "수원 동남보건대(D102) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+  },
+  {
     "id": "gcal-2719",
     "memberId": "second_child",
-    "date": "2026-11-26",
+    "date": "2026-11-25",
     "title": "[하율] 학교수업",
     "startTime": "09:00",
-    "returnTime": "16:15",
+    "returnTime": "15:20",
     "transitMethod": "도보",
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
@@ -33333,14 +33430,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-2720",
     "memberId": "second_child",
     "date": "2026-11-26",
-    "title": "[하율] 수학",
-    "startTime": "17:00",
-    "returnTime": "19:00",
+    "title": "[하율] 학교수업",
+    "startTime": "09:00",
+    "returnTime": "16:15",
     "transitMethod": "도보",
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
+    "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
   },
   {
     "id": "gcal-2721",
@@ -33358,20 +33455,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   {
     "id": "gcal-2722",
     "memberId": "second_child",
-    "date": "2026-11-27",
-    "title": "[하율] 영어",
-    "startTime": "17:00",
-    "returnTime": "18:05",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
-  },
-  {
-    "id": "gcal-2723",
-    "memberId": "second_child",
-    "date": "2026-11-27",
+    "date": "2026-11-26",
     "title": "[하율] 수학",
     "startTime": "17:00",
     "returnTime": "19:00",
@@ -33382,20 +33466,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
   },
   {
-    "id": "gcal-2724",
-    "memberId": "second_child",
-    "date": "2026-11-27",
-    "title": "[하율] 학교수업",
-    "startTime": "09:00",
-    "returnTime": "15:20",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
-  },
-  {
-    "id": "gcal-2725",
+    "id": "gcal-2723",
     "memberId": "second_child",
     "date": "2026-11-27",
     "title": "[하율] 태권도",
@@ -33408,35 +33479,35 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
   },
   {
-    "id": "gcal-2726",
+    "id": "gcal-2724",
     "memberId": "second_child",
-    "date": "2026-11-30",
+    "date": "2026-11-27",
     "title": "[하율] 영어",
     "startTime": "17:00",
     "returnTime": "18:05",
     "transitMethod": "도보",
-    "dinnerStatus": "required",
+    "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
     "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
   },
   {
-    "id": "gcal-2727",
-    "memberId": "first_child",
-    "date": "2026-11-30",
-    "title": "[은비] 상담심리학",
-    "startTime": "14:00",
-    "returnTime": "16:00",
-    "transitMethod": "대중교통",
+    "id": "gcal-2725",
+    "memberId": "second_child",
+    "date": "2026-11-27",
+    "title": "[하율] 수학",
+    "startTime": "17:00",
+    "returnTime": "19:00",
+    "transitMethod": "도보",
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(E606) · 다음 강의 대기"
+    "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
   },
   {
-    "id": "gcal-2728",
+    "id": "gcal-2726",
     "memberId": "second_child",
-    "date": "2026-11-30",
+    "date": "2026-11-27",
     "title": "[하율] 학교수업",
     "startTime": "09:00",
     "returnTime": "15:20",
@@ -33447,20 +33518,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
   },
   {
-    "id": "gcal-2729",
-    "memberId": "second_child",
-    "date": "2026-11-30",
-    "title": "[하율] 태권도",
-    "startTime": "19:00",
-    "returnTime": "20:05",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
-  },
-  {
-    "id": "gcal-2730",
+    "id": "gcal-2727",
     "memberId": "first_child",
     "date": "2026-11-30",
     "title": "[은비] 생리학",
@@ -33473,7 +33531,59 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
   },
   {
+    "id": "gcal-2728",
+    "memberId": "second_child",
+    "date": "2026-11-30",
+    "title": "[하율] 태권도",
+    "startTime": "19:00",
+    "returnTime": "20:05",
+    "transitMethod": "도보",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+  },
+  {
+    "id": "gcal-2729",
+    "memberId": "second_child",
+    "date": "2026-11-30",
+    "title": "[하율] 영어",
+    "startTime": "17:00",
+    "returnTime": "18:05",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+  },
+  {
+    "id": "gcal-2730",
+    "memberId": "first_child",
+    "date": "2026-11-30",
+    "title": "[은비] 상담심리학",
+    "startTime": "14:00",
+    "returnTime": "16:00",
+    "transitMethod": "대중교통",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "수원 동남보건대(E606) · 다음 강의 대기"
+  },
+  {
     "id": "gcal-2731",
+    "memberId": "second_child",
+    "date": "2026-11-30",
+    "title": "[하율] 학교수업",
+    "startTime": "09:00",
+    "returnTime": "15:20",
+    "transitMethod": "도보",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
+  },
+  {
+    "id": "gcal-2732",
     "memberId": "second_child",
     "date": "2026-12-01",
     "title": "[하율] 학교수업",
@@ -33486,33 +33596,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
   },
   {
-    "id": "gcal-2732",
-    "memberId": "first_child",
-    "date": "2026-12-01",
-    "title": "[은비] 보조공학",
-    "startTime": "16:00",
-    "returnTime": "19:00",
-    "transitMethod": "대중교통",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
-  },
-  {
     "id": "gcal-2733",
-    "memberId": "second_child",
-    "date": "2026-12-01",
-    "title": "[하율] 수학",
-    "startTime": "17:00",
-    "returnTime": "19:00",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
-  },
-  {
-    "id": "gcal-2734",
     "memberId": "second_child",
     "date": "2026-12-01",
     "title": "[하율] 태권도",
@@ -33525,20 +33609,20 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
   },
   {
-    "id": "gcal-2735",
+    "id": "gcal-2734",
     "memberId": "first_child",
     "date": "2026-12-01",
-    "title": "[은비] 움직임해부학",
-    "startTime": "14:00",
-    "returnTime": "16:00",
+    "title": "[은비] 보조공학",
+    "startTime": "16:00",
+    "returnTime": "19:00",
     "transitMethod": "대중교통",
-    "dinnerStatus": "not_required",
+    "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(E611) · 다음 강의 대기"
+    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
   },
   {
-    "id": "gcal-2736",
+    "id": "gcal-2735",
     "memberId": "first_child",
     "date": "2026-12-01",
     "title": "[은비] 재활의학",
@@ -33551,17 +33635,30 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수원 동남보건대(E606) · 다음 강의 대기"
   },
   {
-    "id": "gcal-2737",
-    "memberId": "second_child",
-    "date": "2026-12-02",
-    "title": "[하율] 영어",
-    "startTime": "17:00",
-    "returnTime": "18:05",
-    "transitMethod": "도보",
-    "dinnerStatus": "required",
+    "id": "gcal-2736",
+    "memberId": "first_child",
+    "date": "2026-12-01",
+    "title": "[은비] 움직임해부학",
+    "startTime": "14:00",
+    "returnTime": "16:00",
+    "transitMethod": "대중교통",
+    "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "수원 동남보건대(E611) · 다음 강의 대기"
+  },
+  {
+    "id": "gcal-2737",
+    "memberId": "second_child",
+    "date": "2026-12-01",
+    "title": "[하율] 수학",
+    "startTime": "17:00",
+    "returnTime": "19:00",
+    "transitMethod": "도보",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
   },
   {
     "id": "gcal-2738",
@@ -33578,32 +33675,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-2739",
-    "memberId": "first_child",
-    "date": "2026-12-02",
-    "title": "[은비] 해부학2",
-    "startTime": "16:00",
-    "returnTime": "19:00",
-    "transitMethod": "대중교통",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "수원 동남보건대(D102) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
-  },
-  {
-    "id": "gcal-2740",
-    "memberId": "second_child",
-    "date": "2026-12-02",
-    "title": "[하율] 학교수업",
-    "startTime": "09:00",
-    "returnTime": "15:20",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
-  },
-  {
-    "id": "gcal-2741",
     "memberId": "second_child",
     "date": "2026-12-02",
     "title": "[하율] 태권도",
@@ -33616,12 +33687,38 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
   },
   {
+    "id": "gcal-2740",
+    "memberId": "second_child",
+    "date": "2026-12-02",
+    "title": "[하율] 영어",
+    "startTime": "17:00",
+    "returnTime": "18:05",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+  },
+  {
+    "id": "gcal-2741",
+    "memberId": "first_child",
+    "date": "2026-12-02",
+    "title": "[은비] 해부학2",
+    "startTime": "16:00",
+    "returnTime": "19:00",
+    "transitMethod": "대중교통",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "수원 동남보건대(D102) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+  },
+  {
     "id": "gcal-2742",
     "memberId": "second_child",
-    "date": "2026-12-03",
+    "date": "2026-12-02",
     "title": "[하율] 학교수업",
     "startTime": "09:00",
-    "returnTime": "16:15",
+    "returnTime": "15:20",
     "transitMethod": "도보",
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
@@ -33632,14 +33729,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-2743",
     "memberId": "second_child",
     "date": "2026-12-03",
-    "title": "[하율] 수학",
-    "startTime": "17:00",
-    "returnTime": "19:00",
+    "title": "[하율] 학교수업",
+    "startTime": "09:00",
+    "returnTime": "16:15",
     "transitMethod": "도보",
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
+    "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
   },
   {
     "id": "gcal-2744",
@@ -33656,6 +33753,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-2745",
+    "memberId": "second_child",
+    "date": "2026-12-03",
+    "title": "[하율] 수학",
+    "startTime": "17:00",
+    "returnTime": "19:00",
+    "transitMethod": "도보",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
+  },
+  {
+    "id": "gcal-2746",
     "memberId": "family",
     "date": "2026-12-04",
     "title": "할머니제사(처가)",
@@ -33667,46 +33777,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2746",
-    "memberId": "second_child",
-    "date": "2026-12-04",
-    "title": "[하율] 영어",
-    "startTime": "17:00",
-    "returnTime": "18:05",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
-  },
-  {
     "id": "gcal-2747",
-    "memberId": "second_child",
-    "date": "2026-12-04",
-    "title": "[하율] 수학",
-    "startTime": "17:00",
-    "returnTime": "19:00",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
-  },
-  {
-    "id": "gcal-2748",
-    "memberId": "second_child",
-    "date": "2026-12-04",
-    "title": "[하율] 학교수업",
-    "startTime": "09:00",
-    "returnTime": "15:20",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
-  },
-  {
-    "id": "gcal-2749",
     "memberId": "second_child",
     "date": "2026-12-04",
     "title": "[하율] 태권도",
@@ -33719,7 +33790,46 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
   },
   {
+    "id": "gcal-2748",
+    "memberId": "second_child",
+    "date": "2026-12-04",
+    "title": "[하율] 영어",
+    "startTime": "17:00",
+    "returnTime": "18:05",
+    "transitMethod": "도보",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+  },
+  {
+    "id": "gcal-2749",
+    "memberId": "second_child",
+    "date": "2026-12-04",
+    "title": "[하율] 수학",
+    "startTime": "17:00",
+    "returnTime": "19:00",
+    "transitMethod": "도보",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
+  },
+  {
     "id": "gcal-2750",
+    "memberId": "second_child",
+    "date": "2026-12-04",
+    "title": "[하율] 학교수업",
+    "startTime": "09:00",
+    "returnTime": "15:20",
+    "transitMethod": "도보",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
+  },
+  {
+    "id": "gcal-2751",
     "memberId": "first_child",
     "date": "2026-12-07",
     "title": "은비 기말고사",
@@ -33731,59 +33841,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2751",
-    "memberId": "second_child",
-    "date": "2026-12-07",
-    "title": "[하율] 영어",
-    "startTime": "17:00",
-    "returnTime": "18:05",
-    "transitMethod": "도보",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
-  },
-  {
     "id": "gcal-2752",
-    "memberId": "first_child",
-    "date": "2026-12-07",
-    "title": "[은비] 상담심리학",
-    "startTime": "14:00",
-    "returnTime": "16:00",
-    "transitMethod": "대중교통",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "수원 동남보건대(E606) · 다음 강의 대기"
-  },
-  {
-    "id": "gcal-2753",
-    "memberId": "second_child",
-    "date": "2026-12-07",
-    "title": "[하율] 학교수업",
-    "startTime": "09:00",
-    "returnTime": "15:20",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
-  },
-  {
-    "id": "gcal-2754",
-    "memberId": "second_child",
-    "date": "2026-12-07",
-    "title": "[하율] 태권도",
-    "startTime": "19:00",
-    "returnTime": "20:05",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
-  },
-  {
-    "id": "gcal-2755",
     "memberId": "first_child",
     "date": "2026-12-07",
     "title": "[은비] 생리학",
@@ -33796,7 +33854,59 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
   },
   {
+    "id": "gcal-2753",
+    "memberId": "second_child",
+    "date": "2026-12-07",
+    "title": "[하율] 태권도",
+    "startTime": "19:00",
+    "returnTime": "20:05",
+    "transitMethod": "도보",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+  },
+  {
+    "id": "gcal-2754",
+    "memberId": "second_child",
+    "date": "2026-12-07",
+    "title": "[하율] 영어",
+    "startTime": "17:00",
+    "returnTime": "18:05",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+  },
+  {
+    "id": "gcal-2755",
+    "memberId": "first_child",
+    "date": "2026-12-07",
+    "title": "[은비] 상담심리학",
+    "startTime": "14:00",
+    "returnTime": "16:00",
+    "transitMethod": "대중교통",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "수원 동남보건대(E606) · 다음 강의 대기"
+  },
+  {
     "id": "gcal-2756",
+    "memberId": "second_child",
+    "date": "2026-12-07",
+    "title": "[하율] 학교수업",
+    "startTime": "09:00",
+    "returnTime": "15:20",
+    "transitMethod": "도보",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
+  },
+  {
+    "id": "gcal-2757",
     "memberId": "second_child",
     "date": "2026-12-08",
     "title": "[하율] 학교수업",
@@ -33809,33 +33919,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
   },
   {
-    "id": "gcal-2757",
-    "memberId": "first_child",
-    "date": "2026-12-08",
-    "title": "[은비] 보조공학",
-    "startTime": "16:00",
-    "returnTime": "19:00",
-    "transitMethod": "대중교통",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
-  },
-  {
     "id": "gcal-2758",
-    "memberId": "second_child",
-    "date": "2026-12-08",
-    "title": "[하율] 수학",
-    "startTime": "17:00",
-    "returnTime": "19:00",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
-  },
-  {
-    "id": "gcal-2759",
     "memberId": "second_child",
     "date": "2026-12-08",
     "title": "[하율] 태권도",
@@ -33848,20 +33932,20 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
   },
   {
-    "id": "gcal-2760",
+    "id": "gcal-2759",
     "memberId": "first_child",
     "date": "2026-12-08",
-    "title": "[은비] 움직임해부학",
-    "startTime": "14:00",
-    "returnTime": "16:00",
+    "title": "[은비] 보조공학",
+    "startTime": "16:00",
+    "returnTime": "19:00",
     "transitMethod": "대중교통",
-    "dinnerStatus": "not_required",
+    "dinnerStatus": "required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수원 동남보건대(E611) · 다음 강의 대기"
+    "memo": "수원 동남보건대(E410) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
   },
   {
-    "id": "gcal-2761",
+    "id": "gcal-2760",
     "memberId": "first_child",
     "date": "2026-12-08",
     "title": "[은비] 재활의학",
@@ -33874,17 +33958,30 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수원 동남보건대(E606) · 다음 강의 대기"
   },
   {
-    "id": "gcal-2762",
-    "memberId": "second_child",
-    "date": "2026-12-09",
-    "title": "[하율] 영어",
-    "startTime": "17:00",
-    "returnTime": "18:05",
-    "transitMethod": "도보",
-    "dinnerStatus": "required",
+    "id": "gcal-2761",
+    "memberId": "first_child",
+    "date": "2026-12-08",
+    "title": "[은비] 움직임해부학",
+    "startTime": "14:00",
+    "returnTime": "16:00",
+    "transitMethod": "대중교통",
+    "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "수원 동남보건대(E611) · 다음 강의 대기"
+  },
+  {
+    "id": "gcal-2762",
+    "memberId": "second_child",
+    "date": "2026-12-08",
+    "title": "[하율] 수학",
+    "startTime": "17:00",
+    "returnTime": "19:00",
+    "transitMethod": "도보",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
   },
   {
     "id": "gcal-2763",
@@ -33901,32 +33998,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   },
   {
     "id": "gcal-2764",
-    "memberId": "first_child",
-    "date": "2026-12-09",
-    "title": "[은비] 해부학2",
-    "startTime": "16:00",
-    "returnTime": "19:00",
-    "transitMethod": "대중교통",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "수원 동남보건대(D102) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
-  },
-  {
-    "id": "gcal-2765",
-    "memberId": "second_child",
-    "date": "2026-12-09",
-    "title": "[하율] 학교수업",
-    "startTime": "09:00",
-    "returnTime": "15:20",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
-  },
-  {
-    "id": "gcal-2766",
     "memberId": "second_child",
     "date": "2026-12-09",
     "title": "[하율] 태권도",
@@ -33939,12 +34010,38 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
   },
   {
+    "id": "gcal-2765",
+    "memberId": "second_child",
+    "date": "2026-12-09",
+    "title": "[하율] 영어",
+    "startTime": "17:00",
+    "returnTime": "18:05",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+  },
+  {
+    "id": "gcal-2766",
+    "memberId": "first_child",
+    "date": "2026-12-09",
+    "title": "[은비] 해부학2",
+    "startTime": "16:00",
+    "returnTime": "19:00",
+    "transitMethod": "대중교통",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "수원 동남보건대(D102) · 수업 모두 듣고 목감 귀가 (대중교통 약 50분)"
+  },
+  {
     "id": "gcal-2767",
     "memberId": "second_child",
-    "date": "2026-12-10",
+    "date": "2026-12-09",
     "title": "[하율] 학교수업",
     "startTime": "09:00",
-    "returnTime": "16:15",
+    "returnTime": "15:20",
     "transitMethod": "도보",
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
@@ -33955,14 +34052,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-2768",
     "memberId": "second_child",
     "date": "2026-12-10",
-    "title": "[하율] 수학",
-    "startTime": "17:00",
-    "returnTime": "19:00",
+    "title": "[하율] 학교수업",
+    "startTime": "09:00",
+    "returnTime": "16:15",
     "transitMethod": "도보",
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
+    "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
   },
   {
     "id": "gcal-2769",
@@ -33980,20 +34077,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   {
     "id": "gcal-2770",
     "memberId": "second_child",
-    "date": "2026-12-11",
-    "title": "[하율] 영어",
-    "startTime": "17:00",
-    "returnTime": "18:05",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
-  },
-  {
-    "id": "gcal-2771",
-    "memberId": "second_child",
-    "date": "2026-12-11",
+    "date": "2026-12-10",
     "title": "[하율] 수학",
     "startTime": "17:00",
     "returnTime": "19:00",
@@ -34004,20 +34088,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
   },
   {
-    "id": "gcal-2772",
-    "memberId": "second_child",
-    "date": "2026-12-11",
-    "title": "[하율] 학교수업",
-    "startTime": "09:00",
-    "returnTime": "15:20",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
-  },
-  {
-    "id": "gcal-2773",
+    "id": "gcal-2771",
     "memberId": "second_child",
     "date": "2026-12-11",
     "title": "[하율] 태권도",
@@ -34030,7 +34101,46 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
   },
   {
+    "id": "gcal-2772",
+    "memberId": "second_child",
+    "date": "2026-12-11",
+    "title": "[하율] 영어",
+    "startTime": "17:00",
+    "returnTime": "18:05",
+    "transitMethod": "도보",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+  },
+  {
+    "id": "gcal-2773",
+    "memberId": "second_child",
+    "date": "2026-12-11",
+    "title": "[하율] 수학",
+    "startTime": "17:00",
+    "returnTime": "19:00",
+    "transitMethod": "도보",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
+  },
+  {
     "id": "gcal-2774",
+    "memberId": "second_child",
+    "date": "2026-12-11",
+    "title": "[하율] 학교수업",
+    "startTime": "09:00",
+    "returnTime": "15:20",
+    "transitMethod": "도보",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
+  },
+  {
+    "id": "gcal-2775",
     "memberId": "first_child",
     "date": "2026-12-14",
     "title": "은비 방학",
@@ -34042,33 +34152,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2775",
-    "memberId": "second_child",
-    "date": "2026-12-14",
-    "title": "[하율] 영어",
-    "startTime": "17:00",
-    "returnTime": "18:05",
-    "transitMethod": "도보",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
-  },
-  {
     "id": "gcal-2776",
-    "memberId": "second_child",
-    "date": "2026-12-14",
-    "title": "[하율] 학교수업",
-    "startTime": "09:00",
-    "returnTime": "15:20",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
-  },
-  {
-    "id": "gcal-2777",
     "memberId": "second_child",
     "date": "2026-12-14",
     "title": "[하율] 태권도",
@@ -34081,7 +34165,33 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
   },
   {
+    "id": "gcal-2777",
+    "memberId": "second_child",
+    "date": "2026-12-14",
+    "title": "[하율] 영어",
+    "startTime": "17:00",
+    "returnTime": "18:05",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+  },
+  {
     "id": "gcal-2778",
+    "memberId": "second_child",
+    "date": "2026-12-14",
+    "title": "[하율] 학교수업",
+    "startTime": "09:00",
+    "returnTime": "15:20",
+    "transitMethod": "도보",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
+  },
+  {
+    "id": "gcal-2779",
     "memberId": "second_child",
     "date": "2026-12-15",
     "title": "하율 지필평가",
@@ -34093,7 +34203,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2779",
+    "id": "gcal-2780",
     "memberId": "second_child",
     "date": "2026-12-15",
     "title": "[하율] 학교수업",
@@ -34104,19 +34214,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "guardian": "스스로 귀가",
     "isRecurring": false,
     "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
-  },
-  {
-    "id": "gcal-2780",
-    "memberId": "second_child",
-    "date": "2026-12-15",
-    "title": "[하율] 수학",
-    "startTime": "17:00",
-    "returnTime": "19:00",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
   },
   {
     "id": "gcal-2781",
@@ -34134,31 +34231,18 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   {
     "id": "gcal-2782",
     "memberId": "second_child",
-    "date": "2026-12-16",
-    "title": "[하율] 영어",
+    "date": "2026-12-15",
+    "title": "[하율] 수학",
     "startTime": "17:00",
-    "returnTime": "18:05",
-    "transitMethod": "도보",
-    "dinnerStatus": "required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
-  },
-  {
-    "id": "gcal-2783",
-    "memberId": "second_child",
-    "date": "2026-12-16",
-    "title": "[하율] 학교수업",
-    "startTime": "09:00",
-    "returnTime": "15:20",
+    "returnTime": "19:00",
     "transitMethod": "도보",
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
+    "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
   },
   {
-    "id": "gcal-2784",
+    "id": "gcal-2783",
     "memberId": "second_child",
     "date": "2026-12-16",
     "title": "[하율] 태권도",
@@ -34171,12 +34255,25 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
   },
   {
+    "id": "gcal-2784",
+    "memberId": "second_child",
+    "date": "2026-12-16",
+    "title": "[하율] 영어",
+    "startTime": "17:00",
+    "returnTime": "18:05",
+    "transitMethod": "도보",
+    "dinnerStatus": "required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+  },
+  {
     "id": "gcal-2785",
     "memberId": "second_child",
-    "date": "2026-12-17",
+    "date": "2026-12-16",
     "title": "[하율] 학교수업",
     "startTime": "09:00",
-    "returnTime": "16:15",
+    "returnTime": "15:20",
     "transitMethod": "도보",
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
@@ -34187,14 +34284,14 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-2786",
     "memberId": "second_child",
     "date": "2026-12-17",
-    "title": "[하율] 수학",
-    "startTime": "17:00",
-    "returnTime": "19:00",
+    "title": "[하율] 학교수업",
+    "startTime": "09:00",
+    "returnTime": "16:15",
     "transitMethod": "도보",
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
+    "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
   },
   {
     "id": "gcal-2787",
@@ -34212,15 +34309,15 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   {
     "id": "gcal-2788",
     "memberId": "second_child",
-    "date": "2026-12-18",
-    "title": "[하율] 영어",
+    "date": "2026-12-17",
+    "title": "[하율] 수학",
     "startTime": "17:00",
-    "returnTime": "18:05",
+    "returnTime": "19:00",
     "transitMethod": "도보",
     "dinnerStatus": "not_required",
     "guardian": "스스로 귀가",
     "isRecurring": false,
-    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+    "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
   },
   {
     "id": "gcal-2789",
@@ -34238,32 +34335,6 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "id": "gcal-2790",
     "memberId": "second_child",
     "date": "2026-12-18",
-    "title": "[하율] 수학",
-    "startTime": "17:00",
-    "returnTime": "19:00",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
-  },
-  {
-    "id": "gcal-2791",
-    "memberId": "second_child",
-    "date": "2026-12-18",
-    "title": "[하율] 학교수업",
-    "startTime": "09:00",
-    "returnTime": "15:20",
-    "transitMethod": "도보",
-    "dinnerStatus": "not_required",
-    "guardian": "스스로 귀가",
-    "isRecurring": false,
-    "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
-  },
-  {
-    "id": "gcal-2792",
-    "memberId": "second_child",
-    "date": "2026-12-18",
     "title": "[하율] 태권도",
     "startTime": "19:00",
     "returnTime": "20:05",
@@ -34274,9 +34345,35 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "수학·태권도 연속 수강 후 도보 5분 최종 귀가"
   },
   {
+    "id": "gcal-2791",
+    "memberId": "second_child",
+    "date": "2026-12-18",
+    "title": "[하율] 영어",
+    "startTime": "17:00",
+    "returnTime": "18:05",
+    "transitMethod": "도보",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)"
+  },
+  {
+    "id": "gcal-2792",
+    "memberId": "second_child",
+    "date": "2026-12-18",
+    "title": "[하율] 수학",
+    "startTime": "17:00",
+    "returnTime": "19:00",
+    "transitMethod": "도보",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)"
+  },
+  {
     "id": "gcal-2793",
     "memberId": "second_child",
-    "date": "2026-12-21",
+    "date": "2026-12-18",
     "title": "[하율] 학교수업",
     "startTime": "09:00",
     "returnTime": "15:20",
@@ -34289,6 +34386,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
   {
     "id": "gcal-2794",
     "memberId": "second_child",
+    "date": "2026-12-21",
+    "title": "[하율] 학교수업",
+    "startTime": "09:00",
+    "returnTime": "15:20",
+    "transitMethod": "도보",
+    "dinnerStatus": "not_required",
+    "guardian": "스스로 귀가",
+    "isRecurring": false,
+    "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
+  },
+  {
+    "id": "gcal-2795",
+    "memberId": "second_child",
     "date": "2026-12-22",
     "title": "[하율] 학교수업",
     "startTime": "09:00",
@@ -34300,7 +34410,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
   },
   {
-    "id": "gcal-2795",
+    "id": "gcal-2796",
     "memberId": "second_child",
     "date": "2026-12-23",
     "title": "[하율] 학교수업",
@@ -34313,7 +34423,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
   },
   {
-    "id": "gcal-2796",
+    "id": "gcal-2797",
     "memberId": "second_child",
     "date": "2026-12-24",
     "title": "[하율] 학교수업",
@@ -34326,7 +34436,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
   },
   {
-    "id": "gcal-2797",
+    "id": "gcal-2798",
     "memberId": "second_child",
     "date": "2026-12-25",
     "title": "[하율] 학교수업",
@@ -34339,7 +34449,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
   },
   {
-    "id": "gcal-2798",
+    "id": "gcal-2799",
     "memberId": "second_child",
     "date": "2026-12-28",
     "title": "[하율] 학교수업",
@@ -34352,7 +34462,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
   },
   {
-    "id": "gcal-2799",
+    "id": "gcal-2800",
     "memberId": "second_child",
     "date": "2026-12-29",
     "title": "[하율] 학교수업",
@@ -34365,7 +34475,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
   },
   {
-    "id": "gcal-2800",
+    "id": "gcal-2801",
     "memberId": "second_child",
     "date": "2026-12-30",
     "title": "[하율] 학교수업",
@@ -34378,7 +34488,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
   },
   {
-    "id": "gcal-2801",
+    "id": "gcal-2802",
     "memberId": "second_child",
     "date": "2026-12-31",
     "title": "[하율] 학교수업",
@@ -34391,7 +34501,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "memo": "목감 초/중학교 (도보 통학 · 수업 후 귀가)"
   },
   {
-    "id": "gcal-2802",
+    "id": "gcal-2803",
     "memberId": "second_child",
     "date": "2027-01-07",
     "title": "하율 종업식",
@@ -34403,7 +34513,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2803",
+    "id": "gcal-2804",
     "memberId": "family",
     "date": "2027-01-16",
     "title": "교회청소",
@@ -34415,7 +34525,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2804",
+    "id": "gcal-2805",
     "memberId": "family",
     "date": "2027-01-21",
     "title": "큰아버지제사(시댁)",
@@ -34427,19 +34537,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2805",
-    "memberId": "family",
+    "id": "gcal-2806",
+    "memberId": "parents",
     "date": "2027-01-22",
     "title": "작은엄마생신(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-2806",
+    "id": "gcal-2807",
     "memberId": "family",
     "date": "2027-01-30",
     "title": "안양장인생신(처가)",
@@ -34451,7 +34561,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2807",
+    "id": "gcal-2808",
     "memberId": "family",
     "date": "2027-02-13",
     "title": "성준이형생일(처가)",
@@ -34463,7 +34573,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2808",
+    "id": "gcal-2809",
     "memberId": "family",
     "date": "2027-02-16",
     "title": "연미생일(시댁)",
@@ -34475,7 +34585,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2809",
+    "id": "gcal-2810",
     "memberId": "family",
     "date": "2027-02-26",
     "title": "할아버지제사(처가)",
@@ -34487,7 +34597,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2810",
+    "id": "gcal-2811",
     "memberId": "family",
     "date": "2027-05-27",
     "title": "할아버지제사(시댁)",
@@ -34499,31 +34609,31 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2811",
-    "memberId": "family",
+    "id": "gcal-2812",
+    "memberId": "parents",
     "date": "2027-06-03",
     "title": "작은아빠제사(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-2812",
-    "memberId": "family",
+    "id": "gcal-2813",
+    "memberId": "parents",
     "date": "2027-08-04",
     "title": "서울엄마생신(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-2813",
+    "id": "gcal-2814",
     "memberId": "family",
     "date": "2027-08-20",
     "title": "부천어머님생신(처가)",
@@ -34535,7 +34645,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2814",
+    "id": "gcal-2815",
     "memberId": "family",
     "date": "2027-09-15",
     "title": "안양장모님생신(처가)",
@@ -34547,19 +34657,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2815",
-    "memberId": "family",
+    "id": "gcal-2816",
+    "memberId": "parents",
     "date": "2027-10-04",
     "title": "서울아빠제사(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-2816",
+    "id": "gcal-2817",
     "memberId": "family",
     "date": "2027-10-13",
     "title": "부천아버님생신(처가)",
@@ -34571,7 +34681,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2817",
+    "id": "gcal-2818",
     "memberId": "family",
     "date": "2027-10-30",
     "title": "작은할머니제사(시댁)",
@@ -34583,19 +34693,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2818",
-    "memberId": "family",
+    "id": "gcal-2819",
+    "memberId": "parents",
     "date": "2027-11-12",
     "title": "별이아빠생일(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-2819",
+    "id": "gcal-2820",
     "memberId": "family",
     "date": "2027-11-23",
     "title": "할머니제사(처가)",
@@ -34607,7 +34717,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2820",
+    "id": "gcal-2821",
     "memberId": "family",
     "date": "2028-01-10",
     "title": "큰아버지제사(시댁)",
@@ -34619,19 +34729,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2821",
-    "memberId": "family",
+    "id": "gcal-2822",
+    "memberId": "parents",
     "date": "2028-01-11",
     "title": "작은엄마생신(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-2822",
+    "id": "gcal-2823",
     "memberId": "family",
     "date": "2028-01-19",
     "title": "안양장인생신(처가)",
@@ -34643,7 +34753,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2823",
+    "id": "gcal-2824",
     "memberId": "family",
     "date": "2028-02-02",
     "title": "성준이형생일(처가)",
@@ -34655,7 +34765,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2824",
+    "id": "gcal-2825",
     "memberId": "family",
     "date": "2028-02-05",
     "title": "연미생일(시댁)",
@@ -34667,7 +34777,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2825",
+    "id": "gcal-2826",
     "memberId": "family",
     "date": "2028-02-15",
     "title": "할아버지제사(처가)",
@@ -34679,7 +34789,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2826",
+    "id": "gcal-2827",
     "memberId": "family",
     "date": "2028-05-16",
     "title": "할아버지제사(시댁)",
@@ -34691,19 +34801,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2827",
-    "memberId": "family",
+    "id": "gcal-2828",
+    "memberId": "parents",
     "date": "2028-05-23",
     "title": "작은아빠제사(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-2828",
+    "id": "gcal-2829",
     "memberId": "family",
     "date": "2028-08-11",
     "title": "티비인터넷 약정 만료",
@@ -34715,19 +34825,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2829",
-    "memberId": "family",
+    "id": "gcal-2830",
+    "memberId": "parents",
     "date": "2028-08-22",
     "title": "서울엄마생신(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-2830",
+    "id": "gcal-2831",
     "memberId": "family",
     "date": "2028-09-07",
     "title": "부천어머님생신(처가)",
@@ -34739,7 +34849,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2831",
+    "id": "gcal-2832",
     "memberId": "family",
     "date": "2028-10-03",
     "title": "안양장모님생신(처가)",
@@ -34751,19 +34861,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2832",
-    "memberId": "family",
+    "id": "gcal-2833",
+    "memberId": "parents",
     "date": "2028-10-22",
     "title": "서울아빠제사(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-2833",
+    "id": "gcal-2834",
     "memberId": "family",
     "date": "2028-10-31",
     "title": "부천아버님생신(처가)",
@@ -34775,10 +34885,10 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2834",
+    "id": "gcal-2835",
     "memberId": "family",
     "date": "2028-11-17",
-    "title": "작은할머니제사(시댁)",
+    "title": "작은할머니제사(시���)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
@@ -34787,19 +34897,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2835",
-    "memberId": "family",
+    "id": "gcal-2836",
+    "memberId": "parents",
     "date": "2028-11-30",
     "title": "별이아빠생일(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-2836",
+    "id": "gcal-2837",
     "memberId": "family",
     "date": "2028-12-11",
     "title": "할머니제사(처가)",
@@ -34811,7 +34921,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2837",
+    "id": "gcal-2838",
     "memberId": "family",
     "date": "2029-01-28",
     "title": "큰아버지제사(시댁)",
@@ -34823,19 +34933,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2838",
-    "memberId": "family",
+    "id": "gcal-2839",
+    "memberId": "parents",
     "date": "2029-01-29",
     "title": "작은엄마생신(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-2839",
+    "id": "gcal-2840",
     "memberId": "family",
     "date": "2029-02-06",
     "title": "안양장인생신(처가)",
@@ -34847,7 +34957,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2840",
+    "id": "gcal-2841",
     "memberId": "family",
     "date": "2029-02-19",
     "title": "성준이형생일(처가)",
@@ -34859,7 +34969,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2841",
+    "id": "gcal-2842",
     "memberId": "family",
     "date": "2029-02-22",
     "title": "연미생일(시댁)",
@@ -34871,7 +34981,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2842",
+    "id": "gcal-2843",
     "memberId": "family",
     "date": "2029-03-04",
     "title": "할아버지제사(처가)",
@@ -34883,7 +34993,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2843",
+    "id": "gcal-2844",
     "memberId": "family",
     "date": "2029-03-14",
     "title": "큰할머니제사(시댁)",
@@ -34895,7 +35005,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2844",
+    "id": "gcal-2845",
     "memberId": "family",
     "date": "2029-06-03",
     "title": "할아버지제사(시댁)",
@@ -34907,31 +35017,31 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2845",
-    "memberId": "family",
+    "id": "gcal-2846",
+    "memberId": "parents",
     "date": "2029-06-10",
     "title": "작은아빠제사(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-2846",
-    "memberId": "family",
+    "id": "gcal-2847",
+    "memberId": "parents",
     "date": "2029-08-12",
     "title": "서울엄마생신(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-2847",
+    "id": "gcal-2848",
     "memberId": "family",
     "date": "2029-08-28",
     "title": "부천어머님생신(처가)",
@@ -34943,7 +35053,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2848",
+    "id": "gcal-2849",
     "memberId": "family",
     "date": "2029-09-22",
     "title": "안양장모님생신(처가)",
@@ -34955,19 +35065,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2849",
-    "memberId": "family",
+    "id": "gcal-2850",
+    "memberId": "parents",
     "date": "2029-10-12",
     "title": "서울아빠제사(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-2850",
+    "id": "gcal-2851",
     "memberId": "family",
     "date": "2029-10-21",
     "title": "부천아버님생신(처가)",
@@ -34979,7 +35089,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2851",
+    "id": "gcal-2852",
     "memberId": "family",
     "date": "2029-11-07",
     "title": "작은할머니제사(시댁)",
@@ -34991,19 +35101,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2852",
-    "memberId": "family",
+    "id": "gcal-2853",
+    "memberId": "parents",
     "date": "2029-11-20",
     "title": "별이아빠생일(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-2853",
+    "id": "gcal-2854",
     "memberId": "family",
     "date": "2029-12-01",
     "title": "할머니제사(처가)",
@@ -35015,7 +35125,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2854",
+    "id": "gcal-2855",
     "memberId": "family",
     "date": "2030-01-17",
     "title": "큰아버지제사(시댁)",
@@ -35027,19 +35137,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2855",
-    "memberId": "family",
+    "id": "gcal-2856",
+    "memberId": "parents",
     "date": "2030-01-18",
     "title": "작은엄마생신(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-2856",
+    "id": "gcal-2857",
     "memberId": "family",
     "date": "2030-01-26",
     "title": "안양장인생신(처가)",
@@ -35051,7 +35161,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2857",
+    "id": "gcal-2858",
     "memberId": "family",
     "date": "2030-02-09",
     "title": "성준이형생일(처가)",
@@ -35063,7 +35173,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2858",
+    "id": "gcal-2859",
     "memberId": "family",
     "date": "2030-02-12",
     "title": "연미생일(시댁)",
@@ -35075,7 +35185,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2859",
+    "id": "gcal-2860",
     "memberId": "family",
     "date": "2030-02-22",
     "title": "할아버지제사(처가)",
@@ -35087,7 +35197,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2860",
+    "id": "gcal-2861",
     "memberId": "family",
     "date": "2030-05-23",
     "title": "할아버지제사(시댁)",
@@ -35099,31 +35209,31 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2861",
-    "memberId": "family",
+    "id": "gcal-2862",
+    "memberId": "parents",
     "date": "2030-05-30",
     "title": "작은아빠제사(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-2862",
-    "memberId": "family",
+    "id": "gcal-2863",
+    "memberId": "parents",
     "date": "2030-08-01",
     "title": "서울엄마생신(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-2863",
+    "id": "gcal-2864",
     "memberId": "family",
     "date": "2030-08-17",
     "title": "부천어머님생신(처가)",
@@ -35135,7 +35245,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2864",
+    "id": "gcal-2865",
     "memberId": "family",
     "date": "2030-09-12",
     "title": "안양장모님생신(처가)",
@@ -35147,19 +35257,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2865",
-    "memberId": "family",
+    "id": "gcal-2866",
+    "memberId": "parents",
     "date": "2030-10-01",
     "title": "서울아빠제사(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-2866",
+    "id": "gcal-2867",
     "memberId": "family",
     "date": "2030-10-10",
     "title": "부천아버님생신(처가)",
@@ -35171,7 +35281,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2867",
+    "id": "gcal-2868",
     "memberId": "family",
     "date": "2030-10-28",
     "title": "작은할머니제사(시댁)",
@@ -35183,19 +35293,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2868",
-    "memberId": "family",
+    "id": "gcal-2869",
+    "memberId": "parents",
     "date": "2030-11-10",
     "title": "별이아빠생일(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-2869",
+    "id": "gcal-2870",
     "memberId": "family",
     "date": "2030-11-21",
     "title": "할머니제사(처가)",
@@ -35207,7 +35317,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2870",
+    "id": "gcal-2871",
     "memberId": "family",
     "date": "2031-01-07",
     "title": "큰아버지제사(시댁)",
@@ -35219,19 +35329,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2871",
-    "memberId": "family",
+    "id": "gcal-2872",
+    "memberId": "parents",
     "date": "2031-01-08",
     "title": "작은엄마생신(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-2872",
+    "id": "gcal-2873",
     "memberId": "family",
     "date": "2031-01-16",
     "title": "안양장인생신(처가)",
@@ -35243,7 +35353,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2873",
+    "id": "gcal-2874",
     "memberId": "family",
     "date": "2031-01-29",
     "title": "성준이형생일(처가)",
@@ -35255,7 +35365,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2874",
+    "id": "gcal-2875",
     "memberId": "family",
     "date": "2031-02-01",
     "title": "연미생일(시댁)",
@@ -35267,7 +35377,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2875",
+    "id": "gcal-2876",
     "memberId": "family",
     "date": "2031-02-11",
     "title": "할아버지제사(처가)",
@@ -35279,7 +35389,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2876",
+    "id": "gcal-2877",
     "memberId": "family",
     "date": "2031-02-21",
     "title": "큰할머니제사(시댁)",
@@ -35291,7 +35401,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2877",
+    "id": "gcal-2878",
     "memberId": "family",
     "date": "2031-06-11",
     "title": "할아버지제사(시댁)",
@@ -35303,31 +35413,31 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2878",
-    "memberId": "family",
+    "id": "gcal-2879",
+    "memberId": "parents",
     "date": "2031-06-18",
     "title": "작은아빠제사(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-2879",
-    "memberId": "family",
+    "id": "gcal-2880",
+    "memberId": "parents",
     "date": "2031-08-20",
     "title": "서울엄마생신(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-2880",
+    "id": "gcal-2881",
     "memberId": "family",
     "date": "2031-09-05",
     "title": "부천어머님생신(처가)",
@@ -35339,7 +35449,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2881",
+    "id": "gcal-2882",
     "memberId": "family",
     "date": "2031-10-01",
     "title": "안양장모님생신(처가)",
@@ -35351,19 +35461,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2882",
-    "memberId": "family",
+    "id": "gcal-2883",
+    "memberId": "parents",
     "date": "2031-10-20",
     "title": "서울아빠제사(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-2883",
+    "id": "gcal-2884",
     "memberId": "family",
     "date": "2031-10-29",
     "title": "부천아버님생신(처가)",
@@ -35375,7 +35485,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2884",
+    "id": "gcal-2885",
     "memberId": "family",
     "date": "2031-11-16",
     "title": "작은할머니제사(시댁)",
@@ -35387,19 +35497,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2885",
-    "memberId": "family",
+    "id": "gcal-2886",
+    "memberId": "parents",
     "date": "2031-11-29",
     "title": "별이아빠생일(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-2886",
+    "id": "gcal-2887",
     "memberId": "family",
     "date": "2031-12-10",
     "title": "할머니제사(처가)",
@@ -35411,7 +35521,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2887",
+    "id": "gcal-2888",
     "memberId": "family",
     "date": "2032-01-26",
     "title": "큰아버지제사(시댁)",
@@ -35423,19 +35533,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2888",
-    "memberId": "family",
+    "id": "gcal-2889",
+    "memberId": "parents",
     "date": "2032-01-27",
     "title": "작은엄마생신(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-2889",
+    "id": "gcal-2890",
     "memberId": "family",
     "date": "2032-02-04",
     "title": "안양장인생신(처가)",
@@ -35447,7 +35557,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2890",
+    "id": "gcal-2891",
     "memberId": "family",
     "date": "2032-02-17",
     "title": "성준이형생일(처가)",
@@ -35459,7 +35569,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2891",
+    "id": "gcal-2892",
     "memberId": "family",
     "date": "2032-02-20",
     "title": "연미생일(시댁)",
@@ -35471,7 +35581,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2892",
+    "id": "gcal-2893",
     "memberId": "family",
     "date": "2032-03-01",
     "title": "할아버지제사(처가)",
@@ -35483,7 +35593,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2893",
+    "id": "gcal-2894",
     "memberId": "family",
     "date": "2032-03-11",
     "title": "큰할머니제사(시댁)",
@@ -35495,7 +35605,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2894",
+    "id": "gcal-2895",
     "memberId": "family",
     "date": "2032-05-30",
     "title": "할아버지제사(시댁)",
@@ -35507,31 +35617,31 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2895",
-    "memberId": "family",
+    "id": "gcal-2896",
+    "memberId": "parents",
     "date": "2032-06-06",
     "title": "작은아빠제사(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-2896",
-    "memberId": "family",
+    "id": "gcal-2897",
+    "memberId": "parents",
     "date": "2032-08-08",
     "title": "서울엄마생신(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-2897",
+    "id": "gcal-2898",
     "memberId": "family",
     "date": "2032-08-24",
     "title": "부천어머님생신(처가)",
@@ -35543,7 +35653,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2898",
+    "id": "gcal-2899",
     "memberId": "family",
     "date": "2032-09-19",
     "title": "안양장모님생신(처가)",
@@ -35555,19 +35665,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2899",
-    "memberId": "family",
+    "id": "gcal-2900",
+    "memberId": "parents",
     "date": "2032-10-08",
     "title": "서울아빠제사(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-2900",
+    "id": "gcal-2901",
     "memberId": "family",
     "date": "2032-10-17",
     "title": "부천아버님생신(처가)",
@@ -35579,7 +35689,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2901",
+    "id": "gcal-2902",
     "memberId": "family",
     "date": "2032-11-04",
     "title": "작은할머니제사(시댁)",
@@ -35591,19 +35701,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2902",
-    "memberId": "family",
+    "id": "gcal-2903",
+    "memberId": "parents",
     "date": "2032-11-17",
     "title": "별이아빠생일(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-2903",
+    "id": "gcal-2904",
     "memberId": "family",
     "date": "2032-11-28",
     "title": "할머니제사(처가)",
@@ -35615,7 +35725,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2904",
+    "id": "gcal-2905",
     "memberId": "family",
     "date": "2033-01-14",
     "title": "큰아버지제사(시댁)",
@@ -35627,19 +35737,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2905",
-    "memberId": "family",
+    "id": "gcal-2906",
+    "memberId": "parents",
     "date": "2033-01-15",
     "title": "작은엄마생신(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-2906",
+    "id": "gcal-2907",
     "memberId": "family",
     "date": "2033-01-23",
     "title": "안양장인생신(처가)",
@@ -35651,7 +35761,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2907",
+    "id": "gcal-2908",
     "memberId": "family",
     "date": "2033-02-06",
     "title": "성준이형생일(처가)",
@@ -35663,7 +35773,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2908",
+    "id": "gcal-2909",
     "memberId": "family",
     "date": "2033-02-09",
     "title": "연미생일(시댁)",
@@ -35675,7 +35785,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2909",
+    "id": "gcal-2910",
     "memberId": "family",
     "date": "2033-02-19",
     "title": "할아버지제사(처가)",
@@ -35687,7 +35797,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2910",
+    "id": "gcal-2911",
     "memberId": "family",
     "date": "2033-05-20",
     "title": "할아버지제사(시댁)",
@@ -35699,31 +35809,31 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2911",
-    "memberId": "family",
+    "id": "gcal-2912",
+    "memberId": "parents",
     "date": "2033-05-27",
     "title": "작은아빠제사(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-2912",
-    "memberId": "family",
+    "id": "gcal-2913",
+    "memberId": "parents",
     "date": "2033-07-28",
     "title": "서울엄마생신(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-2913",
+    "id": "gcal-2914",
     "memberId": "family",
     "date": "2033-08-13",
     "title": "부천어머님생신(처가)",
@@ -35735,19 +35845,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2914",
-    "memberId": "family",
+    "id": "gcal-2915",
+    "memberId": "parents",
     "date": "2033-08-27",
     "title": "서울엄마생신(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-2915",
+    "id": "gcal-2916",
     "memberId": "family",
     "date": "2033-09-12",
     "title": "부천어머님생신(처가)",
@@ -35759,7 +35869,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2916",
+    "id": "gcal-2917",
     "memberId": "family",
     "date": "2033-10-07",
     "title": "안양장모님생신(처가)",
@@ -35771,19 +35881,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2917",
-    "memberId": "family",
+    "id": "gcal-2918",
+    "memberId": "parents",
     "date": "2033-10-27",
     "title": "서울아빠제사(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-2918",
+    "id": "gcal-2919",
     "memberId": "family",
     "date": "2033-11-05",
     "title": "부천아버님생신(처가)",
@@ -35795,7 +35905,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2919",
+    "id": "gcal-2920",
     "memberId": "family",
     "date": "2033-11-23",
     "title": "작은할머니제사(시댁)",
@@ -35807,19 +35917,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2920",
-    "memberId": "family",
+    "id": "gcal-2921",
+    "memberId": "parents",
     "date": "2033-12-06",
     "title": "별이아빠생일(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-2921",
+    "id": "gcal-2922",
     "memberId": "family",
     "date": "2033-12-17",
     "title": "할머니제사(처가)",
@@ -35831,7 +35941,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2922",
+    "id": "gcal-2923",
     "memberId": "family",
     "date": "2034-02-02",
     "title": "큰아버지제사(시댁)",
@@ -35843,19 +35953,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2923",
-    "memberId": "family",
+    "id": "gcal-2924",
+    "memberId": "parents",
     "date": "2034-02-03",
     "title": "작은엄마생신(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-2924",
+    "id": "gcal-2925",
     "memberId": "family",
     "date": "2034-02-11",
     "title": "안양장인생신(처가)",
@@ -35867,7 +35977,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2925",
+    "id": "gcal-2926",
     "memberId": "family",
     "date": "2034-02-25",
     "title": "성준이형생일(처가)",
@@ -35879,10 +35989,10 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2926",
+    "id": "gcal-2927",
     "memberId": "family",
     "date": "2034-02-28",
-    "title": "연미생일(시댁)",
+    "title": "연미��일(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
@@ -35891,7 +36001,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2927",
+    "id": "gcal-2928",
     "memberId": "family",
     "date": "2034-03-10",
     "title": "할아버지제사(처가)",
@@ -35903,7 +36013,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2928",
+    "id": "gcal-2929",
     "memberId": "family",
     "date": "2034-06-08",
     "title": "할아버지제사(시댁)",
@@ -35915,31 +36025,31 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2929",
-    "memberId": "family",
+    "id": "gcal-2930",
+    "memberId": "parents",
     "date": "2034-06-15",
     "title": "작은아빠제사(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-2930",
-    "memberId": "family",
+    "id": "gcal-2931",
+    "memberId": "parents",
     "date": "2034-08-16",
     "title": "서울엄마생신(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-2931",
+    "id": "gcal-2932",
     "memberId": "family",
     "date": "2034-09-01",
     "title": "부천어머님생신(처가)",
@@ -35951,7 +36061,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2932",
+    "id": "gcal-2933",
     "memberId": "family",
     "date": "2034-09-27",
     "title": "안양장모님생신(처가)",
@@ -35963,19 +36073,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2933",
-    "memberId": "family",
+    "id": "gcal-2934",
+    "memberId": "parents",
     "date": "2034-10-16",
     "title": "서울아빠제사(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-2934",
+    "id": "gcal-2935",
     "memberId": "family",
     "date": "2034-10-25",
     "title": "부천아버님생신(처가)",
@@ -35987,7 +36097,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2935",
+    "id": "gcal-2936",
     "memberId": "family",
     "date": "2034-11-12",
     "title": "작은할머니제사(시댁)",
@@ -35999,19 +36109,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2936",
-    "memberId": "family",
+    "id": "gcal-2937",
+    "memberId": "parents",
     "date": "2034-11-25",
     "title": "별이아빠생일(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-2937",
+    "id": "gcal-2938",
     "memberId": "family",
     "date": "2034-12-06",
     "title": "할머니제사(처가)",
@@ -36023,7 +36133,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2938",
+    "id": "gcal-2939",
     "memberId": "family",
     "date": "2035-01-23",
     "title": "큰아버지제사(시댁)",
@@ -36035,19 +36145,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2939",
-    "memberId": "family",
+    "id": "gcal-2940",
+    "memberId": "parents",
     "date": "2035-01-24",
     "title": "작은엄마생신(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-2940",
+    "id": "gcal-2941",
     "memberId": "family",
     "date": "2035-02-01",
     "title": "안양장인생신(처가)",
@@ -36059,10 +36169,10 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2941",
+    "id": "gcal-2942",
     "memberId": "family",
     "date": "2035-02-14",
-    "title": "성준이형생일(처가)",
+    "title": "��준이형생일(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
@@ -36071,7 +36181,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2942",
+    "id": "gcal-2943",
     "memberId": "family",
     "date": "2035-02-17",
     "title": "연미생일(시댁)",
@@ -36083,7 +36193,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2943",
+    "id": "gcal-2944",
     "memberId": "family",
     "date": "2035-02-27",
     "title": "할아버지제사(처가)",
@@ -36095,7 +36205,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2944",
+    "id": "gcal-2945",
     "memberId": "family",
     "date": "2035-03-09",
     "title": "큰할머니제사(시댁)",
@@ -36107,7 +36217,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2945",
+    "id": "gcal-2946",
     "memberId": "family",
     "date": "2035-05-29",
     "title": "할아버지제사(시댁)",
@@ -36119,31 +36229,31 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2946",
-    "memberId": "family",
+    "id": "gcal-2947",
+    "memberId": "parents",
     "date": "2035-06-05",
     "title": "작은아빠제사(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-2947",
-    "memberId": "family",
+    "id": "gcal-2948",
+    "memberId": "parents",
     "date": "2035-08-06",
     "title": "서울엄마생신(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-2948",
+    "id": "gcal-2949",
     "memberId": "family",
     "date": "2035-08-22",
     "title": "부천어머님생신(처가)",
@@ -36155,7 +36265,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2949",
+    "id": "gcal-2950",
     "memberId": "family",
     "date": "2035-09-16",
     "title": "안양장모님생신(처가)",
@@ -36167,19 +36277,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2950",
-    "memberId": "family",
+    "id": "gcal-2951",
+    "memberId": "parents",
     "date": "2035-10-05",
     "title": "서울아빠제사(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-2951",
+    "id": "gcal-2952",
     "memberId": "family",
     "date": "2035-10-14",
     "title": "부천아버님생신(처가)",
@@ -36191,7 +36301,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2952",
+    "id": "gcal-2953",
     "memberId": "family",
     "date": "2035-11-01",
     "title": "작은할머니제사(시댁)",
@@ -36203,19 +36313,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2953",
-    "memberId": "family",
+    "id": "gcal-2954",
+    "memberId": "parents",
     "date": "2035-11-14",
     "title": "별이아빠생일(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-2954",
+    "id": "gcal-2955",
     "memberId": "family",
     "date": "2035-11-25",
     "title": "할머니제사(처가)",
@@ -36227,7 +36337,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2955",
+    "id": "gcal-2956",
     "memberId": "family",
     "date": "2036-01-11",
     "title": "큰아버지제사(시댁)",
@@ -36239,19 +36349,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2956",
-    "memberId": "family",
+    "id": "gcal-2957",
+    "memberId": "parents",
     "date": "2036-01-12",
     "title": "작은엄마생신(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-2957",
+    "id": "gcal-2958",
     "memberId": "family",
     "date": "2036-01-20",
     "title": "안양장인생신(처가)",
@@ -36263,7 +36373,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2958",
+    "id": "gcal-2959",
     "memberId": "family",
     "date": "2036-02-03",
     "title": "성준이형생일(처가)",
@@ -36275,7 +36385,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2959",
+    "id": "gcal-2960",
     "memberId": "family",
     "date": "2036-02-06",
     "title": "연미생일(시댁)",
@@ -36287,7 +36397,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2960",
+    "id": "gcal-2961",
     "memberId": "family",
     "date": "2036-02-16",
     "title": "할아버지제사(처가)",
@@ -36299,7 +36409,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2961",
+    "id": "gcal-2962",
     "memberId": "family",
     "date": "2036-02-26",
     "title": "큰할머니제사(시댁)",
@@ -36311,7 +36421,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2962",
+    "id": "gcal-2963",
     "memberId": "family",
     "date": "2036-05-17",
     "title": "할아버지제사(시댁)",
@@ -36323,31 +36433,31 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2963",
-    "memberId": "family",
+    "id": "gcal-2964",
+    "memberId": "parents",
     "date": "2036-05-24",
     "title": "작은아빠제사(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-2964",
-    "memberId": "family",
+    "id": "gcal-2965",
+    "memberId": "parents",
     "date": "2036-08-24",
     "title": "서울엄마생신(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-2965",
+    "id": "gcal-2966",
     "memberId": "family",
     "date": "2036-09-09",
     "title": "부천어머님생신(처가)",
@@ -36359,7 +36469,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2966",
+    "id": "gcal-2967",
     "memberId": "family",
     "date": "2036-10-04",
     "title": "안양장모님생신(처가)",
@@ -36371,19 +36481,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2967",
-    "memberId": "family",
+    "id": "gcal-2968",
+    "memberId": "parents",
     "date": "2036-10-23",
     "title": "서울아빠제사(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-2968",
+    "id": "gcal-2969",
     "memberId": "family",
     "date": "2036-11-01",
     "title": "부천아버님생신(처가)",
@@ -36395,7 +36505,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2969",
+    "id": "gcal-2970",
     "memberId": "family",
     "date": "2036-11-19",
     "title": "작은할머니제사(시댁)",
@@ -36407,19 +36517,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2970",
-    "memberId": "family",
+    "id": "gcal-2971",
+    "memberId": "parents",
     "date": "2036-12-02",
     "title": "별이아빠생일(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-2971",
+    "id": "gcal-2972",
     "memberId": "family",
     "date": "2036-12-13",
     "title": "할머니제사(처가)",
@@ -36431,7 +36541,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2972",
+    "id": "gcal-2973",
     "memberId": "family",
     "date": "2037-01-29",
     "title": "큰아버지제사(시댁)",
@@ -36443,19 +36553,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2973",
-    "memberId": "family",
+    "id": "gcal-2974",
+    "memberId": "parents",
     "date": "2037-01-30",
     "title": "작은엄마생신(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-2974",
+    "id": "gcal-2975",
     "memberId": "family",
     "date": "2037-02-07",
     "title": "안양장인생신(처가)",
@@ -36467,7 +36577,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2975",
+    "id": "gcal-2976",
     "memberId": "family",
     "date": "2037-02-21",
     "title": "성준이형생일(처가)",
@@ -36479,7 +36589,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2976",
+    "id": "gcal-2977",
     "memberId": "family",
     "date": "2037-02-24",
     "title": "연미생일(시댁)",
@@ -36491,7 +36601,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2977",
+    "id": "gcal-2978",
     "memberId": "family",
     "date": "2037-03-06",
     "title": "할아버지제사(처가)",
@@ -36503,7 +36613,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2978",
+    "id": "gcal-2979",
     "memberId": "family",
     "date": "2037-03-16",
     "title": "큰할머니제사(시댁)",
@@ -36515,7 +36625,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2979",
+    "id": "gcal-2980",
     "memberId": "family",
     "date": "2037-06-05",
     "title": "할아버지제사(시댁)",
@@ -36527,31 +36637,31 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2980",
-    "memberId": "family",
+    "id": "gcal-2981",
+    "memberId": "parents",
     "date": "2037-06-12",
     "title": "작은아빠제사(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-2981",
-    "memberId": "family",
+    "id": "gcal-2982",
+    "memberId": "parents",
     "date": "2037-08-13",
     "title": "서울엄마생신(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-2982",
+    "id": "gcal-2983",
     "memberId": "family",
     "date": "2037-08-29",
     "title": "부천어머님생신(처가)",
@@ -36563,7 +36673,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2983",
+    "id": "gcal-2984",
     "memberId": "family",
     "date": "2037-09-24",
     "title": "안양장모님생신(처가)",
@@ -36575,19 +36685,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2984",
-    "memberId": "family",
+    "id": "gcal-2985",
+    "memberId": "parents",
     "date": "2037-10-13",
     "title": "서울아빠제사(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-2985",
+    "id": "gcal-2986",
     "memberId": "family",
     "date": "2037-10-22",
     "title": "부천아버님생신(처가)",
@@ -36599,7 +36709,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2986",
+    "id": "gcal-2987",
     "memberId": "family",
     "date": "2037-11-08",
     "title": "작은할머니제사(시댁)",
@@ -36611,19 +36721,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2987",
-    "memberId": "family",
+    "id": "gcal-2988",
+    "memberId": "parents",
     "date": "2037-11-21",
     "title": "별이아빠생일(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-2988",
+    "id": "gcal-2989",
     "memberId": "family",
     "date": "2037-12-02",
     "title": "할머니제사(처가)",
@@ -36635,7 +36745,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2989",
+    "id": "gcal-2990",
     "memberId": "family",
     "date": "2038-01-18",
     "title": "큰아버지제사(시댁)",
@@ -36647,19 +36757,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2990",
-    "memberId": "family",
+    "id": "gcal-2991",
+    "memberId": "parents",
     "date": "2038-01-19",
     "title": "작은엄마생신(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-2991",
+    "id": "gcal-2992",
     "memberId": "family",
     "date": "2038-01-27",
     "title": "안양장인생신(처가)",
@@ -36671,7 +36781,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2992",
+    "id": "gcal-2993",
     "memberId": "family",
     "date": "2038-02-10",
     "title": "성준이형생일(처가)",
@@ -36683,7 +36793,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2993",
+    "id": "gcal-2994",
     "memberId": "family",
     "date": "2038-02-13",
     "title": "연미생일(시댁)",
@@ -36695,7 +36805,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2994",
+    "id": "gcal-2995",
     "memberId": "family",
     "date": "2038-02-23",
     "title": "할아버지제사(처가)",
@@ -36707,7 +36817,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2995",
+    "id": "gcal-2996",
     "memberId": "family",
     "date": "2038-03-05",
     "title": "큰할머니제사(시댁)",
@@ -36719,7 +36829,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2996",
+    "id": "gcal-2997",
     "memberId": "family",
     "date": "2038-05-25",
     "title": "할아버지제사(시댁)",
@@ -36731,31 +36841,31 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-2997",
-    "memberId": "family",
+    "id": "gcal-2998",
+    "memberId": "parents",
     "date": "2038-06-01",
     "title": "작은아빠제사(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-2998",
-    "memberId": "family",
+    "id": "gcal-2999",
+    "memberId": "parents",
     "date": "2038-08-03",
     "title": "서울엄마생신(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-2999",
+    "id": "gcal-3000",
     "memberId": "family",
     "date": "2038-08-19",
     "title": "부천어머님생신(처가)",
@@ -36767,7 +36877,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3000",
+    "id": "gcal-3001",
     "memberId": "family",
     "date": "2038-09-13",
     "title": "안양장모님생신(처가)",
@@ -36779,19 +36889,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3001",
-    "memberId": "family",
+    "id": "gcal-3002",
+    "memberId": "parents",
     "date": "2038-10-03",
     "title": "서울아빠제사(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3002",
+    "id": "gcal-3003",
     "memberId": "family",
     "date": "2038-10-12",
     "title": "부천아버님생신(처가)",
@@ -36803,7 +36913,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3003",
+    "id": "gcal-3004",
     "memberId": "family",
     "date": "2038-10-29",
     "title": "작은할머니제사(시댁)",
@@ -36815,19 +36925,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3004",
-    "memberId": "family",
+    "id": "gcal-3005",
+    "memberId": "parents",
     "date": "2038-11-11",
     "title": "별이아빠생일(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3005",
+    "id": "gcal-3006",
     "memberId": "family",
     "date": "2038-11-22",
     "title": "할머니제사(처가)",
@@ -36839,7 +36949,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3006",
+    "id": "gcal-3007",
     "memberId": "family",
     "date": "2039-01-08",
     "title": "큰아버지제사(시댁)",
@@ -36851,19 +36961,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3007",
-    "memberId": "family",
+    "id": "gcal-3008",
+    "memberId": "parents",
     "date": "2039-01-09",
     "title": "작은엄마생신(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-3008",
+    "id": "gcal-3009",
     "memberId": "family",
     "date": "2039-01-17",
     "title": "안양장인생신(처가)",
@@ -36875,7 +36985,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3009",
+    "id": "gcal-3010",
     "memberId": "family",
     "date": "2039-01-30",
     "title": "성준이형생일(처가)",
@@ -36887,7 +36997,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3010",
+    "id": "gcal-3011",
     "memberId": "family",
     "date": "2039-02-02",
     "title": "연미생일(시댁)",
@@ -36899,7 +37009,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3011",
+    "id": "gcal-3012",
     "memberId": "family",
     "date": "2039-02-12",
     "title": "할아버지제사(처가)",
@@ -36911,7 +37021,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3012",
+    "id": "gcal-3013",
     "memberId": "family",
     "date": "2039-02-22",
     "title": "큰할머니제사(시댁)",
@@ -36923,7 +37033,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3013",
+    "id": "gcal-3014",
     "memberId": "family",
     "date": "2039-05-14",
     "title": "할아버지제사(시댁)",
@@ -36935,31 +37045,31 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3014",
-    "memberId": "family",
+    "id": "gcal-3015",
+    "memberId": "parents",
     "date": "2039-05-21",
     "title": "작은아빠제사(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3015",
-    "memberId": "family",
+    "id": "gcal-3016",
+    "memberId": "parents",
     "date": "2039-08-22",
     "title": "서울엄마생신(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-3016",
+    "id": "gcal-3017",
     "memberId": "family",
     "date": "2039-09-07",
     "title": "부천어머님생신(처가)",
@@ -36971,7 +37081,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3017",
+    "id": "gcal-3018",
     "memberId": "family",
     "date": "2039-10-02",
     "title": "안양장모님생신(처가)",
@@ -36983,19 +37093,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3018",
-    "memberId": "family",
+    "id": "gcal-3019",
+    "memberId": "parents",
     "date": "2039-10-22",
     "title": "서울아빠제사(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3019",
+    "id": "gcal-3020",
     "memberId": "family",
     "date": "2039-10-31",
     "title": "부천아버님생신(처가)",
@@ -37007,7 +37117,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3020",
+    "id": "gcal-3021",
     "memberId": "family",
     "date": "2039-11-17",
     "title": "작은할머니제사(시댁)",
@@ -37019,19 +37129,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3021",
-    "memberId": "family",
+    "id": "gcal-3022",
+    "memberId": "parents",
     "date": "2039-11-30",
     "title": "별이아빠생일(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3022",
+    "id": "gcal-3023",
     "memberId": "family",
     "date": "2039-12-11",
     "title": "할머니제사(처가)",
@@ -37043,7 +37153,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3023",
+    "id": "gcal-3024",
     "memberId": "family",
     "date": "2040-01-27",
     "title": "큰아버지제사(시댁)",
@@ -37055,19 +37165,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3024",
-    "memberId": "family",
+    "id": "gcal-3025",
+    "memberId": "parents",
     "date": "2040-01-28",
     "title": "작은엄마생신(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-3025",
+    "id": "gcal-3026",
     "memberId": "family",
     "date": "2040-02-05",
     "title": "안양장인생신(처가)",
@@ -37079,7 +37189,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3026",
+    "id": "gcal-3027",
     "memberId": "family",
     "date": "2040-02-18",
     "title": "성준이형생일(처가)",
@@ -37091,7 +37201,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3027",
+    "id": "gcal-3028",
     "memberId": "family",
     "date": "2040-02-21",
     "title": "연미생일(시댁)",
@@ -37103,7 +37213,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3028",
+    "id": "gcal-3029",
     "memberId": "family",
     "date": "2040-03-02",
     "title": "할아버지제사(처가)",
@@ -37115,7 +37225,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3029",
+    "id": "gcal-3030",
     "memberId": "family",
     "date": "2040-03-12",
     "title": "큰할머니제사(시댁)",
@@ -37127,7 +37237,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3030",
+    "id": "gcal-3031",
     "memberId": "family",
     "date": "2040-06-01",
     "title": "할아버지제사(시댁)",
@@ -37139,31 +37249,31 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3031",
-    "memberId": "family",
+    "id": "gcal-3032",
+    "memberId": "parents",
     "date": "2040-06-08",
     "title": "작은아빠제사(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3032",
-    "memberId": "family",
+    "id": "gcal-3033",
+    "memberId": "parents",
     "date": "2040-08-10",
     "title": "서울엄마생신(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-3033",
+    "id": "gcal-3034",
     "memberId": "family",
     "date": "2040-08-26",
     "title": "부천어머님생신(처가)",
@@ -37175,7 +37285,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3034",
+    "id": "gcal-3035",
     "memberId": "family",
     "date": "2040-09-21",
     "title": "안양장모님생신(처가)",
@@ -37187,19 +37297,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3035",
-    "memberId": "family",
+    "id": "gcal-3036",
+    "memberId": "parents",
     "date": "2040-10-10",
     "title": "서울아빠제사(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3036",
+    "id": "gcal-3037",
     "memberId": "family",
     "date": "2040-10-19",
     "title": "부천아버님생신(처가)",
@@ -37211,7 +37321,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3037",
+    "id": "gcal-3038",
     "memberId": "family",
     "date": "2040-11-06",
     "title": "작은할머니제사(시댁)",
@@ -37223,19 +37333,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3038",
-    "memberId": "family",
+    "id": "gcal-3039",
+    "memberId": "parents",
     "date": "2040-11-19",
     "title": "별이아빠생일(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3039",
+    "id": "gcal-3040",
     "memberId": "family",
     "date": "2040-11-30",
     "title": "할머니제사(처가)",
@@ -37247,7 +37357,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3040",
+    "id": "gcal-3041",
     "memberId": "family",
     "date": "2041-01-16",
     "title": "큰아버지제사(시댁)",
@@ -37259,19 +37369,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3041",
-    "memberId": "family",
+    "id": "gcal-3042",
+    "memberId": "parents",
     "date": "2041-01-17",
     "title": "작은엄마생신(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-3042",
+    "id": "gcal-3043",
     "memberId": "family",
     "date": "2041-01-25",
     "title": "안양장인생신(처가)",
@@ -37283,7 +37393,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3043",
+    "id": "gcal-3044",
     "memberId": "family",
     "date": "2041-02-07",
     "title": "성준이형생일(처가)",
@@ -37295,7 +37405,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3044",
+    "id": "gcal-3045",
     "memberId": "family",
     "date": "2041-02-10",
     "title": "연미생일(시댁)",
@@ -37307,7 +37417,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3045",
+    "id": "gcal-3046",
     "memberId": "family",
     "date": "2041-02-20",
     "title": "할아버지제사(처가)",
@@ -37319,7 +37429,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3046",
+    "id": "gcal-3047",
     "memberId": "family",
     "date": "2041-03-02",
     "title": "큰할머니제사(시댁)",
@@ -37331,7 +37441,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3047",
+    "id": "gcal-3048",
     "memberId": "family",
     "date": "2041-05-21",
     "title": "할아버지제사(시댁)",
@@ -37343,31 +37453,31 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3048",
-    "memberId": "family",
+    "id": "gcal-3049",
+    "memberId": "parents",
     "date": "2041-05-28",
     "title": "작은아빠제사(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3049",
-    "memberId": "family",
+    "id": "gcal-3050",
+    "memberId": "parents",
     "date": "2041-07-30",
     "title": "서울엄마생신(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-3050",
+    "id": "gcal-3051",
     "memberId": "family",
     "date": "2041-08-15",
     "title": "부천어머님생신(처가)",
@@ -37379,7 +37489,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3051",
+    "id": "gcal-3052",
     "memberId": "family",
     "date": "2041-09-10",
     "title": "안양장모님생신(처가)",
@@ -37391,19 +37501,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3052",
-    "memberId": "family",
+    "id": "gcal-3053",
+    "memberId": "parents",
     "date": "2041-09-29",
     "title": "서울아빠제사(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3053",
+    "id": "gcal-3054",
     "memberId": "family",
     "date": "2041-10-08",
     "title": "부천아버님생신(처가)",
@@ -37415,7 +37525,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3054",
+    "id": "gcal-3055",
     "memberId": "family",
     "date": "2041-10-26",
     "title": "작은할머니제사(시댁)",
@@ -37427,19 +37537,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3055",
-    "memberId": "family",
+    "id": "gcal-3056",
+    "memberId": "parents",
     "date": "2041-11-08",
     "title": "별이아빠생일(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3056",
+    "id": "gcal-3057",
     "memberId": "family",
     "date": "2041-11-19",
     "title": "할머니제사(처가)",
@@ -37451,7 +37561,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3057",
+    "id": "gcal-3058",
     "memberId": "family",
     "date": "2042-01-05",
     "title": "큰아버지제사(시댁)",
@@ -37463,19 +37573,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3058",
-    "memberId": "family",
+    "id": "gcal-3059",
+    "memberId": "parents",
     "date": "2042-01-06",
     "title": "작은엄마생신(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-3059",
+    "id": "gcal-3060",
     "memberId": "family",
     "date": "2042-01-14",
     "title": "안양장인생신(처가)",
@@ -37487,7 +37597,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3060",
+    "id": "gcal-3061",
     "memberId": "family",
     "date": "2042-01-28",
     "title": "성준이형생일(처가)",
@@ -37499,7 +37609,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3061",
+    "id": "gcal-3062",
     "memberId": "family",
     "date": "2042-01-31",
     "title": "연미생일(시댁)",
@@ -37511,7 +37621,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3062",
+    "id": "gcal-3063",
     "memberId": "family",
     "date": "2042-02-10",
     "title": "할아버지제사(처가)",
@@ -37523,7 +37633,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3063",
+    "id": "gcal-3064",
     "memberId": "family",
     "date": "2042-06-09",
     "title": "할아버지제사(시댁)",
@@ -37535,31 +37645,31 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3064",
-    "memberId": "family",
+    "id": "gcal-3065",
+    "memberId": "parents",
     "date": "2042-06-16",
     "title": "작은아빠제사(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3065",
-    "memberId": "family",
+    "id": "gcal-3066",
+    "memberId": "parents",
     "date": "2042-08-18",
     "title": "서울엄마생신(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-3066",
+    "id": "gcal-3067",
     "memberId": "family",
     "date": "2042-09-03",
     "title": "부천어머님생신(처가)",
@@ -37571,7 +37681,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3067",
+    "id": "gcal-3068",
     "memberId": "family",
     "date": "2042-09-28",
     "title": "안양장모님생신(처가)",
@@ -37583,19 +37693,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3068",
-    "memberId": "family",
+    "id": "gcal-3069",
+    "memberId": "parents",
     "date": "2042-10-18",
     "title": "서울아빠제사(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3069",
+    "id": "gcal-3070",
     "memberId": "family",
     "date": "2042-10-27",
     "title": "부천아버님생신(처가)",
@@ -37607,7 +37717,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3070",
+    "id": "gcal-3071",
     "memberId": "family",
     "date": "2042-11-14",
     "title": "작은할머니제사(시댁)",
@@ -37619,19 +37729,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3071",
-    "memberId": "family",
+    "id": "gcal-3072",
+    "memberId": "parents",
     "date": "2042-11-27",
     "title": "별이아빠생일(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3072",
+    "id": "gcal-3073",
     "memberId": "family",
     "date": "2042-12-08",
     "title": "할머니제사(처가)",
@@ -37643,7 +37753,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3073",
+    "id": "gcal-3074",
     "memberId": "family",
     "date": "2043-01-24",
     "title": "큰아버지제사(시댁)",
@@ -37655,19 +37765,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3074",
-    "memberId": "family",
+    "id": "gcal-3075",
+    "memberId": "parents",
     "date": "2043-01-25",
     "title": "작은엄마생신(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-3075",
+    "id": "gcal-3076",
     "memberId": "family",
     "date": "2043-02-02",
     "title": "안양장인생신(처가)",
@@ -37679,7 +37789,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3076",
+    "id": "gcal-3077",
     "memberId": "family",
     "date": "2043-02-16",
     "title": "성준이형생일(처가)",
@@ -37691,7 +37801,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3077",
+    "id": "gcal-3078",
     "memberId": "family",
     "date": "2043-02-19",
     "title": "연미생일(시댁)",
@@ -37703,7 +37813,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3078",
+    "id": "gcal-3079",
     "memberId": "family",
     "date": "2043-03-01",
     "title": "할아버지제사(처가)",
@@ -37715,7 +37825,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3079",
+    "id": "gcal-3080",
     "memberId": "family",
     "date": "2043-05-30",
     "title": "할아버지제사(시댁)",
@@ -37727,31 +37837,31 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3080",
-    "memberId": "family",
+    "id": "gcal-3081",
+    "memberId": "parents",
     "date": "2043-06-06",
-    "title": "작은아빠제사(처가)",
+    "title": "작은아���제사(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3081",
-    "memberId": "family",
+    "id": "gcal-3082",
+    "memberId": "parents",
     "date": "2043-08-07",
     "title": "서울엄마생신(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-3082",
+    "id": "gcal-3083",
     "memberId": "family",
     "date": "2043-08-23",
     "title": "부천어머님생신(처가)",
@@ -37763,7 +37873,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3083",
+    "id": "gcal-3084",
     "memberId": "family",
     "date": "2043-09-17",
     "title": "안양장모님생신(처가)",
@@ -37775,19 +37885,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3084",
-    "memberId": "family",
+    "id": "gcal-3085",
+    "memberId": "parents",
     "date": "2043-10-07",
     "title": "서울아빠제사(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3085",
+    "id": "gcal-3086",
     "memberId": "family",
     "date": "2043-10-16",
     "title": "부천아버님생신(처가)",
@@ -37799,7 +37909,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3086",
+    "id": "gcal-3087",
     "memberId": "family",
     "date": "2043-11-03",
     "title": "작은할머니제사(시댁)",
@@ -37811,19 +37921,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3087",
-    "memberId": "family",
+    "id": "gcal-3088",
+    "memberId": "parents",
     "date": "2043-11-16",
     "title": "별이아빠생일(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3088",
+    "id": "gcal-3089",
     "memberId": "family",
     "date": "2043-11-27",
     "title": "할머니제사(처가)",
@@ -37835,7 +37945,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3089",
+    "id": "gcal-3090",
     "memberId": "family",
     "date": "2044-01-13",
     "title": "큰아버지제사(시댁)",
@@ -37847,19 +37957,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3090",
-    "memberId": "family",
+    "id": "gcal-3091",
+    "memberId": "parents",
     "date": "2044-01-14",
     "title": "작은엄마생신(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-3091",
+    "id": "gcal-3092",
     "memberId": "family",
     "date": "2044-01-22",
     "title": "안양장인생신(처가)",
@@ -37871,7 +37981,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3092",
+    "id": "gcal-3093",
     "memberId": "family",
     "date": "2044-02-05",
     "title": "성준이형생일(처가)",
@@ -37883,7 +37993,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3093",
+    "id": "gcal-3094",
     "memberId": "family",
     "date": "2044-02-08",
     "title": "연미생일(시댁)",
@@ -37895,7 +38005,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3094",
+    "id": "gcal-3095",
     "memberId": "family",
     "date": "2044-02-18",
     "title": "할아버지제사(처가)",
@@ -37907,7 +38017,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3095",
+    "id": "gcal-3096",
     "memberId": "family",
     "date": "2044-02-28",
     "title": "큰할머니제사(시댁)",
@@ -37919,7 +38029,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3096",
+    "id": "gcal-3097",
     "memberId": "family",
     "date": "2044-05-19",
     "title": "할아버지제사(시댁)",
@@ -37931,31 +38041,31 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3097",
-    "memberId": "family",
+    "id": "gcal-3098",
+    "memberId": "parents",
     "date": "2044-05-26",
     "title": "작은아빠제사(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3098",
-    "memberId": "family",
+    "id": "gcal-3099",
+    "memberId": "parents",
     "date": "2044-07-27",
     "title": "서울엄마생신(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-3099",
+    "id": "gcal-3100",
     "memberId": "family",
     "date": "2044-08-12",
     "title": "부천어머님생신(처가)",
@@ -37967,19 +38077,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3100",
-    "memberId": "family",
+    "id": "gcal-3101",
+    "memberId": "parents",
     "date": "2044-08-25",
     "title": "서울엄마생신(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-3101",
+    "id": "gcal-3102",
     "memberId": "family",
     "date": "2044-09-10",
     "title": "부천어머님생신(처가)",
@@ -37991,7 +38101,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3102",
+    "id": "gcal-3103",
     "memberId": "family",
     "date": "2044-10-05",
     "title": "안양장모님생신(처가)",
@@ -38003,19 +38113,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3103",
-    "memberId": "family",
+    "id": "gcal-3104",
+    "memberId": "parents",
     "date": "2044-10-25",
     "title": "서울아빠제사(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3104",
+    "id": "gcal-3105",
     "memberId": "family",
     "date": "2044-11-03",
     "title": "부천아버님생신(처가)",
@@ -38027,7 +38137,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3105",
+    "id": "gcal-3106",
     "memberId": "family",
     "date": "2044-11-21",
     "title": "작은할머니제사(시댁)",
@@ -38039,19 +38149,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3106",
-    "memberId": "family",
+    "id": "gcal-3107",
+    "memberId": "parents",
     "date": "2044-12-04",
     "title": "별이아빠생일(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3107",
+    "id": "gcal-3108",
     "memberId": "family",
     "date": "2044-12-15",
     "title": "할머니제사(처가)",
@@ -38063,7 +38173,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3108",
+    "id": "gcal-3109",
     "memberId": "family",
     "date": "2045-01-31",
     "title": "큰아버지제사(시댁)",
@@ -38075,19 +38185,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3109",
-    "memberId": "family",
+    "id": "gcal-3110",
+    "memberId": "parents",
     "date": "2045-02-01",
     "title": "작은엄마생신(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-3110",
+    "id": "gcal-3111",
     "memberId": "family",
     "date": "2045-02-09",
     "title": "안양장인생신(처가)",
@@ -38099,7 +38209,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3111",
+    "id": "gcal-3112",
     "memberId": "family",
     "date": "2045-02-23",
     "title": "성준이형생일(처가)",
@@ -38111,7 +38221,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3112",
+    "id": "gcal-3113",
     "memberId": "family",
     "date": "2045-02-26",
     "title": "연미생일(시댁)",
@@ -38123,7 +38233,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3113",
+    "id": "gcal-3114",
     "memberId": "family",
     "date": "2045-03-08",
     "title": "할아버지제사(처가)",
@@ -38135,7 +38245,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3114",
+    "id": "gcal-3115",
     "memberId": "family",
     "date": "2045-03-18",
     "title": "큰할머니제사(시댁)",
@@ -38147,7 +38257,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3115",
+    "id": "gcal-3116",
     "memberId": "family",
     "date": "2045-06-07",
     "title": "할아버지제사(시댁)",
@@ -38159,31 +38269,31 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3116",
-    "memberId": "family",
+    "id": "gcal-3117",
+    "memberId": "parents",
     "date": "2045-06-14",
     "title": "작은아빠제사(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3117",
-    "memberId": "family",
+    "id": "gcal-3118",
+    "memberId": "parents",
     "date": "2045-08-15",
     "title": "서울엄마생신(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-3118",
+    "id": "gcal-3119",
     "memberId": "family",
     "date": "2045-08-31",
     "title": "부천어머님생신(처가)",
@@ -38195,7 +38305,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3119",
+    "id": "gcal-3120",
     "memberId": "family",
     "date": "2045-09-25",
     "title": "안양장모님생신(처가)",
@@ -38207,19 +38317,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3120",
-    "memberId": "family",
+    "id": "gcal-3121",
+    "memberId": "parents",
     "date": "2045-10-14",
     "title": "서울아빠제사(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3121",
+    "id": "gcal-3122",
     "memberId": "family",
     "date": "2045-10-23",
     "title": "부천아버님생신(처가)",
@@ -38231,7 +38341,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3122",
+    "id": "gcal-3123",
     "memberId": "family",
     "date": "2045-11-10",
     "title": "작은할머니제사(시댁)",
@@ -38243,19 +38353,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3123",
-    "memberId": "family",
+    "id": "gcal-3124",
+    "memberId": "parents",
     "date": "2045-11-23",
     "title": "별이아빠생일(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3124",
+    "id": "gcal-3125",
     "memberId": "family",
     "date": "2045-12-04",
     "title": "할머니제사(처가)",
@@ -38267,7 +38377,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3125",
+    "id": "gcal-3126",
     "memberId": "family",
     "date": "2046-01-20",
     "title": "큰아버지제사(시댁)",
@@ -38279,19 +38389,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3126",
-    "memberId": "family",
+    "id": "gcal-3127",
+    "memberId": "parents",
     "date": "2046-01-21",
     "title": "작은엄마생신(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-3127",
+    "id": "gcal-3128",
     "memberId": "family",
     "date": "2046-01-29",
     "title": "안양장인생신(처가)",
@@ -38303,7 +38413,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3128",
+    "id": "gcal-3129",
     "memberId": "family",
     "date": "2046-02-12",
     "title": "성준이형생일(처가)",
@@ -38315,7 +38425,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3129",
+    "id": "gcal-3130",
     "memberId": "family",
     "date": "2046-02-15",
     "title": "연미생일(시댁)",
@@ -38327,7 +38437,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3130",
+    "id": "gcal-3131",
     "memberId": "family",
     "date": "2046-02-25",
     "title": "할아버지제사(처가)",
@@ -38339,7 +38449,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3131",
+    "id": "gcal-3132",
     "memberId": "family",
     "date": "2046-03-07",
     "title": "큰할머니제사(시댁)",
@@ -38351,7 +38461,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3132",
+    "id": "gcal-3133",
     "memberId": "family",
     "date": "2046-05-27",
     "title": "할아버지제사(시댁)",
@@ -38363,31 +38473,31 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3133",
-    "memberId": "family",
+    "id": "gcal-3134",
+    "memberId": "parents",
     "date": "2046-06-03",
     "title": "작은아빠제사(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3134",
-    "memberId": "family",
+    "id": "gcal-3135",
+    "memberId": "parents",
     "date": "2046-08-04",
     "title": "서울엄마생신(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-3135",
+    "id": "gcal-3136",
     "memberId": "family",
     "date": "2046-08-20",
     "title": "부천어머님생신(처가)",
@@ -38399,7 +38509,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3136",
+    "id": "gcal-3137",
     "memberId": "family",
     "date": "2046-09-15",
     "title": "안양장모님생신(처가)",
@@ -38411,19 +38521,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3137",
-    "memberId": "family",
+    "id": "gcal-3138",
+    "memberId": "parents",
     "date": "2046-10-04",
     "title": "서울아빠제사(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3138",
+    "id": "gcal-3139",
     "memberId": "family",
     "date": "2046-10-13",
     "title": "부천아버님생신(처가)",
@@ -38435,7 +38545,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3139",
+    "id": "gcal-3140",
     "memberId": "family",
     "date": "2046-10-30",
     "title": "작은할머니제사(시댁)",
@@ -38447,19 +38557,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3140",
-    "memberId": "family",
+    "id": "gcal-3141",
+    "memberId": "parents",
     "date": "2046-11-12",
     "title": "별이아빠생일(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3141",
+    "id": "gcal-3142",
     "memberId": "family",
     "date": "2046-11-23",
     "title": "할머니제사(처가)",
@@ -38471,7 +38581,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3142",
+    "id": "gcal-3143",
     "memberId": "family",
     "date": "2047-01-09",
     "title": "큰아버지제사(시댁)",
@@ -38483,19 +38593,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3143",
-    "memberId": "family",
+    "id": "gcal-3144",
+    "memberId": "parents",
     "date": "2047-01-10",
     "title": "작은엄마생신(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-3144",
+    "id": "gcal-3145",
     "memberId": "family",
     "date": "2047-01-18",
     "title": "안양장인생신(처가)",
@@ -38507,7 +38617,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3145",
+    "id": "gcal-3146",
     "memberId": "family",
     "date": "2047-02-01",
     "title": "성준이형생일(처가)",
@@ -38519,7 +38629,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3146",
+    "id": "gcal-3147",
     "memberId": "family",
     "date": "2047-02-04",
     "title": "연미생일(시댁)",
@@ -38531,7 +38641,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3147",
+    "id": "gcal-3148",
     "memberId": "family",
     "date": "2047-02-14",
     "title": "할아버지제사(처가)",
@@ -38543,7 +38653,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3148",
+    "id": "gcal-3149",
     "memberId": "family",
     "date": "2047-02-24",
     "title": "큰할머니제사(시댁)",
@@ -38555,7 +38665,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3149",
+    "id": "gcal-3150",
     "memberId": "family",
     "date": "2047-05-16",
     "title": "할아버지제사(시댁)",
@@ -38567,31 +38677,31 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3150",
-    "memberId": "family",
+    "id": "gcal-3151",
+    "memberId": "parents",
     "date": "2047-05-23",
     "title": "작은아빠제사(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3151",
-    "memberId": "family",
+    "id": "gcal-3152",
+    "memberId": "parents",
     "date": "2047-08-23",
     "title": "서울엄마생신(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-3152",
+    "id": "gcal-3153",
     "memberId": "family",
     "date": "2047-09-08",
     "title": "부천어머님생신(처가)",
@@ -38603,7 +38713,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3153",
+    "id": "gcal-3154",
     "memberId": "family",
     "date": "2047-10-04",
     "title": "안양장모님생신(처가)",
@@ -38615,19 +38725,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3154",
-    "memberId": "family",
+    "id": "gcal-3155",
+    "memberId": "parents",
     "date": "2047-10-23",
     "title": "서울아빠제사(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3155",
+    "id": "gcal-3156",
     "memberId": "family",
     "date": "2047-11-01",
     "title": "부천아버님생신(처가)",
@@ -38639,7 +38749,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3156",
+    "id": "gcal-3157",
     "memberId": "family",
     "date": "2047-11-18",
     "title": "작은할머니제사(시댁)",
@@ -38651,19 +38761,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3157",
-    "memberId": "family",
+    "id": "gcal-3158",
+    "memberId": "parents",
     "date": "2047-12-01",
     "title": "별이아빠생일(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3158",
+    "id": "gcal-3159",
     "memberId": "family",
     "date": "2047-12-12",
     "title": "할머니제사(처가)",
@@ -38675,7 +38785,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3159",
+    "id": "gcal-3160",
     "memberId": "family",
     "date": "2048-01-28",
     "title": "큰아버지제사(시댁)",
@@ -38687,19 +38797,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3160",
-    "memberId": "family",
+    "id": "gcal-3161",
+    "memberId": "parents",
     "date": "2048-01-29",
     "title": "작은엄마생신(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-3161",
+    "id": "gcal-3162",
     "memberId": "family",
     "date": "2048-02-06",
     "title": "안양장인생신(처가)",
@@ -38711,7 +38821,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3162",
+    "id": "gcal-3163",
     "memberId": "family",
     "date": "2048-02-20",
     "title": "성준이형생일(처가)",
@@ -38723,7 +38833,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3163",
+    "id": "gcal-3164",
     "memberId": "family",
     "date": "2048-02-23",
     "title": "연미생일(시댁)",
@@ -38735,7 +38845,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3164",
+    "id": "gcal-3165",
     "memberId": "family",
     "date": "2048-03-04",
     "title": "할아버지제사(처가)",
@@ -38747,7 +38857,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3165",
+    "id": "gcal-3166",
     "memberId": "family",
     "date": "2048-06-03",
     "title": "할아버지제사(시댁)",
@@ -38759,31 +38869,31 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3166",
-    "memberId": "family",
+    "id": "gcal-3167",
+    "memberId": "parents",
     "date": "2048-06-10",
     "title": "작은아빠제사(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3167",
-    "memberId": "family",
+    "id": "gcal-3168",
+    "memberId": "parents",
     "date": "2048-08-12",
     "title": "서울엄마생신(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-3168",
+    "id": "gcal-3169",
     "memberId": "family",
     "date": "2048-08-28",
     "title": "부천어머님생신(처가)",
@@ -38795,7 +38905,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3169",
+    "id": "gcal-3170",
     "memberId": "family",
     "date": "2048-09-22",
     "title": "안양장모님생신(처가)",
@@ -38807,19 +38917,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3170",
-    "memberId": "family",
+    "id": "gcal-3171",
+    "memberId": "parents",
     "date": "2048-10-12",
     "title": "서울아빠제사(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3171",
+    "id": "gcal-3172",
     "memberId": "family",
     "date": "2048-10-21",
     "title": "부천아버님생신(처가)",
@@ -38831,7 +38941,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3172",
+    "id": "gcal-3173",
     "memberId": "family",
     "date": "2048-11-07",
     "title": "작은할머니제사(시댁)",
@@ -38843,19 +38953,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3173",
-    "memberId": "family",
+    "id": "gcal-3174",
+    "memberId": "parents",
     "date": "2048-11-20",
     "title": "별이아빠생일(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3174",
+    "id": "gcal-3175",
     "memberId": "family",
     "date": "2048-12-01",
     "title": "할머니제사(처가)",
@@ -38867,7 +38977,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3175",
+    "id": "gcal-3176",
     "memberId": "family",
     "date": "2049-01-17",
     "title": "큰아버지제사(시댁)",
@@ -38879,19 +38989,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3176",
-    "memberId": "family",
+    "id": "gcal-3177",
+    "memberId": "parents",
     "date": "2049-01-18",
     "title": "작은엄마생신(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-3177",
+    "id": "gcal-3178",
     "memberId": "family",
     "date": "2049-01-26",
     "title": "안양장인생신(처가)",
@@ -38903,7 +39013,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3178",
+    "id": "gcal-3179",
     "memberId": "family",
     "date": "2049-02-08",
     "title": "성준이형생일(처가)",
@@ -38915,7 +39025,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3179",
+    "id": "gcal-3180",
     "memberId": "family",
     "date": "2049-02-11",
     "title": "연미생일(시댁)",
@@ -38927,7 +39037,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3180",
+    "id": "gcal-3181",
     "memberId": "family",
     "date": "2049-02-21",
     "title": "할아버지제사(처가)",
@@ -38939,7 +39049,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3181",
+    "id": "gcal-3182",
     "memberId": "family",
     "date": "2049-03-03",
     "title": "큰할머니제사(시댁)",
@@ -38951,7 +39061,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3182",
+    "id": "gcal-3183",
     "memberId": "family",
     "date": "2049-05-23",
     "title": "할아버지제사(시댁)",
@@ -38963,31 +39073,31 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3183",
-    "memberId": "family",
+    "id": "gcal-3184",
+    "memberId": "parents",
     "date": "2049-05-30",
     "title": "작은아빠제사(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3184",
-    "memberId": "family",
+    "id": "gcal-3185",
+    "memberId": "parents",
     "date": "2049-08-01",
     "title": "서울엄마생신(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-3185",
+    "id": "gcal-3186",
     "memberId": "family",
     "date": "2049-08-17",
     "title": "부천어머님생신(처가)",
@@ -38999,7 +39109,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3186",
+    "id": "gcal-3187",
     "memberId": "family",
     "date": "2049-09-11",
     "title": "안양장모님생신(처가)",
@@ -39011,19 +39121,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3187",
-    "memberId": "family",
+    "id": "gcal-3188",
+    "memberId": "parents",
     "date": "2049-10-01",
     "title": "서울아빠제사(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3188",
+    "id": "gcal-3189",
     "memberId": "family",
     "date": "2049-10-10",
     "title": "부천아버님생신(처가)",
@@ -39035,7 +39145,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3189",
+    "id": "gcal-3190",
     "memberId": "family",
     "date": "2049-10-28",
     "title": "작은할머니제사(시댁)",
@@ -39047,19 +39157,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3190",
-    "memberId": "family",
+    "id": "gcal-3191",
+    "memberId": "parents",
     "date": "2049-11-10",
     "title": "별이아빠생일(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3191",
+    "id": "gcal-3192",
     "memberId": "family",
     "date": "2049-11-21",
     "title": "할머니제사(처가)",
@@ -39071,7 +39181,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3192",
+    "id": "gcal-3193",
     "memberId": "family",
     "date": "2050-01-07",
     "title": "큰아버지제사(시댁)",
@@ -39083,19 +39193,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3193",
-    "memberId": "family",
+    "id": "gcal-3194",
+    "memberId": "parents",
     "date": "2050-01-08",
     "title": "작은엄마생신(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-3194",
+    "id": "gcal-3195",
     "memberId": "family",
     "date": "2050-01-16",
     "title": "안양장인생신(처가)",
@@ -39107,7 +39217,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3195",
+    "id": "gcal-3196",
     "memberId": "family",
     "date": "2050-01-29",
     "title": "성준이형생일(처가)",
@@ -39119,7 +39229,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3196",
+    "id": "gcal-3197",
     "memberId": "family",
     "date": "2050-02-01",
     "title": "연미생일(시댁)",
@@ -39131,7 +39241,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3197",
+    "id": "gcal-3198",
     "memberId": "family",
     "date": "2050-02-11",
     "title": "할아버지제사(처가)",
@@ -39143,7 +39253,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3198",
+    "id": "gcal-3199",
     "memberId": "family",
     "date": "2050-02-21",
     "title": "큰할머니제사(시댁)",
@@ -39155,7 +39265,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3199",
+    "id": "gcal-3200",
     "memberId": "family",
     "date": "2050-06-11",
     "title": "할아버지제사(시댁)",
@@ -39167,31 +39277,31 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3200",
-    "memberId": "family",
+    "id": "gcal-3201",
+    "memberId": "parents",
     "date": "2050-06-18",
     "title": "작은아빠제사(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3201",
-    "memberId": "family",
+    "id": "gcal-3202",
+    "memberId": "parents",
     "date": "2050-08-19",
     "title": "서울엄마생신(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-3202",
+    "id": "gcal-3203",
     "memberId": "family",
     "date": "2050-09-04",
     "title": "부천어머님생신(처가)",
@@ -39203,7 +39313,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3203",
+    "id": "gcal-3204",
     "memberId": "family",
     "date": "2050-09-30",
     "title": "안양장모님생신(처가)",
@@ -39215,19 +39325,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3204",
-    "memberId": "family",
+    "id": "gcal-3205",
+    "memberId": "parents",
     "date": "2050-10-20",
     "title": "서울아빠제사(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3205",
+    "id": "gcal-3206",
     "memberId": "family",
     "date": "2050-10-29",
     "title": "부천아버님생신(처가)",
@@ -39239,7 +39349,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3206",
+    "id": "gcal-3207",
     "memberId": "family",
     "date": "2050-11-15",
     "title": "작은할머니제사(시댁)",
@@ -39251,19 +39361,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3207",
-    "memberId": "family",
+    "id": "gcal-3208",
+    "memberId": "parents",
     "date": "2050-11-28",
     "title": "별이아빠생일(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3208",
+    "id": "gcal-3209",
     "memberId": "family",
     "date": "2050-12-09",
     "title": "할머니제사(처가)",
@@ -39275,7 +39385,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3209",
+    "id": "gcal-3210",
     "memberId": "family",
     "date": "2051-01-26",
     "title": "큰아버지제사(시댁)",
@@ -39287,19 +39397,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3210",
-    "memberId": "family",
+    "id": "gcal-3211",
+    "memberId": "parents",
     "date": "2051-01-27",
     "title": "작은엄마생신(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-3211",
+    "id": "gcal-3212",
     "memberId": "family",
     "date": "2051-02-04",
     "title": "안양장인생신(처가)",
@@ -39311,7 +39421,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3212",
+    "id": "gcal-3213",
     "memberId": "family",
     "date": "2051-02-17",
     "title": "성준이형생일(처가)",
@@ -39323,7 +39433,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3213",
+    "id": "gcal-3214",
     "memberId": "family",
     "date": "2051-02-20",
     "title": "연미생일(시댁)",
@@ -39335,7 +39445,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3214",
+    "id": "gcal-3215",
     "memberId": "family",
     "date": "2051-03-02",
     "title": "할아버지제사(처가)",
@@ -39347,7 +39457,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3215",
+    "id": "gcal-3216",
     "memberId": "family",
     "date": "2051-03-12",
     "title": "큰할머니제사(시댁)",
@@ -39359,7 +39469,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3216",
+    "id": "gcal-3217",
     "memberId": "family",
     "date": "2051-05-31",
     "title": "할아버지제사(시댁)",
@@ -39371,31 +39481,31 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3217",
-    "memberId": "family",
+    "id": "gcal-3218",
+    "memberId": "parents",
     "date": "2051-06-07",
     "title": "작은아빠제사(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3218",
-    "memberId": "family",
+    "id": "gcal-3219",
+    "memberId": "parents",
     "date": "2051-08-09",
     "title": "서울엄마생신(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-3219",
+    "id": "gcal-3220",
     "memberId": "family",
     "date": "2051-08-25",
     "title": "부천어머님생신(처가)",
@@ -39407,7 +39517,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3220",
+    "id": "gcal-3221",
     "memberId": "family",
     "date": "2051-09-19",
     "title": "안양장모님생신(처가)",
@@ -39419,19 +39529,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3221",
-    "memberId": "family",
+    "id": "gcal-3222",
+    "memberId": "parents",
     "date": "2051-10-09",
     "title": "서울아빠제사(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3222",
+    "id": "gcal-3223",
     "memberId": "family",
     "date": "2051-10-18",
     "title": "부천아버님생신(처가)",
@@ -39443,7 +39553,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3223",
+    "id": "gcal-3224",
     "memberId": "family",
     "date": "2051-11-05",
     "title": "작은할머니제사(시댁)",
@@ -39455,19 +39565,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3224",
-    "memberId": "family",
+    "id": "gcal-3225",
+    "memberId": "parents",
     "date": "2051-11-18",
     "title": "별이아빠생일(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3225",
+    "id": "gcal-3226",
     "memberId": "family",
     "date": "2051-11-29",
     "title": "할머니제사(처가)",
@@ -39479,7 +39589,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3226",
+    "id": "gcal-3227",
     "memberId": "family",
     "date": "2052-01-15",
     "title": "큰아버지제사(시댁)",
@@ -39491,19 +39601,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3227",
-    "memberId": "family",
+    "id": "gcal-3228",
+    "memberId": "parents",
     "date": "2052-01-16",
     "title": "작은엄마생신(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-3228",
+    "id": "gcal-3229",
     "memberId": "family",
     "date": "2052-01-24",
     "title": "안양장인생신(처가)",
@@ -39515,7 +39625,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3229",
+    "id": "gcal-3230",
     "memberId": "family",
     "date": "2052-02-07",
     "title": "성준이형생일(처가)",
@@ -39527,7 +39637,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3230",
+    "id": "gcal-3231",
     "memberId": "family",
     "date": "2052-02-10",
     "title": "연미생일(시댁)",
@@ -39539,7 +39649,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3231",
+    "id": "gcal-3232",
     "memberId": "family",
     "date": "2052-02-20",
     "title": "할아버지제사(처가)",
@@ -39551,7 +39661,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3232",
+    "id": "gcal-3233",
     "memberId": "family",
     "date": "2052-05-20",
     "title": "할아버지제사(시댁)",
@@ -39563,31 +39673,31 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3233",
-    "memberId": "family",
+    "id": "gcal-3234",
+    "memberId": "parents",
     "date": "2052-05-27",
     "title": "작은아빠제사(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3234",
-    "memberId": "family",
+    "id": "gcal-3235",
+    "memberId": "parents",
     "date": "2052-07-28",
     "title": "서울엄마생신(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-3235",
+    "id": "gcal-3236",
     "memberId": "family",
     "date": "2052-08-13",
     "title": "부천어머님생신(처가)",
@@ -39599,7 +39709,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3236",
+    "id": "gcal-3237",
     "memberId": "family",
     "date": "2052-09-07",
     "title": "안양장모님생신(처가)",
@@ -39611,7 +39721,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3237",
+    "id": "gcal-3238",
     "memberId": "family",
     "date": "2052-10-07",
     "title": "안양장모님생신(처가)",
@@ -39623,19 +39733,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3238",
-    "memberId": "family",
+    "id": "gcal-3239",
+    "memberId": "parents",
     "date": "2052-10-27",
     "title": "서울아빠제사(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3239",
+    "id": "gcal-3240",
     "memberId": "family",
     "date": "2052-11-05",
     "title": "부천아버님생신(처가)",
@@ -39647,7 +39757,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3240",
+    "id": "gcal-3241",
     "memberId": "family",
     "date": "2052-11-22",
     "title": "작은할머니제사(시댁)",
@@ -39659,19 +39769,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3241",
-    "memberId": "family",
+    "id": "gcal-3242",
+    "memberId": "parents",
     "date": "2052-12-05",
     "title": "별이아빠생일(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3242",
+    "id": "gcal-3243",
     "memberId": "family",
     "date": "2052-12-16",
     "title": "할머니제사(처가)",
@@ -39683,7 +39793,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3243",
+    "id": "gcal-3244",
     "memberId": "family",
     "date": "2053-02-02",
     "title": "큰아버지제사(시댁)",
@@ -39695,19 +39805,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3244",
-    "memberId": "family",
+    "id": "gcal-3245",
+    "memberId": "parents",
     "date": "2053-02-03",
     "title": "작은엄마생신(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-3245",
+    "id": "gcal-3246",
     "memberId": "family",
     "date": "2053-02-11",
     "title": "안양장인생신(처가)",
@@ -39719,7 +39829,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3246",
+    "id": "gcal-3247",
     "memberId": "family",
     "date": "2053-02-25",
     "title": "성준이형생일(처가)",
@@ -39731,7 +39841,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3247",
+    "id": "gcal-3248",
     "memberId": "family",
     "date": "2053-02-28",
     "title": "연미생일(시댁)",
@@ -39743,7 +39853,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3248",
+    "id": "gcal-3249",
     "memberId": "family",
     "date": "2053-03-10",
     "title": "할아버지제사(처가)",
@@ -39755,7 +39865,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3249",
+    "id": "gcal-3250",
     "memberId": "family",
     "date": "2053-06-08",
     "title": "할아버지제사(시댁)",
@@ -39767,31 +39877,31 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3250",
-    "memberId": "family",
+    "id": "gcal-3251",
+    "memberId": "parents",
     "date": "2053-06-15",
     "title": "작은아빠제사(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3251",
-    "memberId": "family",
+    "id": "gcal-3252",
+    "memberId": "parents",
     "date": "2053-08-16",
     "title": "서울엄마생신(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-3252",
+    "id": "gcal-3253",
     "memberId": "family",
     "date": "2053-09-01",
     "title": "부천어머님생신(처가)",
@@ -39803,7 +39913,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3253",
+    "id": "gcal-3254",
     "memberId": "family",
     "date": "2053-09-26",
     "title": "안양장모님생신(처가)",
@@ -39815,19 +39925,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3254",
-    "memberId": "family",
+    "id": "gcal-3255",
+    "memberId": "parents",
     "date": "2053-10-16",
     "title": "서울아빠제사(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3255",
+    "id": "gcal-3256",
     "memberId": "family",
     "date": "2053-10-25",
     "title": "부천아버님생신(처가)",
@@ -39839,7 +39949,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3256",
+    "id": "gcal-3257",
     "memberId": "family",
     "date": "2053-11-11",
     "title": "작은할머니제사(시댁)",
@@ -39851,19 +39961,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3257",
-    "memberId": "family",
+    "id": "gcal-3258",
+    "memberId": "parents",
     "date": "2053-11-24",
     "title": "별이아빠생일(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3258",
+    "id": "gcal-3259",
     "memberId": "family",
     "date": "2053-12-05",
     "title": "할머니제사(처가)",
@@ -39875,7 +39985,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3259",
+    "id": "gcal-3260",
     "memberId": "family",
     "date": "2054-01-22",
     "title": "큰아버지제사(시댁)",
@@ -39887,19 +39997,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3260",
-    "memberId": "family",
+    "id": "gcal-3261",
+    "memberId": "parents",
     "date": "2054-01-23",
     "title": "작은엄마생신(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-3261",
+    "id": "gcal-3262",
     "memberId": "family",
     "date": "2054-01-31",
     "title": "안양장인생신(처가)",
@@ -39911,7 +40021,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3262",
+    "id": "gcal-3263",
     "memberId": "family",
     "date": "2054-02-14",
     "title": "성준이형생일(처가)",
@@ -39923,7 +40033,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3263",
+    "id": "gcal-3264",
     "memberId": "family",
     "date": "2054-02-17",
     "title": "연미생일(시댁)",
@@ -39935,7 +40045,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3264",
+    "id": "gcal-3265",
     "memberId": "family",
     "date": "2054-02-27",
     "title": "할아버지제사(처가)",
@@ -39947,7 +40057,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3265",
+    "id": "gcal-3266",
     "memberId": "family",
     "date": "2054-05-29",
     "title": "할아버지제사(시댁)",
@@ -39959,31 +40069,31 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3266",
-    "memberId": "family",
+    "id": "gcal-3267",
+    "memberId": "parents",
     "date": "2054-06-05",
     "title": "작은아빠제사(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3267",
-    "memberId": "family",
+    "id": "gcal-3268",
+    "memberId": "parents",
     "date": "2054-08-06",
     "title": "서울엄마생신(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-3268",
+    "id": "gcal-3269",
     "memberId": "family",
     "date": "2054-08-22",
     "title": "부천어머님생신(처가)",
@@ -39995,7 +40105,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3269",
+    "id": "gcal-3270",
     "memberId": "family",
     "date": "2054-09-16",
     "title": "안양장모님생신(처가)",
@@ -40007,19 +40117,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3270",
-    "memberId": "family",
+    "id": "gcal-3271",
+    "memberId": "parents",
     "date": "2054-10-05",
     "title": "서울아빠제사(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3271",
+    "id": "gcal-3272",
     "memberId": "family",
     "date": "2054-10-14",
     "title": "부천아버님생신(처가)",
@@ -40031,7 +40141,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3272",
+    "id": "gcal-3273",
     "memberId": "family",
     "date": "2054-11-01",
     "title": "작은할머니제사(시댁)",
@@ -40043,19 +40153,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3273",
-    "memberId": "family",
+    "id": "gcal-3274",
+    "memberId": "parents",
     "date": "2054-11-14",
     "title": "별이아빠생일(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3274",
+    "id": "gcal-3275",
     "memberId": "family",
     "date": "2054-11-25",
     "title": "할머니제사(처가)",
@@ -40067,7 +40177,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3275",
+    "id": "gcal-3276",
     "memberId": "family",
     "date": "2055-01-11",
     "title": "큰아버지제사(시댁)",
@@ -40079,19 +40189,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3276",
-    "memberId": "family",
+    "id": "gcal-3277",
+    "memberId": "parents",
     "date": "2055-01-12",
     "title": "작은엄마생신(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-3277",
+    "id": "gcal-3278",
     "memberId": "family",
     "date": "2055-01-20",
     "title": "안양장인생신(처가)",
@@ -40103,7 +40213,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3278",
+    "id": "gcal-3279",
     "memberId": "family",
     "date": "2055-02-03",
     "title": "성준이형생일(처가)",
@@ -40115,7 +40225,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3279",
+    "id": "gcal-3280",
     "memberId": "family",
     "date": "2055-02-06",
     "title": "연미생일(시댁)",
@@ -40127,7 +40237,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3280",
+    "id": "gcal-3281",
     "memberId": "family",
     "date": "2055-02-16",
     "title": "할아버지제사(처가)",
@@ -40139,7 +40249,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3281",
+    "id": "gcal-3282",
     "memberId": "family",
     "date": "2055-05-18",
     "title": "할아버지제사(시댁)",
@@ -40151,31 +40261,31 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3282",
-    "memberId": "family",
+    "id": "gcal-3283",
+    "memberId": "parents",
     "date": "2055-05-25",
     "title": "작은아빠제사(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3283",
-    "memberId": "family",
+    "id": "gcal-3284",
+    "memberId": "parents",
     "date": "2055-08-25",
     "title": "서울엄마생신(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-3284",
+    "id": "gcal-3285",
     "memberId": "family",
     "date": "2055-09-10",
     "title": "부천어머님생신(처가)",
@@ -40187,7 +40297,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3285",
+    "id": "gcal-3286",
     "memberId": "family",
     "date": "2055-10-05",
     "title": "안양장모님생신(처가)",
@@ -40199,19 +40309,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3286",
-    "memberId": "family",
+    "id": "gcal-3287",
+    "memberId": "parents",
     "date": "2055-10-24",
     "title": "서울아빠제사(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3287",
+    "id": "gcal-3288",
     "memberId": "family",
     "date": "2055-11-02",
     "title": "부천아버님생신(처가)",
@@ -40223,7 +40333,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3288",
+    "id": "gcal-3289",
     "memberId": "family",
     "date": "2055-11-20",
     "title": "작은할머니제사(시댁)",
@@ -40235,19 +40345,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3289",
-    "memberId": "family",
+    "id": "gcal-3290",
+    "memberId": "parents",
     "date": "2055-12-03",
     "title": "별이아빠생일(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3290",
+    "id": "gcal-3291",
     "memberId": "family",
     "date": "2055-12-14",
     "title": "할머니제사(처가)",
@@ -40259,7 +40369,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3291",
+    "id": "gcal-3292",
     "memberId": "family",
     "date": "2056-01-30",
     "title": "큰아버지제사(시댁)",
@@ -40271,19 +40381,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3292",
-    "memberId": "family",
+    "id": "gcal-3293",
+    "memberId": "parents",
     "date": "2056-01-31",
     "title": "작은엄마생신(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-3293",
+    "id": "gcal-3294",
     "memberId": "family",
     "date": "2056-02-08",
     "title": "안양장인생신(처가)",
@@ -40295,7 +40405,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3294",
+    "id": "gcal-3295",
     "memberId": "family",
     "date": "2056-02-21",
     "title": "성준이형생일(처가)",
@@ -40307,7 +40417,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3295",
+    "id": "gcal-3296",
     "memberId": "family",
     "date": "2056-02-24",
     "title": "연미생일(시댁)",
@@ -40319,7 +40429,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3296",
+    "id": "gcal-3297",
     "memberId": "family",
     "date": "2056-03-05",
     "title": "할아버지제사(처가)",
@@ -40331,7 +40441,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3297",
+    "id": "gcal-3298",
     "memberId": "family",
     "date": "2056-03-15",
     "title": "큰할머니제사(시댁)",
@@ -40343,7 +40453,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3298",
+    "id": "gcal-3299",
     "memberId": "family",
     "date": "2056-06-05",
     "title": "할아버지제사(시댁)",
@@ -40355,31 +40465,31 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3299",
-    "memberId": "family",
+    "id": "gcal-3300",
+    "memberId": "parents",
     "date": "2056-06-12",
     "title": "작은아빠제사(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3300",
-    "memberId": "family",
+    "id": "gcal-3301",
+    "memberId": "parents",
     "date": "2056-08-13",
     "title": "서울엄마생신(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-3301",
+    "id": "gcal-3302",
     "memberId": "family",
     "date": "2056-08-29",
     "title": "부천어머님생신(처가)",
@@ -40391,7 +40501,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3302",
+    "id": "gcal-3303",
     "memberId": "family",
     "date": "2056-09-24",
     "title": "안양장모님생신(처가)",
@@ -40403,19 +40513,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3303",
-    "memberId": "family",
+    "id": "gcal-3304",
+    "memberId": "parents",
     "date": "2056-10-13",
     "title": "서울아빠제사(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3304",
+    "id": "gcal-3305",
     "memberId": "family",
     "date": "2056-10-22",
     "title": "부천아버님생신(처가)",
@@ -40427,7 +40537,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3305",
+    "id": "gcal-3306",
     "memberId": "family",
     "date": "2056-11-08",
     "title": "작은할머니제사(시댁)",
@@ -40439,19 +40549,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3306",
-    "memberId": "family",
+    "id": "gcal-3307",
+    "memberId": "parents",
     "date": "2056-11-21",
     "title": "별이아빠생일(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3307",
+    "id": "gcal-3308",
     "memberId": "family",
     "date": "2056-12-02",
     "title": "할머니제사(처가)",
@@ -40463,7 +40573,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3308",
+    "id": "gcal-3309",
     "memberId": "family",
     "date": "2057-01-18",
     "title": "큰아버지제사(시댁)",
@@ -40475,19 +40585,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3309",
-    "memberId": "family",
+    "id": "gcal-3310",
+    "memberId": "parents",
     "date": "2057-01-19",
     "title": "작은엄마생신(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-3310",
+    "id": "gcal-3311",
     "memberId": "family",
     "date": "2057-01-27",
     "title": "안양장인생신(처가)",
@@ -40499,7 +40609,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3311",
+    "id": "gcal-3312",
     "memberId": "family",
     "date": "2057-02-10",
     "title": "성준이형생일(처가)",
@@ -40511,7 +40621,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3312",
+    "id": "gcal-3313",
     "memberId": "family",
     "date": "2057-02-13",
     "title": "연미생일(시댁)",
@@ -40523,7 +40633,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3313",
+    "id": "gcal-3314",
     "memberId": "family",
     "date": "2057-02-23",
     "title": "할아버지제사(처가)",
@@ -40535,7 +40645,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3314",
+    "id": "gcal-3315",
     "memberId": "family",
     "date": "2057-05-25",
     "title": "할아버지제사(시댁)",
@@ -40547,31 +40657,31 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3315",
-    "memberId": "family",
+    "id": "gcal-3316",
+    "memberId": "parents",
     "date": "2057-06-01",
     "title": "작은아빠제사(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3316",
-    "memberId": "family",
+    "id": "gcal-3317",
+    "memberId": "parents",
     "date": "2057-08-02",
     "title": "서울엄마생신(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-3317",
+    "id": "gcal-3318",
     "memberId": "family",
     "date": "2057-08-18",
     "title": "부천어머님생신(처가)",
@@ -40583,7 +40693,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3318",
+    "id": "gcal-3319",
     "memberId": "family",
     "date": "2057-09-13",
     "title": "안양장모님생신(처가)",
@@ -40595,19 +40705,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3319",
-    "memberId": "family",
+    "id": "gcal-3320",
+    "memberId": "parents",
     "date": "2057-10-03",
     "title": "서울아빠제사(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3320",
+    "id": "gcal-3321",
     "memberId": "family",
     "date": "2057-10-12",
     "title": "부천아버님생신(처가)",
@@ -40619,7 +40729,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3321",
+    "id": "gcal-3322",
     "memberId": "family",
     "date": "2057-10-29",
     "title": "작은할머니제사(시댁)",
@@ -40631,19 +40741,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3322",
-    "memberId": "family",
+    "id": "gcal-3323",
+    "memberId": "parents",
     "date": "2057-11-11",
     "title": "별이아빠생일(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3323",
+    "id": "gcal-3324",
     "memberId": "family",
     "date": "2057-11-22",
     "title": "할머니제사(처가)",
@@ -40655,7 +40765,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3324",
+    "id": "gcal-3325",
     "memberId": "family",
     "date": "2058-01-08",
     "title": "큰아버지제사(시댁)",
@@ -40667,19 +40777,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3325",
-    "memberId": "family",
+    "id": "gcal-3326",
+    "memberId": "parents",
     "date": "2058-01-09",
     "title": "작은엄마생신(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-3326",
+    "id": "gcal-3327",
     "memberId": "family",
     "date": "2058-01-17",
     "title": "안양장인생신(처가)",
@@ -40691,7 +40801,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3327",
+    "id": "gcal-3328",
     "memberId": "family",
     "date": "2058-01-30",
     "title": "성준이형생일(처가)",
@@ -40703,7 +40813,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3328",
+    "id": "gcal-3329",
     "memberId": "family",
     "date": "2058-02-02",
     "title": "연미생일(시댁)",
@@ -40715,7 +40825,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3329",
+    "id": "gcal-3330",
     "memberId": "family",
     "date": "2058-02-12",
     "title": "할아버지제사(처가)",
@@ -40727,7 +40837,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3330",
+    "id": "gcal-3331",
     "memberId": "family",
     "date": "2058-02-22",
     "title": "큰할머니제사(시댁)",
@@ -40739,7 +40849,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3331",
+    "id": "gcal-3332",
     "memberId": "family",
     "date": "2058-05-14",
     "title": "할아버지제사(시댁)",
@@ -40751,19 +40861,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3332",
-    "memberId": "family",
+    "id": "gcal-3333",
+    "memberId": "parents",
     "date": "2058-05-21",
     "title": "작은아빠제사(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3333",
+    "id": "gcal-3334",
     "memberId": "family",
     "date": "2058-06-12",
     "title": "할아버지제사(시댁)",
@@ -40775,31 +40885,31 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3334",
-    "memberId": "family",
+    "id": "gcal-3335",
+    "memberId": "parents",
     "date": "2058-06-19",
     "title": "작은아빠제사(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3335",
-    "memberId": "family",
+    "id": "gcal-3336",
+    "memberId": "parents",
     "date": "2058-08-21",
     "title": "서울엄마생신(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-3336",
+    "id": "gcal-3337",
     "memberId": "family",
     "date": "2058-09-06",
     "title": "부천어머님생신(처가)",
@@ -40811,7 +40921,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3337",
+    "id": "gcal-3338",
     "memberId": "family",
     "date": "2058-10-02",
     "title": "안양장모님생신(처가)",
@@ -40823,19 +40933,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3338",
-    "memberId": "family",
+    "id": "gcal-3339",
+    "memberId": "parents",
     "date": "2058-10-21",
     "title": "서울아빠제사(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3339",
+    "id": "gcal-3340",
     "memberId": "family",
     "date": "2058-10-30",
     "title": "부천아버님생신(처가)",
@@ -40847,7 +40957,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3340",
+    "id": "gcal-3341",
     "memberId": "family",
     "date": "2058-11-17",
     "title": "작은할머니제사(시댁)",
@@ -40859,19 +40969,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3341",
-    "memberId": "family",
+    "id": "gcal-3342",
+    "memberId": "parents",
     "date": "2058-11-30",
     "title": "별이아빠생일(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3342",
+    "id": "gcal-3343",
     "memberId": "family",
     "date": "2058-12-11",
     "title": "할머니제사(처가)",
@@ -40883,7 +40993,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3343",
+    "id": "gcal-3344",
     "memberId": "family",
     "date": "2059-01-27",
     "title": "큰아버지제사(시댁)",
@@ -40895,19 +41005,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3344",
-    "memberId": "family",
+    "id": "gcal-3345",
+    "memberId": "parents",
     "date": "2059-01-28",
     "title": "작은엄마생신(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-3345",
+    "id": "gcal-3346",
     "memberId": "family",
     "date": "2059-02-05",
     "title": "안양장인생신(처가)",
@@ -40919,7 +41029,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3346",
+    "id": "gcal-3347",
     "memberId": "family",
     "date": "2059-02-18",
     "title": "성준이형생일(처가)",
@@ -40931,7 +41041,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3347",
+    "id": "gcal-3348",
     "memberId": "family",
     "date": "2059-02-21",
     "title": "연미생일(시댁)",
@@ -40943,7 +41053,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3348",
+    "id": "gcal-3349",
     "memberId": "family",
     "date": "2059-03-03",
     "title": "할아버지제사(처가)",
@@ -40955,7 +41065,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3349",
+    "id": "gcal-3350",
     "memberId": "family",
     "date": "2059-03-13",
     "title": "큰할머니제사(시댁)",
@@ -40967,7 +41077,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3350",
+    "id": "gcal-3351",
     "memberId": "family",
     "date": "2059-06-02",
     "title": "할아버지제사(시댁)",
@@ -40979,31 +41089,31 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3351",
-    "memberId": "family",
+    "id": "gcal-3352",
+    "memberId": "parents",
     "date": "2059-06-09",
     "title": "작은아빠제사(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3352",
-    "memberId": "family",
+    "id": "gcal-3353",
+    "memberId": "parents",
     "date": "2059-08-10",
     "title": "서울엄마생신(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-3353",
+    "id": "gcal-3354",
     "memberId": "family",
     "date": "2059-08-26",
     "title": "부천어머님생신(처가)",
@@ -41015,7 +41125,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3354",
+    "id": "gcal-3355",
     "memberId": "family",
     "date": "2059-09-21",
     "title": "안양장모님생신(처가)",
@@ -41027,19 +41137,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3355",
-    "memberId": "family",
+    "id": "gcal-3356",
+    "memberId": "parents",
     "date": "2059-10-11",
     "title": "서울아빠제사(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3356",
+    "id": "gcal-3357",
     "memberId": "family",
     "date": "2059-10-20",
     "title": "부천아버님생신(처가)",
@@ -41051,7 +41161,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3357",
+    "id": "gcal-3358",
     "memberId": "family",
     "date": "2059-11-06",
     "title": "작은할머니제사(시댁)",
@@ -41063,19 +41173,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3358",
-    "memberId": "family",
+    "id": "gcal-3359",
+    "memberId": "parents",
     "date": "2059-11-19",
     "title": "별이아빠생일(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3359",
+    "id": "gcal-3360",
     "memberId": "family",
     "date": "2059-11-30",
     "title": "할머니제사(처가)",
@@ -41087,7 +41197,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3360",
+    "id": "gcal-3361",
     "memberId": "family",
     "date": "2060-01-17",
     "title": "큰아버지제사(시댁)",
@@ -41099,19 +41209,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3361",
-    "memberId": "family",
+    "id": "gcal-3362",
+    "memberId": "parents",
     "date": "2060-01-18",
     "title": "작은엄마생신(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-3362",
+    "id": "gcal-3363",
     "memberId": "family",
     "date": "2060-01-26",
     "title": "안양장인생신(처가)",
@@ -41123,7 +41233,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3363",
+    "id": "gcal-3364",
     "memberId": "family",
     "date": "2060-02-08",
     "title": "성준이형생일(처가)",
@@ -41135,7 +41245,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3364",
+    "id": "gcal-3365",
     "memberId": "family",
     "date": "2060-02-11",
     "title": "연미생일(시댁)",
@@ -41147,7 +41257,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3365",
+    "id": "gcal-3366",
     "memberId": "family",
     "date": "2060-02-21",
     "title": "할아버지제사(처가)",
@@ -41159,7 +41269,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3366",
+    "id": "gcal-3367",
     "memberId": "family",
     "date": "2060-03-02",
     "title": "큰할머니제사(시댁)",
@@ -41171,7 +41281,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3367",
+    "id": "gcal-3368",
     "memberId": "family",
     "date": "2060-05-21",
     "title": "할아버지제사(시댁)",
@@ -41183,31 +41293,31 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3368",
-    "memberId": "family",
+    "id": "gcal-3369",
+    "memberId": "parents",
     "date": "2060-05-28",
     "title": "작은아빠제사(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3369",
-    "memberId": "family",
+    "id": "gcal-3370",
+    "memberId": "parents",
     "date": "2060-07-29",
     "title": "서울엄마생신(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-3370",
+    "id": "gcal-3371",
     "memberId": "family",
     "date": "2060-08-14",
     "title": "부천어머님생신(처가)",
@@ -41219,7 +41329,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3371",
+    "id": "gcal-3372",
     "memberId": "family",
     "date": "2060-09-09",
     "title": "안양장모님생신(처가)",
@@ -41231,19 +41341,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3372",
-    "memberId": "family",
+    "id": "gcal-3373",
+    "memberId": "parents",
     "date": "2060-09-29",
     "title": "서울아빠제사(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3373",
+    "id": "gcal-3374",
     "memberId": "family",
     "date": "2060-10-08",
     "title": "부천아버님생신(처가)",
@@ -41255,7 +41365,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3374",
+    "id": "gcal-3375",
     "memberId": "family",
     "date": "2060-10-25",
     "title": "작은할머니제사(시댁)",
@@ -41267,19 +41377,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3375",
-    "memberId": "family",
+    "id": "gcal-3376",
+    "memberId": "parents",
     "date": "2060-11-07",
     "title": "별이아빠생일(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3376",
+    "id": "gcal-3377",
     "memberId": "family",
     "date": "2060-11-18",
     "title": "할머니제사(처가)",
@@ -41291,7 +41401,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3377",
+    "id": "gcal-3378",
     "memberId": "family",
     "date": "2061-01-05",
     "title": "큰아버지제사(시댁)",
@@ -41303,19 +41413,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3378",
-    "memberId": "family",
+    "id": "gcal-3379",
+    "memberId": "parents",
     "date": "2061-01-06",
     "title": "작은엄마생신(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-3379",
+    "id": "gcal-3380",
     "memberId": "family",
     "date": "2061-01-14",
     "title": "안양장인생신(처가)",
@@ -41327,7 +41437,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3380",
+    "id": "gcal-3381",
     "memberId": "family",
     "date": "2061-01-28",
     "title": "성준이형생일(처가)",
@@ -41339,7 +41449,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3381",
+    "id": "gcal-3382",
     "memberId": "family",
     "date": "2061-01-31",
     "title": "연미생일(시댁)",
@@ -41351,7 +41461,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3382",
+    "id": "gcal-3383",
     "memberId": "family",
     "date": "2061-02-10",
     "title": "할아버지제사(처가)",
@@ -41363,7 +41473,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3383",
+    "id": "gcal-3384",
     "memberId": "family",
     "date": "2061-06-09",
     "title": "할아버지제사(시댁)",
@@ -41375,31 +41485,31 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3384",
-    "memberId": "family",
+    "id": "gcal-3385",
+    "memberId": "parents",
     "date": "2061-06-16",
     "title": "작은아빠제사(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3385",
-    "memberId": "family",
+    "id": "gcal-3386",
+    "memberId": "parents",
     "date": "2061-08-17",
     "title": "서울엄마생신(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-3386",
+    "id": "gcal-3387",
     "memberId": "family",
     "date": "2061-09-02",
     "title": "부천어머님생신(처가)",
@@ -41411,7 +41521,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3387",
+    "id": "gcal-3388",
     "memberId": "family",
     "date": "2061-09-28",
     "title": "안양장모님생신(처가)",
@@ -41423,19 +41533,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3388",
-    "memberId": "family",
+    "id": "gcal-3389",
+    "memberId": "parents",
     "date": "2061-10-17",
     "title": "서울아빠제사(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3389",
+    "id": "gcal-3390",
     "memberId": "family",
     "date": "2061-10-26",
     "title": "부천아버님생신(처가)",
@@ -41447,7 +41557,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3390",
+    "id": "gcal-3391",
     "memberId": "family",
     "date": "2061-11-13",
     "title": "작은할머니제사(시댁)",
@@ -41459,19 +41569,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3391",
-    "memberId": "family",
+    "id": "gcal-3392",
+    "memberId": "parents",
     "date": "2061-11-26",
     "title": "별이아빠생일(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3392",
+    "id": "gcal-3393",
     "memberId": "family",
     "date": "2061-12-07",
     "title": "할머니제사(처가)",
@@ -41483,7 +41593,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3393",
+    "id": "gcal-3394",
     "memberId": "family",
     "date": "2062-01-24",
     "title": "큰아버지제사(시댁)",
@@ -41495,19 +41605,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3394",
-    "memberId": "family",
+    "id": "gcal-3395",
+    "memberId": "parents",
     "date": "2062-01-25",
     "title": "작은엄마생신(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-3395",
+    "id": "gcal-3396",
     "memberId": "family",
     "date": "2062-02-02",
     "title": "안양장인생신(처가)",
@@ -41519,7 +41629,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3396",
+    "id": "gcal-3397",
     "memberId": "family",
     "date": "2062-02-15",
     "title": "성준이형생일(처가)",
@@ -41531,7 +41641,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3397",
+    "id": "gcal-3398",
     "memberId": "family",
     "date": "2062-02-18",
     "title": "연미생일(시댁)",
@@ -41543,7 +41653,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3398",
+    "id": "gcal-3399",
     "memberId": "family",
     "date": "2062-02-28",
     "title": "할아버지제사(처가)",
@@ -41555,7 +41665,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3399",
+    "id": "gcal-3400",
     "memberId": "family",
     "date": "2062-03-10",
     "title": "큰할머니제사(시댁)",
@@ -41567,7 +41677,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3400",
+    "id": "gcal-3401",
     "memberId": "family",
     "date": "2062-05-30",
     "title": "할아버지제사(시댁)",
@@ -41579,31 +41689,31 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3401",
-    "memberId": "family",
+    "id": "gcal-3402",
+    "memberId": "parents",
     "date": "2062-06-06",
     "title": "작은아빠제사(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3402",
-    "memberId": "family",
+    "id": "gcal-3403",
+    "memberId": "parents",
     "date": "2062-08-07",
     "title": "서울엄마생신(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-3403",
+    "id": "gcal-3404",
     "memberId": "family",
     "date": "2062-08-23",
     "title": "부천어머님생신(처가)",
@@ -41615,7 +41725,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3404",
+    "id": "gcal-3405",
     "memberId": "family",
     "date": "2062-09-17",
     "title": "안양장모님생신(처가)",
@@ -41627,19 +41737,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3405",
-    "memberId": "family",
+    "id": "gcal-3406",
+    "memberId": "parents",
     "date": "2062-10-07",
     "title": "서울아빠제사(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3406",
+    "id": "gcal-3407",
     "memberId": "family",
     "date": "2062-10-16",
     "title": "부천아버님생신(처가)",
@@ -41651,7 +41761,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3407",
+    "id": "gcal-3408",
     "memberId": "family",
     "date": "2062-11-02",
     "title": "작은할머니제사(시댁)",
@@ -41663,19 +41773,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3408",
-    "memberId": "family",
+    "id": "gcal-3409",
+    "memberId": "parents",
     "date": "2062-11-15",
     "title": "별이아빠생일(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3409",
+    "id": "gcal-3410",
     "memberId": "family",
     "date": "2062-11-26",
     "title": "할머니제사(처가)",
@@ -41687,7 +41797,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3410",
+    "id": "gcal-3411",
     "memberId": "family",
     "date": "2063-01-13",
     "title": "큰아버지제사(시댁)",
@@ -41699,19 +41809,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3411",
-    "memberId": "family",
+    "id": "gcal-3412",
+    "memberId": "parents",
     "date": "2063-01-14",
     "title": "작은엄마생신(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-3412",
+    "id": "gcal-3413",
     "memberId": "family",
     "date": "2063-01-22",
     "title": "안양장인생신(처가)",
@@ -41723,7 +41833,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3413",
+    "id": "gcal-3414",
     "memberId": "family",
     "date": "2063-02-04",
     "title": "성준이형생일(처가)",
@@ -41735,7 +41845,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3414",
+    "id": "gcal-3415",
     "memberId": "family",
     "date": "2063-02-07",
     "title": "연미생일(시댁)",
@@ -41747,7 +41857,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3415",
+    "id": "gcal-3416",
     "memberId": "family",
     "date": "2063-02-17",
     "title": "할아버지제사(처가)",
@@ -41759,7 +41869,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3416",
+    "id": "gcal-3417",
     "memberId": "family",
     "date": "2063-02-27",
     "title": "큰할머니제사(시댁)",
@@ -41771,7 +41881,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3417",
+    "id": "gcal-3418",
     "memberId": "family",
     "date": "2063-05-20",
     "title": "할아버지제사(시댁)",
@@ -41783,31 +41893,31 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3418",
-    "memberId": "family",
+    "id": "gcal-3419",
+    "memberId": "parents",
     "date": "2063-05-27",
     "title": "작은아빠제사(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3419",
-    "memberId": "family",
+    "id": "gcal-3420",
+    "memberId": "parents",
     "date": "2063-07-28",
     "title": "서울엄마생신(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-3420",
+    "id": "gcal-3421",
     "memberId": "family",
     "date": "2063-08-13",
     "title": "부천어머님생신(처가)",
@@ -41819,19 +41929,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3421",
-    "memberId": "family",
+    "id": "gcal-3422",
+    "memberId": "parents",
     "date": "2063-08-26",
     "title": "서울엄마생신(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "엄마",
     "isRecurring": false
   },
   {
-    "id": "gcal-3422",
+    "id": "gcal-3423",
     "memberId": "family",
     "date": "2063-09-11",
     "title": "부천어머님생신(처가)",
@@ -41843,7 +41953,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3423",
+    "id": "gcal-3424",
     "memberId": "family",
     "date": "2063-10-06",
     "title": "안양장모님생신(처가)",
@@ -41855,19 +41965,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3424",
-    "memberId": "family",
+    "id": "gcal-3425",
+    "memberId": "parents",
     "date": "2063-10-26",
     "title": "서울아빠제사(시댁)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
-    "dinnerStatus": "not_required",
-    "guardian": "온 가족",
+    "dinnerStatus": "required",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3425",
+    "id": "gcal-3426",
     "memberId": "family",
     "date": "2063-11-04",
     "title": "부천아버님생신(처가)",
@@ -41879,7 +41989,7 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3426",
+    "id": "gcal-3427",
     "memberId": "family",
     "date": "2063-11-21",
     "title": "작은할머니제사(시댁)",
@@ -41891,19 +42001,19 @@ export const REAL_GOOGLE_SCHEDULES: Schedule[] = [
     "isRecurring": false
   },
   {
-    "id": "gcal-3427",
-    "memberId": "family",
+    "id": "gcal-3428",
+    "memberId": "parents",
     "date": "2063-12-04",
     "title": "별이아빠생일(처가)",
     "startTime": "09:00",
     "returnTime": "18:00",
     "transitMethod": "자차",
     "dinnerStatus": "required",
-    "guardian": "온 가족",
+    "guardian": "나(아빠)",
     "isRecurring": false
   },
   {
-    "id": "gcal-3428",
+    "id": "gcal-3429",
     "memberId": "family",
     "date": "2063-12-15",
     "title": "할머니제사(처가)",
