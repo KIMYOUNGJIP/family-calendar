@@ -40,8 +40,8 @@ export const FAMILY_MEMBERS: Record<MemberId, FamilyMember> = {
   },
   parents: {
     id: 'parents',
-    name: '나 & 아내 (부모)',
-    relation: '아빠 & 엄마',
+    name: '나 & 아내 지연 (부모)',
+    relation: '아빠 & 엄마 (지연)',
     color: {
       primary: '#7c3aed',
       bgLight: 'bg-purple-50',

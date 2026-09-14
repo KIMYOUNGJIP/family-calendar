@@ -72,6 +72,7 @@ export function inferMemberId(title: string, description: string = ''): MemberId
     text.includes('장학') ||
     text.includes('연수') ||
     text.includes('아내') ||
+    text.includes('지연') ||
     text.includes('마누라') ||
     text.includes('남편') ||
     text.includes('출근') ||
@@ -388,7 +389,7 @@ export function parseICSContent(icsText: string): Schedule[] {
         }
       } else if (item.memberId === 'parents') {
         const titleLower = item.title.toLowerCase();
-        const isMom = titleLower.includes('엄마') || titleLower.includes('아내') || titleLower.includes('마누라') || titleLower.includes('미선');
+        const isMom = titleLower.includes('엄마') || titleLower.includes('아내') || titleLower.includes('마누라') || titleLower.includes('지연') || titleLower.includes('미선');
         guardian = isMom ? '엄마' : '나(아빠)';
         
         const isMeeting =

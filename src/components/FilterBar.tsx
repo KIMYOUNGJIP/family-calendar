@@ -25,7 +25,7 @@ export const FilterBar: React.FC<FilterBarProps> = ({
     { id: 'all', label: '전체 가족 (4인)', avatar: '👨‍👩‍👧‍👦', color: 'bg-slate-800 text-white' },
     { id: 'first_child', label: '첫째 은비 (파랑)', avatar: FAMILY_MEMBERS.first_child.avatar, color: 'bg-blue-600 text-white' },
     { id: 'second_child', label: '둘째 하율 (초록)', avatar: FAMILY_MEMBERS.second_child.avatar, color: 'bg-emerald-600 text-white' },
-    { id: 'parents', label: '나 & 아내 (보라)', avatar: FAMILY_MEMBERS.parents.avatar, color: 'bg-purple-600 text-white' },
+    { id: 'parents', label: '나 & 아내 지연 (보라)', avatar: FAMILY_MEMBERS.parents.avatar, color: 'bg-purple-600 text-white' },
     { id: 'family', label: '가족 공통 (주황)', avatar: FAMILY_MEMBERS.family.avatar, color: 'bg-amber-600 text-white' },
   ];
 

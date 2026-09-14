@@ -60,7 +60,7 @@ export const MonthlyCalendar: React.FC<MonthlyCalendarProps> = ({
             <span className="w-2 h-2 rounded-full bg-emerald-600"></span> 하율(초록)
           </span>
           <span className="inline-flex items-center gap-1 text-purple-700 bg-purple-50 px-2 py-0.5 rounded-md border border-purple-200">
-            <span className="w-2 h-2 rounded-full bg-purple-600"></span> 나&아내(보라)
+            <span className="w-2 h-2 rounded-full bg-purple-600"></span> 나&아내 지연(보라)
           </span>
           <span className="inline-flex items-center gap-1 text-amber-700 bg-amber-50 px-2 py-0.5 rounded-md border border-amber-200">
             <span className="w-2 h-2 rounded-full bg-orange-600"></span> 우리 가족(주황)

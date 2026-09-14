@@ -210,8 +210,8 @@ export const WeeklySchedule: React.FC<WeeklyScheduleProps> = ({
       sch.title.includes('외식')
     ) {
       const isDad = sch.title.includes('아빠') || sch.guardian.includes('아빠');
-      const isMom = sch.title.includes('엄마') || sch.title.includes('아내') || sch.title.includes('마누라') || sch.guardian.includes('엄마');
-      const role = isDad ? '아빠' : isMom ? '엄마' : '부모';
+      const isMom = sch.title.includes('엄마') || sch.title.includes('아내') || sch.title.includes('마누라') || sch.title.includes('지연') || sch.guardian.includes('엄마') || sch.guardian.includes('지연');
+      const role = isDad ? '아빠' : isMom ? '엄마(지연)' : '부모';
       return {
         isReturnHome: true,
         label: `${role} 모임 후 귀가 예정`,
