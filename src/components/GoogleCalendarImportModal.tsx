@@ -62,16 +62,40 @@ export const GoogleCalendarImportModal: React.FC<GoogleCalendarImportModalProps>
         return;
       }
 
-      // try direct or with cors proxy
-      let res: Response;
+      let text = '';
+      // 1. Try dedicated serverless API
       try {
-        res = await fetch(fetchUrl);
-      } catch (corsErr) {
-        // Fallback through public cors proxy if blocked
-        res = await fetch(`https://api.allorigins.win/raw?url=${encodeURIComponent(fetchUrl)}`);
+        const proxyRes = await fetch('https://family-etf.vercel.app/api/calendar', { cache: 'no-store' });
+        if (proxyRes.ok) {
+          const t = await proxyRes.text();
+          if (t && t.includes('BEGIN:VCALENDAR')) text = t;
+        }
+      } catch {}
+
+      // 2. Try direct or bundled file
+      if (!text) {
+        try {
+          const directRes = await fetch(fetchUrl);
+          if (directRes.ok) {
+            const t = await directRes.text();
+            if (t && t.includes('BEGIN:VCALENDAR')) text = t;
+          }
+        } catch {
+          try {
+            const bundleRes = await fetch(`./google_calendar.ics?t=${Date.now()}`);
+            if (bundleRes.ok) {
+              const t = await bundleRes.text();
+              if (t && t.includes('BEGIN:VCALENDAR')) text = t;
+            }
+          } catch {}
+        }
       }
 
-      const text = await res.text();
+      // 3. Fallback through public CORS proxy
+      if (!text) {
+        const res = await fetch(`https://api.allorigins.win/raw?url=${encodeURIComponent(fetchUrl)}`);
+        text = await res.text();
+      }
       const schedules = parseICSContent(text);
       if (schedules.length === 0) {
         alert('일정을 찾지 못했습니다. 올바른 iCal 비공개 주소인지 확인해주세요.');

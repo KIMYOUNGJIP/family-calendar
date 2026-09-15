@@ -51,6 +51,58 @@ export const App: React.FC = () => {
   const [scheduleModalDefaultDate, setScheduleModalDefaultDate] = useState<string | undefined>(undefined);
   const [isSyncGuideOpen, setIsSyncGuideOpen] = useState(false);
   const [isGoogleImportOpen, setIsGoogleImportOpen] = useState(false);
+  const [isSyncing, setIsSyncing] = useState(false);
+
+  // 최신 구글 캘린더 ICS를 가져오는 다중 폴백 유틸
+  const fetchLatestGoogleICS = async (): Promise<string | null> => {
+    // 1. 전용 서버리스 API 프록시 (CORS 걱정 없이 실시간 동기화)
+    try {
+      const res = await fetch('https://family-etf.vercel.app/api/calendar', {
+        headers: { Accept: 'text/calendar' },
+        cache: 'no-store',
+      });
+      if (res.ok) {
+        const text = await res.text();
+        if (text && text.includes('BEGIN:VCALENDAR')) return text;
+      }
+    } catch {
+      // fallback
+    }
+
+    // 2. 배포 번들 내의 최신 ICS 파일 (캐시 방지 타임스탬프)
+    try {
+      const res = await fetch(`./google_calendar.ics?t=${Date.now()}`);
+      if (res.ok) {
+        const text = await res.text();
+        if (text && text.includes('BEGIN:VCALENDAR')) return text;
+      }
+    } catch {
+      // fallback
+    }
+
+    // 3. 외부 퍼블릭 CORS 프록시
+    const fetchUrl = GOOGLE_CALENDAR_DEFAULT_URL;
+    const proxies = [
+      `https://api.allorigins.win/raw?url=${encodeURIComponent(fetchUrl)}`,
+      `https://corsproxy.io/?url=${encodeURIComponent(fetchUrl)}`,
+    ];
+    for (const p of proxies) {
+      try {
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), 7000);
+        const res = await fetch(p, { signal: controller.signal });
+        clearTimeout(timeoutId);
+        if (res.ok) {
+          const text = await res.text();
+          if (text && text.includes('BEGIN:VCALENDAR')) return text;
+        }
+      } catch {
+        // continue
+      }
+    }
+
+    return null;
+  };
 
   // 초기 데이터 로드 및 백그라운드 구글 캘린더 최신 동기화 시도
   useEffect(() => {
@@ -61,44 +113,16 @@ export const App: React.FC = () => {
     // 앱 시작 시 백그라운드에서 최신 구글 캘린더 일정을 동기화
     const autoSyncGoogle = async () => {
       try {
-        // 1. 배포 번들 내의 최신 ICS 파일 fetch 시도 (CORS 없이 즉시 갱신)
-        try {
-          const localRes = await fetch('./google_calendar.ics');
-          if (localRes.ok) {
-            const text = await localRes.text();
-            const parsed = parseICSContent(text);
-            if (parsed && parsed.length > 0) {
-              setSchedules(parsed);
-              saveSchedules(parsed);
-              return;
-            }
-          }
-        } catch {
-          // fallback
-        }
-
-        // 2. 원격 구글 캘린더 프록시 fetch 시도
-        const fetchUrl = GOOGLE_CALENDAR_DEFAULT_URL;
-        let res: Response | null = null;
-        try {
-          res = await fetch(`https://api.allorigins.win/raw?url=${encodeURIComponent(fetchUrl)}`);
-        } catch {
-          try {
-            res = await fetch(`https://corsproxy.io/?url=${encodeURIComponent(fetchUrl)}`);
-          } catch {
-            res = null;
-          }
-        }
-        if (res && res.ok) {
-          const text = await res.text();
-          const parsed = parseICSContent(text);
+        const icsText = await fetchLatestGoogleICS();
+        if (icsText) {
+          const parsed = parseICSContent(icsText);
           if (parsed && parsed.length > 0) {
             setSchedules(parsed);
             saveSchedules(parsed);
           }
         }
-      } catch {
-        // 네트워크 장애 시 로컬 캐시 그대로 유지
+      } catch (err) {
+        console.warn('Auto sync skipped:', err);
       }
     };
     autoSyncGoogle();
@@ -175,12 +199,43 @@ export const App: React.FC = () => {
     }
   };
 
-  // 전체 데이터 초기화
-  const handleResetData = () => {
-    if (window.confirm('구글 캘린더 실제 일정으로 전체 데이터를 재설정하시겠습니까?')) {
+  // 전체 데이터 초기화 및 구글 캘린더 최신 동기화
+  const handleResetData = async () => {
+    if (
+      !window.confirm(
+        '구글 캘린더의 최신 실제 일정을 새로 불러와 전체 데이터를 재설정하시겠습니까?'
+      )
+    ) {
+      return;
+    }
+    setIsSyncing(true);
+    try {
+      const icsText = await fetchLatestGoogleICS();
+      if (icsText) {
+        const parsed = parseICSContent(icsText);
+        if (parsed && parsed.length > 0) {
+          setSchedules(parsed);
+          saveSchedules(parsed);
+          setSelectedDateStr(todayStr);
+          alert(
+            `최신 구글 캘린더 일정(${parsed.length}개)이 성공적으로 동기화 및 반영되었습니다!`
+          );
+          return;
+        }
+      }
+      // fallback
       const fresh = resetAllData();
       setSchedules(fresh.schedules);
       setSelectedDateStr(todayStr);
+      alert('기본 저장된 구글 캘린더 일정으로 재설정되었습니다.');
+    } catch (e) {
+      console.error('Reset sync failed:', e);
+      const fresh = resetAllData();
+      setSchedules(fresh.schedules);
+      setSelectedDateStr(todayStr);
+      alert('동기화 중 오류가 발생하여 기본 일정으로 복원되었습니다.');
+    } finally {
+      setIsSyncing(false);
     }
   };
 
@@ -245,6 +300,7 @@ export const App: React.FC = () => {
         onOpenSyncGuide={() => setIsSyncGuideOpen(true)}
         onOpenGoogleImport={() => setIsGoogleImportOpen(true)}
         selectedDateStr={selectedDateStr}
+        isSyncing={isSyncing}
       />
 
       {/* 필터 바 */}

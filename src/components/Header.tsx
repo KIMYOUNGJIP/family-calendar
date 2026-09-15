@@ -12,6 +12,7 @@ interface HeaderProps {
   onOpenSyncGuide: () => void;
   onOpenGoogleImport: () => void;
   selectedDateStr: string;
+  isSyncing?: boolean;
 }
 
 export const Header: React.FC<HeaderProps> = ({
@@ -24,6 +25,7 @@ export const Header: React.FC<HeaderProps> = ({
   onOpenSyncGuide,
   onOpenGoogleImport,
   selectedDateStr,
+  isSyncing = false,
 }) => {
   const [liveTime, setLiveTime] = useState<string>('');
 
@@ -143,10 +145,11 @@ export const Header: React.FC<HeaderProps> = ({
               </button>
               <button
                 onClick={onResetData}
-                className="p-2 rounded-xl text-slate-400 hover:text-red-600 hover:bg-red-50 border border-transparent hover:border-red-200 transition-colors text-xs"
-                title="샘플 데이터 초기화"
+                disabled={isSyncing}
+                className="p-2 rounded-xl text-slate-400 hover:text-indigo-600 hover:bg-indigo-50 border border-transparent hover:border-indigo-200 transition-colors text-xs disabled:opacity-50"
+                title={isSyncing ? '최신 구글 캘린더 동기화 중...' : '구글 캘린더 실제 최신 일정 동기화 및 재설정'}
               >
-                <RefreshCw className="w-4 h-4" />
+                <RefreshCw className={`w-4 h-4 ${isSyncing ? 'animate-spin text-indigo-600' : ''}`} />
               </button>
             </div>
 
