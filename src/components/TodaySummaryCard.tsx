@@ -8,7 +8,6 @@ import {
   formatKoreanShortDate,
   DAY_NAMES_KO,
   parseDate,
-  addDays,
 } from '../utils/dateUtils';
 import {
   Clock,
@@ -636,7 +635,7 @@ export const TodaySummaryCard: React.FC<TodaySummaryCardProps> = ({
     );
   };
 
-  // 3. 선택된 요일의 가족 저녁 집밥 식수 인원 요약 계산
+  // 3. 선택된 요일의 가족 저녁 식사 요약 계산
   const activeDayOfWeek = activeDateObj.getDay();
   const eunbiLatestReturn =
     firstChildSchedules.length > 0
@@ -653,7 +652,7 @@ export const TodaySummaryCard: React.FC<TodaySummaryCardProps> = ({
       ? '18:05~19:00 (영어 후)'
       : secondChildSchedules.length > 0
       ? `${[...secondChildSchedules].sort((a, b) => b.returnTime.localeCompare(a.returnTime))[0].returnTime} 귀가 후`
-      : '목감 집 체류';
+      : '집 체류';
 
   const dadMeeting = activeParentMeetings.find((m) => {
     const role = getParentMeetingRole(m.title, m.guardian);
@@ -668,12 +667,9 @@ export const TodaySummaryCard: React.FC<TodaySummaryCardProps> = ({
   const momEatsAtHome = !momMeeting;
   const homeDinnerCount = 2 + (dadEatsAtHome ? 1 : 0) + (momEatsAtHome ? 1 : 0);
 
-  // 4. 이번 주 (및 금/주말엔 다음 주 포함) 병원·차량수리·모임·시험 등 놓치면 안 되는 특별 일정 추출
+  // 4. 오직 '이번 주(월~일)'에 해당하는 특별 일정만 추출 (다음 주 일정 제외)
   const specialWindowStart = currentWeek[0].dateStr;
-  const specialWindowEnd =
-    isSelectedInCurrentWeek && remainingWeekdays.length <= 2
-      ? addDays(currentWeek[6].dateStr, 7)
-      : currentWeek[6].dateStr;
+  const specialWindowEnd = currentWeek[6].dateStr;
 
   const isPublicHolidayNotice = (title: string) => {
     const holidays = [
@@ -731,7 +727,7 @@ export const TodaySummaryCard: React.FC<TodaySummaryCardProps> = ({
     .sort((a, b) => (a.date === b.date ? a.startTime.localeCompare(b.startTime) : a.date.localeCompare(b.date)));
 
   // 연속 시험 일정(중간고사 등)은 대표 1건으로 묶어서 깔끔하게 표시
-  const specialEvents: { schedule: Schedule; badgeText: string; isExam?: boolean }[] = [];
+  const specialEvents: { schedule: Schedule; dateLabel: string; titleLabel: string; icon: string }[] = [];
   const seenTitles = new Set<string>();
   for (const s of rawSpecialSchedules) {
     if (s.title.includes('중간고사') || s.title.includes('기말고사')) {
@@ -742,8 +738,9 @@ export const TodaySummaryCard: React.FC<TodaySummaryCardProps> = ({
       const lastD = formatKoreanShortDate(sameTitleDates[sameTitleDates.length - 1]);
       specialEvents.push({
         schedule: s,
-        badgeText: `📝 ${s.title} (${firstD}~${lastD})`,
-        isExam: true,
+        icon: '📝',
+        dateLabel: `${firstD} ~ ${lastD}`,
+        titleLabel: s.title,
       });
     } else {
       const dObj = parseDate(s.date);
@@ -758,7 +755,9 @@ export const TodaySummaryCard: React.FC<TodaySummaryCardProps> = ({
           : '📌';
       specialEvents.push({
         schedule: s,
-        badgeText: `${icon} ${formatKoreanShortDate(s.date)}(${dayName}) ${s.startTime} ${s.title}`,
+        icon,
+        dateLabel: `${formatKoreanShortDate(s.date)}(${dayName}) ${s.startTime}`,
+        titleLabel: s.title,
       });
     }
   }
@@ -804,18 +803,16 @@ export const TodaySummaryCard: React.FC<TodaySummaryCardProps> = ({
           )}
         </div>
 
-        {/* 1.5 [신규] 이번 주 & 다가오는 특별 일정 알림 배너 (병원 진료, 차량 수리, 저녁 모임, 시험 등) */}
+        {/* 1.5 이번 주 특별 일정 체크 (해당 주간 일정만 깔끔하게 정렬) */}
         {specialEvents.length > 0 && (
-          <div className="mb-4 p-3 rounded-2xl bg-indigo-950/80 border border-indigo-600/70 relative z-10 flex flex-col sm:flex-row sm:items-center justify-between gap-2.5">
-            <div className="flex items-center gap-2 shrink-0">
-              <span className="px-2 py-0.5 rounded-lg bg-amber-400 text-slate-950 text-[11px] font-black">
-                📌 주요 특별 일정 체크
+          <div className="mb-4 p-3 rounded-2xl bg-indigo-950/70 border border-indigo-700/70 relative z-10">
+            <div className="flex items-center justify-between mb-2">
+              <span className="text-xs font-extrabold text-amber-300 flex items-center gap-1.5">
+                <span>📌 이번 주 특별 일정 ({specialEvents.length}건)</span>
               </span>
-              <span className="text-xs text-indigo-200 font-semibold hidden xl:inline">
-                반복 학원/수업 외 병원·차량수리·모임 일정입니다 (클릭 시 이동):
-              </span>
+              <span className="text-[11px] text-indigo-300">클릭 시 상세 확인</span>
             </div>
-            <div className="flex items-center gap-1.5 flex-wrap">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2">
               {specialEvents.map((item) => (
                 <button
                   key={item.schedule.id}
@@ -824,13 +821,23 @@ export const TodaySummaryCard: React.FC<TodaySummaryCardProps> = ({
                     if (onSelectDate) onSelectDate(item.schedule.date);
                     onOpenScheduleModal(item.schedule);
                   }}
-                  className={`text-[11px] font-bold px-2.5 py-1 rounded-xl border transition-all cursor-pointer hover:scale-[1.02] ${
+                  className={`px-3 py-2 rounded-xl border text-left transition-all cursor-pointer flex items-center justify-between gap-2 ${
                     item.schedule.date === activeDateStr
-                      ? 'bg-amber-400 text-slate-950 border-amber-300 shadow-xs'
-                      : 'bg-indigo-900/90 hover:bg-indigo-800 text-amber-200 border-indigo-600'
+                      ? 'bg-amber-400 text-slate-950 border-amber-300 font-bold shadow-xs'
+                      : 'bg-indigo-900/70 hover:bg-indigo-800/90 text-white border-indigo-700/80'
                   }`}
                 >
-                  {item.badgeText}
+                  <div className="flex items-center gap-2 min-w-0">
+                    <span className="text-sm shrink-0">{item.icon}</span>
+                    <span className="text-xs font-bold truncate">{item.titleLabel}</span>
+                  </div>
+                  <span
+                    className={`text-[10px] font-semibold shrink-0 ${
+                      item.schedule.date === activeDateStr ? 'text-slate-800' : 'text-indigo-200'
+                    }`}
+                  >
+                    {item.dateLabel}
+                  </span>
                 </button>
               ))}
             </div>
@@ -934,44 +941,52 @@ export const TodaySummaryCard: React.FC<TodaySummaryCardProps> = ({
           </div>
         </div>
 
-        {/* 2.2 [신규] 선택된 평일의 우리 가족 저녁 식수 인원 & 식사 시간 요약 바 */}
-        <div className="mb-4 p-3 sm:p-3.5 rounded-2xl bg-indigo-950/90 border border-amber-400/40 relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-2.5">
-          <div className="flex items-center gap-2 flex-wrap">
-            <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-xl bg-amber-400 text-slate-950 text-xs font-black shadow-2xs">
-              <Utensils className="w-3.5 h-3.5" />
-              🍚 {activeDayName}요일 집밥 식수: {homeDinnerCount}명 / 4명
+        {/* 2.2 선택된 평일의 우리 가족 저녁 식사 요약 (4열 정렬 그리드) */}
+        <div className="mb-4 p-3 rounded-2xl bg-indigo-950/80 border border-indigo-700/70 relative z-10">
+          <div className="flex items-center justify-between mb-2">
+            <span className="text-xs font-extrabold text-amber-300 flex items-center gap-1.5">
+              <Utensils className="w-3.5 h-3.5 text-amber-400" />
+              <span>🍚 {activeDayName}요일 가족 저녁 식사 안내</span>
             </span>
-            <span className="text-xs font-bold text-amber-200">
-              {homeDinnerCount === 4
-                ? '오늘 저녁은 온 가족 4명 모두 집에서 식사합니다'
-                : `외부 저녁 약속(${4 - homeDinnerCount}명) 제외 ${homeDinnerCount}명 집밥`}
+            <span className="text-[11px] font-bold px-2 py-0.5 rounded-full bg-amber-400/20 text-amber-200 border border-amber-400/30">
+              {homeDinnerCount === 4 ? '가족 4명 모두 집밥' : `집밥 ${homeDinnerCount}명 · 외식 ${4 - homeDinnerCount}명`}
             </span>
           </div>
-          <div className="flex items-center gap-1.5 flex-wrap text-[11px]">
-            <span className="px-2.5 py-1 rounded-lg bg-blue-500/20 text-blue-100 border border-blue-400/30 font-bold">
-              👧 은비: 집밥 ({eunbiLatestReturn ? `${eunbiLatestReturn} 귀가 후` : '집 체류'})
-            </span>
-            <span className="px-2.5 py-1 rounded-lg bg-emerald-500/20 text-emerald-100 border border-emerald-400/30 font-bold">
-              🧒 하율: 집밥 ({hayulDinnerInfo})
-            </span>
-            <span
-              className={`px-2.5 py-1 rounded-lg font-bold border ${
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 text-xs">
+            <div className="px-3 py-2 rounded-xl bg-indigo-900/60 border border-indigo-700/60 flex items-center justify-between">
+              <span className="font-bold text-blue-200">👧 은비</span>
+              <span className="font-extrabold text-white text-[11px]">
+                {eunbiLatestReturn ? `${eunbiLatestReturn} 후 집밥` : '집밥'}
+              </span>
+            </div>
+            <div className="px-3 py-2 rounded-xl bg-indigo-900/60 border border-indigo-700/60 flex items-center justify-between">
+              <span className="font-bold text-emerald-200">🧒 하율</span>
+              <span className="font-extrabold text-white text-[11px]">{hayulDinnerInfo}</span>
+            </div>
+            <div
+              className={`px-3 py-2 rounded-xl border flex items-center justify-between ${
                 dadEatsAtHome
-                  ? 'bg-indigo-500/20 text-indigo-100 border-indigo-400/30'
-                  : 'bg-amber-500/25 text-amber-200 border-amber-400/50'
+                  ? 'bg-indigo-900/60 border-indigo-700/60'
+                  : 'bg-amber-500/20 border-amber-400/50'
               }`}
             >
-              👨 아빠: {dadEatsAtHome ? '집밥' : `외식 (${dadMeeting?.returnTime} 귀가)`}
-            </span>
-            <span
-              className={`px-2.5 py-1 rounded-lg font-bold border ${
+              <span className="font-bold text-indigo-200">👨 아빠</span>
+              <span className={`font-extrabold text-[11px] ${dadEatsAtHome ? 'text-white' : 'text-amber-300'}`}>
+                {dadEatsAtHome ? '집밥' : `외식 (${dadMeeting?.returnTime} 귀가)`}
+              </span>
+            </div>
+            <div
+              className={`px-3 py-2 rounded-xl border flex items-center justify-between ${
                 momEatsAtHome
-                  ? 'bg-rose-500/20 text-rose-100 border-rose-400/30'
-                  : 'bg-amber-500/25 text-amber-200 border-amber-400/50'
+                  ? 'bg-indigo-900/60 border-indigo-700/60'
+                  : 'bg-amber-500/20 border-amber-400/50'
               }`}
             >
-              👩 엄마: {momEatsAtHome ? '집밥' : `외식 (${momMeeting?.returnTime} 귀가)`}
-            </span>
+              <span className="font-bold text-rose-200">👩 엄마</span>
+              <span className={`font-extrabold text-[11px] ${momEatsAtHome ? 'text-white' : 'text-amber-300'}`}>
+                {momEatsAtHome ? '집밥' : `외식 (${momMeeting?.returnTime} 귀가)`}
+              </span>
+            </div>
           </div>
         </div>
 
