@@ -45,75 +45,98 @@ export const App: React.FC = () => {
   const [memberFilter, setMemberFilter] = useState<MemberFilter>('all');
   const [timeFilter, setTimeFilter] = useState<TimeFilter>('all');
 
-  // 모달 상태
+  // 모달 및 동기화 상태
   const [isScheduleModalOpen, setIsScheduleModalOpen] = useState(false);
   const [editingSchedule, setEditingSchedule] = useState<Schedule | null>(null);
   const [scheduleModalDefaultDate, setScheduleModalDefaultDate] = useState<string | undefined>(undefined);
   const [isSyncGuideOpen, setIsSyncGuideOpen] = useState(false);
   const [isGoogleImportOpen, setIsGoogleImportOpen] = useState(false);
+  const [isSyncingGoogle, setIsSyncingGoogle] = useState(false);
+  const [lastSyncMessage, setLastSyncMessage] = useState<string | null>(null);
+
+  // 구글 캘린더 실시간 동기화 공통 함수 (자동 동기화 및 원클릭 즉시 동기화 버튼 공용)
+  const syncFromGoogleCalendar = async (showFeedback = false) => {
+    if (showFeedback) {
+      setIsSyncingGoogle(true);
+      setLastSyncMessage('구글 가족 캘린더에서 최신 일정을 불러오는 중...');
+    }
+
+    const mergeWithUserSchedules = (googleParsed: Schedule[]) => {
+      setSchedules((prev) => {
+        const customSchedules = prev.filter(
+          (s) => s.id.startsWith('sch-') || s.id.startsWith('parent-meeting-')
+        );
+        const merged = [...googleParsed, ...customSchedules];
+        saveSchedules(merged);
+        return merged;
+      });
+    };
+
+    try {
+      // 1. 원격 구글 캘린더 프록시 fetch 우선 시도 (캐시 방지 파라미터 포함)
+      const cacheBuster = `?t=${Date.now()}`;
+      const fetchUrl = `${GOOGLE_CALENDAR_DEFAULT_URL}${cacheBuster}`;
+      let res: Response | null = null;
+      try {
+        res = await fetch(`https://api.allorigins.win/raw?url=${encodeURIComponent(fetchUrl)}`);
+      } catch {
+        try {
+          res = await fetch(`https://corsproxy.io/?url=${encodeURIComponent(fetchUrl)}`);
+        } catch {
+          res = null;
+        }
+      }
+      if (res && res.ok) {
+        const text = await res.text();
+        if (text.includes('BEGIN:VCALENDAR')) {
+          const parsed = parseICSContent(text);
+          if (parsed && parsed.length > 0) {
+            mergeWithUserSchedules(parsed);
+            if (showFeedback) {
+              setLastSyncMessage(`✓ 실시간 동기화 완료 (${parsed.length.toLocaleString()}건 반영)`);
+              setTimeout(() => setLastSyncMessage(null), 4000);
+            }
+            return;
+          }
+        }
+      }
+
+      // 2. 프록시 실패 시 배포 번들 내의 최신 ICS 파일 fetch 시도
+      try {
+        const localRes = await fetch(`./google_calendar.ics?t=${Date.now()}`);
+        if (localRes.ok) {
+          const text = await localRes.text();
+          const parsed = parseICSContent(text);
+          if (parsed && parsed.length > 0) {
+            mergeWithUserSchedules(parsed);
+            if (showFeedback) {
+              setLastSyncMessage(`✓ 최신 캘린더 동기화 완료 (${parsed.length.toLocaleString()}건)`);
+              setTimeout(() => setLastSyncMessage(null), 4000);
+            }
+            return;
+          }
+        }
+      } catch {
+        // fallback
+      }
+    } catch {
+      if (showFeedback) {
+        setLastSyncMessage('네트워크 상태를 확인해 주세요 (기존 일정 유지됨)');
+        setTimeout(() => setLastSyncMessage(null), 4000);
+      }
+    } finally {
+      if (showFeedback) {
+        setIsSyncingGoogle(false);
+      }
+    }
+  };
 
   // 초기 데이터 로드 및 백그라운드 구글 캘린더 최신 동기화 시도
   useEffect(() => {
     const loadedSchedules = loadSchedules();
     setSchedules(loadedSchedules);
     setIsLoaded(true);
-
-    // 앱 시작 시 백그라운드에서 최신 구글 캘린더 일정을 동기화 (사용자 수동 등록 일정 보존)
-    const autoSyncGoogle = async () => {
-      const mergeWithUserSchedules = (googleParsed: Schedule[]) => {
-        setSchedules((prev) => {
-          const customSchedules = prev.filter(
-            (s) => s.id.startsWith('sch-') || s.id.startsWith('parent-meeting-')
-          );
-          const merged = [...googleParsed, ...customSchedules];
-          saveSchedules(merged);
-          return merged;
-        });
-      };
-
-      try {
-        // 1. 원격 구글 캘린더 프록시 fetch 우선 시도 (실시간 최신 수정본 반영)
-        const fetchUrl = GOOGLE_CALENDAR_DEFAULT_URL;
-        let res: Response | null = null;
-        try {
-          res = await fetch(`https://api.allorigins.win/raw?url=${encodeURIComponent(fetchUrl)}`);
-        } catch {
-          try {
-            res = await fetch(`https://corsproxy.io/?url=${encodeURIComponent(fetchUrl)}`);
-          } catch {
-            res = null;
-          }
-        }
-        if (res && res.ok) {
-          const text = await res.text();
-          if (text.includes('BEGIN:VCALENDAR')) {
-            const parsed = parseICSContent(text);
-            if (parsed && parsed.length > 0) {
-              mergeWithUserSchedules(parsed);
-              return;
-            }
-          }
-        }
-
-        // 2. 프록시 실패 시 배포 번들 내의 최신 ICS 파일 fetch 시도
-        try {
-          const localRes = await fetch('./google_calendar.ics');
-          if (localRes.ok) {
-            const text = await localRes.text();
-            const parsed = parseICSContent(text);
-            if (parsed && parsed.length > 0) {
-              mergeWithUserSchedules(parsed);
-              return;
-            }
-          }
-        } catch {
-          // fallback
-        }
-      } catch {
-        // 네트워크 장애 시 로컬 캐시 그대로 유지
-      }
-    };
-    autoSyncGoogle();
+    syncFromGoogleCalendar(false);
   }, []);
 
   // 월 이동
@@ -132,6 +155,21 @@ export const App: React.FC = () => {
     setSelectedDateStr(todayStr);
     setTimeFilter('today');
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  // 시간 필터 선택 시 해당 섹션/날짜로 스마트 이동
+  const handleSelectTimeFilter = (tf: TimeFilter) => {
+    setTimeFilter(tf);
+    if (tf === 'today') {
+      const now = new Date();
+      setCurrentDate(now);
+      setSelectedDateStr(todayStr);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else if (tf === 'this_week') {
+      const now = new Date();
+      setCurrentDate(now);
+      setSelectedDateStr(todayStr);
+    }
   };
 
   // 날짜 선택 시 주간 일정도 해당 날짜로 동기화
@@ -256,6 +294,9 @@ export const App: React.FC = () => {
         onResetData={handleResetData}
         onOpenSyncGuide={() => setIsSyncGuideOpen(true)}
         onOpenGoogleImport={() => setIsGoogleImportOpen(true)}
+        onQuickSyncGoogle={() => syncFromGoogleCalendar(true)}
+        isSyncingGoogle={isSyncingGoogle}
+        lastSyncMessage={lastSyncMessage}
         selectedDateStr={selectedDateStr}
       />
 
@@ -264,7 +305,7 @@ export const App: React.FC = () => {
         memberFilter={memberFilter}
         onSelectMember={setMemberFilter}
         timeFilter={timeFilter}
-        onSelectTime={setTimeFilter}
+        onSelectTime={handleSelectTimeFilter}
         totalScheduleCount={schedules.length}
       />
 

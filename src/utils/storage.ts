@@ -2,8 +2,8 @@ import { Schedule, ChecklistItem, ScheduleConflict } from '../types/calendar';
 import { generateInitialData } from './sampleData';
 import { addDays, parseDate, toDateString } from './dateUtils';
 
-const STORAGE_KEY_SCHEDULES = 'family_calendar_schedules_v17';
-const STORAGE_KEY_CHECKLISTS = 'family_calendar_checklists_v17';
+const STORAGE_KEY_SCHEDULES = 'family_calendar_schedules_v18';
+const STORAGE_KEY_CHECKLISTS = 'family_calendar_checklists_v18';
 
 export function loadSchedules(): Schedule[] {
   try {

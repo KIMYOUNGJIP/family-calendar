@@ -1,15 +1,16 @@
 import React from 'react';
-import { Schedule, MemberId } from '../types/calendar';
+import { Schedule } from '../types/calendar';
 import { FAMILY_MEMBERS } from '../utils/sampleData';
-import { getMonthGrid, getTodayString, parseDate, DAY_NAMES_KO } from '../utils/dateUtils';
-import { Clock, Sparkles } from 'lucide-react';
+import { getMonthGrid, getTodayString } from '../utils/dateUtils';
+import { MemberFilter, matchesMemberFilter } from './FilterBar';
+import { Clock } from 'lucide-react';
 
 interface MonthlyCalendarProps {
   currentDate: Date;
   selectedDateStr: string;
   onSelectDate: (dateStr: string) => void;
   schedules: Schedule[];
-    memberFilter: 'all' | MemberId;
+  memberFilter: MemberFilter;
 }
 
 export const MonthlyCalendar: React.FC<MonthlyCalendarProps> = ({
@@ -17,7 +18,7 @@ export const MonthlyCalendar: React.FC<MonthlyCalendarProps> = ({
   selectedDateStr,
   onSelectDate,
   schedules,
-    memberFilter,
+  memberFilter,
 }) => {
   const year = currentDate.getFullYear();
   const month = currentDate.getMonth();
@@ -28,12 +29,22 @@ export const MonthlyCalendar: React.FC<MonthlyCalendarProps> = ({
   // 날짜별 일정 그룹핑
   const schedulesByDate: Record<string, Schedule[]> = {};
   for (const s of schedules) {
-    if (memberFilter !== 'all' && s.memberId !== memberFilter) continue;
+    if (!matchesMemberFilter(s, memberFilter)) continue;
     if (!schedulesByDate[s.date]) schedulesByDate[s.date] = [];
     schedulesByDate[s.date].push(s);
   }
 
-  
+  const getCustomBadgeStyle = (sch: Schedule) => {
+    const t = `${sch.title} ${sch.guardian || ''}`.toLowerCase();
+    if (t.includes('엄마') || t.includes('아내') || t.includes('마누라')) {
+      return { avatar: '👩', badgeClass: 'bg-rose-100 text-rose-800 border border-rose-200' };
+    }
+    if (t.includes('아빠') || t.includes('남편') || t.includes('자동차')) {
+      return { avatar: '👨', badgeClass: 'bg-indigo-100 text-indigo-800 border border-indigo-200' };
+    }
+    const member = FAMILY_MEMBERS[sch.memberId];
+    return { avatar: member.avatar, badgeClass: member.color.bgBadge };
+  };
 
   return (
     <section className="bg-white rounded-3xl border border-slate-200/90 shadow-sm p-4 sm:p-6 mb-6">
@@ -43,7 +54,7 @@ export const MonthlyCalendar: React.FC<MonthlyCalendarProps> = ({
           <h2 className="text-lg sm:text-xl font-black text-slate-900 flex items-center gap-2">
             <span>📅 {year}년 {month + 1}월 가족 달력</span>
             <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-slate-100 text-slate-600">
-              날짜 클릭 시 아래 주간 일정 이동
+              날짜 클릭 시 상단 브리핑 · 주간 일정 이동
             </span>
           </h2>
           <p className="text-xs text-slate-500 mt-0.5">
@@ -59,11 +70,14 @@ export const MonthlyCalendar: React.FC<MonthlyCalendarProps> = ({
           <span className="inline-flex items-center gap-1 text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-md border border-emerald-200">
             <span className="w-2 h-2 rounded-full bg-emerald-600"></span> 하율(초록)
           </span>
-          <span className="inline-flex items-center gap-1 text-purple-700 bg-purple-50 px-2 py-0.5 rounded-md border border-purple-200">
-            <span className="w-2 h-2 rounded-full bg-purple-600"></span> 나&아내(보라)
+          <span className="inline-flex items-center gap-1 text-indigo-700 bg-indigo-50 px-2 py-0.5 rounded-md border border-indigo-200">
+            <span className="w-2 h-2 rounded-full bg-indigo-600"></span> 아빠(남색)
+          </span>
+          <span className="inline-flex items-center gap-1 text-rose-700 bg-rose-50 px-2 py-0.5 rounded-md border border-rose-200">
+            <span className="w-2 h-2 rounded-full bg-rose-500"></span> 엄마(분홍)
           </span>
           <span className="inline-flex items-center gap-1 text-amber-700 bg-amber-50 px-2 py-0.5 rounded-md border border-amber-200">
-            <span className="w-2 h-2 rounded-full bg-orange-600"></span> 우리 가족(주황)
+            <span className="w-2 h-2 rounded-full bg-orange-600"></span> 가족 공통(주황)
           </span>
         </div>
       </div>
@@ -85,7 +99,7 @@ export const MonthlyCalendar: React.FC<MonthlyCalendarProps> = ({
           const isSelected = cell.dateStr === selectedDateStr;
           const isToday = cell.dateStr === todayStr;
           const daySchedules = schedulesByDate[cell.dateStr] || [];
-                    // 귀가 시간 목록 (첫째/둘째 위주)
+          // 귀가 시간 목록 (첫째/둘째 위주)
           const childSchedules = daySchedules.filter(
             (s) => s.memberId === 'first_child' || s.memberId === 'second_child'
           );
@@ -98,7 +112,7 @@ export const MonthlyCalendar: React.FC<MonthlyCalendarProps> = ({
             <button
               key={cell.dateStr}
               onClick={() => onSelectDate(cell.dateStr)}
-              className={`min-h-[76px] sm:min-h-[96px] p-1.5 sm:p-2 rounded-2xl flex flex-col justify-between text-left transition-all relative border ${
+              className={`min-h-[76px] sm:min-h-[96px] p-1.5 sm:p-2 rounded-2xl flex flex-col justify-between text-left transition-all relative border cursor-pointer ${
                 isSelected
                   ? 'border-indigo-600 bg-indigo-50/50 shadow-sm ring-2 ring-indigo-500 ring-offset-1 z-10'
                   : isToday
@@ -131,20 +145,18 @@ export const MonthlyCalendar: React.FC<MonthlyCalendarProps> = ({
                     오늘
                   </span>
                 )}
-
-                
               </div>
 
               {/* Schedules Overview Preview */}
               <div className="mt-1 space-y-1 w-full overflow-hidden">
                 {daySchedules.slice(0, 2).map((sch) => {
-                  const member = FAMILY_MEMBERS[sch.memberId];
+                  const style = getCustomBadgeStyle(sch);
                   return (
                     <div
                       key={sch.id}
-                      className={`text-[10px] sm:text-[11px] font-bold px-1.5 py-0.5 rounded-md truncate flex items-center gap-1 ${member.color.bgBadge}`}
+                      className={`text-[10px] sm:text-[11px] font-bold px-1.5 py-0.5 rounded-md truncate flex items-center gap-1 ${style.badgeClass}`}
                     >
-                      <span className="shrink-0">{member.avatar}</span>
+                      <span className="shrink-0">{style.avatar}</span>
                       <span className="truncate">{sch.title}</span>
                     </div>
                   );

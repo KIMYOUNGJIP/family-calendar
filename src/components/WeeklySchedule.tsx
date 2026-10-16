@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { Schedule, MemberId } from '../types/calendar';
+import { Schedule } from '../types/calendar';
 import { FAMILY_MEMBERS } from '../utils/sampleData';
-import { getWeekDays, formatKoreanShortDate, getTodayString, parseDate, toDateString, addDays } from '../utils/dateUtils';
+import { getWeekDays, formatKoreanShortDate, getTodayString, parseDate, addDays } from '../utils/dateUtils';
+import { MemberFilter, matchesMemberFilter } from './FilterBar';
 import { Clock, Utensils, Bus, Footprints, Car, Plus, Trash2, Edit2, AlertCircle, Sparkles, LayoutGrid, CalendarRange, ChevronLeft, ChevronRight } from 'lucide-react';
 
 interface WeeklyScheduleProps {
@@ -10,7 +11,7 @@ interface WeeklyScheduleProps {
   schedules: Schedule[];
   onOpenScheduleModal: (schedule?: Schedule, defaultDate?: string) => void;
   onDeleteSchedule: (id: string) => void;
-  memberFilter: 'all' | MemberId;
+  memberFilter: MemberFilter;
 }
 
 export const WeeklySchedule: React.FC<WeeklyScheduleProps> = ({
@@ -42,10 +43,7 @@ export const WeeklySchedule: React.FC<WeeklyScheduleProps> = ({
   };
 
   // 필터 적용
-  const filteredSchedules = schedules.filter((s) => {
-    if (memberFilter !== 'all' && s.memberId !== memberFilter) return false;
-    return true;
-  });
+  const filteredSchedules = schedules.filter((s) => matchesMemberFilter(s, memberFilter));
 
   const getSchedulesForDay = (dateStr: string) => {
     return filteredSchedules

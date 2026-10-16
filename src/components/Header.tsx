@@ -11,6 +11,9 @@ interface HeaderProps {
   onResetData: () => void;
   onOpenSyncGuide: () => void;
   onOpenGoogleImport: () => void;
+  onQuickSyncGoogle?: () => void;
+  isSyncingGoogle?: boolean;
+  lastSyncMessage?: string | null;
   selectedDateStr: string;
 }
 
@@ -23,7 +26,9 @@ export const Header: React.FC<HeaderProps> = ({
   onResetData,
   onOpenSyncGuide,
   onOpenGoogleImport,
-  selectedDateStr,
+  onQuickSyncGoogle,
+  isSyncingGoogle = false,
+  lastSyncMessage = null,
 }) => {
   const [liveTime, setLiveTime] = useState<string>('');
 
@@ -63,22 +68,38 @@ export const Header: React.FC<HeaderProps> = ({
                     🏡 시흥시 목감동
                   </span>
                 </h1>
-                <div className="flex items-center gap-2 text-xs sm:text-sm text-slate-500 font-medium">
+                <div className="flex items-center gap-2 text-xs sm:text-sm text-slate-500 font-medium flex-wrap">
                   <span>{formatKoreanDate(new Date())}</span>
                   <span className="inline-block w-1 h-1 rounded-full bg-slate-300"></span>
                   <span className="flex items-center gap-1 font-mono font-semibold text-indigo-600 bg-indigo-50 px-1.5 py-0.5 rounded">
                     <Clock className="w-3.5 h-3.5" />
                     {liveTime || '00:00:00'}
                   </span>
+                  {lastSyncMessage && (
+                    <span className="inline-flex items-center gap-1 text-[11px] font-bold px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 border border-emerald-300 animate-pulse">
+                      {lastSyncMessage}
+                    </span>
+                  )}
                 </div>
               </div>
             </div>
 
             {/* Mobile Actions */}
             <div className="flex items-center gap-1.5 md:hidden">
+              {onQuickSyncGoogle && (
+                <button
+                  onClick={onQuickSyncGoogle}
+                  disabled={isSyncingGoogle}
+                  className="p-2 rounded-xl bg-emerald-600 text-white shadow-sm hover:bg-emerald-700 active:scale-95 transition-all cursor-pointer disabled:opacity-60"
+                  aria-label="구글 캘린더 즉시 동기화"
+                  title="구글 캘린더 즉시 동기화"
+                >
+                  <RefreshCw className={`w-5 h-5 ${isSyncingGoogle ? 'animate-spin' : ''}`} />
+                </button>
+              )}
               <button
                 onClick={onOpenAddModal}
-                className="p-2 rounded-xl bg-indigo-600 text-white shadow-sm hover:bg-indigo-700 active:scale-95 transition-all"
+                className="p-2 rounded-xl bg-indigo-600 text-white shadow-sm hover:bg-indigo-700 active:scale-95 transition-all cursor-pointer"
                 aria-label="새 일정 추가"
                 title="새 일정 추가"
               >
@@ -93,7 +114,7 @@ export const Header: React.FC<HeaderProps> = ({
             <div className="flex items-center bg-slate-100 p-1 rounded-xl border border-slate-200">
               <button
                 onClick={onPrevMonth}
-                className="p-1.5 rounded-lg hover:bg-white text-slate-600 hover:text-slate-900 transition-colors"
+                className="p-1.5 rounded-lg hover:bg-white text-slate-600 hover:text-slate-900 transition-colors cursor-pointer"
                 title="이전 달"
                 aria-label="이전 달"
               >
@@ -104,7 +125,7 @@ export const Header: React.FC<HeaderProps> = ({
               </span>
               <button
                 onClick={onNextMonth}
-                className="p-1.5 rounded-lg hover:bg-white text-slate-600 hover:text-slate-900 transition-colors"
+                className="p-1.5 rounded-lg hover:bg-white text-slate-600 hover:text-slate-900 transition-colors cursor-pointer"
                 title="다음 달"
                 aria-label="다음 달"
               >
@@ -115,27 +136,40 @@ export const Header: React.FC<HeaderProps> = ({
             {/* Jump to Today */}
             <button
               onClick={onGoToToday}
-              className="flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-white border border-slate-300 text-slate-700 hover:bg-slate-50 hover:border-slate-400 active:scale-95 transition-all shadow-2xs"
+              className="flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-white border border-slate-300 text-slate-700 hover:bg-slate-50 hover:border-slate-400 active:scale-95 transition-all shadow-2xs cursor-pointer"
             >
               <CalendarIcon className="w-4 h-4 text-indigo-600" />
               오늘로 이동
             </button>
 
+            {/* One-Click Quick Sync Button */}
+            {onQuickSyncGoogle && (
+              <button
+                onClick={onQuickSyncGoogle}
+                disabled={isSyncingGoogle}
+                className="flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs sm:text-sm font-extrabold bg-emerald-600 hover:bg-emerald-700 text-white active:scale-95 transition-all shadow-xs cursor-pointer disabled:opacity-60"
+                title="구글 가족 캘린더 수정사항을 원클릭으로 즉시 반영합니다"
+              >
+                <RefreshCw className={`w-4 h-4 ${isSyncingGoogle ? 'animate-spin' : ''}`} />
+                <span>{isSyncingGoogle ? '동기화 중...' : '실시간 동기화'}</span>
+              </button>
+            )}
+
             {/* Google Calendar Import Button */}
             <button
               onClick={onOpenGoogleImport}
-              className="flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs sm:text-sm font-bold bg-blue-50 border border-blue-200 text-blue-700 hover:bg-blue-100 active:scale-95 transition-all shadow-2xs"
+              className="flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs sm:text-sm font-bold bg-blue-50 border border-blue-200 text-blue-700 hover:bg-blue-100 active:scale-95 transition-all shadow-2xs cursor-pointer"
               title="내 Google 계정 캘린더 실제 일정 불러오기"
             >
               <span className="text-sm">📅</span>
-              <span>구글 캘린더 불러오기</span>
+              <span>캘린더 설정</span>
             </button>
 
             {/* Secondary Tools: Sync Guide & Reset */}
             <div className="flex items-center gap-1">
               <button
                 onClick={onOpenSyncGuide}
-                className="p-2 rounded-xl text-slate-500 hover:text-indigo-600 hover:bg-indigo-50 border border-transparent hover:border-indigo-200 transition-colors text-xs font-medium flex items-center gap-1"
+                className="p-2 rounded-xl text-slate-500 hover:text-indigo-600 hover:bg-indigo-50 border border-transparent hover:border-indigo-200 transition-colors text-xs font-medium flex items-center gap-1 cursor-pointer"
                 title="캘린더 연동 및 백업 안내"
               >
                 <HelpCircle className="w-4 h-4" />
@@ -143,8 +177,8 @@ export const Header: React.FC<HeaderProps> = ({
               </button>
               <button
                 onClick={onResetData}
-                className="p-2 rounded-xl text-slate-400 hover:text-red-600 hover:bg-red-50 border border-transparent hover:border-red-200 transition-colors text-xs"
-                title="샘플 데이터 초기화"
+                className="p-2 rounded-xl text-slate-400 hover:text-red-600 hover:bg-red-50 border border-transparent hover:border-red-200 transition-colors text-xs cursor-pointer"
+                title="기본 데이터로 재설정"
               >
                 <RefreshCw className="w-4 h-4" />
               </button>
