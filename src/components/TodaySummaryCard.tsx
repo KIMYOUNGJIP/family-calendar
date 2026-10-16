@@ -36,25 +36,42 @@ export const TodaySummaryCard: React.FC<TodaySummaryCardProps> = ({
   const todayStr = getTodayString();
   const now = new Date();
 
-  // 새로고침 기준 오늘이 속한 주의 월~일 (7일)
-  const currentWeek = getWeekDays(todayStr);
+  // 새로고침 기준 선택된 날짜(또는 오늘)가 속한 주의 월~일 (7일)
+  const isSelectedInCurrentWeek = getWeekDays(todayStr).some((d) => d.dateStr === selectedDateStr);
+  const referenceWeekDate = isSelectedInCurrentWeek ? todayStr : selectedDateStr;
+  const currentWeek = getWeekDays(referenceWeekDate);
 
-  // "새로고침하는 해당일이 잇는 주 남은 평일 것만 해줘":
+  // 이번 주 전체 평일 (월~금)
+  const allWeekdays = currentWeek.filter((d) => d.dayOfWeek >= 1 && d.dayOfWeek <= 5);
+
   // 오늘을 포함한 이번 주의 남은 평일 (월~금 중 dateStr >= todayStr)
   const remainingWeekdays = currentWeek.filter(
     (d) => d.dayOfWeek >= 1 && d.dayOfWeek <= 5 && d.dateStr >= todayStr
   );
 
-  // 주말(토/일)일 경우 이번 주 전체 평일(월~금)을 보여주어 대비
+  // 금요일(남은 평일 1개)이거나 주말일 경우, 목요일 등 다른 요일도 바로 클릭해 확인할 수 있도록 기본으로 월~금 전체 탭 표시 토글 제공
+  const [showAllWeekdays, setShowAllWeekdays] = useState<boolean>(remainingWeekdays.length <= 1);
+
   const displayWeekdays =
-    remainingWeekdays.length > 0
-      ? remainingWeekdays
-      : currentWeek.filter((d) => d.dayOfWeek >= 1 && d.dayOfWeek <= 5);
+    !isSelectedInCurrentWeek || showAllWeekdays || remainingWeekdays.length === 0
+      ? allWeekdays
+      : remainingWeekdays;
 
   // 현재 브리핑으로 선택된 날짜 (새로고침 시 기본값: 오늘 날짜)
   const [activeDateStr, setActiveDateStr] = useState<string>(
-    displayWeekdays.some((d) => d.dateStr === todayStr) ? todayStr : displayWeekdays[0].dateStr
+    allWeekdays.some((d) => d.dateStr === todayStr) ? todayStr : allWeekdays[0].dateStr
   );
+
+  // 외부(주간/월간 캘린더)에서 평일 날짜를 클릭하면 브리핑 카드도 동기화
+  React.useEffect(() => {
+    const selDay = parseDate(selectedDateStr).getDay();
+    if (selDay >= 1 && selDay <= 5) {
+      setActiveDateStr(selectedDateStr);
+      if (selectedDateStr < todayStr) {
+        setShowAllWeekdays(true);
+      }
+    }
+  }, [selectedDateStr, todayStr]);
 
   // 아빠/엄마 저녁 모임 판별 헬퍼
   const isParentMeeting = (s: Schedule) => {
@@ -92,12 +109,23 @@ export const TodaySummaryCard: React.FC<TodaySummaryCardProps> = ({
     return { name: '아빠 & 엄마', avatar: '💼', badgeClass: 'bg-purple-500/30 text-purple-200 border-purple-400/40' };
   };
 
+  const isAcademicNoticeOnly = (s: Schedule) =>
+    s.startTime === '09:00' &&
+    (s.title.includes('중간고사') || s.title.includes('기말고사') || s.title.includes('방학'));
+
   // 각 평일별 은비 & 하율 및 부모 모임 간략 프리뷰 계산
   const getDayPreview = (dateStr: string) => {
     const daySchedules = schedules.filter((s: Schedule) => s.date === dateStr);
-    const eunbiSchedules = daySchedules.filter((s: Schedule) => s.memberId === 'first_child');
-    const hayulSchedules = daySchedules.filter((s: Schedule) => s.memberId === 'second_child');
+    const eunbiAll = daySchedules.filter((s: Schedule) => s.memberId === 'first_child');
+    const eunbiLectures = eunbiAll.filter((s: Schedule) => !isAcademicNoticeOnly(s));
+    const eunbiSchedules = eunbiLectures.length > 0 ? eunbiLectures : eunbiAll;
+
+    const hayulAll = daySchedules.filter((s: Schedule) => s.memberId === 'second_child');
+    const hayulAcademies = hayulAll.filter((s: Schedule) => !s.title.includes('학교'));
+    const hayulSchedules = hayulAcademies.length > 0 ? hayulAcademies : hayulAll;
+
     const parentMeetings = daySchedules.filter(isParentMeeting);
+    const dayOfWeek = parseDate(dateStr).getDay();
 
     let eunbiText = '휴식';
     if (eunbiSchedules.length > 0) {
@@ -108,8 +136,13 @@ export const TodaySummaryCard: React.FC<TodaySummaryCardProps> = ({
     let hayulText = '휴식';
     if (hayulSchedules.length > 0) {
       const hasEng = hayulSchedules.some((s: Schedule) => s.title.includes('영어'));
-      const hasTkd = hayulSchedules.some((s: Schedule) => s.title.includes('태권도'));
-      if (hasEng && hasTkd) {
+      const hasMath = hayulSchedules.some((s: Schedule) => s.title.includes('수학'));
+      const tkdSch = hayulSchedules.find((s: Schedule) => s.title.includes('태권도'));
+      const hasTkd = Boolean(tkdSch);
+
+      if (hasMath && hasTkd && (dayOfWeek === 4 || (tkdSch && tkdSch.startTime >= '20:00'))) {
+        hayulText = '19:05 저녁 / 21:05 귀가';
+      } else if (hasEng && hasTkd && !hasMath) {
         hayulText = '18:05 저녁 / 20:05 귀가';
       } else {
         const latest = [...hayulSchedules].sort((a, b) => b.returnTime.localeCompare(a.returnTime))[0];
@@ -129,8 +162,14 @@ export const TodaySummaryCard: React.FC<TodaySummaryCardProps> = ({
 
   // 현재 선택된 평일의 일정
   const activeSchedules = schedules.filter((s: Schedule) => s.date === activeDateStr);
-  const firstChildSchedules = activeSchedules.filter((s: Schedule) => s.memberId === 'first_child');
-  const secondChildSchedules = activeSchedules.filter((s: Schedule) => s.memberId === 'second_child');
+  const firstChildAll = activeSchedules.filter((s: Schedule) => s.memberId === 'first_child');
+  const firstChildLectures = firstChildAll.filter((s: Schedule) => !isAcademicNoticeOnly(s));
+  const firstChildSchedules = firstChildLectures.length > 0 ? firstChildLectures : firstChildAll;
+
+  const secondChildAll = activeSchedules.filter((s: Schedule) => s.memberId === 'second_child');
+  const secondChildAcademies = secondChildAll.filter((s: Schedule) => !s.title.includes('학교'));
+  const secondChildSchedules = secondChildAcademies.length > 0 ? secondChildAcademies : secondChildAll;
+
   const activeParentMeetings = activeSchedules.filter(isParentMeeting);
 
   const isActiveToday = activeDateStr === todayStr;
@@ -178,13 +217,15 @@ export const TodaySummaryCard: React.FC<TodaySummaryCardProps> = ({
 
   const renderChildSummary = (memberId: 'first_child' | 'second_child') => {
     const member = FAMILY_MEMBERS[memberId];
-    const childSchedules = memberId === 'first_child' ? firstChildSchedules : secondChildSchedules;
+    const childSchedules = (memberId === 'first_child' ? firstChildSchedules : secondChildSchedules)
+      .slice()
+      .sort((a, b) => a.startTime.localeCompare(b.startTime));
     const isEunbi = memberId === 'first_child';
     const isHayul = memberId === 'second_child';
 
     // 대표 일정 선정
     // 1. 은비: 수원 동남보건대에서 모든 수업을 듣고 마지막에 귀가하므로 가장 늦은 귀가 일정을 대표로 브리핑
-    // 2. 하율: 수학학원과 태권도가 연속으로 있는 날은 태권도까지 끝나고 귀가하므로 가장 늦은 귀가 일정을 대표로 브리핑
+    // 2. 하율: 마지막 학원 종료 시각 기준 대표 일정 선정
     const activeSchedule =
       (isEunbi || isHayul) && childSchedules.length > 1
         ? [...childSchedules].sort((a, b) => b.returnTime.localeCompare(a.returnTime))[0]
@@ -192,9 +233,20 @@ export const TodaySummaryCard: React.FC<TodaySummaryCardProps> = ({
 
     const hasMath = isHayul && childSchedules.some((s: Schedule) => s.title.includes('수학'));
     const hasEnglish = isHayul && childSchedules.some((s: Schedule) => s.title.includes('영어'));
-    const hasTaekwondo = isHayul && childSchedules.some((s: Schedule) => s.title.includes('태권도'));
-    const isConsecutiveMathTaekwondo = hasMath && hasTaekwondo;
-    const isEnglishAndTaekwondo = hasEnglish && hasTaekwondo;
+    const taekwondoSch = isHayul ? childSchedules.find((s: Schedule) => s.title.includes('태권도')) : undefined;
+    const hasTaekwondo = Boolean(taekwondoSch);
+
+    // 목요일: 수학(17:00~19:00) ➔ 19:05 귀가 및 저녁 식사(7~8시) ➔ 태권도 8시부(20:00~21:00) ➔ 21:05 최종 귀가
+    const isMathDinnerTaekwondo =
+      hasMath &&
+      hasTaekwondo &&
+      (activeDateObj.getDay() === 4 || (taekwondoSch !== undefined && taekwondoSch.startTime >= '20:00'));
+
+    // 월·수요일: 영어(17:00~18:00) ➔ 18:05 귀가 및 저녁 식사 ➔ 태권도(19:00~20:00) ➔ 20:05 최종 귀가
+    const isEnglishAndTaekwondo = hasEnglish && hasTaekwondo && !hasMath;
+
+    // 화·금요일: 수학 ➔ 태권도 연속 수강 후 20:05 귀가 및 저녁 식사
+    const isConsecutiveMathTaekwondo = hasMath && hasTaekwondo && !isMathDinnerTaekwondo;
 
     if (!activeSchedule) {
       return (
@@ -263,7 +315,9 @@ export const TodaySummaryCard: React.FC<TodaySummaryCardProps> = ({
                 </span>
               </div>
               <p className="text-xs text-slate-500 font-medium line-clamp-1">
-                {isEnglishAndTaekwondo
+                {isMathDinnerTaekwondo
+                  ? '수학(17:00) ➔ 19:05 귀가(7~8시 저녁) ➔ 20:00 태권도(8시부) ➔ 21:05 최종 귀가'
+                  : isEnglishAndTaekwondo
                   ? '영어(17:00) ➔ 18:05 귀가(저녁) ➔ 19:00 태권도 ➔ 20:05 최종 귀가'
                   : activeSchedule.title}
               </p>
@@ -302,7 +356,16 @@ export const TodaySummaryCard: React.FC<TodaySummaryCardProps> = ({
 
         {isHayul && (
           <div className="mb-2.5 flex items-center gap-1.5 flex-wrap">
-            {isEnglishAndTaekwondo ? (
+            {isMathDinnerTaekwondo ? (
+              <>
+                <span className="inline-flex items-center gap-1 text-[11px] font-bold px-2 py-0.5 rounded-md bg-amber-100 text-amber-900 border border-amber-300">
+                  🍚 수학 종료 후 집에서 저녁 식사 (19:05~20:00)
+                </span>
+                <span className="text-[11px] font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-md border border-emerald-100">
+                  태권도 8시부 종료 후 21:05 최종 귀가
+                </span>
+              </>
+            ) : isEnglishAndTaekwondo ? (
               <>
                 <span className="inline-flex items-center gap-1 text-[11px] font-bold px-2 py-0.5 rounded-md bg-amber-100 text-amber-900 border border-amber-300">
                   🍚 영어 종료 후 집에서 저녁 식사 (18:05~19:00)
@@ -337,13 +400,29 @@ export const TodaySummaryCard: React.FC<TodaySummaryCardProps> = ({
         <div className="my-2.5 p-3 bg-slate-50 rounded-xl border border-slate-100 flex items-center justify-between">
           <div>
             <span className="text-xs text-slate-500 font-bold block">
-              {isEnglishAndTaekwondo
+              {isMathDinnerTaekwondo || isEnglishAndTaekwondo
                 ? '목감 집 1차 귀가(저녁) 및 최종 귀가 예정 시각'
                 : (isEunbi && childSchedules.length > 1) || isConsecutiveMathTaekwondo
                 ? '목감 집 최종 귀가 예정 시각'
                 : '귀가 예정 시각'}
             </span>
-            {isEnglishAndTaekwondo ? (
+            {isMathDinnerTaekwondo ? (
+              <div className="flex items-baseline gap-2 flex-wrap">
+                <div className="flex items-baseline gap-1">
+                  <span className="text-2xl sm:text-3xl font-black text-amber-900 tracking-tight">
+                    19:05
+                  </span>
+                  <span className="text-xs font-black text-amber-700">1차(7~8시 저녁)</span>
+                </div>
+                <span className="text-slate-400 font-black">·</span>
+                <div className="flex items-baseline gap-1">
+                  <span className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
+                    21:05
+                  </span>
+                  <span className="text-xs font-bold text-slate-500">최종(8시부)</span>
+                </div>
+              </div>
+            ) : isEnglishAndTaekwondo ? (
               <div className="flex items-baseline gap-2 flex-wrap">
                 <div className="flex items-baseline gap-1">
                   <span className="text-2xl sm:text-3xl font-black text-amber-900 tracking-tight">
@@ -388,7 +467,7 @@ export const TodaySummaryCard: React.FC<TodaySummaryCardProps> = ({
         </div>
 
         {/* Eunbi's Multi-Lecture Timeline */}
-        {isEunbi && childSchedules.length > 1 && (
+        {isEunbi && childSchedules.length >= 1 && (
           <div className="mb-2.5 p-2.5 bg-blue-50/70 rounded-xl border border-blue-200/80 text-[11px] space-y-1.5">
             <div className="font-bold text-blue-900 flex items-center justify-between">
               <span>📚 {activeDayName}요일 동남보건대 수강 과목 ({childSchedules.length}과목)</span>
@@ -421,14 +500,39 @@ export const TodaySummaryCard: React.FC<TodaySummaryCardProps> = ({
             <div className="font-bold text-emerald-900 flex items-center justify-between">
               <span>🏃 {activeDayName}요일 하율이 학원 동선 ({childSchedules.length}개)</span>
               <span className="text-[10px] text-emerald-700 font-semibold">
-                {isEnglishAndTaekwondo
+                {isMathDinnerTaekwondo
+                  ? '수학 후 7~8시 저녁 식사 ➔ 태권도 8시부'
+                  : isEnglishAndTaekwondo
                   ? '영어 후 저녁 식사 ➔ 태권도'
                   : isConsecutiveMathTaekwondo
                   ? '태권도까지 끝나고 귀가'
                   : '도보 5분 거리'}
               </span>
             </div>
-            {isEnglishAndTaekwondo ? (
+            {isMathDinnerTaekwondo ? (
+              <div className="space-y-1.5">
+                <div className="flex flex-wrap items-center gap-1.5">
+                  <span className="px-2 py-0.5 rounded-md font-bold text-[10px] bg-white text-emerald-800 border border-emerald-200">
+                    17:00~19:00 수학
+                  </span>
+                  <span className="text-amber-600 font-bold">➔</span>
+                  <span className="px-2 py-0.5 rounded-md font-black text-[10px] bg-amber-500 text-white shadow-2xs">
+                    19:05 귀가 및 저녁 식사 (7~8시) 🍚
+                  </span>
+                  <span className="text-amber-600 font-bold">➔</span>
+                  <span className="px-2 py-0.5 rounded-md font-bold text-[10px] bg-white text-emerald-800 border border-emerald-200">
+                    20:00 태권도 (8시부)
+                  </span>
+                  <span className="text-emerald-600 font-bold">➔</span>
+                  <span className="px-2 py-0.5 rounded-md font-black text-[10px] bg-emerald-600 text-white shadow-2xs">
+                    21:05 최종 귀가 🏠
+                  </span>
+                </div>
+                <p className="text-[10px] text-amber-900 font-medium bg-amber-50 p-2 rounded-lg border border-amber-200">
+                  💡 <strong>목요일 저녁 안내 (8시부 변경 반영)</strong>: 목요일은 태권도가 8시부(20:00~21:00)로 운영되어, 19:00 수학 종료 후 <strong>19:05에 귀가하여 7시~8시 사이에 집에서 저녁 식사</strong>를 하고 20:00에 태권도로 출발합니다. (21:05 최종 귀가 시 식사 완료)
+                </p>
+              </div>
+            ) : isEnglishAndTaekwondo ? (
               <div className="space-y-1.5">
                 <div className="flex flex-wrap items-center gap-1.5">
                   <span className="px-2 py-0.5 rounded-md font-bold text-[10px] bg-white text-emerald-800 border border-emerald-200">
@@ -485,7 +589,17 @@ export const TodaySummaryCard: React.FC<TodaySummaryCardProps> = ({
 
         {/* Dinner Status */}
         <div className="flex items-center justify-between gap-2 pt-1">
-          {isEnglishAndTaekwondo ? (
+          {isMathDinnerTaekwondo ? (
+            <div className="flex items-center gap-1.5 flex-wrap">
+              <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-extrabold bg-amber-100 text-amber-900 border border-amber-300">
+                <Utensils className="w-3.5 h-3.5 text-amber-700" />
+                🍚 집밥 저녁 필요 (19:05~20:00 수학 후 식사)
+              </span>
+              <span className="text-[11px] text-slate-500 font-medium">
+                (태권도 21:05 최종 귀가 후에는 식사 불필요)
+              </span>
+            </div>
+          ) : isEnglishAndTaekwondo ? (
             <div className="flex items-center gap-1.5 flex-wrap">
               <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-extrabold bg-amber-100 text-amber-900 border border-amber-300">
                 <Utensils className="w-3.5 h-3.5 text-amber-700" />
@@ -504,7 +618,11 @@ export const TodaySummaryCard: React.FC<TodaySummaryCardProps> = ({
         </div>
 
         {/* Memo note if exists */}
-        {isEnglishAndTaekwondo ? (
+        {isMathDinnerTaekwondo ? (
+          <p className="mt-2 text-xs text-amber-900 bg-amber-50/90 border border-amber-200 px-2.5 py-1.5 rounded-lg">
+            💬 목요일은 19:05에 귀가하여 7시~8시 사이 저녁 식사 후 20:00 태권도(8시부)로 이동합니다. (21:05 최종 귀가)
+          </p>
+        ) : isEnglishAndTaekwondo ? (
           <p className="mt-2 text-xs text-amber-900 bg-amber-50/90 border border-amber-200 px-2.5 py-1.5 rounded-lg">
             💬 18:05에 귀가하여 집에서 저녁 식사 후 19:00에 태권도로 이동합니다. (20:05 최종 귀가)
           </p>
@@ -533,7 +651,7 @@ export const TodaySummaryCard: React.FC<TodaySummaryCardProps> = ({
             <div>
               <div className="flex items-center gap-2 flex-wrap">
                 <h3 className="text-lg sm:text-xl font-black tracking-tight text-white">
-                  이번 주 남은 평일 귀가시간 집중 안내
+                  이번 주 평일 귀가시간 집중 안내
                 </h3>
                 <span className="text-[11px] font-bold px-2 py-0.5 rounded-full bg-amber-400 text-slate-950">
                   {isActiveToday ? '오늘 브리핑' : `${activeDayName}요일 브리핑`}
@@ -543,25 +661,40 @@ export const TodaySummaryCard: React.FC<TodaySummaryCardProps> = ({
                 </span>
               </div>
               <p className="text-xs text-indigo-200 mt-0.5">
-                새로고침 기준 이번 주 남은 평일(${displayWeekdays.map((d) => DAY_NAMES_KO[d.dayOfWeek]).join('·')})의 자녀별 귀가 시간과 이동 동선만 집중 안내합니다.
+                이번 주 평일({displayWeekdays.map((d) => DAY_NAMES_KO[d.dayOfWeek]).join('·')})의 자녀별 귀가 시간, 저녁 식사 타이밍, 부모 저녁 약속을 집중 안내합니다.
               </p>
             </div>
           </div>
+          {isSelectedInCurrentWeek && remainingWeekdays.length > 0 && remainingWeekdays.length < 5 && (
+            <button
+              type="button"
+              onClick={() => setShowAllWeekdays((prev) => !prev)}
+              className="self-start sm:self-auto text-xs font-bold px-3 py-1.5 rounded-xl bg-indigo-800/80 hover:bg-indigo-700 text-indigo-100 border border-indigo-600/80 cursor-pointer transition-all shrink-0"
+            >
+              {showAllWeekdays ? `남은 평일만 보기 (${remainingWeekdays.length}일)` : '월~금 전체 요일 보기 (5일)'}
+            </button>
+          )}
         </div>
 
-        {/* 2. 이번 주 남은 평일 탭 바 */}
+        {/* 2. 이번 주 평일 탭 바 */}
         <div className="mb-4 relative z-10">
           <div className="flex items-center justify-between mb-2">
             <span className="text-xs font-extrabold text-indigo-200 flex items-center gap-1.5">
               <CalendarRange className="w-4 h-4 text-amber-400" />
-              이번 주 남은 평일 ({displayWeekdays.length}일)
+              {showAllWeekdays || !isSelectedInCurrentWeek
+                ? `주간 평일 전체 (${displayWeekdays.length}일)`
+                : `이번 주 남은 평일 (${displayWeekdays.length}일)`}
             </span>
             <span className="text-[11px] text-indigo-300 font-medium">
-              탭을 누르면 해당 평일의 귀가 동선으로 즉시 전환됩니다
+              탭을 누르면 해당 평일(예: 목요일)의 귀가·저녁 동선으로 즉시 전환됩니다
             </span>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+          <div
+            className={`grid grid-cols-2 ${
+              displayWeekdays.length >= 5 ? 'sm:grid-cols-5' : 'sm:grid-cols-4'
+            } gap-2`}
+          >
             {displayWeekdays.map((d) => {
               const isSelected = d.dateStr === activeDateStr;
               const isToday = d.dateStr === todayStr;

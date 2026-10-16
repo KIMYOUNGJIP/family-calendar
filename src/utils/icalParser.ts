@@ -272,6 +272,22 @@ export function parseICSContent(icsText: string): Schedule[] {
     }
   }
 
+  // 2026년 2학기 정규 시간 보정 (중복 제거 전 수행)
+  for (const s of rawList) {
+    if (s.memberId === 'second_child' && s.date >= '2026-09-07') {
+      const [dy, dm, dd] = s.date.split('-').map(Number);
+      const dow = new Date(dy, dm - 1, dd).getDay();
+      if (dow === 4 && s.title.includes('태권도')) {
+        s.startTime = '20:00';
+        s.endTime = '21:00';
+      }
+      if (dow === 5 && s.title.includes('수학') && s.startTime === '17:00') {
+        s.startTime = '18:00';
+        s.endTime = '19:00';
+      }
+    }
+  }
+
   // Deduplicate
   const seen = new Set<string>();
   const deduped: typeof rawList = [];
@@ -294,10 +310,12 @@ export function parseICSContent(icsText: string): Schedule[] {
 
   for (const date of Object.keys(dateGroups).sort()) {
     const dayItems = dateGroups[date];
+    const [dy, dm, dd] = date.split('-').map(Number);
+    const dayOfWeek = new Date(dy, dm - 1, dd).getDay();
 
     // Eunbi classes
     const eunbiClasses = dayItems
-      .filter(s => s.memberId === 'first_child' && (s.title.includes('[은비]') || s.title.includes('보건') || s.title.includes('대학') || s.location))
+      .filter(s => s.memberId === 'first_child' && (s.title.includes('[은비]') || s.title.includes('보건') || s.title.includes('대학') || s.location) && !s.title.includes('중간고사') && !s.title.includes('기말고사') && !s.title.includes('방학'))
       .sort((a, b) => a.startTime.localeCompare(b.startTime));
 
     const latestEunbiClass = eunbiClasses.length > 0 ? eunbiClasses[eunbiClasses.length - 1] : null;
@@ -310,7 +328,10 @@ export function parseICSContent(icsText: string): Schedule[] {
 
     const hasMath = hayulActivities.some(s => s.title.includes('수학'));
     const hasTaekwondo = hayulActivities.some(s => s.title.includes('태권도'));
-    const isConsecutiveMathTaekwondo = hasMath && hasTaekwondo;
+    const taekwondoItem = hayulActivities.find(s => s.title.includes('태권도'));
+    // 목요일(또는 태권도 20:00 8시부): 수학(17:00~19:00) 후 19:05 귀가하여 7시~8시 저녁 식사 후 20:00 태권도 이동
+    const isMathDinnerTaekwondo = hasMath && hasTaekwondo && (dayOfWeek === 4 || (taekwondoItem && taekwondoItem.startTime >= '20:00'));
+    const isConsecutiveMathTaekwondo = hasMath && hasTaekwondo && !isMathDinnerTaekwondo;
 
     for (const item of dayItems) {
       let transitMethod: TransitMethod = '도보';
@@ -320,7 +341,12 @@ export function parseICSContent(icsText: string): Schedule[] {
       let returnTime = item.endTime;
 
       if (item.memberId === 'first_child') {
-        if (item.title.includes('[은비]') || item.title.includes('동남') || item.title.includes('보건') || item.location) {
+        if (item.title.includes('중간고사') || item.title.includes('기말고사') || item.title.includes('방학')) {
+          transitMethod = '대중교통';
+          guardian = '스스로 귀가';
+          dinnerStatus = 'not_required';
+          memo = '동남보건대 학사 일정';
+        } else if (item.title.includes('[은비]') || item.title.includes('동남') || item.title.includes('보건') || item.location) {
           transitMethod = '대중교통';
           guardian = '스스로 귀가';
           const isLast = latestEunbiClass && item.title === latestEunbiClass.title && item.startTime === latestEunbiClass.startTime;
@@ -345,12 +371,12 @@ export function parseICSContent(icsText: string): Schedule[] {
           transitMethod = '도보';
           guardian = '스스로 귀가';
 
-          // 하율: 월·수는 영어에만, 화·목·금은 태권도에만 저녁 필요
-          const [y, m, d] = item.date.split('-').map(Number);
-          const dayOfWeek = new Date(y, m - 1, d).getDay();
+          // 하율: 월·수는 영어에만, 목요일은 수학 후(7~8시)에만, 화·금은 태권도 후에만 저녁 필요
           if ((dayOfWeek === 1 || dayOfWeek === 3) && item.title.includes('영어')) {
             dinnerStatus = 'required';
-          } else if ((dayOfWeek === 2 || dayOfWeek === 4 || dayOfWeek === 5) && item.title.includes('태권도')) {
+          } else if ((dayOfWeek === 4 || isMathDinnerTaekwondo) && item.title.includes('수학')) {
+            dinnerStatus = 'required';
+          } else if ((dayOfWeek === 2 || dayOfWeek === 5) && item.title.includes('태권도')) {
             dinnerStatus = 'required';
           } else {
             dinnerStatus = 'not_required';
@@ -359,8 +385,20 @@ export function parseICSContent(icsText: string): Schedule[] {
           if (item.title.includes('학교')) {
             returnTime = addMinutes(item.endTime, 5);
             memo = '목감 초/중학교 (도보 통학 · 수업 후 귀가)';
-          } else if (isConsecutiveMathTaekwondo) {
+          } else if (isMathDinnerTaekwondo || dayOfWeek === 4) {
+            returnTime = addMinutes(item.endTime, 5);
             if (item.title.includes('수학')) {
+              memo = '수학 종료 후 19:05 귀가 (7시~8시 집에서 저녁 식사 후 20:00 태권도 8시부 출발)';
+            } else if (item.title.includes('태권도')) {
+              memo = '태권도(8시부) 종료 후 21:05 최종 귀가 (수학 종료 후 7시~8시에 저녁 식사 완료)';
+            } else {
+              memo = '목감 집 앞 학원 (도보 5분 거리 · 도보 귀가)';
+            }
+          } else if (isConsecutiveMathTaekwondo) {
+            if (item.title.includes('영어') && dayOfWeek === 5) {
+              returnTime = item.endTime;
+              memo = '영어 종료 후 수학학원으로 바로 이동 (귀가하지 않고 직행)';
+            } else if (item.title.includes('수학')) {
               // 수학 끝난 후 바로 태권도 이동 (집에 오지 않음)
               returnTime = item.endTime;
               memo = '수학 종료 후 태권도로 바로 이동 (귀가하지 않고 태권도 직행)';

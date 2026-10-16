@@ -22,16 +22,16 @@ export const WeeklySchedule: React.FC<WeeklyScheduleProps> = ({
   memberFilter,
 }) => {
   const [viewMode, setViewMode] = useState<'timeline' | 'grid'>('timeline');
+  const [showAllCurrentWeek, setShowAllCurrentWeek] = useState<boolean>(false);
   const todayStr = getTodayString();
   const weekDays = getWeekDays(selectedDateStr);
 
   const isViewingCurrentWeek = weekDays.some((d) => d.dateStr === todayStr);
-  // "상세스케줄에서 지난 일정은 안보이게 해줘":
-  // 이번 주를 보고 있을 때만 지난 날짜(day.dateStr < todayStr)를 가리고,
-  // 다음 주나 이전 주를 선택했을 때는 해당 주의 모든 요일이 표시됨
-  const upcomingDays = isViewingCurrentWeek
-    ? weekDays.filter((d) => d.dateStr >= todayStr)
-    : weekDays;
+  // 이번 주를 보고 있을 때 기본은 오늘 이후만 표시하되, 사용자가 이번 주의 이전 요일(예: 금요일에 목요일 탭 클릭)을 선택했거나 전체 보기를 켠 경우 월~일 전체 표시
+  const shouldShowFullWeek = !isViewingCurrentWeek || showAllCurrentWeek || selectedDateStr < todayStr;
+  const upcomingDays = shouldShowFullWeek
+    ? weekDays
+    : weekDays.filter((d) => d.dateStr >= todayStr);
   const targetDays = upcomingDays.length > 0 ? upcomingDays : weekDays;
 
   const handlePrevWeek = () => {
@@ -90,7 +90,10 @@ export const WeeklySchedule: React.FC<WeeklyScheduleProps> = ({
   // 은비/하율 및 구성원별 귀가 및 이동 상태 안내 계산
   // 규칙:
   // 1. 은비(동남보건대): 수업을 모두 듣고 마지막에만 귀가하므로, 해당 일의 마지막 수업에만 '귀가' 표기하고 앞선 수업은 '수업 종료 (교내 체류)' 표기
-  // 2. 하율: 수학-태권도 연속 수강 시 수학은 '태권도 이동' 표기, 태권도 종료 시에만 '귀가' 표기
+  // 2. 하율:
+  //    - 월·수: 영어(18:05 1차 귀가 및 저녁 식사) ➔ 태권도(20:05 최종 귀가, 식사 완료)
+  //    - 목: 수학(19:05 1차 귀가 및 7~8시 저녁 식사) ➔ 태권도 8시부(21:05 최종 귀가, 식사 완료)
+  //    - 화·금: 수학-태권도 연속 수강 후 태권도 종료 시(20:05) 최종 귀가 및 저녁 식사
   const getScheduleStatus = (sch: Schedule, daySchedules: Schedule[]) => {
     // 0 = Sun, 1 = Mon, 2 = Tue, 3 = Wed, 4 = Thu, 5 = Fri, 6 = Sat
     const dayOfWeek = parseDate(sch.date).getDay();
@@ -123,39 +126,19 @@ export const WeeklySchedule: React.FC<WeeklyScheduleProps> = ({
     }
 
     if (sch.memberId === 'second_child') {
-      // 하율: 월·수는 영어에만, 화·목·금은 태권도에만 저녁 필요
+      // 하율: 월·수는 영어 후 저녁, 목요일은 수학 후(7~8시) 저녁, 화·금은 태권도 후 저녁 필요
       let isHayulDinnerCard = false;
       const title = sch.title.toLowerCase();
       if (dayOfWeek === 1 || dayOfWeek === 3) {
         isHayulDinnerCard = title.includes('영어');
-      } else if (dayOfWeek === 2 || dayOfWeek === 4 || dayOfWeek === 5) {
+      } else if (dayOfWeek === 4) {
+        isHayulDinnerCard = title.includes('수학');
+      } else if (dayOfWeek === 2 || dayOfWeek === 5) {
         isHayulDinnerCard = title.includes('태권도');
       }
 
       const dinnerStatus = isHayulDinnerCard ? ('required' as const) : ('not_required' as const);
 
-      if (sch.memo?.includes('귀가하지 않고') || sch.memo?.includes('바로 이동')) {
-        return {
-          isReturnHome: false,
-          label: '다음 학원 이동',
-          timeDisplay: `${sch.returnTime} 태권도 이동`,
-          gridTimeDisplay: `${sch.returnTime} 이동`,
-          pillText: '🥋 태권도로 바로 이동',
-          pillClass: 'bg-purple-100 text-purple-800 border border-purple-200',
-          dinnerStatus,
-        };
-      }
-      if (sch.memo?.includes('연속 수강')) {
-        return {
-          isReturnHome: true,
-          label: '최종 귀가 예정',
-          timeDisplay: `${sch.returnTime} 귀가`,
-          gridTimeDisplay: `${sch.returnTime} 귀가`,
-          pillText: '🏠 태권도 후 최종 귀가',
-          pillClass: 'bg-emerald-100 text-emerald-800 border border-emerald-200',
-          dinnerStatus,
-        };
-      }
       if (sch.title.includes('학교')) {
         return {
           isReturnHome: true,
@@ -167,6 +150,34 @@ export const WeeklySchedule: React.FC<WeeklyScheduleProps> = ({
           dinnerStatus,
         };
       }
+
+      // 목요일 전용: 수학(19:05 귀가 및 7~8시 저녁 식사) ➔ 태권도 8시부(21:05 최종 귀가)
+      if (dayOfWeek === 4) {
+        if (title.includes('수학')) {
+          return {
+            isReturnHome: true,
+            label: '1차 귀가 (7~8시 저녁 식사)',
+            timeDisplay: `${sch.returnTime} 귀가(저녁)`,
+            gridTimeDisplay: `${sch.returnTime} 저녁`,
+            pillText: '🍚 19:05 귀가 (7~8시 저녁 후 8시부 태권도)',
+            pillClass: 'bg-amber-100 text-amber-900 border border-amber-300 font-bold',
+            dinnerStatus,
+          };
+        }
+        if (title.includes('태권도')) {
+          return {
+            isReturnHome: true,
+            label: '최종 귀가 예정 (8시부)',
+            timeDisplay: `${sch.returnTime} 최종 귀가`,
+            gridTimeDisplay: `${sch.returnTime} 귀가`,
+            pillText: '🏠 21:05 최종 귀가 (7~8시 식사 완료)',
+            pillClass: 'bg-emerald-100 text-emerald-800 border border-emerald-200',
+            dinnerStatus,
+          };
+        }
+      }
+
+      // 월·수요일 전용: 영어(18:05 귀가 및 저녁 식사) ➔ 태권도(20:05 최종 귀가)
       if (dayOfWeek === 1 || dayOfWeek === 3) {
         if (title.includes('영어')) {
           return {
@@ -190,6 +201,42 @@ export const WeeklySchedule: React.FC<WeeklyScheduleProps> = ({
             dinnerStatus,
           };
         }
+      }
+
+      // 금요일 영어(17:00~18:00) ➔ 수학(18:00~19:00) 바로 이동
+      if (dayOfWeek === 5 && title.includes('영어')) {
+        return {
+          isReturnHome: false,
+          label: '다음 학원 이동',
+          timeDisplay: `${sch.returnTime} 수학 이동`,
+          gridTimeDisplay: `${sch.returnTime} 이동`,
+          pillText: '📚 수학학원으로 바로 이동',
+          pillClass: 'bg-purple-100 text-purple-800 border border-purple-200',
+          dinnerStatus,
+        };
+      }
+
+      if (sch.memo?.includes('귀가하지 않고') || sch.memo?.includes('바로 이동')) {
+        return {
+          isReturnHome: false,
+          label: '다음 학원 이동',
+          timeDisplay: `${sch.returnTime} 태권도 이동`,
+          gridTimeDisplay: `${sch.returnTime} 이동`,
+          pillText: '🥋 태권도로 바로 이동',
+          pillClass: 'bg-purple-100 text-purple-800 border border-purple-200',
+          dinnerStatus,
+        };
+      }
+      if (sch.memo?.includes('연속 수강')) {
+        return {
+          isReturnHome: true,
+          label: '최종 귀가 예정',
+          timeDisplay: `${sch.returnTime} 귀가`,
+          gridTimeDisplay: `${sch.returnTime} 귀가`,
+          pillText: '🏠 태권도 후 최종 귀가',
+          pillClass: 'bg-emerald-100 text-emerald-800 border border-emerald-200',
+          dinnerStatus,
+        };
       }
       return {
         isReturnHome: true,
@@ -264,6 +311,15 @@ export const WeeklySchedule: React.FC<WeeklyScheduleProps> = ({
                 <ChevronRight className="w-4 h-4" />
               </button>
             </div>
+            {isViewingCurrentWeek && (
+              <button
+                type="button"
+                onClick={() => setShowAllCurrentWeek((prev) => !prev)}
+                className="text-xs font-bold px-2.5 py-1 rounded-xl bg-indigo-50 hover:bg-indigo-100 text-indigo-700 border border-indigo-200 cursor-pointer transition-colors"
+              >
+                {shouldShowFullWeek ? '오늘 이후만 보기' : '이번 주 전체(월~일) 보기'}
+              </button>
+            )}
           </div>
           <p className="text-xs text-slate-500 mt-0.5">
             자녀별 출발/귀가 시간, 부모님 저녁 모임, 이동 방법 및 식사 여부를 상세하게 확인하세요.

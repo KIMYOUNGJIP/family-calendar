@@ -58,26 +58,21 @@ export const App: React.FC = () => {
     setSchedules(loadedSchedules);
     setIsLoaded(true);
 
-    // 앱 시작 시 백그라운드에서 최신 구글 캘린더 일정을 동기화
+    // 앱 시작 시 백그라운드에서 최신 구글 캘린더 일정을 동기화 (사용자 수동 등록 일정 보존)
     const autoSyncGoogle = async () => {
-      try {
-        // 1. 배포 번들 내의 최신 ICS 파일 fetch 시도 (CORS 없이 즉시 갱신)
-        try {
-          const localRes = await fetch('./google_calendar.ics');
-          if (localRes.ok) {
-            const text = await localRes.text();
-            const parsed = parseICSContent(text);
-            if (parsed && parsed.length > 0) {
-              setSchedules(parsed);
-              saveSchedules(parsed);
-              return;
-            }
-          }
-        } catch {
-          // fallback
-        }
+      const mergeWithUserSchedules = (googleParsed: Schedule[]) => {
+        setSchedules((prev) => {
+          const customSchedules = prev.filter(
+            (s) => s.id.startsWith('sch-') || s.id.startsWith('parent-meeting-')
+          );
+          const merged = [...googleParsed, ...customSchedules];
+          saveSchedules(merged);
+          return merged;
+        });
+      };
 
-        // 2. 원격 구글 캘린더 프록시 fetch 시도
+      try {
+        // 1. 원격 구글 캘린더 프록시 fetch 우선 시도 (실시간 최신 수정본 반영)
         const fetchUrl = GOOGLE_CALENDAR_DEFAULT_URL;
         let res: Response | null = null;
         try {
@@ -91,11 +86,28 @@ export const App: React.FC = () => {
         }
         if (res && res.ok) {
           const text = await res.text();
-          const parsed = parseICSContent(text);
-          if (parsed && parsed.length > 0) {
-            setSchedules(parsed);
-            saveSchedules(parsed);
+          if (text.includes('BEGIN:VCALENDAR')) {
+            const parsed = parseICSContent(text);
+            if (parsed && parsed.length > 0) {
+              mergeWithUserSchedules(parsed);
+              return;
+            }
           }
+        }
+
+        // 2. 프록시 실패 시 배포 번들 내의 최신 ICS 파일 fetch 시도
+        try {
+          const localRes = await fetch('./google_calendar.ics');
+          if (localRes.ok) {
+            const text = await localRes.text();
+            const parsed = parseICSContent(text);
+            if (parsed && parsed.length > 0) {
+              mergeWithUserSchedules(parsed);
+              return;
+            }
+          }
+        } catch {
+          // fallback
         }
       } catch {
         // 네트워크 장애 시 로컬 캐시 그대로 유지
