@@ -3,7 +3,7 @@ import { Schedule, MemberId } from '../types/calendar';
 import { parseICSContent } from '../utils/icalParser';
 import { FAMILY_MEMBERS } from '../utils/sampleData';
 import { GOOGLE_CALENDAR_DEFAULT_URL } from '../data/realGoogleSchedules';
-import { X, Calendar, Upload, FileText, CheckCircle2, AlertCircle, Sparkles, ExternalLink, ArrowRight } from 'lucide-react';
+import { X, Calendar, Upload, FileText, CheckCircle2, Sparkles, ExternalLink, ArrowRight, Download } from 'lucide-react';
 
 interface GoogleCalendarImportModalProps {
   isOpen: boolean;
@@ -48,13 +48,12 @@ export const GoogleCalendarImportModal: React.FC<GoogleCalendarImportModalProps>
     reader.readAsText(file);
   };
 
-  // 2. URL 처리
+  // 2. URL 처리 (브라우저 CORS 프록시 1MB 제한 대응 + 로컬 최신 번들 폴백)
   const handleFetchUrl = async () => {
     if (!icalUrl.trim()) return;
     setIsParsing(true);
 
     try {
-      // CORS 프록시 또는 직접 fetch 시도
       let fetchUrl = icalUrl.trim();
       if (!fetchUrl.startsWith('http')) {
         alert('올바른 URL 형식(https://...)을 입력해주세요.');
@@ -62,24 +61,64 @@ export const GoogleCalendarImportModal: React.FC<GoogleCalendarImportModalProps>
         return;
       }
 
-      // try direct or with cors proxy
-      let res: Response;
-      try {
-        res = await fetch(fetchUrl);
-      } catch (corsErr) {
-        // Fallback through public cors proxy if blocked
-        res = await fetch(`https://api.allorigins.win/raw?url=${encodeURIComponent(fetchUrl)}`);
+      const fetchWithTimeout = async (url: string, ms = 4000) => {
+        const controller = new AbortController();
+        const timer = setTimeout(() => controller.abort(), ms);
+        try {
+          return await fetch(url, { signal: controller.signal });
+        } finally {
+          clearTimeout(timer);
+        }
+      };
+
+      const targetWithCacheBuster = `${fetchUrl}${fetchUrl.includes('?') ? '&' : '?'}t=${Date.now()}`;
+      let validText = '';
+
+      // 1차: 공개 CORS 프록시 시도 (타임아웃 4초)
+      const proxyUrls = [
+        `https://api.allorigins.win/raw?url=${encodeURIComponent(targetWithCacheBuster)}`,
+        `https://corsproxy.io/?url=${encodeURIComponent(targetWithCacheBuster)}`,
+      ];
+
+      for (const pUrl of proxyUrls) {
+        try {
+          const res = await fetchWithTimeout(pUrl, 4000);
+          if (res.ok) {
+            const text = await res.text();
+            if (text.includes('BEGIN:VCALENDAR')) {
+              validText = text;
+              break;
+            }
+          }
+        } catch {
+          // 다음 프록시 또는 폴백 진행
+        }
       }
 
-      const text = await res.text();
-      const schedules = parseICSContent(text);
+      // 2차: 1MB 대용량 .ics 파일로 인해 무료 CORS 프록시가 타임아웃될 경우 서버의 최신 동기화 본(.ics) 사용
+      if (!validText) {
+        const localRes = await fetch(`./google_calendar.ics?t=${Date.now()}`);
+        if (localRes.ok) {
+          const text = await localRes.text();
+          if (text.includes('BEGIN:VCALENDAR')) {
+            validText = text;
+          }
+        }
+      }
+
+      if (!validText) {
+        alert('브라우저 보안(CORS) 제한으로 URL 직접 호출이 지연되었습니다. 아래 [1단계: 구글 최신 파일(basic.ics) 바로 받기] 버튼을 눌러 파일을 선택해 주세요.');
+        return;
+      }
+
+      const schedules = parseICSContent(validText);
       if (schedules.length === 0) {
         alert('일정을 찾지 못했습니다. 올바른 iCal 비공개 주소인지 확인해주세요.');
       } else {
         setParsedList(schedules);
       }
     } catch (err) {
-      alert('iCal 주소에서 일정을 불러오지 못했습니다. Google Calendar 설정에서 .ics 파일을 직접 다운로드하여 업로드해주세요.');
+      alert('iCal 주소에서 일정을 불러오지 못했습니다. 아래 [구글 최신 파일 바로 받기] 후 업로드해주세요.');
     } finally {
       setIsParsing(false);
     }
@@ -199,37 +238,33 @@ export const GoogleCalendarImportModal: React.FC<GoogleCalendarImportModalProps>
         <div className="p-5 space-y-4">
           {activeTab === 'file' && (
             <div className="space-y-3">
-              {/* How to export guide */}
-              <div className="p-3.5 rounded-2xl bg-amber-50 border border-amber-200 text-amber-900 text-xs space-y-1">
-                <div className="font-bold flex items-center gap-1">
-                  <Sparkles className="w-4 h-4 text-amber-600" />
-                  구글 캘린더에서 파일 10초 만에 내보내는 방법
+              {/* 1-click direct download guide */}
+              <div className="p-3.5 rounded-2xl bg-indigo-50 border border-indigo-200 text-indigo-900 text-xs space-y-2">
+                <div className="font-bold flex items-center gap-1.5">
+                  <Sparkles className="w-4 h-4 text-indigo-600" />
+                  방금 추가한 구글 가족 캘린더 일정 2초 만에 반영하기 (가장 빠름 · 100% 성공)
                 </div>
-                <ol className="list-decimal pl-4 space-y-0.5 text-amber-800">
-                  <li>
-                    브라우저에서{' '}
-                    <a
-                      href="https://calendar.google.com/calendar/r/settings/export"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="underline font-bold text-amber-900"
-                    >
-                      Google Calendar 설정(가져오기/내보내기)
-                    </a>{' '}
-                    접속
-                  </li>
-                  <li><strong>[내보내기]</strong> 버튼 클릭하여 다운로드된 압축파일 속 <code>.ics</code> 파일 선택</li>
-                  <li>아래 상자에 파일을 끌어다 놓거나 [파일 선택] 클릭</li>
-                </ol>
+                <div className="flex flex-wrap items-center gap-2 pt-0.5">
+                  <a
+                    href={icalUrl || GOOGLE_CALENDAR_DEFAULT_URL}
+                    className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-xs shadow-xs transition-colors"
+                  >
+                    <Download className="w-3.5 h-3.5" />
+                    1단계: 구글 최신 파일(basic.ics) 바로 받기
+                  </a>
+                  <span className="text-[11px] text-indigo-700 font-semibold">
+                    → 다운로드된 <code>basic.ics</code> 파일을 아래 상자에 선택하면 즉시 반영됩니다!
+                  </span>
+                </div>
               </div>
 
               {/* Upload Dropzone */}
               <label className="border-2 border-dashed border-slate-300 hover:border-indigo-500 rounded-2xl p-6 flex flex-col items-center justify-center cursor-pointer transition-colors bg-slate-50/50 hover:bg-indigo-50/20">
                 <Upload className="w-8 h-8 text-indigo-600 mb-2" />
                 <span className="text-sm font-bold text-slate-700">
-                  {fileName ? fileName : 'Google 캘린더 .ics 파일을 여기에 끌어다 놓으세요'}
+                  {fileName ? `선택된 파일: ${fileName}` : '2단계: 다운로드된 basic.ics 파일을 클릭해 선택하거나 끌어다 놓으세요'}
                 </span>
-                <span className="text-xs text-slate-400 mt-1">또는 클릭하여 컴퓨터에서 파일 선택</span>
+                <span className="text-xs text-slate-400 mt-1">프록시 지연 없이 1MB 전체 일정을 0.1초 만에 불러옵니다</span>
                 <input type="file" accept=".ics" onChange={handleFileUpload} className="hidden" />
               </label>
             </div>
@@ -237,11 +272,25 @@ export const GoogleCalendarImportModal: React.FC<GoogleCalendarImportModalProps>
 
           {activeTab === 'url' && (
             <div className="space-y-3">
-              <div className="p-3.5 rounded-2xl bg-blue-50 border border-blue-200 text-blue-900 text-xs space-y-1">
-                <div className="font-bold">Google Calendar iCal 비공개 주소 찾는 법</div>
+              <div className="p-3.5 rounded-2xl bg-blue-50 border border-blue-200 text-blue-900 text-xs space-y-1.5">
+                <div className="font-bold">Google Calendar iCal 비공개 주소 동기화</div>
                 <p className="text-blue-800">
-                  Google Calendar 설정 &gt; 좌측 '내 캘린더의 설정' &gt; <strong>'iCal 형식의 비공개 주소'</strong>를 복사해 아래에 붙여넣으세요.
+                  아래 <strong>[가져오기]</strong>를 누르면 최신 동기화 일정을 불러옵니다. 만약 구글 캘린더에 <strong>방금 새 일정을 등록</strong>하셨다면 브라우저 보안(CORS) 우회를 위해 아래 <strong>[1초 직접 다운로드 후 선택]</strong>을 사용하시면 즉시 반영됩니다.
                 </p>
+                <div className="flex flex-wrap items-center gap-2 pt-1">
+                  <a
+                    href={icalUrl || GOOGLE_CALENDAR_DEFAULT_URL}
+                    className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white hover:bg-blue-100 text-blue-700 border border-blue-300 font-bold text-xs transition-colors"
+                  >
+                    <Download className="w-3.5 h-3.5" />
+                    구글에서 최신 basic.ics 직접 받기 (1초)
+                  </a>
+                  <label className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs cursor-pointer transition-colors">
+                    <Upload className="w-3.5 h-3.5" />
+                    받은 basic.ics 파일 바로 선택
+                    <input type="file" accept=".ics" onChange={handleFileUpload} className="hidden" />
+                  </label>
+                </div>
               </div>
 
               <div className="flex gap-2">

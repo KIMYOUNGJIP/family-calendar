@@ -45,6 +45,16 @@ export function parseICSDateTime(dtStr: string): { date: string; time: string } 
 export function inferMemberId(title: string, description: string = ''): MemberId {
   const text = `${title} ${description}`.toLowerCase();
 
+  // 시댁/처가 생신·생일·제사·명절은 가족 공통 일정으로 분류 (예: 별이아빠생일(처가), 서울아빠제사(시댁))
+  if (
+    text.includes('처가') ||
+    text.includes('시댁') ||
+    text.includes('제사') ||
+    text.includes('생신')
+  ) {
+    return 'family';
+  }
+
   if (
     text.includes('은비') ||
     text.includes('[은비]') ||
@@ -87,6 +97,8 @@ export function inferMemberId(title: string, description: string = ''): MemberId
     text.includes('저녁식사') ||
     text.includes('저녁 식사') ||
     text.includes('외식') ||
+    text.includes('여전도') ||
+    text.includes('8여') ||
     text.includes('아빠') ||
     text.includes('엄마') ||
     text.includes('영집') ||
@@ -426,7 +438,13 @@ export function parseICSContent(icsText: string): Schedule[] {
         }
       } else if (item.memberId === 'parents') {
         const titleLower = item.title.toLowerCase();
-        const isMom = titleLower.includes('엄마') || titleLower.includes('아내') || titleLower.includes('마누라') || titleLower.includes('미선');
+        const isMom =
+          titleLower.includes('엄마') ||
+          titleLower.includes('아내') ||
+          titleLower.includes('마누라') ||
+          titleLower.includes('미선') ||
+          titleLower.includes('여전도') ||
+          titleLower.includes('8여');
         guardian = isMom ? '엄마' : '나(아빠)';
         
         const isMeeting =

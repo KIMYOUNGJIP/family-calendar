@@ -22,7 +22,9 @@ export function matchesMemberFilter(sch: { memberId: MemberId; title: string; gu
       text.includes('엄마') ||
       text.includes('아내') ||
       text.includes('마누라') ||
-      text.includes('미선')
+      text.includes('미선') ||
+      text.includes('여전도') ||
+      text.includes('8여')
     );
   }
   return sch.memberId === filter;

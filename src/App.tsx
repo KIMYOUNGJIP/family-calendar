@@ -73,15 +73,25 @@ export const App: React.FC = () => {
     };
 
     try {
-      // 1. 원격 구글 캘린더 프록시 fetch 우선 시도 (캐시 방지 파라미터 포함)
+      // 1. 원격 구글 캘린더 프록시 fetch 우선 시도 (3.5초 타임아웃 적용하여 1MB 파일 프록시 지연 방지)
       const cacheBuster = `?t=${Date.now()}`;
       const fetchUrl = `${GOOGLE_CALENDAR_DEFAULT_URL}${cacheBuster}`;
+      const fetchWithTimeout = async (url: string, ms = 3500) => {
+        const controller = new AbortController();
+        const timer = setTimeout(() => controller.abort(), ms);
+        try {
+          return await fetch(url, { signal: controller.signal });
+        } finally {
+          clearTimeout(timer);
+        }
+      };
+
       let res: Response | null = null;
       try {
-        res = await fetch(`https://api.allorigins.win/raw?url=${encodeURIComponent(fetchUrl)}`);
+        res = await fetchWithTimeout(`https://api.allorigins.win/raw?url=${encodeURIComponent(fetchUrl)}`);
       } catch {
         try {
-          res = await fetch(`https://corsproxy.io/?url=${encodeURIComponent(fetchUrl)}`);
+          res = await fetchWithTimeout(`https://corsproxy.io/?url=${encodeURIComponent(fetchUrl)}`);
         } catch {
           res = null;
         }
@@ -101,19 +111,21 @@ export const App: React.FC = () => {
         }
       }
 
-      // 2. 프록시 실패 시 배포 번들 내의 최신 ICS 파일 fetch 시도
+      // 2. 프록시 타임아웃 시 배포 서버의 최신 ICS 파일 즉시 fetch
       try {
         const localRes = await fetch(`./google_calendar.ics?t=${Date.now()}`);
         if (localRes.ok) {
           const text = await localRes.text();
-          const parsed = parseICSContent(text);
-          if (parsed && parsed.length > 0) {
-            mergeWithUserSchedules(parsed);
-            if (showFeedback) {
-              setLastSyncMessage(`✓ 최신 캘린더 동기화 완료 (${parsed.length.toLocaleString()}건)`);
-              setTimeout(() => setLastSyncMessage(null), 4000);
+          if (text.includes('BEGIN:VCALENDAR')) {
+            const parsed = parseICSContent(text);
+            if (parsed && parsed.length > 0) {
+              mergeWithUserSchedules(parsed);
+              if (showFeedback) {
+                setLastSyncMessage(`✓ 최신 가족 캘린더 동기화 완료 (${parsed.length.toLocaleString()}건 반영)`);
+                setTimeout(() => setLastSyncMessage(null), 4000);
+              }
+              return;
             }
-            return;
           }
         }
       } catch {
@@ -240,10 +252,16 @@ export const App: React.FC = () => {
     saveSchedules(newSchedules);
   };
 
-  // 구글 캘린더 가져오기 완료 시
+  // 구글 캘린더 가져오기 완료 시 (사이트에서 직접 추가한 커스텀 일정은 보존)
   const handleImportGoogleSchedules = (importedSchedules: Schedule[]) => {
-    setSchedules(importedSchedules);
-    saveSchedules(importedSchedules);
+    setSchedules((prev) => {
+      const customSchedules = prev.filter(
+        (s) => s.id.startsWith('sch-') || s.id.startsWith('parent-meeting-')
+      );
+      const merged = [...importedSchedules, ...customSchedules];
+      saveSchedules(merged);
+      return merged;
+    });
   };
 
   // 모달 열기

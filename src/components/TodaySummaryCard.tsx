@@ -100,7 +100,14 @@ export const TodaySummaryCard: React.FC<TodaySummaryCardProps> = ({
 
   const getParentMeetingRole = (title: string, guardian?: string) => {
     const t = (title + ' ' + (guardian || '')).toLowerCase();
-    if (t.includes('엄마') || t.includes('아내') || t.includes('마누라') || t.includes('미선')) {
+    if (
+      t.includes('엄마') ||
+      t.includes('아내') ||
+      t.includes('마누라') ||
+      t.includes('미선') ||
+      t.includes('여전도') ||
+      t.includes('8여')
+    ) {
       return { name: '엄마', avatar: '👩', badgeClass: 'bg-rose-500/30 text-rose-200 border-rose-400/40' };
     }
     if (t.includes('아빠') || t.includes('남편') || t.includes('영집')) {

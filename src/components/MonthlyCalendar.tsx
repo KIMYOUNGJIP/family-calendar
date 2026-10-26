@@ -36,7 +36,13 @@ export const MonthlyCalendar: React.FC<MonthlyCalendarProps> = ({
 
   const getCustomBadgeStyle = (sch: Schedule) => {
     const t = `${sch.title} ${sch.guardian || ''}`.toLowerCase();
-    if (t.includes('엄마') || t.includes('아내') || t.includes('마누라')) {
+    if (
+      t.includes('엄마') ||
+      t.includes('아내') ||
+      t.includes('마누라') ||
+      t.includes('여전도') ||
+      t.includes('8여')
+    ) {
       return { avatar: '👩', badgeClass: 'bg-rose-100 text-rose-800 border border-rose-200' };
     }
     if (t.includes('아빠') || t.includes('남편') || t.includes('자동차')) {
