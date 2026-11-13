@@ -1,9 +1,13 @@
 import React from 'react';
 import { Schedule } from '../types/calendar';
-import { FAMILY_MEMBERS } from '../utils/sampleData';
 import { getMonthGrid, getTodayString } from '../utils/dateUtils';
-import { MemberFilter, matchesMemberFilter } from './FilterBar';
-import { Clock } from 'lucide-react';
+import {
+  MemberFilter,
+  matchesMemberFilter,
+  isRegularClassSchedule,
+  getScheduleRoleStyle,
+} from './FilterBar';
+import { GraduationCap, Eye, EyeOff } from 'lucide-react';
 
 interface MonthlyCalendarProps {
   currentDate: Date;
@@ -11,6 +15,8 @@ interface MonthlyCalendarProps {
   onSelectDate: (dateStr: string) => void;
   schedules: Schedule[];
   memberFilter: MemberFilter;
+  showRegularClasses: boolean;
+  onToggleRegularClasses: () => void;
 }
 
 export const MonthlyCalendar: React.FC<MonthlyCalendarProps> = ({
@@ -19,6 +25,8 @@ export const MonthlyCalendar: React.FC<MonthlyCalendarProps> = ({
   onSelectDate,
   schedules,
   memberFilter,
+  showRegularClasses,
+  onToggleRegularClasses,
 }) => {
   const year = currentDate.getFullYear();
   const month = currentDate.getMonth();
@@ -26,70 +34,86 @@ export const MonthlyCalendar: React.FC<MonthlyCalendarProps> = ({
 
   const cells = getMonthGrid(year, month);
 
-  // 날짜별 일정 그룹핑
+  // 날짜별 일정 그룹핑 (특별 일정을 항상 최상단에 우선 정렬)
   const schedulesByDate: Record<string, Schedule[]> = {};
+  const hiddenRegularCountByDate: Record<string, number> = {};
+
   for (const s of schedules) {
     if (!matchesMemberFilter(s, memberFilter)) continue;
+    const isRegular = isRegularClassSchedule(s);
+    if (!showRegularClasses && isRegular) {
+      hiddenRegularCountByDate[s.date] = (hiddenRegularCountByDate[s.date] || 0) + 1;
+      continue;
+    }
     if (!schedulesByDate[s.date]) schedulesByDate[s.date] = [];
     schedulesByDate[s.date].push(s);
   }
 
-  const getCustomBadgeStyle = (sch: Schedule) => {
-    const t = `${sch.title} ${sch.guardian || ''}`.toLowerCase();
-    if (
-      t.includes('엄마') ||
-      t.includes('아내') ||
-      t.includes('마누라') ||
-      t.includes('여전도') ||
-      t.includes('8여')
-    ) {
-      return { avatar: '👩', badgeClass: 'bg-rose-100 text-rose-800 border border-rose-200' };
-    }
-    if (t.includes('아빠') || t.includes('남편') || t.includes('자동차')) {
-      return { avatar: '👨', badgeClass: 'bg-indigo-100 text-indigo-800 border border-indigo-200' };
-    }
-    const member = FAMILY_MEMBERS[sch.memberId];
-    return { avatar: member.avatar, badgeClass: member.color.bgBadge };
-  };
+  for (const dateKey of Object.keys(schedulesByDate)) {
+    schedulesByDate[dateKey].sort((a, b) => {
+      const aReg = isRegularClassSchedule(a) ? 1 : 0;
+      const bReg = isRegularClassSchedule(b) ? 1 : 0;
+      if (aReg !== bReg) return aReg - bReg; // 특별 일정(0)이 정규 수업(1)보다 항상 먼저 표시됨
+      return a.startTime.localeCompare(b.startTime);
+    });
+  }
 
   return (
-    <section className="bg-white rounded-3xl border border-slate-200/90 shadow-sm p-4 sm:p-6 mb-6">
-      {/* Calendar Top Info & Legend */}
+    <section className="bg-white rounded-3xl border border-slate-200/90 shadow-xs p-4 sm:p-5">
+      {/* Calendar Top Info & Regular Classes Toggle */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4 pb-3 border-b border-slate-100">
         <div>
-          <h2 className="text-lg sm:text-xl font-black text-slate-900 flex items-center gap-2">
+          <h2 className="text-lg sm:text-xl font-black text-slate-900 flex items-center gap-2 flex-wrap">
             <span>📅 {year}년 {month + 1}월 가족 달력</span>
-            <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-slate-100 text-slate-600">
-              날짜 클릭 시 상단 브리핑 · 주간 일정 이동
+            <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-indigo-50 text-indigo-700 border border-indigo-100">
+              특별 일정 최우선 표시
             </span>
           </h2>
           <p className="text-xs text-slate-500 mt-0.5">
-            온 가족 일정과 자녀별 귀가 시간을 한눈에 파악할 수 있습니다.
+            날짜를 클릭하면 우측 상세 패널에서 해당 일자의 전체 일정을 확인하고 바로 등록할 수 있습니다.
           </p>
         </div>
 
-        {/* Color Legend for Accessibility */}
-        <div className="flex items-center gap-2 flex-wrap text-xs font-semibold">
-          <span className="inline-flex items-center gap-1 text-blue-700 bg-blue-50 px-2 py-0.5 rounded-md border border-blue-200">
-            <span className="w-2 h-2 rounded-full bg-blue-600"></span> 은비(파랑)
-          </span>
-          <span className="inline-flex items-center gap-1 text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-md border border-emerald-200">
-            <span className="w-2 h-2 rounded-full bg-emerald-600"></span> 하율(초록)
-          </span>
-          <span className="inline-flex items-center gap-1 text-indigo-700 bg-indigo-50 px-2 py-0.5 rounded-md border border-indigo-200">
-            <span className="w-2 h-2 rounded-full bg-indigo-600"></span> 아빠(남색)
-          </span>
-          <span className="inline-flex items-center gap-1 text-rose-700 bg-rose-50 px-2 py-0.5 rounded-md border border-rose-200">
-            <span className="w-2 h-2 rounded-full bg-rose-500"></span> 엄마(분홍)
-          </span>
-          <span className="inline-flex items-center gap-1 text-amber-700 bg-amber-50 px-2 py-0.5 rounded-md border border-amber-200">
-            <span className="w-2 h-2 rounded-full bg-orange-600"></span> 가족 공통(주황)
-          </span>
+        {/* Regular Class Visibility Toggle */}
+        <div className="flex items-center gap-2 self-start sm:self-auto">
+          <button
+            type="button"
+            onClick={onToggleRegularClasses}
+            className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold border transition-all cursor-pointer ${
+              showRegularClasses
+                ? 'bg-indigo-50 text-indigo-700 border-indigo-200 hover:bg-indigo-100'
+                : 'bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200'
+            }`}
+            title="은비·하율이의 반복 학교/학원 정규수업을 달력 칸에 함께 표시할지 선택합니다"
+          >
+            <GraduationCap className="w-3.5 h-3.5" />
+            <span>정규수업 {showRegularClasses ? '표시 중' : '숨김'}</span>
+            {showRegularClasses ? <Eye className="w-3.5 h-3.5" /> : <EyeOff className="w-3.5 h-3.5" />}
+          </button>
         </div>
       </div>
 
+      {/* Color Legend */}
+      <div className="flex items-center gap-1.5 flex-wrap text-[11px] font-semibold mb-3">
+        <span className="inline-flex items-center gap-1 text-blue-700 bg-blue-50 px-2 py-0.5 rounded-md border border-blue-200">
+          <span className="w-2 h-2 rounded-full bg-blue-600"></span> 은비
+        </span>
+        <span className="inline-flex items-center gap-1 text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-md border border-emerald-200">
+          <span className="w-2 h-2 rounded-full bg-emerald-600"></span> 하율
+        </span>
+        <span className="inline-flex items-center gap-1 text-indigo-700 bg-indigo-50 px-2 py-0.5 rounded-md border border-indigo-200">
+          <span className="w-2 h-2 rounded-full bg-indigo-600"></span> 아빠
+        </span>
+        <span className="inline-flex items-center gap-1 text-rose-700 bg-rose-50 px-2 py-0.5 rounded-md border border-rose-200">
+          <span className="w-2 h-2 rounded-full bg-rose-500"></span> 엄마
+        </span>
+        <span className="inline-flex items-center gap-1 text-amber-800 bg-amber-50 px-2 py-0.5 rounded-md border border-amber-200">
+          <span className="w-2 h-2 rounded-full bg-orange-500"></span> 가족 공통
+        </span>
+      </div>
+
       {/* Weekday Header */}
-      <div className="grid grid-cols-7 gap-1 sm:gap-2 mb-2 text-center text-xs font-black">
+      <div className="grid grid-cols-7 gap-1 sm:gap-1.5 mb-1.5 text-center text-xs font-black">
         <div className="py-1 text-rose-500">일</div>
         <div className="py-1 text-slate-700">월</div>
         <div className="py-1 text-slate-700">화</div>
@@ -100,36 +124,30 @@ export const MonthlyCalendar: React.FC<MonthlyCalendarProps> = ({
       </div>
 
       {/* Days Grid */}
-      <div className="grid grid-cols-7 gap-1 sm:gap-2">
+      <div className="grid grid-cols-7 gap-1 sm:gap-1.5">
         {cells.map((cell) => {
           const isSelected = cell.dateStr === selectedDateStr;
           const isToday = cell.dateStr === todayStr;
           const daySchedules = schedulesByDate[cell.dateStr] || [];
-          // 귀가 시간 목록 (첫째/둘째 위주)
-          const childSchedules = daySchedules.filter(
-            (s) => s.memberId === 'first_child' || s.memberId === 'second_child'
-          );
-          const latestReturnTime =
-            childSchedules.length > 0
-              ? childSchedules.reduce((prev, curr) => (curr.returnTime > prev.returnTime ? curr : prev)).returnTime
-              : null;
+          const hiddenRegularCount = hiddenRegularCountByDate[cell.dateStr] || 0;
 
           return (
             <button
               key={cell.dateStr}
+              type="button"
               onClick={() => onSelectDate(cell.dateStr)}
-              className={`min-h-[76px] sm:min-h-[96px] p-1.5 sm:p-2 rounded-2xl flex flex-col justify-between text-left transition-all relative border cursor-pointer ${
+              className={`min-h-[82px] sm:min-h-[104px] p-1.5 sm:p-2 rounded-2xl flex flex-col justify-start text-left transition-all relative border cursor-pointer ${
                 isSelected
-                  ? 'border-indigo-600 bg-indigo-50/50 shadow-sm ring-2 ring-indigo-500 ring-offset-1 z-10'
+                  ? 'border-indigo-600 bg-indigo-50/40 shadow-xs ring-2 ring-indigo-500 ring-offset-1 z-10'
                   : isToday
                   ? 'border-amber-400 bg-amber-50/30'
                   : cell.isCurrentMonth
-                  ? 'border-slate-100 bg-white hover:border-slate-300 hover:bg-slate-50/80'
-                  : 'border-slate-100/50 bg-slate-50/40 text-slate-300 opacity-60'
+                  ? 'border-slate-100 bg-white hover:border-slate-300 hover:bg-slate-50/70'
+                  : 'border-slate-100/50 bg-slate-50/40 text-slate-300 opacity-55'
               }`}
             >
-              {/* Day Number and Today / Selected Badges */}
-              <div className="flex items-center justify-between w-full">
+              {/* Day Number and Today Badge */}
+              <div className="flex items-center justify-between w-full mb-1">
                 <span
                   className={`w-6 h-6 rounded-full flex items-center justify-center text-xs font-black ${
                     isToday
@@ -147,43 +165,43 @@ export const MonthlyCalendar: React.FC<MonthlyCalendarProps> = ({
                 </span>
 
                 {isToday && (
-                  <span className="text-[10px] font-bold text-amber-600 bg-amber-100 px-1.5 py-0.2 rounded-full">
+                  <span className="text-[9px] sm:text-[10px] font-bold text-amber-700 bg-amber-100 px-1.5 py-0.2 rounded-full">
                     오늘
                   </span>
                 )}
               </div>
 
-              {/* Schedules Overview Preview */}
-              <div className="mt-1 space-y-1 w-full overflow-hidden">
-                {daySchedules.slice(0, 2).map((sch) => {
-                  const style = getCustomBadgeStyle(sch);
+              {/* Schedules Preview (Up to 3 items, Special events prioritized first) */}
+              <div className="space-y-1 w-full overflow-hidden flex-1">
+                {daySchedules.slice(0, 3).map((sch) => {
+                  const style = getScheduleRoleStyle(sch);
+                  const isSpecial = !isRegularClassSchedule(sch);
+                  const cleanTitle = sch.title.replace(/^\[(은비|하율)\]\s*/, '');
                   return (
                     <div
                       key={sch.id}
-                      className={`text-[10px] sm:text-[11px] font-bold px-1.5 py-0.5 rounded-md truncate flex items-center gap-1 ${style.badgeClass}`}
+                      className={`text-[10px] sm:text-[11px] px-1.5 py-0.5 rounded-md truncate flex items-center gap-1 ${
+                        style.badgeClass
+                      } ${isSpecial ? 'font-extrabold ring-1 ring-inset ring-black/10' : 'font-semibold opacity-90'}`}
                     >
-                      <span className="shrink-0">{style.avatar}</span>
-                      <span className="truncate">{sch.title}</span>
+                      <span className="shrink-0 text-[10px]">{style.avatar}</span>
+                      <span className="truncate">{cleanTitle}</span>
                     </div>
                   );
                 })}
 
-                {daySchedules.length > 2 && (
+                {daySchedules.length > 3 && (
                   <div className="text-[9px] font-bold text-slate-500 pl-1">
-                    +{daySchedules.length - 2}개 더보기
+                    +{daySchedules.length - 3}개 더보기
+                  </div>
+                )}
+
+                {!showRegularClasses && daySchedules.length === 0 && hiddenRegularCount > 0 && (
+                  <div className="text-[9px] font-medium text-slate-400 pl-0.5 pt-1">
+                    정규수업 {hiddenRegularCount}건
                   </div>
                 )}
               </div>
-
-              {/* Bottom Return Time Highlight */}
-              {latestReturnTime ? (
-                <div className="mt-1 pt-1 border-t border-slate-100 text-[10px] sm:text-[11px] font-bold text-slate-700 flex items-center gap-0.5">
-                  <Clock className="w-2.5 h-2.5 text-slate-400" />
-                  <span>귀가 {latestReturnTime}</span>
-                </div>
-              ) : (
-                <div className="h-3 sm:h-4"></div>
-              )}
             </button>
           );
         })}

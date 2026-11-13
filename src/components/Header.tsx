@@ -55,14 +55,14 @@ export const Header: React.FC<HeaderProps> = ({
           {/* Brand & Live Date/Time */}
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-2xl bg-linear-to-tr from-amber-500 to-orange-400 flex items-center justify-center text-white shadow-md shadow-orange-100 font-bold text-xl">
-                🏠
+              <div className="w-10 h-10 rounded-2xl bg-linear-to-tr from-indigo-600 to-blue-500 flex items-center justify-center text-white shadow-md shadow-indigo-100 font-bold text-xl">
+                📅
               </div>
               <div>
                 <h1 className="text-xl sm:text-2xl font-black tracking-tight text-slate-800 flex items-center gap-2 flex-wrap">
-                  우리 가족 저녁 스케줄
-                  <span className="hidden sm:inline-block text-xs font-semibold px-2 py-0.5 rounded-full bg-amber-100 text-amber-800 border border-amber-200">
-                    저녁 5초 브리핑
+                  우리 가족 캘린더
+                  <span className="hidden sm:inline-block text-xs font-semibold px-2 py-0.5 rounded-full bg-indigo-50 text-indigo-700 border border-indigo-200">
+                    가족 일정 관리 허브
                   </span>
                   <span className="inline-flex items-center gap-1 text-xs font-bold px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200">
                     🏡 시흥시 목감동

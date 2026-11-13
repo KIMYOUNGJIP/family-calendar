@@ -1,9 +1,31 @@
 import React, { useState } from 'react';
 import { Schedule } from '../types/calendar';
-import { FAMILY_MEMBERS } from '../utils/sampleData';
-import { getWeekDays, formatKoreanShortDate, getTodayString, parseDate, addDays } from '../utils/dateUtils';
-import { MemberFilter, matchesMemberFilter } from './FilterBar';
-import { Clock, Utensils, Bus, Footprints, Car, Plus, Trash2, Edit2, AlertCircle, Sparkles, LayoutGrid, CalendarRange, ChevronLeft, ChevronRight } from 'lucide-react';
+import {
+  getWeekDays,
+  formatKoreanShortDate,
+  getTodayString,
+  addDays,
+  DAY_NAMES_KO,
+} from '../utils/dateUtils';
+import {
+  MemberFilter,
+  matchesMemberFilter,
+  isRegularClassSchedule,
+  getScheduleRoleStyle,
+} from './FilterBar';
+import {
+  Clock,
+  Plus,
+  Trash2,
+  Edit2,
+  LayoutGrid,
+  CalendarRange,
+  ChevronLeft,
+  ChevronRight,
+  GraduationCap,
+  Eye,
+  EyeOff,
+} from 'lucide-react';
 
 interface WeeklyScheduleProps {
   selectedDateStr: string;
@@ -12,6 +34,8 @@ interface WeeklyScheduleProps {
   onOpenScheduleModal: (schedule?: Schedule, defaultDate?: string) => void;
   onDeleteSchedule: (id: string) => void;
   memberFilter: MemberFilter;
+  showRegularClasses?: boolean;
+  onToggleRegularClasses?: () => void;
 }
 
 export const WeeklySchedule: React.FC<WeeklyScheduleProps> = ({
@@ -21,19 +45,13 @@ export const WeeklySchedule: React.FC<WeeklyScheduleProps> = ({
   onOpenScheduleModal,
   onDeleteSchedule,
   memberFilter,
+  showRegularClasses = true,
+  onToggleRegularClasses,
 }) => {
   const [viewMode, setViewMode] = useState<'timeline' | 'grid'>('timeline');
-  const [showAllCurrentWeek, setShowAllCurrentWeek] = useState<boolean>(false);
   const todayStr = getTodayString();
   const weekDays = getWeekDays(selectedDateStr);
-
   const isViewingCurrentWeek = weekDays.some((d) => d.dateStr === todayStr);
-  // 이번 주를 보고 있을 때 기본은 오늘 이후만 표시하되, 사용자가 이번 주의 이전 요일(예: 금요일에 목요일 탭 클릭)을 선택했거나 전체 보기를 켠 경우 월~일 전체 표시
-  const shouldShowFullWeek = !isViewingCurrentWeek || showAllCurrentWeek || selectedDateStr < todayStr;
-  const upcomingDays = shouldShowFullWeek
-    ? weekDays
-    : weekDays.filter((d) => d.dateStr >= todayStr);
-  const targetDays = upcomingDays.length > 0 ? upcomingDays : weekDays;
 
   const handlePrevWeek = () => {
     onSelectDate(addDays(selectedDateStr, -7));
@@ -43,256 +61,46 @@ export const WeeklySchedule: React.FC<WeeklyScheduleProps> = ({
   };
 
   // 필터 적용
-  const filteredSchedules = schedules.filter((s) => matchesMemberFilter(s, memberFilter));
+  const filteredSchedules = schedules.filter((s) => {
+    if (!matchesMemberFilter(s, memberFilter)) return false;
+    if (!showRegularClasses && isRegularClassSchedule(s)) return false;
+    return true;
+  });
 
   const getSchedulesForDay = (dateStr: string) => {
     return filteredSchedules
       .filter((s) => s.date === dateStr)
-      .sort((a, b) => a.startTime.localeCompare(b.startTime));
+      .sort((a, b) => {
+        const aReg = isRegularClassSchedule(a) ? 1 : 0;
+        const bReg = isRegularClassSchedule(b) ? 1 : 0;
+        if (aReg !== bReg) return aReg - bReg;
+        return a.startTime.localeCompare(b.startTime);
+      });
   };
 
-  const renderTransitIcon = (method: string) => {
-    if (method.includes('셔틀') || method.includes('버스')) return <Bus className="w-3.5 h-3.5" />;
-    if (method.includes('도보')) return <Footprints className="w-3.5 h-3.5" />;
-    if (method.includes('픽업') || method.includes('차')) return <Car className="w-3.5 h-3.5" />;
-    return <Clock className="w-3.5 h-3.5" />;
-  };
-
-  const renderDinnerBadge = (status: Schedule['dinnerStatus']) => {
-    switch (status) {
-      case 'required':
-        return (
-          <span className="text-[11px] font-bold px-2 py-0.5 rounded-full bg-amber-100 text-amber-900 border border-amber-300 flex items-center gap-1">
-            <Utensils className="w-3 h-3 text-amber-700" />
-            🍚 저녁 필요
-          </span>
-        );
-      case 'completed':
-        return (
-          <span className="text-[11px] font-medium px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800">
-            식사 완료
-          </span>
-        );
-      case 'snack_only':
-        return (
-          <span className="text-[11px] font-medium px-2 py-0.5 rounded-full bg-orange-100 text-orange-800">
-            간식만
-          </span>
-        );
-      case 'not_required':
-      default:
-        return null;
-    }
-  };
-
-  // 은비/하율 및 구성원별 귀가 및 이동 상태 안내 계산
-  // 규칙:
-  // 1. 은비(동남보건대): 수업을 모두 듣고 마지막에만 귀가하므로, 해당 일의 마지막 수업에만 '귀가' 표기하고 앞선 수업은 '수업 종료 (교내 체류)' 표기
-  // 2. 하율:
-  //    - 월·수: 영어(18:05 1차 귀가 및 저녁 식사) ➔ 태권도(20:05 최종 귀가, 식사 완료)
-  //    - 목: 수학(19:05 1차 귀가 및 7~8시 저녁 식사) ➔ 태권도 8시부(21:05 최종 귀가, 식사 완료)
-  //    - 화·금: 수학-태권도 연속 수강 후 태권도 종료 시(20:05) 최종 귀가 및 저녁 식사
-  const getScheduleStatus = (sch: Schedule, daySchedules: Schedule[]) => {
-    // 0 = Sun, 1 = Mon, 2 = Tue, 3 = Wed, 4 = Thu, 5 = Fri, 6 = Sat
-    const dayOfWeek = parseDate(sch.date).getDay();
-
-    if (sch.memberId === 'first_child') {
-      const eunbiClasses = daySchedules.filter((s) => s.memberId === 'first_child');
-      if (eunbiClasses.length > 1) {
-        const latestClass = [...eunbiClasses].sort((a, b) => b.returnTime.localeCompare(a.returnTime))[0];
-        if (sch.id !== latestClass.id) {
-          return {
-            isReturnHome: false,
-            label: '수업 종료 (교내 체류)',
-            timeDisplay: `${sch.returnTime} 수업 종료`,
-            gridTimeDisplay: `${sch.returnTime} 종료`,
-            pillText: '🏫 캠퍼스 체류 (다음 강의)',
-            pillClass: 'bg-slate-100 text-slate-700 border border-slate-200',
-            dinnerStatus: 'not_required' as const,
-          };
-        }
-      }
-      return {
-        isReturnHome: true,
-        label: '목감 귀가 예정',
-        timeDisplay: `${sch.returnTime} 귀가`,
-        gridTimeDisplay: `${sch.returnTime} 귀가`,
-        pillText: '🎓 동남보건대 ➔ 목감 귀가',
-        pillClass: 'bg-blue-100 text-blue-800 border border-blue-200',
-        dinnerStatus: 'required' as const,
-      };
-    }
-
-    if (sch.memberId === 'second_child') {
-      // 하율: 월·수는 영어 후 저녁, 목요일은 수학 후(7~8시) 저녁, 화·금은 태권도 후 저녁 필요
-      let isHayulDinnerCard = false;
-      const title = sch.title.toLowerCase();
-      if (dayOfWeek === 1 || dayOfWeek === 3) {
-        isHayulDinnerCard = title.includes('영어');
-      } else if (dayOfWeek === 4) {
-        isHayulDinnerCard = title.includes('수학');
-      } else if (dayOfWeek === 2 || dayOfWeek === 5) {
-        isHayulDinnerCard = title.includes('태권도');
-      }
-
-      const dinnerStatus = isHayulDinnerCard ? ('required' as const) : ('not_required' as const);
-
-      if (sch.title.includes('학교')) {
-        return {
-          isReturnHome: true,
-          label: '하교 및 귀가',
-          timeDisplay: `${sch.returnTime} 하교 귀가`,
-          gridTimeDisplay: `${sch.returnTime} 하교`,
-          pillText: '🏫 목감 학교 (도보 통학)',
-          pillClass: 'bg-emerald-50 text-emerald-800 border border-emerald-200',
-          dinnerStatus,
-        };
-      }
-
-      // 목요일 전용: 수학(19:05 귀가 및 7~8시 저녁 식사) ➔ 태권도 8시부(21:05 최종 귀가)
-      if (dayOfWeek === 4) {
-        if (title.includes('수학')) {
-          return {
-            isReturnHome: true,
-            label: '1차 귀가 (7~8시 저녁 식사)',
-            timeDisplay: `${sch.returnTime} 귀가(저녁)`,
-            gridTimeDisplay: `${sch.returnTime} 저녁`,
-            pillText: '🍚 19:05 귀가 (7~8시 저녁 후 8시부 태권도)',
-            pillClass: 'bg-amber-100 text-amber-900 border border-amber-300 font-bold',
-            dinnerStatus,
-          };
-        }
-        if (title.includes('태권도')) {
-          return {
-            isReturnHome: true,
-            label: '최종 귀가 예정 (8시부)',
-            timeDisplay: `${sch.returnTime} 최종 귀가`,
-            gridTimeDisplay: `${sch.returnTime} 귀가`,
-            pillText: '🏠 21:05 최종 귀가 (7~8시 식사 완료)',
-            pillClass: 'bg-emerald-100 text-emerald-800 border border-emerald-200',
-            dinnerStatus,
-          };
-        }
-      }
-
-      // 월·수요일 전용: 영어(18:05 귀가 및 저녁 식사) ➔ 태권도(20:05 최종 귀가)
-      if (dayOfWeek === 1 || dayOfWeek === 3) {
-        if (title.includes('영어')) {
-          return {
-            isReturnHome: true,
-            label: '1차 귀가 (저녁 식사)',
-            timeDisplay: `${sch.returnTime} 귀가(저녁)`,
-            gridTimeDisplay: `${sch.returnTime} 저녁`,
-            pillText: '🍚 18:05 귀가 (저녁 식사 후 태권도)',
-            pillClass: 'bg-amber-100 text-amber-900 border border-amber-300 font-bold',
-            dinnerStatus,
-          };
-        }
-        if (title.includes('태권도')) {
-          return {
-            isReturnHome: true,
-            label: '최종 귀가 예정',
-            timeDisplay: `${sch.returnTime} 최종 귀가`,
-            gridTimeDisplay: `${sch.returnTime} 귀가`,
-            pillText: '🏠 20:05 최종 귀가 (식사 완료)',
-            pillClass: 'bg-emerald-100 text-emerald-800 border border-emerald-200',
-            dinnerStatus,
-          };
-        }
-      }
-
-      // 금요일 영어(17:00~18:00) ➔ 수학(18:00~19:00) 바로 이동
-      if (dayOfWeek === 5 && title.includes('영어')) {
-        return {
-          isReturnHome: false,
-          label: '다음 학원 이동',
-          timeDisplay: `${sch.returnTime} 수학 이동`,
-          gridTimeDisplay: `${sch.returnTime} 이동`,
-          pillText: '📚 수학학원으로 바로 이동',
-          pillClass: 'bg-purple-100 text-purple-800 border border-purple-200',
-          dinnerStatus,
-        };
-      }
-
-      if (sch.memo?.includes('귀가하지 않고') || sch.memo?.includes('바로 이동')) {
-        return {
-          isReturnHome: false,
-          label: '다음 학원 이동',
-          timeDisplay: `${sch.returnTime} 태권도 이동`,
-          gridTimeDisplay: `${sch.returnTime} 이동`,
-          pillText: '🥋 태권도로 바로 이동',
-          pillClass: 'bg-purple-100 text-purple-800 border border-purple-200',
-          dinnerStatus,
-        };
-      }
-      if (sch.memo?.includes('연속 수강')) {
-        return {
-          isReturnHome: true,
-          label: '최종 귀가 예정',
-          timeDisplay: `${sch.returnTime} 귀가`,
-          gridTimeDisplay: `${sch.returnTime} 귀가`,
-          pillText: '🏠 태권도 후 최종 귀가',
-          pillClass: 'bg-emerald-100 text-emerald-800 border border-emerald-200',
-          dinnerStatus,
-        };
-      }
-      return {
-        isReturnHome: true,
-        label: '귀가 예정 시각',
-        timeDisplay: `${sch.returnTime} 귀가`,
-        gridTimeDisplay: `${sch.returnTime} 귀가`,
-        pillText: '🏫 목감 학원 (도보 5분)',
-        pillClass: 'bg-emerald-100 text-emerald-800 border border-emerald-200',
-        dinnerStatus,
-      };
-    }
-
+  const getCleanMemo = (memo?: string) => {
+    if (!memo) return null;
     if (
-      sch.memberId === 'parents' ||
-      sch.title.includes('모임') ||
-      sch.title.includes('회식') ||
-      sch.title.includes('약속') ||
-      sch.title.includes('외식')
+      memo.includes('저녁 식사') ||
+      memo.includes('집밥 불필요') ||
+      memo.includes('목감 귀가') ||
+      memo.includes('도보 5분') ||
+      memo.includes('바로 이동') ||
+      memo.includes('다음 강의 대기')
     ) {
-      const isDad = sch.title.includes('아빠') || sch.guardian.includes('아빠');
-      const isMom =
-        sch.title.includes('엄마') ||
-        sch.title.includes('아내') ||
-        sch.title.includes('마누라') ||
-        sch.title.includes('여전도') ||
-        sch.title.includes('8여') ||
-        sch.guardian.includes('엄마');
-      const role = isMom ? '엄마' : isDad ? '아빠' : '부모';
-      return {
-        isReturnHome: true,
-        label: `${role} 모임 후 귀가 예정`,
-        timeDisplay: `${sch.returnTime} 귀가`,
-        gridTimeDisplay: `${sch.returnTime} 귀가`,
-        pillText: '🍷 저녁 모임 (외부 식사)',
-        pillClass: 'bg-purple-100 text-purple-800 border border-purple-200',
-        dinnerStatus: sch.dinnerStatus,
-      };
+      return null;
     }
-
-    return {
-      isReturnHome: true,
-      label: '귀가 예정 시각',
-      timeDisplay: `${sch.returnTime} 귀가`,
-      gridTimeDisplay: `${sch.returnTime} 귀가`,
-      pillText: null,
-      pillClass: null,
-      dinnerStatus: sch.dinnerStatus,
-    };
+    return memo;
   };
 
   return (
-    <section className="bg-white rounded-3xl border border-slate-200/90 shadow-sm p-4 sm:p-6 mb-6">
+    <section className="bg-white rounded-3xl border border-slate-200/90 shadow-xs p-4 sm:p-6 mb-6">
       {/* Section Header */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4 pb-3 border-b border-slate-100">
         <div>
           <div className="flex items-center gap-2 flex-wrap">
             <h2 className="text-lg sm:text-xl font-black text-slate-900">
-              📅 {isViewingCurrentWeek ? '이번 주' : '주간'} 상세 스케줄 (월~일)
+              📋 {isViewingCurrentWeek ? '이번 주' : '주간'} 가족 타임라인 (월~일)
             </h2>
             <div className="flex items-center bg-slate-100 rounded-xl p-0.5 border border-slate-200">
               <button
@@ -303,8 +111,8 @@ export const WeeklySchedule: React.FC<WeeklyScheduleProps> = ({
               >
                 <ChevronLeft className="w-4 h-4" />
               </button>
-              <span className="text-xs font-bold text-indigo-800 px-2 py-0.5">
-                {formatKoreanShortDate(targetDays[0].dateStr)} ~ {formatKoreanShortDate(targetDays[targetDays.length - 1].dateStr)}
+              <span className="text-xs font-bold text-indigo-800 px-2.5 py-0.5">
+                {formatKoreanShortDate(weekDays[0].dateStr)} ~ {formatKoreanShortDate(weekDays[6].dateStr)}
               </span>
               <button
                 type="button"
@@ -315,41 +123,50 @@ export const WeeklySchedule: React.FC<WeeklyScheduleProps> = ({
                 <ChevronRight className="w-4 h-4" />
               </button>
             </div>
-            {isViewingCurrentWeek && (
-              <button
-                type="button"
-                onClick={() => setShowAllCurrentWeek((prev) => !prev)}
-                className="text-xs font-bold px-2.5 py-1 rounded-xl bg-indigo-50 hover:bg-indigo-100 text-indigo-700 border border-indigo-200 cursor-pointer transition-colors"
-              >
-                {shouldShowFullWeek ? '오늘 이후만 보기' : '이번 주 전체(월~일) 보기'}
-              </button>
-            )}
           </div>
           <p className="text-xs text-slate-500 mt-0.5">
-            자녀별 출발/귀가 시간, 부모님 저녁 모임, 이동 방법 및 식사 여부를 상세하게 확인하세요.
+            요일별 가족 전체 일정과 시간을 한눈에 확인하고 관리할 수 있습니다.
           </p>
         </div>
 
-        {/* View Toggle */}
-        <div className="flex items-center gap-2 self-end sm:self-auto">
+        {/* Controls: Regular Classes Toggle & View Toggle */}
+        <div className="flex items-center gap-2 self-end sm:self-auto flex-wrap">
+          {onToggleRegularClasses && (
+            <button
+              type="button"
+              onClick={onToggleRegularClasses}
+              className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold border transition-all cursor-pointer ${
+                showRegularClasses
+                  ? 'bg-indigo-50 text-indigo-700 border-indigo-200 hover:bg-indigo-100'
+                  : 'bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200'
+              }`}
+            >
+              <GraduationCap className="w-3.5 h-3.5" />
+              <span>정규수업 {showRegularClasses ? '포함' : '숨김'}</span>
+              {showRegularClasses ? <Eye className="w-3.5 h-3.5" /> : <EyeOff className="w-3.5 h-3.5" />}
+            </button>
+          )}
+
           <div className="hidden lg:inline-flex rounded-xl bg-slate-100 p-1 border border-slate-200 text-xs font-semibold">
             <button
+              type="button"
               onClick={() => setViewMode('timeline')}
-              className={`flex items-center gap-1.5 px-3 py-1 rounded-lg transition-colors ${
+              className={`flex items-center gap-1.5 px-3 py-1 rounded-lg transition-colors cursor-pointer ${
                 viewMode === 'timeline' ? 'bg-white text-indigo-700 shadow-2xs font-bold' : 'text-slate-600'
               }`}
             >
               <CalendarRange className="w-3.5 h-3.5" />
-              세로 카드 뷰
+              요일별 카드 뷰
             </button>
             <button
+              type="button"
               onClick={() => setViewMode('grid')}
-              className={`flex items-center gap-1.5 px-3 py-1 rounded-lg transition-colors ${
+              className={`flex items-center gap-1.5 px-3 py-1 rounded-lg transition-colors cursor-pointer ${
                 viewMode === 'grid' ? 'bg-white text-indigo-700 shadow-2xs font-bold' : 'text-slate-600'
               }`}
             >
               <LayoutGrid className="w-3.5 h-3.5" />
-              7열 주간표
+              7열 주간 시간표
             </button>
           </div>
         </div>
@@ -357,41 +174,48 @@ export const WeeklySchedule: React.FC<WeeklyScheduleProps> = ({
 
       {/* 7-Column Desktop Table View */}
       {viewMode === 'grid' && (
-        <div className="hidden lg:grid gap-3" style={{ gridTemplateColumns: `repeat(${targetDays.length}, minmax(0, 1fr))` }}>
-          {targetDays.map((day) => {
+        <div className="hidden lg:grid grid-cols-7 gap-2.5">
+          {weekDays.map((day) => {
             const isToday = day.dateStr === todayStr;
             const isSelected = day.dateStr === selectedDateStr;
-            const isPast = day.dateStr < todayStr;
             const daySchedules = getSchedulesForDay(day.dateStr);
+            const dayName = DAY_NAMES_KO[day.dayOfWeek];
 
             return (
               <div
                 key={day.dateStr}
                 onClick={() => onSelectDate(day.dateStr)}
-                className={`rounded-2xl p-3 border transition-all flex flex-col justify-between cursor-pointer min-h-[360px] ${
+                className={`rounded-2xl p-2.5 border transition-all flex flex-col justify-between cursor-pointer min-h-[340px] ${
                   isToday
-                    ? 'bg-amber-50/40 border-amber-300 ring-2 ring-amber-300 shadow-sm'
+                    ? 'bg-amber-50/30 border-amber-300 ring-2 ring-amber-300 shadow-xs'
                     : isSelected
-                    ? 'bg-indigo-50/40 border-indigo-400 shadow-xs'
-                    : isPast
-                    ? 'bg-slate-50/60 border-slate-200 opacity-70'
-                    : 'bg-white border-slate-200 hover:border-slate-300 shadow-2xs'
+                    ? 'bg-indigo-50/30 border-indigo-400 shadow-2xs'
+                    : 'bg-white border-slate-200 hover:border-slate-300'
                 }`}
               >
                 <div>
                   {/* Day Header */}
                   <div className="flex items-center justify-between pb-2 mb-2 border-b border-slate-100">
-                    <div>
-                      <span className="text-xs font-bold text-slate-500">
-                        {formatKoreanShortDate(day.dateStr)}
+                    <div className="flex items-center gap-1">
+                      <span
+                        className={`text-xs font-extrabold ${
+                          day.dayOfWeek === 0
+                            ? 'text-rose-600'
+                            : day.dayOfWeek === 6
+                            ? 'text-blue-600'
+                            : 'text-slate-800'
+                        }`}
+                      >
+                        {formatKoreanShortDate(day.dateStr)}({dayName})
                       </span>
                       {isToday && (
-                        <span className="ml-1 text-[10px] font-black bg-amber-500 text-white px-1.5 py-0.2 rounded-full">
+                        <span className="text-[10px] font-black bg-amber-500 text-white px-1.5 py-0.2 rounded-full">
                           오늘
                         </span>
                       )}
                     </div>
                     <button
+                      type="button"
                       onClick={(e) => {
                         e.stopPropagation();
                         onOpenScheduleModal(undefined, day.dateStr);
@@ -404,13 +228,13 @@ export const WeeklySchedule: React.FC<WeeklyScheduleProps> = ({
                   </div>
 
                   {/* Day Schedules */}
-                  <div className="space-y-2">
+                  <div className="space-y-1.5">
                     {daySchedules.length === 0 ? (
                       <p className="text-xs text-slate-400 text-center py-8">일정 없음</p>
                     ) : (
                       daySchedules.map((sch) => {
-                        const member = FAMILY_MEMBERS[sch.memberId];
-                        const status = getScheduleStatus(sch, daySchedules);
+                        const style = getScheduleRoleStyle(sch);
+                        const isSpecial = !isRegularClassSchedule(sch);
                         return (
                           <div
                             key={sch.id}
@@ -418,42 +242,20 @@ export const WeeklySchedule: React.FC<WeeklyScheduleProps> = ({
                               e.stopPropagation();
                               onOpenScheduleModal(sch);
                             }}
-                            className={`p-2 rounded-xl text-xs border transition-transform hover:scale-[1.02] ${member.color.bgLight} ${member.color.border}`}
+                            className={`p-2 rounded-xl text-xs border transition-transform hover:scale-[1.01] ${style.cardBgClass} ${
+                              isSpecial ? 'ring-1 ring-black/10' : ''
+                            }`}
                           >
-                            <div className="flex items-center justify-between font-bold">
-                              <span className="flex items-center gap-1">
-                                <span>{member.avatar}</span>
-                                <span className="truncate">{sch.title}</span>
+                            <div className="flex items-center justify-between gap-1 mb-1">
+                              <span className={`text-[10px] font-bold px-1.5 py-0.2 rounded ${style.badgeClass}`}>
+                                {style.avatar} {style.name}
+                              </span>
+                              <span className="text-[10px] font-mono font-bold text-slate-600">
+                                {sch.startTime}~{sch.returnTime}
                               </span>
                             </div>
-
-                            {status.pillText && (
-                              <div className="mt-1">
-                                <span className={`text-[9px] font-bold px-1.5 py-0.5 rounded ${status.pillClass}`}>
-                                  {status.pillText}
-                                </span>
-                              </div>
-                            )}
-
-                            <div className="mt-1 flex items-baseline justify-between">
-                              <span className="text-slate-500 text-[10px] font-medium">
-                                {sch.startTime} ~
-                              </span>
-                              <span className={`text-xs ${status.isReturnHome ? 'font-black text-slate-900' : 'font-semibold text-slate-600'}`}>
-                                {status.gridTimeDisplay}
-                              </span>
-                            </div>
-
-                            <div className="mt-1.5 flex items-center justify-between text-[10px] text-slate-600">
-                              <span className="flex items-center gap-0.5">
-                                {renderTransitIcon(sch.transitMethod)}
-                                {sch.transitMethod}
-                              </span>
-                              <span>{sch.guardian}</span>
-                            </div>
-
-                            <div className="mt-1.5">
-                              {renderDinnerBadge(status.dinnerStatus)}
+                            <div className="font-extrabold text-slate-900 truncate">
+                              {sch.title}
                             </div>
                           </div>
                         );
@@ -467,176 +269,147 @@ export const WeeklySchedule: React.FC<WeeklyScheduleProps> = ({
         </div>
       )}
 
-      {/* Timeline / Mobile Card View (Default and for Mobile/Tablet) */}
-      {(viewMode === 'timeline' || true) && (
-        <div className={`space-y-3 ${viewMode === 'grid' ? 'lg:hidden' : ''}`}>
-          {targetDays.map((day) => {
-            const isToday = day.dateStr === todayStr;
-            const isSelected = day.dateStr === selectedDateStr;
-            const isPast = day.dateStr < todayStr;
-            const daySchedules = getSchedulesForDay(day.dateStr);
+      {/* Timeline / Day-by-Day Card View */}
+      <div className={`space-y-3 ${viewMode === 'grid' ? 'lg:hidden' : ''}`}>
+        {weekDays.map((day) => {
+          const isToday = day.dateStr === todayStr;
+          const isSelected = day.dateStr === selectedDateStr;
+          const daySchedules = getSchedulesForDay(day.dateStr);
+          const dayName = DAY_NAMES_KO[day.dayOfWeek];
 
-            return (
-              <div
-                key={day.dateStr}
-                className={`rounded-2xl p-3 sm:p-4 border transition-all ${
-                  isToday
-                    ? 'bg-amber-50/40 border-amber-300 ring-2 ring-amber-300/80 shadow-sm'
-                    : isSelected
-                    ? 'bg-indigo-50/30 border-indigo-400 shadow-2xs'
-                    : isPast
-                    ? 'bg-slate-50/60 border-slate-200/80 opacity-75'
-                    : 'bg-white border-slate-200/90 shadow-2xs'
-                }`}
-              >
-                {/* Day Bar */}
-                <div className="flex items-center justify-between pb-2 mb-2 border-b border-slate-100">
-                  <div
-                    onClick={() => onSelectDate(day.dateStr)}
-                    className="flex items-center gap-2 cursor-pointer group"
+          return (
+            <div
+              key={day.dateStr}
+              className={`rounded-2xl p-3.5 sm:p-4 border transition-all ${
+                isToday
+                  ? 'bg-amber-50/30 border-amber-300 ring-2 ring-amber-300/70 shadow-xs'
+                  : isSelected
+                  ? 'bg-indigo-50/25 border-indigo-300 shadow-2xs'
+                  : 'bg-white border-slate-200/90'
+              }`}
+            >
+              {/* Day Bar */}
+              <div className="flex items-center justify-between pb-2.5 mb-2.5 border-b border-slate-100">
+                <div
+                  onClick={() => onSelectDate(day.dateStr)}
+                  className="flex items-center gap-2 cursor-pointer group"
+                >
+                  <span
+                    className={`text-sm sm:text-base font-black ${
+                      isToday
+                        ? 'text-amber-900'
+                        : day.dayOfWeek === 0
+                        ? 'text-rose-600'
+                        : day.dayOfWeek === 6
+                        ? 'text-blue-600'
+                        : 'text-slate-900 group-hover:text-indigo-600'
+                    }`}
                   >
-                    <span
-                      className={`text-sm sm:text-base font-black ${
-                        isToday ? 'text-amber-900' : 'text-slate-900 group-hover:text-indigo-600'
-                      }`}
-                    >
-                      {formatKoreanShortDate(day.dateStr)}
+                    {formatKoreanShortDate(day.dateStr)} ({dayName})
+                  </span>
+
+                  {isToday && (
+                    <span className="text-xs font-extrabold bg-amber-500 text-white px-2.5 py-0.5 rounded-full shadow-2xs">
+                      오늘
                     </span>
+                  )}
 
-                    {isToday && (
-                      <span className="text-xs font-extrabold bg-amber-500 text-white px-2.5 py-0.5 rounded-full shadow-xs animate-pulse-subtle">
-                        오늘 저녁
-                      </span>
-                    )}
-
-                    {isSelected && !isToday && (
-                      <span className="text-xs font-semibold bg-indigo-100 text-indigo-800 px-2 py-0.5 rounded-full">
-                        선택된 날짜
-                      </span>
-                    )}
-
-                    {isPast && (
-                      <span className="text-[11px] font-medium text-slate-400">
-                        (지나간 일정)
-                      </span>
-                    )}
-                  </div>
-
-                  <button
-                    onClick={() => onOpenScheduleModal(undefined, day.dateStr)}
-                    className="flex items-center gap-1 text-xs font-bold text-indigo-600 hover:text-indigo-800 bg-indigo-50 hover:bg-indigo-100 px-2.5 py-1 rounded-xl transition-all active:scale-95"
-                  >
-                    <Plus className="w-3.5 h-3.5" />
-                    <span>일정 추가</span>
-                  </button>
+                  <span className="text-xs text-slate-400 font-semibold">
+                    {daySchedules.length}건
+                  </span>
                 </div>
 
-                {/* Day Schedules Cards */}
-                {daySchedules.length === 0 ? (
-                  <p className="text-xs text-slate-400 py-2 pl-1">
-                    등록된 일정이 없습니다.
-                  </p>
-                ) : (
-                  <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3">
-                    {daySchedules.map((sch) => {
-                      const member = FAMILY_MEMBERS[sch.memberId];
-                      const status = getScheduleStatus(sch, daySchedules);
-                      return (
-                        <div
-                          key={sch.id}
-                          className={`p-3.5 rounded-xl border transition-all hover:shadow-xs relative group ${member.color.bgLight} ${member.color.border}`}
-                        >
-                          {/* Top row: Member badge & Actions */}
-                          <div className="flex items-center justify-between mb-1.5">
-                            <div className="flex items-center gap-1.5">
-                              <span className="text-base">{member.avatar}</span>
-                              <span className={`text-xs font-extrabold px-2 py-0.5 rounded-md ${member.color.bgBadge}`}>
-                                {member.name}
-                              </span>
-                            </div>
-
-                            <div className="flex items-center gap-1 opacity-80 group-hover:opacity-100">
-                              <button
-                                onClick={() => onOpenScheduleModal(sch)}
-                                className="p-1 rounded-lg hover:bg-white/80 text-slate-600 hover:text-slate-900 transition-colors"
-                                title="수정"
-                              >
-                                <Edit2 className="w-3.5 h-3.5" />
-                              </button>
-                              <button
-                                onClick={() => onDeleteSchedule(sch.id)}
-                                className="p-1 rounded-lg hover:bg-white/80 text-rose-500 hover:text-rose-700 transition-colors"
-                                title="삭제"
-                              >
-                                <Trash2 className="w-3.5 h-3.5" />
-                              </button>
-                            </div>
-                          </div>
-
-                          {/* Title & Route Pill */}
-                          <div className="flex items-baseline justify-between gap-2">
-                            <h4 className="font-extrabold text-slate-900 text-sm sm:text-base">
-                              {sch.title}
-                            </h4>
-                            {status.pillText && (
-                              <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full shrink-0 ${status.pillClass}`}>
-                                {status.pillText}
-                              </span>
-                            )}
-                          </div>
-
-                          {/* Time Details */}
-                          <div className="mt-2 p-2 bg-white/80 rounded-lg flex items-center justify-between border border-slate-100">
-                            <div>
-                              <span className="text-[10px] text-slate-400 block font-semibold">시작 시간</span>
-                              <span className="text-xs font-bold text-slate-700">{sch.startTime}</span>
-                            </div>
-                            <div className="text-right">
-                              <span className={`text-[10px] block font-bold ${status.isReturnHome ? 'text-indigo-600' : 'text-slate-500'}`}>
-                                {status.label}
-                              </span>
-                              <span className={`text-sm sm:text-base font-black ${status.isReturnHome ? 'text-slate-900' : 'text-slate-700'}`}>
-                                {status.timeDisplay}
-                              </span>
-                            </div>
-                          </div>
-
-                          {/* Transit & Guardian */}
-                          <div className="mt-2 flex items-center justify-between text-xs text-slate-600">
-                            <span className="flex items-center gap-1 font-semibold">
-                              {renderTransitIcon(sch.transitMethod)}
-                              {sch.transitMethod}
-                            </span>
-                            <span className="text-slate-500 font-medium">
-                              보호자: <strong className="text-slate-800">{sch.guardian}</strong>
-                            </span>
-                          </div>
-
-                          {/* Dinner Status & Memo */}
-                          <div className="mt-2 pt-2 border-t border-slate-200/60 flex items-center justify-between gap-2">
-                            <div>{renderDinnerBadge(status.dinnerStatus)}</div>
-                            {sch.isRecurring && (
-                              <span className="text-[10px] text-slate-500 bg-white/60 px-1.5 py-0.5 rounded">
-                                매주 반복
-                              </span>
-                            )}
-                          </div>
-
-                          {sch.memo && (
-                            <p className="mt-1.5 text-xs text-slate-600 bg-white/70 p-1.5 rounded-md">
-                              📝 {sch.memo}
-                            </p>
-                          )}
-                        </div>
-                      );
-                    })}
-                  </div>
-                )}
+                <button
+                  type="button"
+                  onClick={() => onOpenScheduleModal(undefined, day.dateStr)}
+                  className="flex items-center gap-1 text-xs font-bold text-indigo-600 hover:text-indigo-800 bg-indigo-50 hover:bg-indigo-100 px-2.5 py-1 rounded-xl transition-all active:scale-95 cursor-pointer"
+                >
+                  <Plus className="w-3.5 h-3.5" />
+                  <span>일정 추가</span>
+                </button>
               </div>
-            );
-          })}
-        </div>
-      )}
+
+              {/* Day Schedules Cards */}
+              {daySchedules.length === 0 ? (
+                <p className="text-xs text-slate-400 py-1.5 pl-1">등록된 일정이 없습니다.</p>
+              ) : (
+                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2.5">
+                  {daySchedules.map((sch) => {
+                    const style = getScheduleRoleStyle(sch);
+                    const isSpecial = !isRegularClassSchedule(sch);
+                    const cleanMemo = getCleanMemo(sch.memo);
+
+                    return (
+                      <div
+                        key={sch.id}
+                        onClick={() => onOpenScheduleModal(sch)}
+                        className={`p-3 rounded-xl border transition-all hover:shadow-xs relative group cursor-pointer ${style.cardBgClass} ${
+                          isSpecial ? 'ring-1 ring-black/5' : ''
+                        }`}
+                      >
+                        {/* Top row: Role badge, Time, and Edit/Delete Actions */}
+                        <div className="flex items-center justify-between gap-2 mb-1.5">
+                          <div className="flex items-center gap-1.5">
+                            <span className={`inline-flex items-center gap-1 text-xs font-extrabold px-2 py-0.5 rounded-md ${style.badgeClass}`}>
+                              <span>{style.avatar}</span>
+                              <span>{style.name}</span>
+                            </span>
+                            {isSpecial && (
+                              <span className="text-[10px] font-bold px-1.5 py-0.5 rounded bg-amber-100 text-amber-800 border border-amber-200">
+                                주요 일정
+                              </span>
+                            )}
+                          </div>
+
+                          <div className="flex items-center gap-1">
+                            <span className="inline-flex items-center gap-1 text-xs font-mono font-bold text-slate-700 bg-white/85 px-2 py-0.5 rounded-md border border-slate-200/70">
+                              <Clock className="w-3 h-3 text-indigo-500" />
+                              {sch.startTime} ~ {sch.returnTime}
+                            </span>
+                            <button
+                              type="button"
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                onOpenScheduleModal(sch);
+                              }}
+                              className="p-1 rounded-lg hover:bg-white/90 text-slate-500 hover:text-indigo-600 transition-colors"
+                              title="수정"
+                            >
+                              <Edit2 className="w-3.5 h-3.5" />
+                            </button>
+                            <button
+                              type="button"
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                onDeleteSchedule(sch.id);
+                              }}
+                              className="p-1 rounded-lg hover:bg-white/90 text-slate-400 hover:text-rose-600 transition-colors"
+                              title="삭제"
+                            >
+                              <Trash2 className="w-3.5 h-3.5" />
+                            </button>
+                          </div>
+                        </div>
+
+                        {/* Title */}
+                        <h4 className="font-extrabold text-slate-900 text-sm sm:text-base leading-snug">
+                          {sch.title}
+                        </h4>
+
+                        {cleanMemo && (
+                          <p className="mt-1.5 text-xs text-slate-600 bg-white/75 px-2 py-1 rounded-md">
+                            📍 {cleanMemo}
+                          </p>
+                        )}
+                      </div>
+                    );
+                  })}
+                </div>
+              )}
+            </div>
+          );
+        })}
+      </div>
     </section>
   );
 };

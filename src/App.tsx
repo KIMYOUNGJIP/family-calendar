@@ -1,29 +1,46 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import { Schedule, MemberId, ScheduleConflict } from './types/calendar';
+import { Schedule, ScheduleConflict } from './types/calendar';
 import {
   loadSchedules,
   saveSchedules,
   resetAllData,
   detectConflicts,
 } from './utils/storage';
-import { getTodayString, addDays, parseDate, getWeekDays } from './utils/dateUtils';
+import {
+  getTodayString,
+  addDays,
+  parseDate,
+  getWeekDays,
+  formatKoreanShortDate,
+  DAY_NAMES_KO,
+} from './utils/dateUtils';
 import { Header } from './components/Header';
-import { FilterBar, MemberFilter, TimeFilter } from './components/FilterBar';
+import {
+  FilterBar,
+  MainTab,
+  MemberFilter,
+  TimeFilter,
+  matchesMemberFilter,
+  isRegularClassSchedule,
+  isPublicHolidaySchedule,
+  getScheduleRoleStyle,
+} from './components/FilterBar';
 import { ConflictAlert } from './components/ConflictAlert';
 import { TodaySummaryCard } from './components/TodaySummaryCard';
 import { WeeklySchedule } from './components/WeeklySchedule';
 import { MonthlyCalendar } from './components/MonthlyCalendar';
+import { SelectedDayPanel } from './components/SelectedDayPanel';
 import { ScheduleModal } from './components/ScheduleModal';
 import { SyncGuideModal } from './components/SyncGuideModal';
 import { GoogleCalendarImportModal } from './components/GoogleCalendarImportModal';
 import { GOOGLE_CALENDAR_DEFAULT_URL } from './data/realGoogleSchedules';
 import { parseICSContent } from './utils/icalParser';
-import { Plus } from 'lucide-react';
+import { Plus, Sparkles, Utensils, CalendarRange } from 'lucide-react';
 
 export const App: React.FC = () => {
   const [todayStr, setTodayStr] = useState<string>(getTodayString());
 
-  // 자정(00:00) 경과 감지: 매 30초마다 확인하여 날짜가 바뀌면 자동으로 오늘 날짜 갱신 (전날 일정 자동 숨김)
+  // 자정(00:00) 경과 감지: 매 30초마다 확인하여 날짜가 바뀌면 자동으로 오늘 날짜 갱신
   useEffect(() => {
     const timer = setInterval(() => {
       const current = getTodayString();
@@ -36,14 +53,16 @@ export const App: React.FC = () => {
   }, [todayStr]);
 
   // 상태 관리
+  const [activeTab, setActiveTab] = useState<MainTab>('calendar');
   const [currentDate, setCurrentDate] = useState<Date>(new Date());
   const [selectedDateStr, setSelectedDateStr] = useState<string>(todayStr);
   const [schedules, setSchedules] = useState<Schedule[]>([]);
   const [isLoaded, setIsLoaded] = useState(false);
 
-  // 필터 상태
+  // 필터 및 정규수업 표시 토글 상태
   const [memberFilter, setMemberFilter] = useState<MemberFilter>('all');
   const [timeFilter, setTimeFilter] = useState<TimeFilter>('all');
+  const [showRegularClasses, setShowRegularClasses] = useState<boolean>(true);
 
   // 모달 및 동기화 상태
   const [isScheduleModalOpen, setIsScheduleModalOpen] = useState(false);
@@ -54,7 +73,7 @@ export const App: React.FC = () => {
   const [isSyncingGoogle, setIsSyncingGoogle] = useState(false);
   const [lastSyncMessage, setLastSyncMessage] = useState<string | null>(null);
 
-  // 구글 캘린더 실시간 동기화 공통 함수 (자동 동기화 및 원클릭 즉시 동기화 버튼 공용)
+  // 구글 캘린더 실시간 동기화 공통 함수
   const syncFromGoogleCalendar = async (showFeedback = false) => {
     if (showFeedback) {
       setIsSyncingGoogle(true);
@@ -73,7 +92,6 @@ export const App: React.FC = () => {
     };
 
     try {
-      // 1. 원격 구글 캘린더 프록시 fetch 우선 시도 (3.5초 타임아웃 적용하여 1MB 파일 프록시 지연 방지)
       const cacheBuster = `?t=${Date.now()}`;
       const fetchUrl = `${GOOGLE_CALENDAR_DEFAULT_URL}${cacheBuster}`;
       const fetchWithTimeout = async (url: string, ms = 3500) => {
@@ -111,7 +129,7 @@ export const App: React.FC = () => {
         }
       }
 
-      // 2. 프록시 타임아웃 시 배포 서버의 최신 ICS 파일 즉시 fetch
+      // 프록시 타임아웃 시 배포 서버의 최신 ICS 파일 즉시 fetch
       try {
         const localRes = await fetch(`./google_calendar.ics?t=${Date.now()}`);
         if (localRes.ok) {
@@ -166,25 +184,19 @@ export const App: React.FC = () => {
     setCurrentDate(now);
     setSelectedDateStr(todayStr);
     setTimeFilter('today');
-    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  // 시간 필터 선택 시 해당 섹션/날짜로 스마트 이동
+  // 시간 필터 선택
   const handleSelectTimeFilter = (tf: TimeFilter) => {
     setTimeFilter(tf);
-    if (tf === 'today') {
-      const now = new Date();
-      setCurrentDate(now);
-      setSelectedDateStr(todayStr);
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    } else if (tf === 'this_week') {
+    if (tf === 'today' || tf === 'this_week') {
       const now = new Date();
       setCurrentDate(now);
       setSelectedDateStr(todayStr);
     }
   };
 
-  // 날짜 선택 시 주간 일정도 해당 날짜로 동기화
+  // 날짜 선택 시 월간 달력 연/월 동기화
   const handleSelectDate = (dateStr: string) => {
     setSelectedDateStr(dateStr);
     const targetDate = parseDate(dateStr);
@@ -201,7 +213,7 @@ export const App: React.FC = () => {
       id: newId,
     };
 
-    let updatedSchedules = [...schedules, newSchedule];
+    const updatedSchedules = [...schedules, newSchedule];
 
     // 매주 반복일 경우 다음 3주간의 일정도 자동 등록
     if (newSchedule.isRecurring) {
@@ -276,12 +288,54 @@ export const App: React.FC = () => {
     setIsScheduleModalOpen(true);
   };
 
-  // 이번 주 범위 계산 (월~일)
+  // 현재 선택된 날짜가 속한 주 (월~일)
+  const selectedWeekDays = useMemo(() => getWeekDays(selectedDateStr), [selectedDateStr]);
   const currentWeekDays = useMemo(() => getWeekDays(todayStr), [todayStr]);
   const thisWeekEnd = currentWeekDays[6].dateStr;
 
-  // "귀가시간집중 알림은 이번주것만 뜨게 해줘":
-  // 과거 연도/과거 날짜를 제외하고, 새로고침 기준 이번 주(오늘 포함 남은 기간)의 일정만 대상으로 충돌 감지!
+  // 선택된 주(월~일)의 주요 특별 일정 목록 (중간·기말고사 등 연속 일정은 1건으로 병합)
+  const weeklySpecialHighlights = useMemo(() => {
+    const weekStart = selectedWeekDays[0].dateStr;
+    const weekEnd = selectedWeekDays[6].dateStr;
+
+    const raw = schedules
+      .filter(
+        (s) =>
+          s.date >= weekStart &&
+          s.date <= weekEnd &&
+          matchesMemberFilter(s, memberFilter) &&
+          !isPublicHolidaySchedule(s.title) &&
+          !isRegularClassSchedule(s)
+      )
+      .sort((a, b) => (a.date === b.date ? a.startTime.localeCompare(b.startTime) : a.date.localeCompare(b.date)));
+
+    const list: { schedule: Schedule; dateLabel: string; titleLabel: string }[] = [];
+    const seenExamTitles = new Set<string>();
+
+    for (const s of raw) {
+      if (s.title.includes('중간고사') || s.title.includes('기말고사')) {
+        if (seenExamTitles.has(s.title)) continue;
+        seenExamTitles.add(s.title);
+        const sameDates = raw.filter((x) => x.title === s.title).map((x) => x.date);
+        list.push({
+          schedule: s,
+          dateLabel: `${formatKoreanShortDate(sameDates[0])}~${formatKoreanShortDate(sameDates[sameDates.length - 1])}`,
+          titleLabel: s.title,
+        });
+      } else {
+        const dObj = parseDate(s.date);
+        const dayName = DAY_NAMES_KO[dObj.getDay()];
+        list.push({
+          schedule: s,
+          dateLabel: `${formatKoreanShortDate(s.date)}(${dayName}) ${s.startTime}`,
+          titleLabel: s.title,
+        });
+      }
+    }
+    return list;
+  }, [schedules, selectedWeekDays, memberFilter]);
+
+  // 이번 주 충돌 감지 (저녁·귀가 브리핑 탭 전용)
   const conflicts: ScheduleConflict[] = useMemo(() => {
     const thisWeekSchedules = schedules.filter(
       (s) => s.date >= todayStr && s.date <= thisWeekEnd
@@ -318,8 +372,10 @@ export const App: React.FC = () => {
         selectedDateStr={selectedDateStr}
       />
 
-      {/* 필터 바 */}
+      {/* 2. 메인 3탭 네비게이션 & 구성원 필터 바 */}
       <FilterBar
+        activeTab={activeTab}
+        onSelectTab={setActiveTab}
         memberFilter={memberFilter}
         onSelectMember={setMemberFilter}
         timeFilter={timeFilter}
@@ -327,37 +383,134 @@ export const App: React.FC = () => {
         totalScheduleCount={schedules.length}
       />
 
-      {/* 메인 콘텐츠 영역: 1. 귀가시간 집중 안내 (맨 위) ➔ 2. 주간 상세 스케줄 (중간) ➔ 3. 월간 캘린더 (맨 아래) */}
-      <main className="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-5 flex-1 space-y-6">
-        {/* 일정 및 픽업 충돌 경고 배너 */}
-        <ConflictAlert conflicts={conflicts} />
+      {/* 3. 탭별 메인 콘텐츠 영역 */}
+      <main className="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-5 flex-1 space-y-5">
+        {/* ==================== [탭 1: 가족 캘린더 홈 (기본 화면)] ==================== */}
+        {activeTab === 'calendar' && (
+          <>
+            {/* 상단: 선택된 주(이번 주) 주요 특별 일정 요약 바 */}
+            <div className="bg-white rounded-2xl border border-slate-200/90 shadow-2xs p-3.5 sm:px-5 flex flex-col md:flex-row md:items-center justify-between gap-3">
+              <div className="flex items-center gap-2.5 flex-wrap">
+                <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-xl bg-amber-100 text-amber-900 font-extrabold text-xs shrink-0">
+                  <Sparkles className="w-3.5 h-3.5 text-amber-600" />
+                  주간 주요 · 특별 일정 ({formatKoreanShortDate(selectedWeekDays[0].dateStr)} ~{' '}
+                  {formatKoreanShortDate(selectedWeekDays[6].dateStr)})
+                </span>
 
-        {/* 1. [맨 위] 이번 주 남은 평일 귀가시간 집중 안내 카드 */}
-        <TodaySummaryCard
-          schedules={schedules}
-          selectedDateStr={selectedDateStr}
-          onSelectDate={handleSelectDate}
-          onOpenScheduleModal={(sch) => openAddScheduleModal(sch)}
-        />
+                {weeklySpecialHighlights.length === 0 ? (
+                  <span className="text-xs text-slate-400 font-medium">
+                    이 주간에 등록된 특별 일정(모임·병원·행사 등)이 없습니다.
+                  </span>
+                ) : (
+                  <div className="flex items-center gap-1.5 flex-wrap">
+                    {weeklySpecialHighlights.map((item) => {
+                      const style = getScheduleRoleStyle(item.schedule);
+                      const isSel = item.schedule.date === selectedDateStr;
+                      return (
+                        <button
+                          key={item.schedule.id}
+                          type="button"
+                          onClick={() => handleSelectDate(item.schedule.date)}
+                          className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-xl text-xs border transition-all cursor-pointer ${
+                            isSel
+                              ? 'bg-indigo-600 text-white border-indigo-600 font-extrabold shadow-2xs'
+                              : `${style.badgeClass} hover:opacity-85 font-bold`
+                          }`}
+                        >
+                          <span>{style.avatar}</span>
+                          <span>{item.titleLabel}</span>
+                          <span
+                            className={`text-[10px] font-mono ${
+                              isSel ? 'text-indigo-100' : 'opacity-75'
+                            }`}
+                          >
+                            ({item.dateLabel})
+                          </span>
+                        </button>
+                      );
+                    })}
+                  </div>
+                )}
+              </div>
 
-        {/* 2. [중간] 이번 주 상세 스케줄 (월~일 요일별 시간표) */}
-        <WeeklySchedule
-          selectedDateStr={selectedDateStr}
-          onSelectDate={handleSelectDate}
-          schedules={schedules}
-          onOpenScheduleModal={openAddScheduleModal}
-          onDeleteSchedule={handleDeleteSchedule}
-          memberFilter={memberFilter}
-        />
+              {/* 우측 빠른 메뉴 전환 바로가기 */}
+              <div className="flex items-center gap-1.5 shrink-0 self-end md:self-auto">
+                <button
+                  type="button"
+                  onClick={() => setActiveTab('weekly')}
+                  className="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold transition-colors cursor-pointer"
+                >
+                  <CalendarRange className="w-3.5 h-3.5 text-indigo-600" />
+                  <span>주간 시간표</span>
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setActiveTab('dinner')}
+                  className="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-amber-50 hover:bg-amber-100 text-amber-900 border border-amber-200 text-xs font-bold transition-colors cursor-pointer"
+                >
+                  <Utensils className="w-3.5 h-3.5 text-amber-600" />
+                  <span>저녁·귀가 챙기기</span>
+                </button>
+              </div>
+            </div>
 
-        {/* 3. [맨 아래] 가족달력 월간 뷰 */}
-        <MonthlyCalendar
-          currentDate={currentDate}
-          selectedDateStr={selectedDateStr}
-          onSelectDate={handleSelectDate}
-          schedules={schedules}
-          memberFilter={memberFilter}
-        />
+            {/* 메인 2단 분할 레이아웃: 좌측 월간 달력 (7) + 우측 선택 날짜 상세 패널 (5) */}
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 items-start">
+              <div className="lg:col-span-7 xl:col-span-8">
+                <MonthlyCalendar
+                  currentDate={currentDate}
+                  selectedDateStr={selectedDateStr}
+                  onSelectDate={handleSelectDate}
+                  schedules={schedules}
+                  memberFilter={memberFilter}
+                  showRegularClasses={showRegularClasses}
+                  onToggleRegularClasses={() => setShowRegularClasses((prev) => !prev)}
+                />
+              </div>
+
+              <div className="lg:col-span-5 xl:col-span-4">
+                <SelectedDayPanel
+                  selectedDateStr={selectedDateStr}
+                  onSelectDate={handleSelectDate}
+                  schedules={schedules}
+                  memberFilter={memberFilter}
+                  showRegularClasses={showRegularClasses}
+                  onToggleRegularClasses={() => setShowRegularClasses((prev) => !prev)}
+                  onOpenScheduleModal={openAddScheduleModal}
+                  onDeleteSchedule={handleDeleteSchedule}
+                  onGoToDinnerTab={() => setActiveTab('dinner')}
+                />
+              </div>
+            </div>
+          </>
+        )}
+
+        {/* ==================== [탭 2: 주간·일간 타임라인] ==================== */}
+        {activeTab === 'weekly' && (
+          <WeeklySchedule
+            selectedDateStr={selectedDateStr}
+            onSelectDate={handleSelectDate}
+            schedules={schedules}
+            onOpenScheduleModal={openAddScheduleModal}
+            onDeleteSchedule={handleDeleteSchedule}
+            memberFilter={memberFilter}
+            showRegularClasses={showRegularClasses}
+            onToggleRegularClasses={() => setShowRegularClasses((prev) => !prev)}
+          />
+        )}
+
+        {/* ==================== [탭 3: 저녁·귀가 챙기기 (부가 메뉴)] ==================== */}
+        {activeTab === 'dinner' && (
+          <div className="space-y-5">
+            <ConflictAlert conflicts={conflicts} />
+            <TodaySummaryCard
+              schedules={schedules}
+              selectedDateStr={selectedDateStr}
+              onSelectDate={handleSelectDate}
+              onOpenScheduleModal={(sch) => openAddScheduleModal(sch)}
+            />
+          </div>
+        )}
       </main>
 
       {/* 모바일 하단 플로팅 액션 버튼 (FAB) */}
@@ -406,3 +559,4 @@ export const App: React.FC = () => {
 };
 
 export default App;
+
