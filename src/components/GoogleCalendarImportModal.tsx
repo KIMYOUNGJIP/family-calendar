@@ -16,7 +16,7 @@ export const GoogleCalendarImportModal: React.FC<GoogleCalendarImportModalProps>
   onClose,
   onImportSchedules,
 }) => {
-  const [activeTab, setActiveTab] = useState<'url' | 'file' | 'text'>('url');
+  const [activeTab, setActiveTab] = useState<'url' | 'file' | 'text'>('file');
   const [parsedList, setParsedList] = useState<Schedule[]>([]);
   const [isParsing, setIsParsing] = useState(false);
   const [icalUrl, setIcalUrl] = useState(GOOGLE_CALENDAR_DEFAULT_URL);
@@ -39,29 +39,30 @@ export const GoogleCalendarImportModal: React.FC<GoogleCalendarImportModalProps>
         const text = event.target?.result as string;
         const schedules = parseICSContent(text);
         setParsedList(schedules);
-      } catch (err) {
+      } catch {
         alert('ICS 파일 파싱 중 오류가 발생했습니다.');
       } finally {
         setIsParsing(false);
       }
     };
     reader.readAsText(file);
+    e.target.value = '';
   };
 
-  // 2. URL 처리 (브라우저 CORS 프록시 1MB 제한 대응 + 로컬 최신 번들 폴백)
+  // 2. URL 처리 (공개 CORS 프록시 시도 후 실패 시 직접 다운로드 안내)
   const handleFetchUrl = async () => {
     if (!icalUrl.trim()) return;
     setIsParsing(true);
 
     try {
-      let fetchUrl = icalUrl.trim();
+      const fetchUrl = icalUrl.trim();
       if (!fetchUrl.startsWith('http')) {
         alert('올바른 URL 형식(https://...)을 입력해주세요.');
         setIsParsing(false);
         return;
       }
 
-      const fetchWithTimeout = async (url: string, ms = 4000) => {
+      const fetchWithTimeout = async (url: string, ms = 5000) => {
         const controller = new AbortController();
         const timer = setTimeout(() => controller.abort(), ms);
         try {
@@ -74,7 +75,6 @@ export const GoogleCalendarImportModal: React.FC<GoogleCalendarImportModalProps>
       const targetWithCacheBuster = `${fetchUrl}${fetchUrl.includes('?') ? '&' : '?'}t=${Date.now()}`;
       let validText = '';
 
-      // 1차: 공개 CORS 프록시 시도 (타임아웃 4초)
       const proxyUrls = [
         `https://api.allorigins.win/raw?url=${encodeURIComponent(targetWithCacheBuster)}`,
         `https://corsproxy.io/?url=${encodeURIComponent(targetWithCacheBuster)}`,
@@ -82,7 +82,7 @@ export const GoogleCalendarImportModal: React.FC<GoogleCalendarImportModalProps>
 
       for (const pUrl of proxyUrls) {
         try {
-          const res = await fetchWithTimeout(pUrl, 4000);
+          const res = await fetchWithTimeout(pUrl, 5000);
           if (res.ok) {
             const text = await res.text();
             if (text.includes('BEGIN:VCALENDAR')) {
@@ -91,23 +91,15 @@ export const GoogleCalendarImportModal: React.FC<GoogleCalendarImportModalProps>
             }
           }
         } catch {
-          // 다음 프록시 또는 폴백 진행
-        }
-      }
-
-      // 2차: 1MB 대용량 .ics 파일로 인해 무료 CORS 프록시가 타임아웃될 경우 서버의 최신 동기화 본(.ics) 사용
-      if (!validText) {
-        const localRes = await fetch(`./google_calendar.ics?t=${Date.now()}`);
-        if (localRes.ok) {
-          const text = await localRes.text();
-          if (text.includes('BEGIN:VCALENDAR')) {
-            validText = text;
-          }
+          // 다음 프록시 시도
         }
       }
 
       if (!validText) {
-        alert('브라우저 보안(CORS) 제한으로 URL 직접 호출이 지연되었습니다. 아래 [1단계: 구글 최신 파일(basic.ics) 바로 받기] 버튼을 눌러 파일을 선택해 주세요.');
+        setActiveTab('file');
+        alert(
+          '현재 구글 캘린더 파일 용량(약 1MB) 때문에 무료 웹 프록시가 응답하지 않습니다.\n\n[1단계: 구글 최신 파일(basic.ics) 바로 받기] 버튼을 누른 뒤 다운로드된 파일을 선택하시면 1초 만에 100% 반영됩니다!'
+        );
         return;
       }
 
@@ -117,8 +109,9 @@ export const GoogleCalendarImportModal: React.FC<GoogleCalendarImportModalProps>
       } else {
         setParsedList(schedules);
       }
-    } catch (err) {
-      alert('iCal 주소에서 일정을 불러오지 못했습니다. 아래 [구글 최신 파일 바로 받기] 후 업로드해주세요.');
+    } catch {
+      setActiveTab('file');
+      alert('iCal 주소에서 일정을 불러오지 못했습니다. [구글 최신 파일(basic.ics) 바로 받기] 후 파일을 선택해주세요.');
     } finally {
       setIsParsing(false);
     }

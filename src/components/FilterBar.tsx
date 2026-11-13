@@ -95,14 +95,26 @@ export function isRegularClassSchedule(sch: Schedule): boolean {
  */
 export function getScheduleRoleStyle(sch: Schedule) {
   const t = `${sch.title} ${sch.guardian || ''}`.toLowerCase();
-  if (
+  const isMom =
     t.includes('엄마') ||
     t.includes('아내') ||
     t.includes('마누라') ||
     t.includes('미선') ||
     t.includes('여전도') ||
-    t.includes('8여')
-  ) {
+    t.includes('8여');
+  const isDad = t.includes('아빠') || t.includes('남편') || t.includes('영집') || t.includes('자동차');
+
+  if (isMom && isDad) {
+    return {
+      roleId: 'parents' as const,
+      name: '아빠·엄마',
+      avatar: '👫',
+      badgeClass: 'bg-purple-100 text-purple-800 border border-purple-200',
+      cardBgClass: 'bg-purple-50/70 border-purple-200',
+      dotClass: 'bg-purple-600',
+    };
+  }
+  if (isMom) {
     return {
       roleId: 'mom' as const,
       name: '엄마',
@@ -112,7 +124,7 @@ export function getScheduleRoleStyle(sch: Schedule) {
       dotClass: 'bg-rose-500',
     };
   }
-  if (t.includes('아빠') || t.includes('남편') || t.includes('영집') || t.includes('자동차')) {
+  if (isDad) {
     return {
       roleId: 'dad' as const,
       name: '아빠',

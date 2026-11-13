@@ -129,25 +129,27 @@ export const App: React.FC = () => {
         }
       }
 
-      // 프록시 타임아웃 시 배포 서버의 최신 ICS 파일 즉시 fetch
-      try {
-        const localRes = await fetch(`./google_calendar.ics?t=${Date.now()}`);
-        if (localRes.ok) {
-          const text = await localRes.text();
-          if (text.includes('BEGIN:VCALENDAR')) {
-            const parsed = parseICSContent(text);
-            if (parsed && parsed.length > 0) {
-              mergeWithUserSchedules(parsed);
-              if (showFeedback) {
-                setLastSyncMessage(`✓ 최신 가족 캘린더 동기화 완료 (${parsed.length.toLocaleString()}건 반영)`);
-                setTimeout(() => setLastSyncMessage(null), 4000);
+      // 2차: 자동 초기 로딩일 때만 서버 번들(.ics) 확인; 사용자가 직접 [실시간 동기화]를 눌렀을 때는 구버전 번들로 성공한 것처럼 오인시키지 않고 1초 파일 받기 모달 안내
+      if (!showFeedback) {
+        try {
+          const localRes = await fetch(`./google_calendar.ics?t=${Date.now()}`);
+          if (localRes.ok) {
+            const text = await localRes.text();
+            if (text.includes('BEGIN:VCALENDAR')) {
+              const parsed = parseICSContent(text);
+              if (parsed && parsed.length > 0) {
+                mergeWithUserSchedules(parsed);
+                return;
               }
-              return;
             }
           }
+        } catch {
+          // fallback
         }
-      } catch {
-        // fallback
+      } else {
+        setLastSyncMessage('⚠️ 구글 파일 용량(1MB)으로 프록시 지연됨 → [1단계: basic.ics 바로 받기]를 이용해 주세요');
+        setTimeout(() => setLastSyncMessage(null), 6000);
+        setIsGoogleImportOpen(true);
       }
     } catch {
       if (showFeedback) {
